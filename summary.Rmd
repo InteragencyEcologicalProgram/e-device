@@ -7,8 +7,6 @@
 Digital data entry methods facilitate more accurate and rapid reporting of survey data - as compared to paper data sheets - by reducing field entry errors, eliminating manual entry QC checks, and improving overall processing efficiency. 
 
 
-Adding a change to see if I can push to IEP
-
 ## **Problem:** {-}
 
 **IEP still uses paper data sheets for most surveys.**  

@@ -3,7 +3,7 @@ bookdown::bs4_book:
   theme:
     primary: "#096B72"
     bootswatch: yeti
-  #repo: https://github.com/GitKarIn/e-device2.git
+  repo: https://github.com/InteragencyEcologicalProgram/e-device.git
   
 # Currently pdf marked out because of conflicts with kable tables
 # bookdown::pdf_book:

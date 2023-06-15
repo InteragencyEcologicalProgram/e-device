@@ -3,7 +3,7 @@ new_session: true
 # this runs the setup.R program before rendering the chapters
 # the setup.R program calls readin_tables.R which pulls in all tables
 before_chapter_script: setup.R
-
+output_dir: "docs"
 delete_merged_file: true
 language:
   ui:
