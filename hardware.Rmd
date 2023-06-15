@@ -1,0 +1,10 @@
+# (PART\*) Hardware Reviews {-}
+
+# E-Device Hardware Options 
+
+## Waterproof Cases: ipads
+
+
+```{r ieplog, echo=FALSE,  out.width= "70%", fig.align='center',fig.cap=""}
+knitr::include_graphics(c("images/Hardware/GIS_discussion.JPG"))
+```

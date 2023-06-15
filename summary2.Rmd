@@ -1,0 +1,74 @@
+# Summary for Managers {-}
+
+## Take Home Message:{-}
+
+IEP should transition to electronic data entry in order to improve efficiency and data quality.
+
+Digital data entry methods have the potential to significantly increase the turn-around data from survey to  publication by reducing field entry errors, eliminating manual entry QC checks, and improving overall processing efficiency. 
+
+Recent innovations in electronic data transfer, cloud processing and AI technology have been integrated into most commercially available data collection software;  these tools provide high-performance solutions, and some are genuinely providing a user-friendly development interface.
+
+## Problem:
+
+IEP still uses paper data sheets for most surveys.  Several surveys have tried out different e-devices for collecting field data, but they haven't been broadly adopted and people are not sure which ones are best.  
+
+This bookdown document is set-up as an **Open-access Repository for Information related to Electronic Field Data Entry Software/Hardware for IEP Survey Applications**.
+
+This document is intended as resource for IEP survey leads in selecting and deploying digital data-entry procedures.  
+
+The initial information was gathered from interviews and presentations organized during a IEP Data Users Working Group sub-team (6/2022-6/2023).  
+
+A Github-based bookdown framework has been established to support open sharing and on-going community updates as survey teams add new digital data-entry tools to their program.  
+
+
+## Method: {-}
+
+The DUWG formed a subteam and carried out the following steps:
+
+1. **Poll IEP survey teams** to learn what digital data entry tools are currently used within the IEP network; 
+2. **Evaluate the top software tools** with interviews/presentations from experienced users and product vendors; 
+3. **Conduct software trials** using apps specifically configured for IEP survey data collections;
+4. **Continue to encourage participation** to grow this IEP community sharing and exchange of technical information using an Open-document forum.
+
+
+## Solution: {-}
+
+
+
+```{r proscons, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='speakers', out.width='100%', tab.asp=.75, tab.align='left'}
+
+library(kableExtra)
+library(dplyr)
+library(here)
+
+pc<- as.data.frame(readRDS(here("proscons.rds"))) 
+
+# Replace NAs with empty strings using replace()
+pc[is.na(pc)] <- ""
+
+
+pc %>%
+  # Group by category column and collapse repeating values
+  group_by(Software) %>%
+  mutate(Software = ifelse(duplicated(Software), "", Software))  %>%
+
+kable(pc, format = "html", escape = F, caption = "Summary Pros and Cons of Field Data Entry Apps Reviewed.", booktabs = TRUE,align='l') %>%
+  kable_paper() %>% 
+  # kable_styling(bootstrap_options = c("striped", "hover"),full_width = FALSE, fixed_thead = TRUE,
+  #               font_size = 20) %>%
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  #column_spec(1, width_min = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "4.5cm", bold = TRUE, italic = F) %>%
+  #column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+  #column_spec(3, width_min = "10cm", bold = F, italic = F) %>%
+  column_spec(3, width_max = "10cm", bold = F, italic = F) %>%
+  scroll_box(width = "800px")
+
+```
+
+
+## Impact: {-}
+
+Adopting e-devices will mean some time/entry spent in developing the platforms and software and training staff, but long-term savings in data entry time and data quality will be worth it.  
+

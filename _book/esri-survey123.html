@@ -1,0 +1,1462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 4 ESRI Survey123 | Electronic Data Entry Options for IEP Surveys</title>
+<meta name="author" content="IEP DUWG ‘e-Device’ Sub-group led by Karrin Alstad">
+<meta name="description" content="4.1 Survey123 Overview From ESRI documentation: ArcGIS Survey123 is a complete, form-centric solution for creating, sharing, and analyzing surveys. Use it to create forms with skip logic,...">
+<meta name="generator" content="bookdown 0.34 with bs4_book()">
+<meta property="og:title" content="Chapter 4 ESRI Survey123 | Electronic Data Entry Options for IEP Surveys">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://github.com/GitKarIn/e-device2.git/esri-survey123.html">
+<meta property="og:description" content="4.1 Survey123 Overview From ESRI documentation: ArcGIS Survey123 is a complete, form-centric solution for creating, sharing, and analyzing surveys. Use it to create forms with skip logic,...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 4 ESRI Survey123 | Electronic Data Entry Options for IEP Surveys">
+<meta name="twitter:description" content="4.1 Survey123 Overview From ESRI documentation: ArcGIS Survey123 is a complete, form-centric solution for creating, sharing, and analyzing surveys. Use it to create forms with skip logic,...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/kePrint-0.0.1/kePrint.js"></script><link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style_test2.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Electronic Data Entry Options for IEP Surveys</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Electronic Data Entry Options for IEP Surveys</a></li>
+<li><a class="" href="executive-summary.html">Executive Summary</a></li>
+<li class="book-part">Intro and IEP Questionnaire</li>
+<li><a class="" href="intro.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="e-device-questionnaire.html"><span class="header-section-number">2</span> E-device Questionnaire</a></li>
+<li class="book-part">Software Reviews</li>
+<li><a class="" href="software-comparison-criteria.html"><span class="header-section-number">3</span> Software Comparison Criteria</a></li>
+<li><a class="active" href="esri-survey123.html"><span class="header-section-number">4</span> ESRI Survey123</a></li>
+<li><a class="" href="ms-power-apps.html"><span class="header-section-number">5</span> MS Power Apps</a></li>
+<li><a class="" href="fulcrum-app.html"><span class="header-section-number">6</span> Fulcrum App</a></li>
+<li><a class="" href="pendragon.html"><span class="header-section-number">7</span> Pendragon</a></li>
+<li><a class="" href="feed.html"><span class="header-section-number">8</span> FEED</a></li>
+<li><a class="" href="big-fin.html"><span class="header-section-number">9</span> Big Fin</a></li>
+<li><a class="" href="pdf-form-and-r-sraping.html"><span class="header-section-number">10</span> PDF Form and R Sraping</a></li>
+<li class="book-part">IEP Survey Demos</li>
+<li><a class="" href="yoldem.html"><span class="header-section-number">11</span> Yolo Bipass: Survey123 Trial App</a></li>
+<li><a class="" href="powdem.html"><span class="header-section-number">12</span> SF Bay Study: PowerApps Trial App</a></li>
+<li class="book-part">Hardware Reviews</li>
+<li><a class="" href="e-device-hardware-options.html"><span class="header-section-number">13</span> E-Device Hardware Options</a></li>
+<li class="book-part">External Sensors</li>
+<li><a class="" href="fishboards.html"><span class="header-section-number">14</span> Fishboards</a></li>
+<li><a class="" href="navigation-data.html"><span class="header-section-number">15</span> Navigation Data</a></li>
+<li class="book-part">Appendix</li>
+<li><a class="" href="appx_1.html"><span class="header-section-number">A</span> Appendix - E-device Survey</a></li>
+<li><a class="" href="appendix--.html"><span class="header-section-number">B</span> Appendix -</a></li>
+<li><a class="" href="gloss.html"><span class="header-section-number">C</span> Glossary</a></li>
+<li><a class="" href="expnet.html"><span class="header-section-number">D</span> Expert Network</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="esri-survey123" class="section level1" number="4">
+<h1>
+<span class="header-section-number">4</span> ESRI Survey123<a class="anchor" aria-label="anchor" href="#esri-survey123"><i class="fas fa-link"></i></a>
+</h1>
+<div id="s12top" class="section level2" number="4.1">
+<h2>
+<span class="header-section-number">4.1</span> Survey123 Overview<a class="anchor" aria-label="anchor" href="#s12top"><i class="fas fa-link"></i></a>
+</h2>
+<p>From ESRI documentation: ArcGIS Survey123 is a complete, form-centric solution for creating, sharing, and analyzing surveys. Use it to create forms with skip logic, defaults, and support for multiple languages. Collect data using web or mobile devices, even when disconnected from the internet. Upload data securely, and analyze results on the web or in an ArcGIS app.
+<a href="https://doc.arcgis.com/en/survey123/reference/whatissurvey123.htm" class="uri">https://doc.arcgis.com/en/survey123/reference/whatissurvey123.htm</a></p>
+<p>From G2 Business Software Review: Survey123 is included with ArcGIS, and provides powerful features to help you leverage the power of location to boost your productivity while capturing data and analyzing the results of your surveys. <a href="https://www.g2.com/products/arcgis-survey123/reviews" class="uri">https://www.g2.com/products/arcgis-survey123/reviews</a></p>
+</div>
+<div id="survey123-key-features" class="section level2" number="4.2">
+<h2>
+<span class="header-section-number">4.2</span> Survey123: Key Features<a class="anchor" aria-label="anchor" href="#survey123-key-features"><i class="fas fa-link"></i></a>
+</h2>
+<div id="survey123-form-developing-interface" class="section level3" number="4.2.1">
+<h3>
+<span class="header-section-number">4.2.1</span> Survey123 Form Developing Interface<a class="anchor" aria-label="anchor" href="#survey123-form-developing-interface"><i class="fas fa-link"></i></a>
+</h3>
+<p>Surveys123 Survey Forms are created and stored through the ESRI web interface (see <a href="esri-survey123.html#fig:ESRIweb">4.1</a>); access requires a current ESRI license. Survey123 forms can be downloaded to tablets, iPhones or iPads, and data collection can be made while the device is offline. Survey results are uploaded to cloud storage next time the device is on-line.</p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://here.r-lib.org/">here</a></span><span class="op">)</span></span></code></pre></div>
+<div class="figure">
+<span style="display:block;" id="fig:ESRIweb"></span>
+<img src="images/survey123/ESRIweb.png" alt="Screen capture of the ESRI web interface for Survey123 and the option to Create New Survey." width="90%"><p class="caption">
+Figure 4.1: Screen capture of the ESRI web interface for Survey123 and the option to Create New Survey.
+</p>
+</div>
+<p>There are two main options for designing a Survey123 survey form (<a href="esri-survey123.html#fig:ESRIweb2">4.2</a>): the Web Designer or Survey123 Connect tool. The Web Designer is a web-based menu-driven GUI that does not require learning any specific coding to set up a basic survey form. Survey questions and response types can be specified using a drag and drop tool.</p>
+<div class="figure">
+<span style="display:block;" id="fig:ESRIweb2"></span>
+<img src="images/survey123/ESRIweb2.png" alt="Screen capture of the ESRI web interface for Survey123 highlighting the two main options for designing a Survey123 form: the web designer or the Survey123 Connect tool." width="90%"><p class="caption">
+Figure 4.2: Screen capture of the ESRI web interface for Survey123 highlighting the two main options for designing a Survey123 form: the web designer or the Survey123 Connect tool.
+</p>
+</div>
+<p>Survey123 Connect is an option for more advanced survey form design, such as a nested structure or calculated responses from user inputs. The Survey123 Connect approach requires defining the more advanced form properties within an ‘XLSForm spreadsheet’ using the XLSForm coding language (XLSForm spreadsheets: <a href="esri-survey123.html#fig:xlsform">4.3</a> and <a href="esri-survey123.html#fig:xlsform2">4.4</a>). ESRI documentation for both Web designer and Connect can be found at: <a href="https://doc.arcgis.com/en/survey123/browser/create-surveys/createsurveys.htm" class="uri">https://doc.arcgis.com/en/survey123/browser/create-surveys/createsurveys.htm</a>
+XLSForm formatting language is described at: <a href="https://xlsform.org/en/" class="uri">https://xlsform.org/en/</a>.</p>
+<div class="figure">
+<span style="display:block;" id="fig:xlsform"></span>
+<img src="images/survey123/survey123_xlsform.png" alt="Screen capture of ESRI Survey123 Connect software demonstrating the use of the XLSForm spreadsheet-based coding language and the ability to directly edit the JavaScript code that is linked to XLSForm parameters." width="90%"><p class="caption">
+Figure 4.3: Screen capture of ESRI Survey123 Connect software demonstrating the use of the XLSForm spreadsheet-based coding language and the ability to directly edit the JavaScript code that is linked to XLSForm parameters.
+</p>
+</div>
+<div class="figure">
+<span style="display:block;" id="fig:xlsform2"></span>
+<img src="images/survey123/survey123_xlsform2.png" alt="Screen capture of ArcGIS website description of the XLSForm features: https://gis.idaho.gov/wp-content/uploads/2021/03/ArcGIS-Apps-for-the-Field-State-of-ID.pdf." width="90%"><p class="caption">
+Figure 4.4: Screen capture of ArcGIS website description of the XLSForm features: <a href="https://gis.idaho.gov/wp-content/uploads/2021/03/ArcGIS-Apps-for-the-Field-State-of-ID.pdf" class="uri">https://gis.idaho.gov/wp-content/uploads/2021/03/ArcGIS-Apps-for-the-Field-State-of-ID.pdf</a>.
+</p>
+</div>
+</div>
+</div>
+<div id="survey123-criteria-tables" class="section level2" number="4.3">
+<h2>
+<span class="header-section-number">4.3</span> Survey123: Criteria Tables<a class="anchor" aria-label="anchor" href="#survey123-criteria-tables"><i class="fas fa-link"></i></a>
+</h2>
+<div id="survey123-forms-options" class="section level3" number="4.3.1">
+<h3>
+<span class="header-section-number">4.3.1</span> Survey123: Forms Options<a class="anchor" aria-label="anchor" href="#survey123-forms-options"><i class="fas fa-link"></i></a>
+</h3>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:s1form">Table 4.1: </span>Forms Options
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Category
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Available
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Data entry validation/QC
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Geo-referencing
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Every Survey123 entry (object?) has an associated lat/long data
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Uses device navigation: phone app or GPS device; Data can open in data in ArcGIS maps directly; Can change base map; Default is current location; Can tap the map to change location <a href="https://doc.arcgis.com/en/survey123/browser/analyze-results/viewresults.htm#:~:text=Under%20the%20title%20for%20your,geodatabase%20and%20download%20your%20data">test</a>
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Constrained choices from a list
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Web Designer
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+-Restricted lengths, Default values (e.g., Date, Time from device)
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Survey123 Connect: XLSForm spreadsheet
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Above functionality, plus more advanced options such as: - select multiple responses from a list;smart fields: expressions and formulas to control the allowable input (e.g., total percentage &lt;= 100%)
+- Auto limit by partial input
+- Auto-completed suggestion
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Rules guiding answer series (e.g., “Conditional Questions” and “Skips”)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Web Designer 
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+This can be done with Web Designer using the ‘Set rule function’; However, in Web Designer, this function is limited to Single choice, Dropdown, Likert scale, and Rating questions
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+<a href="https://support.esri.com/en/technical-article/000022942">tst4</a>
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Survey123 Connect: XLSForm spreadsheet
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Constrained choices from an external table
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Form Version Control
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Real-time Data Review
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Survey123 HUB
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+The HUB webbased tool allows one to review raw data and summarize data submitted to each survey in the ‘Data’ and ‘Analyze’ tabs; Other summaries: word clouds, frequency plots
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Survey123 Connect
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+In trial demo, it was difficult to produce a listing of the lengths which was needed for field QC
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Real-time Edit (“on the fly”)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+User needs to open a separate tab to edit the responses
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Ease of Form Development
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Intuitive form design tool
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Web designer
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Web designer intuitive
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Survey123 Connect: XLSForm spreadsheet
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+XLSForm formatting language required some effort to pick up.
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Coding language required?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Web designer
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Web designer is a GUI tool that is menu driven and does not require learning any coding
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+XLSForm spreadsheet
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Survey123 Connect is an option for more advanced survey designs which requires configuration of an ‘XLSForm spreadsheet’. XLSForm is an ESRII coding language specific to forms configuration.
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+Can be hard to edit XLSForm code:
+“Per my experience, if I delete some of the questions and add other [using] filters for the answers through the [XLSForm spread sheet], the answers will be totally. So, every time I have to make a new form for every survey in order to avoid messy information.”<br><a href="https://www.g2.com/products/arcgis-survey123/reviews?page=2#survey-response-2154622">tst2</a>
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Different styles of question types
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Web Designer 
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Yes, both Web designer and Connect provide a range of question types:
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+<a href="https://doc.arcgis.com/en/survey123/browser/create-surveys/webdesigneressentials.htm" class="uri">https://doc.arcgis.com/en/survey123/browser/create-surveys/webdesigneressentials.htm</a>
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Survey123 Connect: XLSForm spreadsheet
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Flexibility to configure in a logical order for field entry (e.g., nested desgin)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Web Designer 
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Survey123 Connect: XLSForm spreadsheet
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+In trial demo (Appendix 3): The XLSForm coding was required to represent a nested sampling design; this effort was time consuming to optimize
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Other IEP Survey needs
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Permissions Management
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Muti-users of an app
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+More than one user can submit data to an app at a time (same database); Survey123 HUB: can review responses by user
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Off-line capacity
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Field App works offline and online
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Does the data uploads automatically when back on-line??
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+User Accessability
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Multiple-language options
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Form can be transposed to other languages; language of stored responses can be specified.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Font adjustment/Speak-to-text
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="S12dat" class="section level3" number="4.3.2">
+<h3>
+<span class="header-section-number">4.3.2</span> Survey123: Data Interface<a class="anchor" aria-label="anchor" href="#S12dat"><i class="fas fa-link"></i></a>
+</h3>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:s12dat">Table 4.2: </span>Data Interface Options
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Category
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Available
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Database interface
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Cloud-storage
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<p>All Survey123 items (forms, web maps, tabular reference data, survey records) are stored in the respective ArcGIS Survey Hub online account <a href="https://survey123.arcgis.com/" class="uri">https://survey123.arcgis.com/</a></p>
+ArcGIS Hub is a cloud-based engagement platform. ArcGIS Hub is automatically available with a subscription to ArcGIS Online.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+ArcGIS Survey123 consumes ArcGIS Online credits for storage, geocoding, and when printing reports (how does this relate to a State account?)
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Direct integration with database
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Not a feature of Survey123 per se; would need to be configured by a database manager
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+As far as I can tell, Survey123 does not have a tool for integrating data into editing SQL or Access databases; need to verify
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Integrate data from local tables
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Reference lists can reside in additional tabs in the XLSForm spreadsheet
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Are these tables actually on the local hard drive or web based? Need to verify
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Edit after transfer
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Editing data ‘on-the-fly’ (data already submitted)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Not easily done
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<p>Survey responses submitted to the web-based database from a user’s device can be edited from the Sent folder in the Survey123 field app</p>
+The owner of a survey can also edit any responses sent for their survey on the survey’s Data page on the Survey123 website, or in the web app using URL parameters. <a href="https://doc.arcgis.com/en/survey123/browser/get-answers/editexistingdata.htm" class="uri">https://doc.arcgis.com/en/survey123/browser/get-answers/editexistingdata.htm</a>
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+In trial demo: User noted that it was not possible to view the full list of fish lengths, and it was not easy to edit responses ‘on-the-fly’) <a href="yoldem.html#yoldem">See Yolo BiPass Survey123 Demo</a>)
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Data format
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Open (standard) format output
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Can be downloaded as .CSV; User selects output format (CSV, Excel, KML, shapefile, or file geodatabase) 
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+Data can open in data in ArcGIS maps directly
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Data format logical / useable
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Somewhat difficult
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Exported in relational tables associated with nested forms design; used key ID to associate across levels; direct database update options not available
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+In trial demo (Appendix 3): The format of the .csv exported data was difficult to work with and required significant post-processing
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+<p>“Cannot export in a clean way. Changes to the feature service do not translate to the online page, so you can’t export from there in a way that leaves all the disabled fields off.”
+<a href="https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872" class="uri">https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872</a></p>
+“There should be better tools to manage the resulting database when the schema needs to change.”
+<a href="https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872" class="uri">https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872</a>
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Data transfer
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Real-time data transfer
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Data can open in data in ArcGIS maps directly
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Cloud connectivity &amp; back up
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Cloud connectivity &amp; back up
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Data change logs
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Audit trails (data version control)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+As far as I can tell, Survey123 does not have mechanism for logging data edits; need to verify
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="s12pho" class="section level3" number="4.3.3">
+<h3>
+<span class="header-section-number">4.3.3</span> Survey123: Photo Integration and External Sensors<a class="anchor" aria-label="anchor" href="#s12pho"><i class="fas fa-link"></i></a>
+</h3>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:s12pho">Table 4.3: </span>Photo Integration and External Sensors
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Category
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Available
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Photo Integration
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Collect photo &amp; assoc. with element
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+multiple photos can be linked to a question field with comments and associated question to a record
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Ease of interface
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<p>“We have problems however, when it comes to photos. If a previous user has submitted photos, a later user can not. Also, it seems there are issues period in submitting photos on any record that is not the initial creating. Users editing a record within survey 123 cannot see photos submitted be previous users.”</p>
+<a href="https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872" class="uri">https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872</a>
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Multi-photo per element (and # limit)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+You can allow the user to submit multiple files in the one question response, up to a maximum of 99.
+The maximum file size for an individual attachment submitted from the Survey123 field app is 10 MB.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Drawing/Annotating on photo
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+The September 2021 release of ArcGIS Survey123 (version 3.13) includes ability to draw and annotate questions in the Survey123 field app.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<a href="https://community.esri.com/t5/arcgis-survey123-blog/updates-to-draw-and-annotate-in-arcgis-survey123/ba-p/1100656#" class="uri">https://community.esri.com/t5/arcgis-survey123-blog/updates-to-draw-and-annotate-in-arcgis-survey123/ba-p/1100656#</a>:~:text=Draw%20and%20annotate%20are%20staple,a%20snapshot%20of%20a%20map.
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+X-tern sensors
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+GPS from device
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+GPS precision only as good as app on device
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+“The tool needs to have better integration capabilities with GPS and Bluetooth devices in order to capture location at a better scale than the tablet of phone can offer.” <a href="https://www.g2.com/products/arcgis-survey123/reviews?page=2#survey-response-766508" class="uri">https://www.g2.com/products/arcgis-survey123/reviews?page=2#survey-response-766508</a>
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Integrate data from bar codes
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<p>the Survey123 field app can interpret barcodes though your device’s camera, so you do not need external barcode hardware</p>
+<a href="https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanning-in-survey123-for-arcgis/" class="uri">https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanning-in-survey123-for-arcgis/</a>
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Integrate data from external sensors
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="s12hrd" class="section level3" number="4.3.4">
+<h3>
+<span class="header-section-number">4.3.4</span> Survey123: Hardware Platforms<a class="anchor" aria-label="anchor" href="#s12hrd"><i class="fas fa-link"></i></a>
+</h3>
+<p><a href="esri-survey123.html#s12top">Top of section</a></p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:s12har">Table 4.4: </span>Hardware Platform Options
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Available
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+Smart Phones and Tablets
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+-      iOS (phone and tablet)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+-      Android(phone and tablet)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+Desktop/laptop
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+-      Windows 7,8,10, 11
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Need to verify Windows 11
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+-      MacOS (computer)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+-      Ubuntu Linux
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="s12sec" class="section level3" number="4.3.5">
+<h3>
+<span class="header-section-number">4.3.5</span> Survey123: Security Factors<a class="anchor" aria-label="anchor" href="#s12sec"><i class="fas fa-link"></i></a>
+</h3>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:s12sec">Table 4.5: </span>Security Factors
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Available
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;">
+Where’s the application/product origins from?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; max-width: 4cm; ">
+Headquartered in Redlands, California
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Product thoroughly vetted in state agencies.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;">
+Is the application Cloud based, and if so, where?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 3cm; max-width: 4cm; ">
+Esri Managed AWS Cloud Services:
+Esri’s flagship software, ArcGIS, runs on Azure. Esri provides deployment tooling and prebuilt virtual machine images on two cloud platforms: Amazon Web Services (AWS) and Microsoft Azure:
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+You can deploy ArcGIS Enterprise on any cloud platform that provides virtual machines meeting the basic system requirements
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;">
+Where is the data being stored for the application?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; max-width: 4cm; ">
+Everything stored in Azure. Storage exists in triplicate in specified data centers located around the world 
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;">
+Is the data center FedRAMP certified?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 3cm; max-width: 4cm; ">
+Azure maintains the following authorizations: FedRAMP High Provisional Authorization to Operate (P-ATO) issued by the FedRAMP Joint Authorization Board (JAB)
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;">
+Online Security measures
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; max-width: 4cm; ">
+ArcGIS Online secures all access to your information. User identity is established when the user signs in, which always takes place over an encrypted connection (HTTPS).
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Subsequent transactions require the token acquired at sign in and can take place over encrypted or unencrypted connections.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="s12bus" class="section level3" number="4.3.6">
+<h3>
+<span class="header-section-number">4.3.6</span> Survey123: Business Model and Customer Support<a class="anchor" aria-label="anchor" href="#s12bus"><i class="fas fa-link"></i></a>
+</h3>
+<p><a href="esri-survey123.html#s12top">Top of section</a></p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:s123bus">Table 4.6: </span>Business Model and Pricing
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Price
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+Price (Option 1)
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+“Mobile Worker” includes Survey123
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+$350/yr
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+Requires ‘foundational user’ license; either Creator
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+$500/yr
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+or GIS Professional
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+$700/yr
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+Price (Option 2)
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+ArcGIS Survey123 within the Online Acct
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+CA State Licenses with ESRI
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+Business model
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+ESRII a very large company:
+- difficult to get individual support
+- significant web resources
+- huge user network within CA agencies.
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<p>“Company does not take feedback from customers”<a href="https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2728634" class="uri">https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2728634</a></p>
+<p>“..there are several bugs that have been addressed by the user community but not yet addressed by the developers”
+<a href="https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872" class="uri">https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872</a></p>
+<p>“..every field user needs an account to input data. It constricts our usage.”
+<a href="https://www.g2.com/products/arcgis-survey123/reviews?page=2#survey-response-766508" class="uri">https://www.g2.com/products/arcgis-survey123/reviews?page=2#survey-response-766508</a></p>
+<a href="https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872" class="uri">https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872</a>
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+Technical Support
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="software-comparison-criteria.html"><span class="header-section-number">3</span> Software Comparison Criteria</a></div>
+<div class="next"><a href="ms-power-apps.html"><span class="header-section-number">5</span> MS Power Apps</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#esri-survey123"><span class="header-section-number">4</span> ESRI Survey123</a></li>
+<li><a class="nav-link" href="#s12top"><span class="header-section-number">4.1</span> Survey123 Overview</a></li>
+<li>
+<a class="nav-link" href="#survey123-key-features"><span class="header-section-number">4.2</span> Survey123: Key Features</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#survey123-form-developing-interface"><span class="header-section-number">4.2.1</span> Survey123 Form Developing Interface</a></li></ul>
+</li>
+<li>
+<a class="nav-link" href="#survey123-criteria-tables"><span class="header-section-number">4.3</span> Survey123: Criteria Tables</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#survey123-forms-options"><span class="header-section-number">4.3.1</span> Survey123: Forms Options</a></li>
+<li><a class="nav-link" href="#S12dat"><span class="header-section-number">4.3.2</span> Survey123: Data Interface</a></li>
+<li><a class="nav-link" href="#s12pho"><span class="header-section-number">4.3.3</span> Survey123: Photo Integration and External Sensors</a></li>
+<li><a class="nav-link" href="#s12hrd"><span class="header-section-number">4.3.4</span> Survey123: Hardware Platforms</a></li>
+<li><a class="nav-link" href="#s12sec"><span class="header-section-number">4.3.5</span> Survey123: Security Factors</a></li>
+<li><a class="nav-link" href="#s12bus"><span class="header-section-number">4.3.6</span> Survey123: Business Model and Customer Support</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Electronic Data Entry Options for IEP Surveys</strong>" was written by IEP DUWG ‘e-Device’ Sub-group led by Karrin Alstad. It was last built on 2023-06-15.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

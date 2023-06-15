@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Chapter 5 MS Power Apps | Electronic Data Entry Options for IEP Surveys</title>
+<meta name="author" content="IEP DUWG ‘e-Device’ Sub-group led by Karrin Alstad">
+<meta name="description" content="5.1 Power Apps Overview The Power Apps ‘Suite’ is a collection of apps, services, connectors and (with an Azure subscription) a database platform. Power Apps provides two different form building...">
+<meta name="generator" content="bookdown 0.34 with bs4_book()">
+<meta property="og:title" content="Chapter 5 MS Power Apps | Electronic Data Entry Options for IEP Surveys">
+<meta property="og:type" content="book">
+<meta property="og:url" content="https://github.com/GitKarIn/e-device2.git/ms-power-apps.html">
+<meta property="og:description" content="5.1 Power Apps Overview The Power Apps ‘Suite’ is a collection of apps, services, connectors and (with an Azure subscription) a database platform. Power Apps provides two different form building...">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chapter 5 MS Power Apps | Electronic Data Entry Options for IEP Surveys">
+<meta name="twitter:description" content="5.1 Power Apps Overview The Power Apps ‘Suite’ is a collection of apps, services, connectors and (with an Azure subscription) a database platform. Power Apps provides two different form building...">
+<!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
+<script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
+<script src="libs/bs4_book-1.0.0/bs4_book.js"></script><script src="libs/kePrint-0.0.1/kePrint.js"></script><link href="libs/lightable-0.0.1/lightable.css" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- CSS --><style type="text/css">
+    
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  </style>
+<link rel="stylesheet" href="style_test2.css">
+</head>
+<body data-spy="scroll" data-target="#toc">
+
+<div class="container-fluid">
+<div class="row">
+  <header class="col-sm-12 col-lg-3 sidebar sidebar-book"><a class="sr-only sr-only-focusable" href="#content">Skip to main content</a>
+
+    <div class="d-flex align-items-start justify-content-between">
+      <h1>
+        <a href="index.html" title="">Electronic Data Entry Options for IEP Surveys</a>
+      </h1>
+      <button class="btn btn-outline-primary d-lg-none ml-2 mt-1" type="button" data-toggle="collapse" data-target="#main-nav" aria-expanded="true" aria-controls="main-nav"><i class="fas fa-bars"></i><span class="sr-only">Show table of contents</span></button>
+    </div>
+
+    <div id="main-nav" class="collapse-lg">
+      <form role="search">
+        <input id="search" class="form-control" type="search" placeholder="Search" aria-label="Search">
+</form>
+
+      <nav aria-label="Table of contents"><h2>Table of contents</h2>
+        <ul class="book-toc list-unstyled">
+<li><a class="" href="index.html">Electronic Data Entry Options for IEP Surveys</a></li>
+<li><a class="" href="executive-summary.html">Executive Summary</a></li>
+<li class="book-part">Intro and IEP Questionnaire</li>
+<li><a class="" href="intro.html"><span class="header-section-number">1</span> Introduction</a></li>
+<li><a class="" href="e-device-questionnaire.html"><span class="header-section-number">2</span> E-device Questionnaire</a></li>
+<li class="book-part">Software Reviews</li>
+<li><a class="" href="software-comparison-criteria.html"><span class="header-section-number">3</span> Software Comparison Criteria</a></li>
+<li><a class="" href="esri-survey123.html"><span class="header-section-number">4</span> ESRI Survey123</a></li>
+<li><a class="active" href="ms-power-apps.html"><span class="header-section-number">5</span> MS Power Apps</a></li>
+<li><a class="" href="fulcrum-app.html"><span class="header-section-number">6</span> Fulcrum App</a></li>
+<li><a class="" href="pendragon.html"><span class="header-section-number">7</span> Pendragon</a></li>
+<li><a class="" href="feed.html"><span class="header-section-number">8</span> FEED</a></li>
+<li><a class="" href="big-fin.html"><span class="header-section-number">9</span> Big Fin</a></li>
+<li><a class="" href="pdf-form-and-r-sraping.html"><span class="header-section-number">10</span> PDF Form and R Sraping</a></li>
+<li class="book-part">IEP Survey Demos</li>
+<li><a class="" href="yoldem.html"><span class="header-section-number">11</span> Yolo Bipass: Survey123 Trial App</a></li>
+<li><a class="" href="powdem.html"><span class="header-section-number">12</span> SF Bay Study: PowerApps Trial App</a></li>
+<li class="book-part">Hardware Reviews</li>
+<li><a class="" href="e-device-hardware-options.html"><span class="header-section-number">13</span> E-Device Hardware Options</a></li>
+<li class="book-part">External Sensors</li>
+<li><a class="" href="fishboards.html"><span class="header-section-number">14</span> Fishboards</a></li>
+<li><a class="" href="navigation-data.html"><span class="header-section-number">15</span> Navigation Data</a></li>
+<li class="book-part">Appendix</li>
+<li><a class="" href="appx_1.html"><span class="header-section-number">A</span> Appendix - E-device Survey</a></li>
+<li><a class="" href="appendix--.html"><span class="header-section-number">B</span> Appendix -</a></li>
+<li><a class="" href="gloss.html"><span class="header-section-number">C</span> Glossary</a></li>
+<li><a class="" href="expnet.html"><span class="header-section-number">D</span> Expert Network</a></li>
+</ul>
+
+        <div class="book-extra">
+          
+        </div>
+      </nav>
+</div>
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="ms-power-apps" class="section level1" number="5">
+<h1>
+<span class="header-section-number">5</span> MS Power Apps<a class="anchor" aria-label="anchor" href="#ms-power-apps"><i class="fas fa-link"></i></a>
+</h1>
+<div id="powtop" class="section level2" number="5.1">
+<h2>
+<span class="header-section-number">5.1</span> Power Apps Overview<a class="anchor" aria-label="anchor" href="#powtop"><i class="fas fa-link"></i></a>
+</h2>
+<p>The Power Apps ‘Suite’ is a collection of apps, services, connectors and (with an Azure subscription) a database platform. Power Apps provides two different form building methods: 1. A Canvas App starts with a blank canvas and provides Power Point-like drag-and-drop form building tools and Excel-like functions to control behavior and interaction of the entry fields; 2. A Model-driven App is an app that is integrated into a Common Data Service (CDS) which is a secure, cloud-based storage space that can use to store business application data (CDS requires the Azure subscription). Canvas apps are ideal for building task-based forms (such as collecting Survey data). Model-driven apps are better for creating end-to-end solutions such as a customer service support ticket that that must be created, routed, addressed, updated, marked as complete automatically based on conditions. The Bay Study app demonstration uses a Canvas derived Power App approach <a href="powdem.html#powdem">Bay Study P-App</a>.</p>
+</div>
+<div id="power-apps-key-features" class="section level2" number="5.2">
+<h2>
+<span class="header-section-number">5.2</span> Power Apps: Key Features<a class="anchor" aria-label="anchor" href="#power-apps-key-features"><i class="fas fa-link"></i></a>
+</h2>
+<div id="intuitive-form-developing-interface" class="section level3" number="5.2.1">
+<h3>
+<span class="header-section-number">5.2.1</span> Intuitive Form Developing Interface<a class="anchor" aria-label="anchor" href="#intuitive-form-developing-interface"><i class="fas fa-link"></i></a>
+</h3>
+<p>The Power Apps form-building interface is intended to be a “LOW-code/NO-code” experience. The use of the PowerFX commands provide familiar structure to Excel function commands and contain significant built-in functionality. As well, Power Apps has incorporated a high functioning AI interface that helps to convert natural language to FX code and provides the inverse interpretation of FX code. The Power Apps marketing statements indicates that this combination prevents the developer from “hitting a cliff” when progressing from a simple form design to more complex requirements such as a nested sampling design. The Bay Study Power App development team has substantiated this claim to a degree, finding it relatively easy to get up to speed when configuring the Power Apps form. <a href="powdem.html#powdem">See Bay Study Power Apps demo</a></p>
+<div class="figure">
+<span style="display:block;" id="fig:padem1"></span>
+<img src="images/PowerApps/Start_Canvas4.jpg" alt="Screen capture of a basic Power Apps data collection form demonstrating the FX code used to control the collection and display of variables." width="90%"><p class="caption">
+Figure 5.1: Screen capture of a basic Power Apps data collection form demonstrating the FX code used to control the collection and display of variables.
+</p>
+</div>
+<div class="figure">
+<span style="display:block;" id="fig:padem2"></span>
+<img src="images/PowerApps/Start_Canvas6.jpg" alt="Screen capture Power Apps during the initation of the connection with an existing database where specific table can be selected and the automated tool that populated data variables avaliable in the app builder." width="90%"><p class="caption">
+Figure 5.2: Screen capture Power Apps during the initation of the connection with an existing database where specific table can be selected and the automated tool that populated data variables avaliable in the app builder.
+</p>
+</div>
+</div>
+<div id="data-interface-and-exporting" class="section level3" number="5.2.2">
+<h3>
+<span class="header-section-number">5.2.2</span> Data Interface and Exporting<a class="anchor" aria-label="anchor" href="#data-interface-and-exporting"><i class="fas fa-link"></i></a>
+</h3>
+<p>The seamless connections to either on-premise or online data sources is a notable feature of Power Apps. Users may initiate a Power App form by connecting to an existing database or starting a blank app. Another Power Apps feature that stands out is the The on-premises data gateway acts as a bridge to provide quick and secure data transfer between on-premises data (data that isn’t in the cloud) and several Microsoft cloud services. <a href="https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem" class="uri">https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem</a></p>
+<div class="figure">
+<span style="display:block;" id="fig:paconn"></span>
+<img src="images/PowerApps/Connections.jpg" alt="Graphical representation of the multiple types of Power Apps data connections established in Power Apps." width="90%"><p class="caption">
+Figure 5.3: Graphical representation of the multiple types of Power Apps data connections established in Power Apps.
+</p>
+</div>
+<div class="figure">
+<span style="display:block;" id="fig:pastart"></span>
+<img src="images/PowerApps/Start_Canvas.jpg" alt="Screen capture of the Canvas interface when initating a new Power Apps Form." width="90%"><p class="caption">
+Figure 5.4: Screen capture of the Canvas interface when initating a new Power Apps Form.
+</p>
+</div>
+<p>A Power App form may be developed for a tablet or phone formatting, and the tablet format also works on computer screens (Apple or PC). Note that changing format between phone and tablet is not a build tool, but work around methods to transpose between formats have been developed. (find source)</p>
+<div class="figure">
+<span style="display:block;" id="fig:paform"></span>
+<img src="images/PowerApps/Start_Canvas3.jpg" alt="Screen capture of the Canvas form building tool demonstrating options to selection from tablet or phone format." width="90%"><p class="caption">
+Figure 5.5: Screen capture of the Canvas form building tool demonstrating options to selection from tablet or phone format.
+</p>
+</div>
+</div>
+</div>
+<div id="power-apps-criteria-tables" class="section level2" number="5.3">
+<h2>
+<span class="header-section-number">5.3</span> Power Apps: Criteria Tables<a class="anchor" aria-label="anchor" href="#power-apps-criteria-tables"><i class="fas fa-link"></i></a>
+</h2>
+<div id="power-apps-forms-options" class="section level3" number="5.3.1">
+<h3>
+<span class="header-section-number">5.3.1</span> Power Apps: Forms Options<a class="anchor" aria-label="anchor" href="#power-apps-forms-options"><i class="fas fa-link"></i></a>
+</h3>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:paform2">Table 5.1: </span>Forms Options
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Category
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Available
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Data entry validation/QC
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Geo-referencing
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes/No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Apps is able to collect the GPS coordinates from the GPS of the e-device with a button within the form; Power Apps does not provide mapping of all elements like Survey 123.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Constrained choices from a list
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Choice lists can entered manually or can be read in from an external file located on the OneDrive or can be a table in an SQL db
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Rules guiding answer series (e.g., “Conditional Questions” and “Skips”)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Apps makes use of the FX coding language which uses Excel type functions, including an “if” function which provides conditional logic for guiding answer series based on responses entered.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Constrained choices from an external table or set of rules
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+See above. The “If” function can be combined with range checks, minimum field submission checks, check for the format of responses. Error messages can be linked to these conditional field checks. The validity of a series of fields on a form can be checked using Form1.Valid command which could be linked to the submit button preventing users from submitting if data validataion fails.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Form Version Control
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Apps includes Versions within the Details of an app. Each Power Apps app has a release number; each version update can be annotated with comments; Each version of an app must be ‘Published’ for users to access and use and to generate a unique release number; Note: can only restore apps that have been created within the last 6-months - so maintaining older versions requires re-saving.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Real-time Data Review
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<p>Power Apps provides different tools for viewing data that is collected: A “gallery” is a control that contains other controls and shows a set of data. The gallery view is customizable and allows for conditional formating (colors for specific values..etc); galleries allow for images and non-text controls (e.g., buttons) to be included in the listing.</p>
+A data table shows a set of data in a tabular format. “Data tables” are a quick data viewing tool that shows records without any configuration; column order and column subsets can be easilly changed and filtered.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Real-time Edit (“on the fly”)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Using the gallery tool in Power Apps, a user can creat an editible (Excel-like) data grid that can allow a new record to be added or changes or deletions made to existing records. Function called “Patch” can be build into each field of the editable grid in order to push edits to save dataset. Alternatively (and more efficiently), all changes can be pushed at once with a Patch query that lists all of the columns that may be changed.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Ease of Form Development
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Intuitive form design tool
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Forms build in Canas Power Apps are built using an intuitive drag-and-drop editor where components such as forms can be arranged. The Canvas editor behaves like a combination of Power Point and Excel where one can configure an app with formulas that not only calculate values and perform other tasks (as they do in Excel) but also respond to user input (as an app requires).
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Coding language required?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Apps is intended to be a Low-code/No-code programming approach. This means that it uses commands that have built in functioning (Low-code), and several tools for menu-based Form development, and autmated AI assisted natural language convertersn “Co-pilot” (No-code).
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Different styles of question types
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Radio control, toggle, date entry, rating, calculations, text entry,
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Flexibility to configure in a logical order for field entry (e.g., nested desgin)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+The gallery tool allows for a single data table to be split across tabs base on logical nested structure of the data collection.<br>
+Alternatively, separate galleries can be created based separate tables within a connected SQL database; each gallery-table can be arranged in a logical order (within or across tabs) based on the nested study design.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Other IEP Survey needs
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Permissions Management
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+The 365 license Power Apps user is able to share an app through the Apps tab on the PowerApps home screen (click on 3 ellipses and a share menu opens; share using the email of intended user).<br>
+Often Power Apps applications are built using Sharepoint as the data source, and Sharepoint based Power Apps are managed when a new form is initated (users are assigned and user status is set).
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Muti-users of an app
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+The apps made in PowerApps are multiuser. They each are their own instances so it does not matter how many users use it at the same time.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Off-line capacity
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<p>Power Apps is able to operate when off-line and a ‘power effect formula’ can check the on-line/off-line status can be used to direct data storage based on the on-line/off-line conditions.</p>
+<a href="https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/offline-apps" class="uri">https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/offline-apps</a>
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+User Accessability
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Multiple-language options
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<p>A couple of options are available for multple language apps in Power Apps: The app can be connected to the microsoft translator “connector” to translate the app into “any language”; Alternatively, app can be built in one language and can be translated locally using Power Automate flows.</p>
+<a href="https://devoworx.net/multilingual-apps-in-powerapps/" class="uri">https://devoworx.net/multilingual-apps-in-powerapps/</a>
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+This feature not tested by the DUWG subgroup trial of Power Apps
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Font adjustment/Speak-to-text
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<p>Font adjustment is available.</p>
+Speak to text has been demonstrated within Power Apps using the Premium licenses which can use AI services through Azure. Demonstration collects sound recordings and uploads to a cloud based converter. This sound data transfer can be controlled by a Power Flow routine. The routine includes conversion of audio file type from webm to wav format.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+This feature was not tested by the DUWG subgroup trail of Power Apps which was using the Power App license through the CDFW 365 subscription
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="powdat" class="section level3" number="5.3.2">
+<h3>
+<span class="header-section-number">5.3.2</span> Power Apps: Data Interface<a class="anchor" aria-label="anchor" href="#powdat"><i class="fas fa-link"></i></a>
+</h3>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:padat">Table 5.2: </span>Data Interface Options
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Category
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Available
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Database interface
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Cloud-storage
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Different types of ‘cloud-storage’ services can be accessed within the “Power Platform”; OneDrive storage and Power Flows are availabel with the 365 license; Many other cloud based services/connectors are available with the previum license using Azure-based databases.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Direct integration with database
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Apps Canvas apps use ‘Connections’ to to a variety of data sources including Onedrive, Sharepoint, SQL Server;
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+In the demonstration Power App for the Bay Study, an SQL Server Authentication and connection was made using “on-premises data gateway”; The SQL Server is connected to an Access front end using SQL Server Authentication and user name and password; Power Automate is the tool that is used to connect from PowerApps to OneDrive.
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Integrate data from local tables
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes/No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Automate is a tool within the Power Platform that can be integrated into a Power App; Power Automate Desktop does have the capacity to read files from the local drive.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Automate requires web access so is not a reliable routine if building an app to function while intermittently off-line.
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+This is a discussion about the lack of ability for Power Apps to read a file directly from the local drive: <a href="https://powerusers.microsoft.com/t5/Power-Automate-Desktop/Able-to-configure-Power-Automate-Desktop-to-be-used-offline/m-p/1210321#M5552" class="uri">https://powerusers.microsoft.com/t5/Power-Automate-Desktop/Able-to-configure-Power-Automate-Desktop-to-be-used-offline/m-p/1210321#M5552</a>
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Edit after transfer
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Editing data ‘on-the-fly’ (data already submitted)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Apps provides several directly connection tools including connections to databases on an SQL server and lists Sharepoint. If a direct connection is set up, queries can be built in the Power App form to view and edit data that has already been pushed to the remote database.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+In the demonstration Power App for the Bay Study, the SQL connection works very well and a reporting query and graphical display can poll data from the local collection on the e-device or from the remote SQL database. The same tool allows for edits to the local collection or the remote db.
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Data format
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Open (standard) format output
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Apps can export data to multiple format types using the Power Automate (Flow) tool; Automate can generate .csv, pdf, html, excel and other types of files (also able to email data). Power Apps is also able to Export the Collections data on the e-device to a .json type of file which can be transferred to a back-up drive.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+In the demonstration Power App for the Bay Study, Power Automate routine is used to export data as .csv files to the users OneDrive through a connection. Default export is the separate relational data tables based on the nested sampling design. A query can be added to the Automate export routine to format the data to meet the user requirements.
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Data format logical / useable
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+The exported data formats are customizable for the users requirements.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Data transfer
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Real-time data transfer
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Apps can be programmed to transfer data to a connected database automatically or mannually with a send button. Power Apps autmatically stores data in local ‘Collections’ on the e-device; these Collections are cleared after data is pushed to the remote database.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Cloud connectivity &amp; back up
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Type of cloud connectivity and back up depend on thelevel of Power Automate license; The basic 365 license provide for easy connectivity to OneDrive using web-based tools; The Premium license provides many other Azure-base storage and processing tools.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Data change logs
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Audit trails (data version control)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+No/Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Apps 365 does not have data audit trails as a built in feature; Audit trails are available in the “Managed Environments” included with the standalone Power Apps, Power Automate, Power Virtual Agents, Power Pages, and Dynamics 365 licenses.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Van had suggested a way to program logging of data changes as she does for another survey (what software; what approach?)
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+“Managed Environments is a suite of capabilities that allows admins to manage Power Platform at scale with more control, less effort, and more insights.” <a href="https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview" class="uri">https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview</a>
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="powpho" class="section level3" number="5.3.3">
+<h3>
+<span class="header-section-number">5.3.3</span> Power Apps: Photo Integration and External Sensors<a class="anchor" aria-label="anchor" href="#powpho"><i class="fas fa-link"></i></a>
+</h3>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:paphot">Table 5.3: </span>Photo Integration and External Sensors
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Category
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Available
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+Photo Integration
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Collect photo &amp; assoc. with element
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+;Power Apps has a Camera control function; for a Power App form in Canvas, multiple photos can be linked to a record without the use of a Power Automate routine. <a href="https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/controls/control-add-picture" class="uri">https://learn.microsoft.com/en-us/power-apps/maker/canvas-apps/controls/control-add-picture</a>
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+In the Bay Study Power Apps demo, a photo button provides the option to upload a photo or document or take a photo using the camera on the device.
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+Other demos show attachments uploaded to a Power Apps form and added to a Sharepoint list without the use of Power Automate.
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Ease of interface
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Multi-photo per element (and # limit)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Drawing-on/ Annotating photo
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+No
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Power Apps has a Pen Input control that supports drawing a sketch which can be added as an attachment; but does not have the ability to annotate a picture (to our best knowledge)
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+X-tern sensors
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+GPS from device
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Integrate data from bar codes
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Integrate data from external sensors
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+In-progress
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="powhrd" class="section level3" number="5.3.4">
+<h3>
+<span class="header-section-number">5.3.4</span> Power Apps: Hardware Platforms<a class="anchor" aria-label="anchor" href="#powhrd"><i class="fas fa-link"></i></a>
+</h3>
+<p><a href="ms-power-apps.html#powtop">Top of section</a></p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:paard">Table 5.4: </span>Hardware Platform Options
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Available
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+Smart Phones and Tablets
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+-      iOS (phone and tablet)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+The Bay Study demonstration app was run/tested on an iphone.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+-      Android(phone and tablet)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+Desktop/laptop
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+-      Windows 7,8,10, 11
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+The Bay Study demonstration app was run/tested on an Windows 10 system.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+-      MacOS (computer)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;">
+-      Ubuntu Linux
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes, but some features (“Components”) of form building will not work.
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+The PowerApps Component Framework can only be used on Windows. <a href="https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview" class="uri">https://learn.microsoft.com/en-us/power-platform/admin/managed-environment-overview</a>
+</td>
+<td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="powsec" class="section level3" number="5.3.5">
+<h3>
+<span class="header-section-number">5.3.5</span> Power Apps: Security Factors<a class="anchor" aria-label="anchor" href="#powsec"><i class="fas fa-link"></i></a>
+</h3>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:pasec">Table 5.5: </span>Security Factors
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Available
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;">
+Where’s the application/product origins from?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+International Company
+</td>
+<td style="text-align:left;min-width: 3cm; max-width: 4cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;">
+Is the application Cloud based, and if so, where?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+The Power Platform service is governed by the Microsoft Online Services Terms and the Microsoft Enterprise Privacy Statement
+</td>
+<td style="text-align:left;min-width: 3cm; max-width: 4cm; ">
+<a href="https://www.microsoft.com/licensing/docs" class="uri">https://www.microsoft.com/licensing/docs</a>; <a href="https://privacy.microsoft.com/en-us/privacystatement" class="uri">https://privacy.microsoft.com/en-us/privacystatement</a>
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<a href="https://www.youtube.com/watch?v=80aK2_iwMOs" class="uri">https://www.youtube.com/watch?v=80aK2_iwMOs</a>
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;">
+Where is the data being stored for the application?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Data collected by Power Apps is initially stored in “Collections” on the device; transfer to an external database on OneDrive or ShareDrive can be automated or link to manual button; These are Azure storage services
+</td>
+<td style="text-align:left;min-width: 3cm; max-width: 4cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;">
+Is the data center FedRAMP certified?
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+Yes; <a href="https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-fedramp" class="uri">https://learn.microsoft.com/en-us/azure/compliance/offerings/offering-fedramp</a>
+</td>
+<td style="text-align:left;min-width: 3cm; max-width: 4cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;">
+Online Security measures
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 3cm; ">
+See above link
+</td>
+<td style="text-align:left;min-width: 3cm; max-width: 4cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div id="powbus" class="section level3" number="5.3.6">
+<h3>
+<span class="header-section-number">5.3.6</span> Power Apps: Business Model and Customer Support<a class="anchor" aria-label="anchor" href="#powbus"><i class="fas fa-link"></i></a>
+</h3>
+<p><a href="ms-power-apps.html#powtop">Top of section</a></p>
+<p>Microsoft Power Apps pricing plans include subscription plans and Pay-as-you-go plans (see <a href="https://powerapps.microsoft.com/en-us/pricing/" class="uri">https://powerapps.microsoft.com/en-us/pricing/</a>). Government plans seem to have the same pricing structure as the public plans.</p>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
+<div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">
+<span id="tab:pabus">Table 5.6: </span>Business Model and Pricing
+</caption>
+<thead><tr>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Feature
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Description
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Price
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Group Notes
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+External Reviews
+</th>
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+Score(0-3)
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+Price (Option 1)
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+Power Apps for Government Plans
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+<p>The ‘Power Apps per User Premium Plan for Government’ is an app developer license which is ~ $17/month;</p>
+The ‘Power Apps per App Plan for Government’ is the end-user license which is initiated when an app is shared with a new user; this license is ~$10/month for each user
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+<a href="https://learn.microsoft.com/en-us/power-platform/admin/signup-for-powerapps-admin#power-apps-per-app-plan" class="uri">https://learn.microsoft.com/en-us/power-platform/admin/signup-for-powerapps-admin#power-apps-per-app-plan</a>
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+Price (Option 3)
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+Pay-as-you-go Premium License (non- Gov’t)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+$10/Active User/month
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+Good when use is unpredictable, just starting, not used often. Connect through Azure account.
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+Price (Option 4)
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+Per User Premium License (non-Gov’t)
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+$20/User/month
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+As many apps as needed
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+Business model
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+Huge Company
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+<tr>
+<td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">
+Technical Support
+</td>
+<td style="text-align:left;min-width: 4cm; max-width: 5cm; ">
+Not easy to get direct technical support; However, lots of resources on the web.
+</td>
+<td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">
+</td>
+<td style="text-align:left;min-width: 3cm; ">
+</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+
+</div>
+</div>
+</div>
+  <div class="chapter-nav">
+<div class="prev"><a href="esri-survey123.html"><span class="header-section-number">4</span> ESRI Survey123</a></div>
+<div class="next"><a href="fulcrum-app.html"><span class="header-section-number">6</span> Fulcrum App</a></div>
+</div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
+    <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#ms-power-apps"><span class="header-section-number">5</span> MS Power Apps</a></li>
+<li><a class="nav-link" href="#powtop"><span class="header-section-number">5.1</span> Power Apps Overview</a></li>
+<li>
+<a class="nav-link" href="#power-apps-key-features"><span class="header-section-number">5.2</span> Power Apps: Key Features</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#intuitive-form-developing-interface"><span class="header-section-number">5.2.1</span> Intuitive Form Developing Interface</a></li>
+<li><a class="nav-link" href="#data-interface-and-exporting"><span class="header-section-number">5.2.2</span> Data Interface and Exporting</a></li>
+</ul>
+</li>
+<li>
+<a class="nav-link" href="#power-apps-criteria-tables"><span class="header-section-number">5.3</span> Power Apps: Criteria Tables</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#power-apps-forms-options"><span class="header-section-number">5.3.1</span> Power Apps: Forms Options</a></li>
+<li><a class="nav-link" href="#powdat"><span class="header-section-number">5.3.2</span> Power Apps: Data Interface</a></li>
+<li><a class="nav-link" href="#powpho"><span class="header-section-number">5.3.3</span> Power Apps: Photo Integration and External Sensors</a></li>
+<li><a class="nav-link" href="#powhrd"><span class="header-section-number">5.3.4</span> Power Apps: Hardware Platforms</a></li>
+<li><a class="nav-link" href="#powsec"><span class="header-section-number">5.3.5</span> Power Apps: Security Factors</a></li>
+<li><a class="nav-link" href="#powbus"><span class="header-section-number">5.3.6</span> Power Apps: Business Model and Customer Support</a></li>
+</ul>
+</li>
+</ul>
+
+      <div class="book-extra">
+        <ul class="list-unstyled">
+          
+        </ul>
+</div>
+    </nav>
+</div>
+
+</div>
+</div> <!-- .container -->
+
+<footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>"<strong>Electronic Data Entry Options for IEP Surveys</strong>" was written by IEP DUWG ‘e-Device’ Sub-group led by Karrin Alstad. It was last built on 2023-06-15.</p>
+  </div>
+
+  <div class="col-12 col-md-6 mt-3">
+    <p>This book was built by the <a class="text-light" href="https://bookdown.org">bookdown</a> R package.</p>
+  </div>
+
+</div></div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,227 @@
+# (PART\*) Software Reviews {-}
+
+
+# Software Comparison Criteria
+
+## Criteria for Comparison of E-device Apps {#crittop} 
+
+The e-device subgroup identified 6 different groupings of criteria for comparing different data entry apps: Forms Options \@ref(forms), Data Interface Options \@ref(datint), Photo Integration and External Sensor Options \@ref(photsens), Hardware Platform Options \@ref(hardware), Security Factors \@ref(securt), and Vendor Business Model \@ref(business). 
+The main categories considering include options within the forms building tools, including QC related factors such as constrained choices and rules that guide subsequent fields.  Other categories include IT security protocols, photo integration, cost of different product options, and factors related to the business model of each vendor, including the longevity of the company and the level/cost of customer/technical support. 
+
+
+
+### Forms Options Criteria {#forms}
+
+<!-- [Top of section](#crittop) -->
+
+```{r forms, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Forms Criteria', out.width='100%', fig.asp=.75, fig.align='left'}
+
+library(kableExtra)
+library(dplyr)
+
+
+
+criteria_in <- readRDS(here("criteria.rds")) 
+forms <- criteria_in$Forms_Options %>% select(-QC)
+forms[] <- lapply(forms, function(x) ifelse(is.na(x), "", x))
+
+forms %>%
+  # Group by category column and collapse repeating values
+  group_by(Category) %>%
+  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
+
+kable(forms, format = "html", escape = F, caption = "Forms Options.", booktabs = TRUE) %>%
+  kable_paper() %>% 
+  # kable_styling(bootstrap_options = c("striped", "hover"),full_width = FALSE, fixed_thead = TRUE,
+  #               font_size = 20) %>%
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  #column_spec(1, width_min = "3.5cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "4cm", bold = TRUE, italic = F) %>%
+  #column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+  #column_spec(3, width_min = "10cm", bold = F, italic = F) %>%
+  column_spec(3, width_max = "8cm", bold = F, italic = F) %>%
+  scroll_box(width = "800px")
+
+```
+
+
+
+
+
+### Data Interface Criteria {#datint}
+
+[Top of section](#crittop)
+
+
+```{r data, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Criteria', out.width='100%',  tab.asp=.75, tab.align='left'}
+
+library(kableExtra)
+library(dplyr)
+
+criteria_in <- readRDS(here("criteria.rds")) 
+dataint <- criteria_in$Data_Interface
+dataint[] <- lapply(dataint, function(x) ifelse(is.na(x), "", x))
+
+library(kableExtra)
+dataint %>%
+  # Group by category column and collapse repeating values
+  group_by(Category) %>%
+  mutate(Category = ifelse(duplicated(Category), "", Category)) %>%
+
+kable(dataint, format = "html", escape = F, caption = "Data Interface Options.", booktabs = TRUE) %>%
+  kable_paper() %>% 
+  # kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE, fixed_thead = TRUE,
+  #               font_size = 20) %>%
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  #column_spec(1, width_min = "3.5cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "4cm", bold = TRUE, italic = F) %>%
+  #column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+  column_spec(3, width_min = "8cm", bold = F, italic = F) %>%
+  column_spec(3, width_max = "9cm", bold = F, italic = F) %>%
+  scroll_box(width = "800px")
+
+
+```
+
+
+
+
+
+
+
+### Photo Integration and External Sensors {#photsens}
+
+[Top of section](#crittop)
+
+
+```{r photo, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Criteria', out.width='100%', tab.asp=.75, tab.align='left'}
+
+library(kableExtra)
+library(dplyr)
+
+criteria_in <- readRDS(here("criteria.rds")) 
+photsens <- criteria_in$Photos_ExtSensors
+photsens[] <- lapply(photsens, function(x) ifelse(is.na(x), "", x))
+
+library(kableExtra)
+photsens %>%
+  # Group by category column and collapse repeating values
+  group_by(Category) %>%
+  mutate(Category = ifelse(duplicated(Category), "", Category)) %>%
+
+  kable(format = "html", escape = F, caption = "Photo Integration and External Sensors.", booktabs = TRUE) %>%
+  kable_paper() %>% 
+  kable_styling(full_width =TRUE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "3.5cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  #column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+  column_spec(3, width_min = "10cm", bold = F, italic = F) %>%
+  #column_spec(3, width_max = "10cm", bold = F, italic = F) #%>%
+  scroll_box(width = "800px")
+
+
+```
+
+
+
+### Hardware Platforms {#hardware}
+
+[Top of section](#crittop)
+
+
+
+```{r HWplat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Criteria', out.width='100%', tab.asp=.75, tab.align='left'}
+
+library(kableExtra)
+library(dplyr)
+
+criteria_in <- readRDS(here("criteria.rds")) 
+HWplats <- criteria_in$HW_Platforms
+HWplats[] <- lapply(HWplats, function(x) ifelse(is.na(x), "", x))
+
+library(kableExtra)
+HWplats %>%
+
+  kable(format = "html", escape = F, caption = "Hardware Platforms Supported.", booktabs = TRUE,
+        table.attr = "style='width:90%;'") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =TRUE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "6.0cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "6.5cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "8cm", bold = F, italic = F) %>%
+  scroll_box(width = "800px")
+
+
+```
+
+
+
+
+### Security Factors {#securt}
+
+[Top of section](#crittop)
+
+
+
+```{r security, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Criteria', out.width='100%', tab.asp=.75, tab.align='left'}
+
+library(kableExtra)
+library(dplyr)
+
+criteria_in <- readRDS(here("criteria.rds")) 
+securfac <- criteria_in$Security_Factors
+securfac[] <- lapply(securfac, function(x) ifelse(is.na(x), "", x))
+
+securfac %>%
+
+  kable(format = "html", escape = F, caption = "Software Security Factors.", booktabs = TRUE) %>%
+  kable_paper() %>% 
+  kable_styling(full_width =TRUE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "5.0cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "5.5cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  scroll_box(width = "800px")
+
+
+```
+
+
+
+
+### Business Model and Customer Support {#business}
+
+[Top of section](#crittop)
+
+
+
+
+```{r busmod, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap="Business Model and Customer Support", out.width='100%', tab.asp=.75, tab.align='left'}
+
+library(kableExtra)
+library(dplyr)
+
+criteria_in <- readRDS(here("criteria.rds")) 
+busmod <- criteria_in$Business_Model
+busmod[] <- lapply(busmod, function(x) ifelse(is.na(x), "", x))
+
+library(kableExtra)
+busmod %>%
+
+  kable(format = "html", escape = F, caption = "Business Model.", booktabs = TRUE,
+        table.attr = "style='width:100%;'") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =TRUE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "5.0cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "5.5cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  scroll_box(width = "800px")
+
+
+```

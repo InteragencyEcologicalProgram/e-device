@@ -1,0 +1,300 @@
+# MS Power Apps 
+
+## Power Apps Overview    {#powtop}
+
+The Power Apps 'Suite' is a collection of apps, services, connectors and (with an Azure subscription) a database platform. Power Apps provides two different form building methods: 1. A Canvas App starts with a blank canvas and provides Power Point-like drag-and-drop form building tools and Excel-like functions to control behavior and interaction of the entry fields; 2. A Model-driven App is an app that is integrated into a Common Data Service (CDS) which is a secure, cloud-based storage space that can use to store business application data (CDS requires the Azure subscription).  Canvas apps are ideal for building task-based forms (such as collecting Survey data).  Model-driven apps are better for creating end-to-end solutions such as a customer service support ticket that that must be created, routed, addressed, updated, marked as complete automatically based on conditions.  The Bay Study app demonstration uses a Canvas derived Power App approach [Bay Study P-App](#powdem).
+
+
+## Power Apps: Key Features 
+
+
+### Intuitive Form Developing Interface
+
+The Power Apps form-building interface is intended to be a "LOW-code/NO-code" experience.  The use of the PowerFX commands provide familiar structure to Excel function commands and contain significant built-in functionality. As well, Power Apps has incorporated a high functioning AI interface that helps to convert natural language to FX code and provides the inverse interpretation of FX code. The Power Apps marketing statements indicates that this combination prevents the developer from "hitting a cliff” when progressing from a simple form design to more complex requirements such as a nested sampling design. The Bay Study Power App development team has substantiated this claim to a degree, finding it relatively easy to get up to speed when configuring the Power Apps form. [See Bay Study Power Apps demo](#powdem)
+
+
+```{r padem1, echo=FALSE, fig.cap="Screen capture of a basic Power Apps data collection form demonstrating the FX code used to control the collection and display of variables.", out.width = '90%'}
+knitr::include_graphics("images/PowerApps/Start_Canvas4.jpg", error = FALSE)
+```
+
+
+
+```{r padem2, echo=FALSE, fig.cap="Screen capture Power Apps during the initation of the connection with an existing database where specific table can be selected and the automated tool that populated data variables avaliable in the app builder.", out.width = '90%'}
+knitr::include_graphics("images/PowerApps/Start_Canvas6.jpg", error = FALSE)
+```
+
+
+### Data Interface and Exporting
+
+The seamless connections to either on-premise or online data sources is a notable feature of Power Apps. Users may initiate a Power App form by connecting to an existing database or starting a blank app.  Another Power Apps feature that stands out is the The on-premises data gateway acts as a bridge to provide quick and secure data transfer between on-premises data (data that isn't in the cloud) and several Microsoft cloud services. https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem
+
+
+```{r paconn, echo=FALSE, fig.cap="Graphical representation of the multiple types of Power Apps data connections established in Power Apps.", out.width = '90%'}
+knitr::include_graphics("images/PowerApps/Connections.jpg", error = FALSE)
+```
+
+
+```{r pastart, echo=FALSE, fig.cap="Screen capture of the Canvas interface when initating a new Power Apps Form.", out.width = '90%'}
+knitr::include_graphics("images/PowerApps/Start_Canvas.jpg", error = FALSE)
+```
+
+A Power App form may be developed for a tablet or phone formatting, and the tablet format also works on computer screens (Apple or PC).  Note that changing format between phone and tablet is not a build tool, but work around methods to transpose between formats have been developed. (find source)
+
+
+```{r paform, echo=FALSE, fig.cap="Screen capture of the Canvas form building tool demonstrating options to selection from tablet or phone format.", out.width = '90%'}
+knitr::include_graphics("images/PowerApps/Start_Canvas3.jpg", error = FALSE)
+```
+
+
+## Power Apps: Criteria Tables
+
+### Power Apps: Forms Options 
+
+
+```{r painit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+
+library(kableExtra)
+
+powform <- powerapp$Forms_Options
+powdat <- powerapp$Data_Interface 
+powhot <- powerapp$Photos_ExtSensors
+powhard <- powerapp$HW_Platforms
+powsec  <- powerapp$Security_Factors
+powbus  <- powerapp$Business_Model
+```
+
+
+
+```{r paform2, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Forms Options', out.width='70%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+powform[] <- lapply(powform, function(x) ifelse(is.na(x), "", x))
+powform %>%
+  # Group by category column and collapse repeating values
+  group_by(Category) %>%
+  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
+  group_by(Feature) %>%
+  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
+  
+  
+kable(powform, format = "html", escape = F, caption = 'Forms Options',
+      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews","Score(0-3)"),
+      booktabs = TRUE, align =  "l") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "2cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "3cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(3, width_min = "2cm") %>%
+  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_max = "5cm") %>%
+  column_spec(6, width_min = "2cm") %>%  
+  column_spec(7, width_min = "3cm") %>%
+  scroll_box(width = "800px", height = "600px") 
+```
+
+
+### Power Apps: Data Interface {#powdat}
+
+
+
+```{r padat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+powdat[] <- lapply(powdat, function(x) ifelse(is.na(x), "", x))
+
+
+powdat %>%
+  # Group by category column and collapse repeating values
+  group_by(Category) %>%
+  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
+  group_by(Feature) %>%
+  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
+  
+
+
+kable(powdat, format = "html", escape = F, caption = 'Data Interface Options',
+      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews","Score(0-3)"),
+      booktabs = TRUE, align =  "l") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "2cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "3cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(3, width_min = "2cm") %>%
+  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_max = "5cm") %>%
+  column_spec(6, width_min = "2cm") %>%  
+  column_spec(7, width_min = "3cm") %>%
+  scroll_box(width = "800px", height = "600px") 
+
+```
+
+
+
+
+###  Power Apps: Photo Integration and External Sensors {#powpho}
+
+
+```{r paphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
+
+
+library(kableExtra)
+
+powhot[] <- lapply(powhot, function(x) ifelse(is.na(x), "", x))
+
+powhot %>%
+  # Group by category column and collapse repeating values
+  group_by(Category) %>%
+  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
+  group_by(Feature) %>%
+  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
+  
+
+
+kable(powhot, format = "html", escape = F, caption = 'Photo Integration and External Sensors',  
+      col.names = c("Category","Feature"	,"Available","Description",	"Group Notes","External  Reviews","Score(0-3)"),
+      booktabs = TRUE, align =  "l") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "2cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "3cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(3, width_min = "2cm") %>%
+  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_max = "5cm") %>%
+  column_spec(6, width_min = "2cm") %>%  
+  column_spec(7, width_min = "3cm") %>%
+  
+  scroll_box(width = "800px", height = "600px") 
+
+```
+
+
+
+
+
+###  Power Apps:  Hardware Platforms  {#powhrd}
+
+[Top of section](#powtop)
+
+
+
+```{r paard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+powhard[] <- lapply(powhard, function(x) ifelse(is.na(x), "", x)) 
+#powhard <- powhard #%>% select(1:3,)
+
+kable(powhard, format = "html", escape = F, caption = 'Hardware Platform Options',
+      col.names = c("Feature"	,"Available",	"Group Notes","External  Reviews","Score(0-3)"),
+      booktabs = TRUE, align =  "l") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "6cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "7cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(3, width_min = "2cm") %>%
+  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "2.5cm") %>%
+  column_spec(5, width_max = "3cm") %>%
+
+  scroll_box(width = "800px", height = "600px") 
+
+```
+
+
+### Power Apps: Security Factors {#powsec}
+
+
+
+```{r pasec, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Security Factors', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+powsec[] <- lapply(powsec, function(x) ifelse(is.na(x), "", x))
+
+kable(powsec, format = "html", escape = F, caption = 'Security Factors', booktabs = TRUE, align =  "l",col.names = c("Feature"	,"Available",	"Description","Group Notes","External  Reviews","Score(0-3)")) %>%
+  kable_paper() %>% 
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "3cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(3, width_min = "3cm") %>%
+  column_spec(3, width_max = "4cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_max = "5cm") %>%
+  column_spec(6, width_min = "3cm") %>%  
+  
+  scroll_box(width = "800px", height = "600px") 
+
+```
+
+
+
+
+### Power Apps: Business Model and Customer Support {#powbus}
+
+[Top of section](#powtop)
+
+Microsoft Power Apps pricing plans include subscription plans and Pay-as-you-go plans (see https://powerapps.microsoft.com/en-us/pricing/).  Government plans seem to have the same pricing structure as the public plans.  
+
+```{r pabus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
+
+
+
+library(kableExtra)
+
+powbus[] <- lapply(powbus, function(x) ifelse(is.na(x), "", x))
+powbus %>%
+  group_by(Feature) %>%
+  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
+kable(powbus, format = "html", escape = F, caption = 'Business Model and Pricing',  booktabs = TRUE,col.names = c("Feature"	,"Description","Price","Group Notes","External Reviews","Score(0-3)"), align =  "l") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =TRUE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "5cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "4cm" ) %>%
+  column_spec(2, width_max = "5cm" ) %>%
+  column_spec(3, width_min = "2cm") %>%
+  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_max = "5cm") %>%
+  column_spec(6, width_min = "3cm") %>%  
+  scroll_box(width = "800px", height = "600px") 
+
+
+```
+
+
+
+

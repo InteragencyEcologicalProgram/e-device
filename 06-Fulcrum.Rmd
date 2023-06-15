@@ -1,0 +1,325 @@
+# Fulcrum App
+
+## Fulcrum App Overview    {#fultop}
+
+The Fulcrum App is a mobile data collection platform that provides tools to collect and analyze data in field surveys. There are two key components to the Fulcrum platform: the mobile app is for data collectors in the field and a web-based dashboard that provides an at-a-glance view of all field data collections in real time and summaries to date which can be accessible to anyone working on the project. 
+
+Users can design forms using the intuitive, web-based drag-and-drop designer and deploy to their mobile workforce for gathering information like Text, Photos, SpatialVideo, SpatialAudio, Signatures, Barcodes, GPS Location, and more.
+
+Fulcrum is currently being used by at least two major ecosystem monitoring field surveys: NOAA Ship Strikes Survey and National Ecological Observatory Network (hundreds of Fulcrum applications are currently deployed). Fulcrum can be use with both iOS and Android mobile devices. 
+ 
+
+
+## Fulcrum App: Key Features 
+
+### Professional Look
+
+The Fulcrum App provides a clean and professional look in both the mobile and the web interface which is a stand-out feature as compared to Survey123 and Power Apps.  
+
+
+```{r fulook, echo=FALSE, fig.cap="Screen capture of the web-based Fulcrum app devopement tool demonstrating the the general look of the app for a mobile device (three different screens are shown)", out.width = '90%'}
+knitr::include_graphics("images/Fulcrum/profess_look.jpg", error = FALSE)
+```
+
+
+### Intuitive Form Developing Interface
+
+The app development tools in Fulcrum are straight forward to use and has a fairly easy learning curve. Significant resources are available to beginning form developers and Fulcrum support staff are willing to assist new users to set up a functioning app using the trial license. However, for more detailed apps with complex nested design, there is potential of "hitting the cliff" in form development, at which point one must be able to program in the Fulcrum-JSON code to configure the form. The interface with the json code behind the app features is fairly straight forward and the Fulcrum documentation providing code syntax for field control is extensive. https://docs.fulcrumapp.com/docs/data-events-setminlength
+
+
+```{r fumenu, echo=FALSE, fig.cap="Screen capture of the web-based Fulcrum app devopement tool demonstrating the the clear menu used to speicify unique titles.", out.width = '90%'}
+knitr::include_graphics("images/Fulcrum/app_building.jpg", error = FALSE)
+```
+
+
+
+```{r fujson, echo=FALSE, fig.cap="Screen capture of the json form schema for a Fulcrum app form demonstrating the direct access to json editing in form development.", out.width = '90%'}
+knitr::include_graphics("images/Fulcrum/edit_json.jpg", error = FALSE)
+```
+
+
+### Cloud Storage and Data Interface and Exporting
+
+The Fulcrum App is build on the Google Cloud Platform and Google Drive.  Google Drive is a storage platform that includes a generous free storage quota, secure sharing mechanisms, mobile apps for both Android & iOS, and desktop apps for integrated backup and sync.  
+
+Because Fulcrum data is stored on the Google Cloud Platform, it is replicated in real time to multiple data centers in separate geographic regions, which increases redundancy and loss prevention. The Fulcrum back-end is powered by PostgreSQL and PostGIS, the open source industry-standard database platform for working with spatial data. 
+
+A Fulcrum REST API is available to programmatically link the Fulcrum database with a project database. The Fulcrum-Google Cloud interface also provides for a wide range of API links possible [Fulcrum API hooks](#fuhook).  Note that this listing does not include direct links to a non-cloud-service-based database, in contrast to the MS Power Apps options which provide an established link to connect to an 'on-premises' MS database).  The Fulcrum 'web hooks' are written in the internal JSON format and creating a customized link requires some coding: https://www.fulcrumapp.com/blog/syncing-fulcrum-with-your-own-database/. Significant Fulcrum documentation is available to support customizing links to project databases : https://docs.fulcrumapp.com/reference/records-update
+
+
+```{r fuhook, echo=FALSE, fig.cap="Depiction of the range of Fulcrum App-Google Cloud API hooks possible.", out.width = '90%'}
+knitr::include_graphics("images/Fulcrum/googlecloud_fulcrum.jpg", error = FALSE)
+```
+
+
+### Mapping Layers
+
+Fulcrum has been rated as one of the best apps for geolocation with custom maps. Fulcrum is built on the Google Maps Platform, which leverages Google Maps and can provide a variety of map layers for field reference, including streets, terrain, and aerial imagery, as well as points of interest wn both the web and mobile interfaces. Fulcrum also supports custom map layers, which can be combined with the standard base-maps or used completely independently. Fulcrum has recently partnered with ESRI to provide more advanced GIS features and mapping. https://help.fulcrumapp.com/en/articles/4352017-what-are-layers  https://www.fulcrumapp.com/blog/chart-new-territory-using-advanced-geospatial-capabilities-with-esri-integration/
+
+
+```{r fulmap2, echo=FALSE, fig.cap="Screen capture of the Fulcrum mobile app demonstrating the mapping layers options.", out.width = '90%'}
+knitr::include_graphics("images/Fulcrum/maps_field2.jpg", error = FALSE)
+```
+
+
+
+```{r fulmap3, echo=FALSE, fig.cap="Screen capture of the Fulcrum web management interface demonstrating the ability to review data while continuing to use the mapping layers.", out.width = '90%'}
+knitr::include_graphics("images/Fulcrum/maps_office2.jpg", error = FALSE)
+```
+
+
+## Fulcrum App: Criteria Tables
+
+
+
+### Fulcrum App: Forms Options 
+
+
+
+```{r fulcinit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+
+fulcform <- fulcrum$Forms_Options
+fulcdat <- fulcrum$Data_Interface 
+fulcphot <- fulcrum$Photos_ExtSensors
+fulchard <- fulcrum$HW_Platforms
+fulcsec  <- fulcrum$Security_Factors
+fulcbus  <- fulcrum$Business_Model
+```
+
+
+
+
+
+
+```{r fulcform, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Forms Options', out.width='70%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+fulcform[] <- lapply(fulcform, function(x) ifelse(is.na(x), "", x))
+fulcform %>%
+  # Group by category column and collapse repeating values
+  group_by(Category) %>%
+  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
+  group_by(Feature) %>%
+  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
+  
+  
+kable(fulcform, format = "html", escape = F, caption = 'Forms Options',
+      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews","Score(0-3)"),
+      booktabs = TRUE, align =  "l") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "2cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "3cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(3, width_min = "2cm") %>%
+  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_max = "5cm") %>%
+  column_spec(6, width_min = "2cm") %>%  
+  column_spec(7, width_min = "3cm") %>%
+  scroll_box(width = "800px", height = "600px") 
+```
+
+
+### Fulcrum App: Data Interface {#fuldat}
+
+The data connectivity options in Fulcrum App are significant, as noted above and outlined in the Data Interface table. An important note is the ability of the Fulcrum App Mobile components that supports exporting the 'Collections' on a mobile device to a standard .json file.  This is a stand-out feature compared to Survey123 and Fulcrum, and can be critical when building in a back-up protocol for cases when internet data transfer is not available.  The Bay Study Power App project included this option to export to .json because there are some survey stations in which internet access is low or not available [See Bay Study Fulcrum App demo](#powdem).
+
+```{r fulcdat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+fulcdat[] <- lapply(fulcdat, function(x) ifelse(is.na(x), "", x))
+
+
+fulcdat %>%
+  # Group by category column and collapse repeating values
+  group_by(Category) %>%
+  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
+  group_by(Feature) %>%
+  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
+  
+
+
+kable(fulcdat, format = "html", escape = F, caption = 'Data Interface Options',
+      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews","Score(0-3)"),
+      booktabs = TRUE, align =  "l") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "2cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "3cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(3, width_min = "2cm") %>%
+  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_max = "5cm") %>%
+  column_spec(6, width_min = "2cm") %>%  
+  column_spec(7, width_min = "3cm") %>%
+  scroll_box(width = "800px", height = "600px") 
+
+```
+
+
+
+
+###  Fulcrum App: Photo Integration and External Sensors {#fulpho}
+
+
+```{r fulcphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
+
+
+library(kableExtra)
+
+fulcphot[] <- lapply(fulcphot, function(x) ifelse(is.na(x), "", x))
+
+fulcphot %>%
+  # Group by category column and collapse repeating values
+  group_by(Category) %>%
+  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
+  group_by(Feature) %>%
+  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
+  
+
+
+kable(fulcphot, format = "html", escape = F, caption = 'Photo Integration and External Sensors',  
+      col.names = c("Category","Feature"	,"Available","Description",	"Group Notes","External  Reviews","Score(0-3)"),
+      booktabs = TRUE, align =  "l") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "2cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "3cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(3, width_min = "2cm") %>%
+  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_max = "5cm") %>%
+  column_spec(6, width_min = "2cm") %>%  
+  column_spec(7, width_min = "3cm") %>%
+  
+  scroll_box(width = "800px", height = "600px") 
+
+```
+
+
+
+
+
+###  Fulcrum App:  Hardware Platforms  {#fulhrd}
+
+[Top of section](#fultop)
+
+
+
+```{r fulchard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+fulchard[] <- lapply(fulchard, function(x) ifelse(is.na(x), "", x)) 
+
+kable(fulchard, format = "html", escape = F, caption = 'Hardware Platform Options',
+      col.names = c("Feature"	,"Available",	"Group Notes","External  Reviews","Score(0-3)"),
+      booktabs = TRUE, align =  "l") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "6cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "7cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(3, width_min = "2cm") %>%
+  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "2.5cm") %>%
+  column_spec(5, width_max = "3cm") %>%
+
+  scroll_box(width = "800px", height = "600px") 
+
+```
+
+
+### Fulcrum App: Security Factors {#fulsec}
+
+
+
+```{r fulcsec, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Security Factors', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+fulcsec[] <- lapply(fulcsec, function(x) ifelse(is.na(x), "", x))
+
+kable(fulcsec, format = "html", escape = F, caption = 'Security Factors', booktabs = TRUE, align =  "l",col.names = c("Feature"	,"Available",	"Description","Group Notes","External  Reviews","Score(0-3)")) %>%
+  kable_paper() %>% 
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "3cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(3, width_min = "3cm") %>%
+  column_spec(3, width_max = "4cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_max = "5cm") %>%
+  column_spec(6, width_min = "3cm") %>%  
+  
+  scroll_box(width = "800px", height = "600px") 
+
+```
+
+
+
+
+### Fulcrum App: Business Model and Customer Support {#fulbus}
+
+[Top of section](#fultop)
+
+  
+
+```{r fulpbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
+
+
+
+library(kableExtra)
+
+fulcbus[] <- lapply(fulcbus, function(x) ifelse(is.na(x), "", x))
+fulcbus %>%
+  group_by(Feature) %>%
+  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
+kable(fulcbus, format = "html", escape = F, caption = 'Business Model and Pricing',  booktabs = TRUE,col.names = c("Feature"	,"Description","Price","Group Notes","External Reviews","Score(0-3)"), align =  "l") %>%
+  kable_paper() %>% 
+  kable_styling(full_width =TRUE, fixed_thead = TRUE, font_size = 18) %>%
+  
+  column_spec(1, width_min = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "5cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "4cm" ) %>%
+  column_spec(2, width_max = "5cm" ) %>%
+  column_spec(3, width_min = "2cm") %>%
+  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(4, width_max = "5cm") %>%
+  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_max = "5cm") %>%
+  column_spec(6, width_min = "3cm") %>%  
+  scroll_box(width = "800px", height = "600px") 
+
+
+```
+
+
+
+

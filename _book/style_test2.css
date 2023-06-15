@@ -1,0 +1,48 @@
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}
+
+
+tbody::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar li a {
+font-size: 16px;
+}
+
+#menu .right {
+    float: right;
+}
+
+
+li.book-part {
+  font-size: 1.3em;
+  color: blue;
+}
+
+li.a[href="index.html" title="Electronic Data Entry Software Options for IEP Surveys"] {
+  font-size: 2em;
+}
+
+.sidebar h1 {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 1.3em;
+}
+
+h1 {
+  font-family: "Comic Sans MS", sans-serif;
+  font-size: 2.5rem; /* adjust the font size as needed */
+  color: #333; /* adjust the color as needed */
+}

@@ -1,0 +1,25 @@
+# Expert Network   {#expnet}
+
+One of the goal the e-device sub-group was to develop a listing of IEP associated scientists and staff who have expertise in different software approaches.  The names listed here are those who are willing to be a contact by anyone within IEP who is interested in the corresponding Software or Hardware listed. One caveat is that the listed personnel would not be able to replace a full-time technical support staff or programmer, and so reasonable consideration is needed to maintain this type of network resource.  
+
+
+```{r expnet, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Most common e-device software applications used by the IEP members who responded to the e-device questionnaire.', out.width='100%', fig.asp=.75, tab.align='left'}
+
+
+library(kableExtra)
+library(dplyr)
+
+experts[is.na(experts)] <- ""
+
+kable(experts, format = "html", escape = F, caption = 'IEP associated staff who have specific experence with a software app or hardward device and are willing te be contacted by newer users or survey teams that are considering these applications.', booktabs = TRUE, align='l') %>%
+   kable_paper() %>% 
+   # kable_styling(bootstrap_options = c("striped", "hover"),full_width = FALSE, fixed_thead = TRUE, font_size = 20)
+    kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+    column_spec(1, width_max = "4.5cm", bold = TRUE, italic = F) %>%
+    column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+    column_spec(3, width_max = "10cm", bold = F, italic = F) %>%
+    column_spec(4, width_max = "10cm", bold = F, italic = F) #%>%
+    #scroll_box(width = "800px")
+
+```
+

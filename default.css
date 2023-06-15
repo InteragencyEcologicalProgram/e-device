@@ -1,0 +1,18 @@
+
+/* Whole document: */
+body{
+  font-size: 16pt;
+}
+/* Headers */
+h2,h3,h4,h5,h6{
+  font-size: 24pt;
+}
+h1.book-header{
+  font-size: 16pt;
+}
+
+#toc li.part a {
+  font-size: 20px;
+}
+
+

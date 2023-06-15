@@ -1,0 +1,89 @@
+# Executive Summary {-}
+
+## **Take Home Message:** {-}
+
+**IEP should transition to electronic data entry in order to improve efficiency and data quality.**
+
+Digital data entry methods facilitate more accurate and rapid reporting of survey data - as compared to paper data sheets - by reducing field entry errors, eliminating manual entry QC checks, and improving overall processing efficiency. 
+
+
+## **Problem:** {-}
+
+**IEP still uses paper data sheets for most surveys.**  
+
+**IEP survey leads have significant questions about electronic data entry methods.** Several surveys have tried out different e-devices for collecting field data, but they haven't been broadly adopted due to lack of available information about which tools are most appropriate for survey applications.  
+
+
+
+## **Methods:** {-}
+
+The DUWG formed a sub-team and carried out the following steps:
+
+1. **Polled IEP survey teams** to learn what digital data entry tools are currently used within the IEP network; 
+2. **Evaluated the top software tools** with interviews/presentations from experienced users and product vendors; 
+3. **Conducted software trials** using apps specifically configured for IEP survey data collections;
+4. **Developed an open-document forum** for exchange of technical information on e-devices across IEP;
+5. **Summarized pros and cons** of the top e-device software options.
+
+
+## **Solutions:** {-}
+
+Two tools were developed to promote the transition to electronic data entry methods:
+
+- **Summarized and expanded listing of the specific pros and cons of each of the top data entry software apps (Table 1 below)**
+
+- **An open-access html document and Github repository for information related to electronic field data entry software/hardware for IEP Survey applications (Link to Github repo and [E-device document Introduction](#intro))**
+
+
+
+
+## **Impacts:** {-}
+
+Adopting digital data entry protocols will require time to develop the platforms and software and to train the staff. In addition, IEP surveys will have to budget for the purchase and maintenance of mobile field devices, data loggers and/or electronic fish measurement boards. **In the longer term, the time and staff-power savings in reduced data entry and post-collection processing will significantly outweigh equipment and training time expenditures.**
+
+
+## **Table 1:** {-}
+
+<!-- # specifying font style for bold because H3 does not render bold "**" option-->
+::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
+**Table 1:  The top software tools used for field data entry are listed and the Pros and Cons of each tool are briefly described for each [criteria category](#crittop).**
+:::
+
+
+
+```{r procon, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap=NULL, out.width='100%', tab.asp=.75, tab.align='left'}
+
+library(kableExtra)
+library(dplyr)
+library(here)
+
+# 'The top software tools used for field data entry are listed and the Pros and Cons of each tool are briefly described.'
+
+# Replace NAs with empty strings 
+proscons[is.na(proscons)] <- ""
+
+# Group by category column and collapse repeating values
+proscons %>%
+  group_by(Software) %>%
+  mutate(Software = ifelse(duplicated(Software), "", Software))  %>%
+
+#caption = ".",
+  
+kable(proscons, format = "html", escape = F,  booktabs = TRUE, align='l') %>%
+  kable_paper() %>% 
+  # kable_styling(bootstrap_options = c("striped", "hover"),full_width = FALSE, fixed_thead = TRUE,
+  #               font_size = 20) %>%
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  #column_spec(1, width_min = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "4.5cm", bold = TRUE, italic = F) %>%
+  #column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+  #column_spec(3, width_min = "10cm", bold = F, italic = F) %>%
+  column_spec(3, width_max = "10cm", bold = F, italic = F) %>%
+  scroll_box(width = "800px")
+
+```
+
+
+
+

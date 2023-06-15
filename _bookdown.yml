@@ -1,0 +1,48 @@
+book_filename: "e-device2"
+new_session: true
+# this runs the setup.R program before rendering the chapters
+# the setup.R program calls readin_tables.R which pulls in all tables
+before_chapter_script: setup.R
+
+delete_merged_file: true
+language:
+  ui:
+    chapter_name: "Chapter "
+  label:
+    chapter: "Chapter"
+    appendix: "Appendix"
+    part: "Part"
+    figure: "Figure"
+    table: "Table"
+    equation: "Equation"
+    reference: "Reference"
+    code: "Code"
+includes:
+      before_body: titlepage.html
+# this works with other html code in the summary.rmdto suppress the table header 
+# (this exec summary to be submitted as a separate document)
+# header-includes:
+#     - \usepackage{caption}
+split_by: section
+rmd_files:
+  - index.Rmd
+  - summary.Rmd
+  - 01-intro.Rmd
+  - 02-survey.Rmd
+  - 03-criteria.Rmd
+  - 04-survey123.Rmd
+  - 05-PowerApps.Rmd
+  - 06-Fulcrum.Rmd
+  - 07-Pendragon.Rmd
+  - 08-FEED.Rmd
+  - 09-BigFin.Rmd
+  - 10-PDF_R.Rmd
+  - survey123demo.Rmd
+  - powerappsdemo.Rmd
+  - hardware.Rmd
+  - sensors.Rmd
+  - appendix1.Rmd
+  - appendix2.Rmd
+  - glossary.Rmd
+  - expertnet.Rmd
+  

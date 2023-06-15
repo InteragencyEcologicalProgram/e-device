@@ -1,0 +1,65 @@
+# (PART\*) Intro and IEP Questionnaire {-}
+
+# Introduction  {#intro}
+
+This bookdown document is intended to be a 'living document' which develops as more IEP surveys adopt the use of electronic data entry tools.  Optimally, new e-device experiences and information can be shared with the IEP community through on-going presentations to the DUWG working group and updates to this document. 
+
+## E-device Working Group Overview
+
+### Goals
+
+In general, the goal of the electronic data entry sub-group of the DUWG is to research field data entry software and hardware devices (“e-devices”), and to generate resources that support IEP survey leads in selecting and deploying digital data-entry procedures.  This sub-group does not intend to suggest a single solution or software choice for all IEP surveys; rather, the sub-group aims to provide specific application reviews and research, and group members may report on direct hands-on software trials or testing of new methods. Potentially, these activities will initiate an IEP e-device users network as a resource for IEP survey members who are newer to these methods and technologies.
+
+### Approach
+
+A general approach to the exploration of e-device applications was outlined and agreed on at the initial e-device meetings.  
+
+First, an e-device information gathering questionnaire (survey) was distributed within IEP which specifically collects response data from: 1. Experienced e-device users, 2. Those who are currently researching e-device solutions for their survey applications; and 3. Those who have determined e-devices will not work for them. 
+
+Second, from the responses to the questionnaire, the distribution was expanded to include external associates (ICF, NEON, CDFW Marine).  Follow-up interviews of the experienced e-device users and vendors were conducted, and demonstrations were arranged for the most promising e-device options.
+
+Third, group members potentially test specific e-devices apps by making use of free trial licenses, and these trials reported back to the group (SFBS & Yolo By-pass were early volunteers for trial forms development exercises). Potentially other e-device methods will be researched and developed for demonstration purposes going forward (e.g., collection and integration of external sensor data and fish board data into e-device applications).
+
+
+### Scope of group activities and intended products 
+
+The initial e-device questionnaire was used to identify the most common e-device apps used within IEP (\@ref(fig:survey)) the key questions/concerns about using e-devices [key questions](#keyqest) as well as the key criteria that will be used to evaluate each software options explored by the working group [criteria](#crittop). These criteria served as the outline for software reviews.   
+
+Seven different field data entry software applications were evaluated over eight meetings (\@ref(tab:spkr)); Each month, an expert user was invited to present the particular app, and efforts were made to find a local IEP representative to also trial the software and present their first hand impressions.
+
+The intended product from this DUWG subgroup research is a central repository document that summarizes the range of data entry software apps used by IEP and associated surveys, as well as reviews of the various methods used to transfer field data to published databases.  Eventually, this compilation may include information on field hardware devices/weatherizing kits, and methods used for integrating external sensors such as fish boards. The summary document intends to include a list of reference persons who have experience with one or more of the electronic data software or methods.  It is anticipated that this document can be used by survey leads to aid in decision making on electronic field data entry options.
+
+
+
+```{r spkr, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='speakers', out.width='100%', tab.asp=.75, tab.align='left'}
+
+library(kableExtra)
+library(dplyr)
+library(here)
+
+
+speakrs[is.na(speakrs)] <- ""
+
+speakrs %>%
+  # Group by category column and collapse repeating values
+  group_by(Software) %>%
+  mutate(Software = ifelse(duplicated(Software), "", Software))  %>%
+
+kable(speakrs, format = "html", escape = F, caption = "Guest speakers and local trials.", booktabs = TRUE,align='l') %>%
+  kable_paper() %>% 
+  # kable_styling(bootstrap_options = c("striped", "hover"),full_width = FALSE, fixed_thead = TRUE,
+  #               font_size = 20) %>%
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  #column_spec(1, width_min = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "4.5cm", bold = TRUE, italic = F) %>%
+  #column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+  #column_spec(3, width_min = "10cm", bold = F, italic = F) %>%
+  column_spec(3, width_max = "10cm", bold = F, italic = F) %>%
+  scroll_box(width = "800px")
+
+```
+
+
+
+

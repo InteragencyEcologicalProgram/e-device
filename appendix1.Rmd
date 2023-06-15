@@ -1,0 +1,110 @@
+# (APPENDIX) Appendix {-}
+
+#  Appendix - E-device Survey    {#appx_1}
+
+## Survey Questions 
+
+The IEP electronic data entry survey was distributed on June 15, 2022 and responses compiled on August 1, 2022. This survey may be downloaded from the following link:
+
+```{r e_surv, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+xfun::embed_file("C:/Users/KAlstad/Kar_Docs/ProjectMangmt/e-Devices/IEP_Edevice_Survey.pdf")
+```
+
+## Survey Responses  
+
+The survey responses were separated into responses from experienced e-device users and responses from non-experienced e-device users.
+
+
+### Responses from Experienced E-device Users   
+
+
+
+
+```{r esurvdat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE}
+
+source("setup.R")
+
+# Read in data from experience folks #
+Exp <- Survey3 %>% filter(grepl('I am currently',dev_exp))  %>%  select(Agency, field_app,   what_hard,  what_soft, yr_reasons )
+
+# Read in data from folks seeking solutions #
+Looking <- Survey3 %>% filter(grepl("I am interested" ,dev_exp)|grepl(" researching" ,dev_exp))  %>%  select(Agency,  field_app,   type_data, key_challenges, dev_consid )
+
+# Read in data from folks who would never use e-devices #
+NoWay <- Survey3 %>% filter(grepl("e-devices will NOT work" ,dev_exp))  %>%  select(Agency, field_app, type_data_nohope, whathaveyoutried,   yr_reasons, reas_nodevice )
+
+
+Features <- Survey3 %>% select(Agency, field_app, type_data, type_data_nohope, hrdwr_feachz,sftwr_feachz,other_feachz,extern_contact)
+
+
+```
+
+
+
+
+```{r e_surv2, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,, out.width='80%', fig.asp=.75, fig.align='left' }
+
+library(kableExtra)
+
+kable(Exp, format = "html", escape = F, 
+      col.names = c("Affiliation","Your Field Application", "What Hardware Using?", "What Software Using?","Key Reasons"), 
+      caption = 'Responses from Experience Users', booktabs = TRUE,
+      table.attr="table thead th { position: sticky;
+  background: white;
+  z-index: -100;
+  top: calc(var(--line-height) * 1px);}") %>%
+  
+  kable_styling(bootstrap_options = c("striped", "hover"), full_width = FALSE,  font_size = 20) %>%
+  kable_paper() %>% 
+  column_spec(1, width_min = "3cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "3.5cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+  column_spec(3, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(3, width_max = "7cm", bold = F, italic = F) %>%
+  column_spec(4, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(4, width_max = "7cm", bold = F, italic = F) %>%
+  column_spec(5, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(5, width_max = "7cm", bold = F, italic = F) %>%
+  scroll_box(width = "1200px", height = "600px")
+
+```
+
+
+
+#### Responses from Non-Experienced Seeking E-Solutions  
+
+
+```{r e_surv3, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE, out.width='80%', fig.asp=.75, fig.align='left' }
+
+library(kableExtra)
+
+Look2 <- Looking %>% select(-field_app)
+
+kable(Look2, format = "html", escape = F, 
+      col.names = c("Affiliation","Type of Data", "Key Challenges", "Device Considering"), 
+      caption = 'Responses from Non-Experienced Seeking E-Solutions', booktabs = TRUE, align =  "l") %>%
+  
+  kable_styling(bootstrap_options = c("striped", "hover"),full_width = FALSE,  font_size = 20) %>%
+  kable_paper() %>% 
+  column_spec(1, width_min = "3cm", bold = TRUE, italic = F, ) %>%
+  column_spec(1, width_max = "3.5cm", bold = TRUE, italic = F) %>%
+  column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+  column_spec(3, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(3, width_max = "7cm", bold = F, italic = F) %>%
+  column_spec(4, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(4, width_max = "7cm", bold = F, italic = F) %>%
+  scroll_box(width = "900px", height = "600px")
+
+```
+
+
+
+
+
+
+
+
+
+

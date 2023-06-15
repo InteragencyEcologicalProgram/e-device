@@ -1,0 +1,92 @@
+# E-device Questionnaire 
+
+## E-device Questionnaire Outline
+
+An Electronic Field Data-Entry Device ("e-Device") Questionnaire was distributed to IEP survey leads in July of 2022. The goals of this questionnaire were: 1. To get an understanding of the current level of use of electronic field data entry devices among IEP survey staff; 2. To seek information from expert e-device users about both hardware and software considerations, and 3. To the learn specific roadblocks for those who are hesitant to consider shifting to electronic data entry methods.  
+
+Three groups were targeted for this questionnaire:
+
+1. Experienced e-device users (internal IEP and external agencies),                            
+2. IEP Survey Staff who are researching e-devices for field application,                            
+3. IEP Survey Staff who don't believe electronic field data collection will work for their application.
+
+## Questionnaire Respondents 
+
+The IEP e-device questionnaire was run for approximately a month and received 24 responses (Figure \@ref(fig:survey). A link to the original questionnaire and to the compiled questionnaire responses is included in the Appendix [See IEP E-device Survey](#appx_1).
+
+
+
+```{r survey, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  fig.cap='The distribution of responses to the e-device questionnaire by agency association. Most of these respondents were CDFW staff, but USFWS and DWR responses were also represented.  Two external agencies (NEON and ICF) were specifically asked to participate after the questionnaire responses pointed to these expert resources.',echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center'}
+
+source("setup.R")
+
+sms <- Survey3  %>%  group_by(Agency) %>% summarize(n())
+smssum <- Survey3  %>%  summarize(n()) 
+
+pie_labels <- paste0(sms$Agency, " = ", round(100 *sms$`n()`/sum(sms$`n()`), 2), "%")
+pie_labels <- paste0(sms$Agency, " = ", sms$`n()`)
+
+pie(sms$`n()`, labels = pie_labels, col=c("#A9D18E", "#1B8CF0", "#E06F7D", "#D1BA26","#D3DEF1","#edd8e0","#9d4edd"), 
+    main= paste0("IEP E-device Survey Responses: Total = ", smssum),
+    sub = "IEP Agencies not represented: SWRCB, NMFS, USEPA, USACE, USBR")
+
+```
+
+Among the 24 respondents, half of these were IEP associates and external contacts that are already using e-device applications for their survey data collections.  Five (20%) of the respondents were IEP associates who were currently seeking e-device solutions for their survey data collections. Two of the respondents indicated that they have already determined that electronic data entry would not work for their IEP survey application, and 5 respondents did not answer the question about their e-device use experience/status. An experienced e-device user resource list has been initiated, including contact names, software type, and type of survey application; this list will be expanded as possible (Appendix  D) [Expert Network](#expnet).
+
+
+## Most Common Software Applications Used
+
+
+```{r surv2, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Most common e-device software applications used by the IEP members who responded to the e-device questionnaire.', out.width='100%', fig.asp=.75, tab.align='left'}
+
+
+library(kableExtra)
+popap_in <- readRDS(here("popapps.rds"))
+
+kable(popap_in, format = "html", escape = F, caption = 'Most common e-device software applications used by the IEP members who responded to the e-device questionnaire.', booktabs = TRUE, align='l') %>%
+   kable_paper() %>% 
+   # kable_styling(bootstrap_options = c("striped", "hover"),full_width = FALSE, fixed_thead = TRUE, font_size = 20)
+    kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+    column_spec(1, width_max = "4.5cm", bold = TRUE, italic = F) %>%
+    column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+    column_spec(3, width_max = "10cm", bold = F, italic = F) #%>%
+    #scroll_box(width = "800px")
+
+```
+
+
+
+
+## Key questions/concerns about using e-devices (derived from the e-device questionnaire) {#keyqest}
+
+
+A series of key questions were extracted from the questionnaire responses, and were further developed in the first several working group meetings. These questions outline most difficult hurdles that questionnaire leads address when adopting electronic data entry technology for shipboard surveys.
+
+- Forms: 	
+   Do I need to know a programming language to develop a data entry form?  
+   Can the forms builder be used to represent a highly nested sampling design?  
+   Can I review fish length data as a list? Can I edit my data ‘on-the-fly’?  
+   Can I take photos and link to the record at various levels of a nested sampling design?  
+   
+- Data Export Formats and Transfers:  
+   What is the format of the exported data?  
+   Can the exported data be integrated with an existing Access or SQL database?  
+   What procedures are needed for uploading to the database (for each output type)?  
+   Can I make a back-up of the data locally when an internet connection is not available? 
+
+- Reading external data inputs:  
+Can I incorporate data from an external sensor into the app? GPS, Fish boards, Bar Codes?
+
+- IT Security and Version Control:  
+   Does the app have network security certificates; has the security been vetted?  
+   Are there version control options for data pushed to cloud repositories from the field?
+
+- Hardware:  
+   Can a handheld device truly be weatherproof?  
+   How can we keep these devices from dropping overboard during fishing and processing activities?
+
+- QA/QC:  
+   What features of the data entry software are critical for supporting quality assurance and quality control routines.
+
+
