@@ -35,8 +35,6 @@ Two tools were developed to promote the transition to electronic data entry meth
 - **An open-access html document and Github repository for information related to electronic field data entry software/hardware for IEP Survey applications (Link to [Github repo](https://github.com/InteragencyEcologicalProgram/e-device) and [E-device document Introduction](#intro))**
 
 
-
-
 ## **Impacts:** {-}
 
 Adopting digital data entry protocols will require time to develop the platforms and software and to train the staff. In addition, IEP surveys will have to budget for the purchase and maintenance of mobile field devices, data loggers and/or electronic fish measurement boards. **In the longer term, the time and staff-power savings in reduced data entry and post-collection processing will significantly outweigh equipment and training time expenditures.**

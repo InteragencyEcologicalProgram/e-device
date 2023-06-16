@@ -17,9 +17,6 @@ Surveys123 Survey Forms are created and stored through the ESRI web interface (s
 
 
 
-```r
-library(here)
-```
 
 
 <div class="figure">
