@@ -17,8 +17,6 @@ language:
     equation: "Equation"
     reference: "Reference"
     code: "Code"
-includes:
-      before_body: titlepage.html
 # this works with other html code in the summary.rmdto suppress the table header 
 # (this exec summary to be submitted as a separate document)
 # header-includes:
