@@ -1,4 +1,4 @@
-# PDF Form and R Sraping
+# PDF Form and R Scraping
 
 ## PDF-R Scrape Overview  {#PDFtop} 
 
