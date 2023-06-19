@@ -4,17 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>C Glossary | Electronic Data Entry Options for IEP Surveys</title>
+<title>Chapter 10 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys</title>
 <meta name="author" content="IEP DUWG ‘e-Device’ Sub-group led by Karrin Alstad">
-<meta name="description" content="API: REST API: PostgreSQL: PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale...">
+<meta name="description" content="10.1 PDF-R Scrape Overview   10.2 PDF-R Scrape: Key Features  10.2.1 PDF-R Scrape Form Developing Interface   10.3 PDF-R Scrape: Criteria Tables  10.3.1 PDF-R Scrape: Forms Options   10.3.2 PDF-R...">
 <meta name="generator" content="bookdown 0.34 with bs4_book()">
-<meta property="og:title" content="C Glossary | Electronic Data Entry Options for IEP Surveys">
+<meta property="og:title" content="Chapter 10 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys">
 <meta property="og:type" content="book">
-<meta property="og:url" content="https://interagencyecologicalprogram.github.io/e-device/gloss.html">
-<meta property="og:description" content="API: REST API: PostgreSQL: PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale...">
+<meta property="og:url" content="https://interagencyecologicalprogram.github.io/e-device/pdf-form-and-r-scraping.html">
+<meta property="og:description" content="10.1 PDF-R Scrape Overview   10.2 PDF-R Scrape: Key Features  10.2.1 PDF-R Scrape Form Developing Interface   10.3 PDF-R Scrape: Criteria Tables  10.3.1 PDF-R Scrape: Forms Options   10.3.2 PDF-R...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="C Glossary | Electronic Data Entry Options for IEP Surveys">
-<meta name="twitter:description" content="API: REST API: PostgreSQL: PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale...">
+<meta name="twitter:title" content="Chapter 10 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys">
+<meta name="twitter:description" content="10.1 PDF-R Scrape Overview   10.2 PDF-R Scrape: Key Features  10.2.1 PDF-R Scrape Form Developing Interface   10.3 PDF-R Scrape: Criteria Tables  10.3.1 PDF-R Scrape: Forms Options   10.3.2 PDF-R...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -58,7 +58,7 @@
 <li><a class="" href="pendragon.html"><span class="header-section-number">7</span> Pendragon</a></li>
 <li><a class="" href="feed.html"><span class="header-section-number">8</span> FEED</a></li>
 <li><a class="" href="big-fin.html"><span class="header-section-number">9</span> Big Fin</a></li>
-<li><a class="" href="pdf-form-and-r-scraping.html"><span class="header-section-number">10</span> PDF Form and R Scraping</a></li>
+<li><a class="active" href="pdf-form-and-r-scraping.html"><span class="header-section-number">10</span> PDF Form and R Scraping</a></li>
 <li class="book-part">IEP Survey Demos</li>
 <li><a class="" href="yoldem.html"><span class="header-section-number">11</span> Yolo Bipass: Survey123 Trial App</a></li>
 <li><a class="" href="powdem.html"><span class="header-section-number">12</span> SF Bay Study: PowerApps Trial App</a></li>
@@ -70,7 +70,7 @@
 <li class="book-part">Appendix</li>
 <li><a class="" href="appx_1.html"><span class="header-section-number">A</span> Appendix - E-device Survey</a></li>
 <li><a class="" href="appendix--.html"><span class="header-section-number">B</span> Appendix -</a></li>
-<li><a class="active" href="gloss.html"><span class="header-section-number">C</span> Glossary</a></li>
+<li><a class="" href="gloss.html"><span class="header-section-number">C</span> Glossary</a></li>
 <li><a class="" href="expnet.html"><span class="header-section-number">D</span> Expert Network</a></li>
 </ul>
 
@@ -79,26 +79,94 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="gloss" class="section level1" number="18">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="pdf-form-and-r-scraping" class="section level1" number="10">
 <h1>
-<span class="header-section-number">C</span> Glossary<a class="anchor" aria-label="anchor" href="#gloss"><i class="fas fa-link"></i></a>
+<span class="header-section-number">10</span> PDF Form and R Scraping<a class="anchor" aria-label="anchor" href="#pdf-form-and-r-scraping"><i class="fas fa-link"></i></a>
 </h1>
-<p>API:</p>
-<p>REST API:</p>
-<p>PostgreSQL: PostgreSQL is a powerful, open source object-relational database system that uses and extends the SQL language combined with many features that safely store and scale the most complicated data workloads. <a href="https://www.postgresql.org/docs/current/intro-whatis.html" class="uri">https://www.postgresql.org/docs/current/intro-whatis.html</a></p>
+<div id="PDFtop" class="section level2" number="10.1">
+<h2>
+<span class="header-section-number">10.1</span> PDF-R Scrape Overview<a class="anchor" aria-label="anchor" href="#PDFtop"><i class="fas fa-link"></i></a>
+</h2>
+</div>
+<div id="pdf-r-scrape-key-features" class="section level2" number="10.2">
+<h2>
+<span class="header-section-number">10.2</span> PDF-R Scrape: Key Features<a class="anchor" aria-label="anchor" href="#pdf-r-scrape-key-features"><i class="fas fa-link"></i></a>
+</h2>
+<div id="pdf-r-scrape-form-developing-interface" class="section level3" number="10.2.1">
+<h3>
+<span class="header-section-number">10.2.1</span> PDF-R Scrape Form Developing Interface<a class="anchor" aria-label="anchor" href="#pdf-r-scrape-form-developing-interface"><i class="fas fa-link"></i></a>
+</h3>
+</div>
+</div>
+<div id="pdf-r-scrape-criteria-tables" class="section level2" number="10.3">
+<h2>
+<span class="header-section-number">10.3</span> PDF-R Scrape: Criteria Tables<a class="anchor" aria-label="anchor" href="#pdf-r-scrape-criteria-tables"><i class="fas fa-link"></i></a>
+</h2>
+<div id="pdf-r-scrape-forms-options" class="section level3" number="10.3.1">
+<h3>
+<span class="header-section-number">10.3.1</span> PDF-R Scrape: Forms Options<a class="anchor" aria-label="anchor" href="#pdf-r-scrape-forms-options"><i class="fas fa-link"></i></a>
+</h3>
+</div>
+<div id="PDFdat" class="section level3" number="10.3.2">
+<h3>
+<span class="header-section-number">10.3.2</span> PDF-R Scrape: Data Interface<a class="anchor" aria-label="anchor" href="#PDFdat"><i class="fas fa-link"></i></a>
+</h3>
+</div>
+<div id="PDFpho" class="section level3" number="10.3.3">
+<h3>
+<span class="header-section-number">10.3.3</span> PDF-R Scrape: Photo Integration and External Sensors<a class="anchor" aria-label="anchor" href="#PDFpho"><i class="fas fa-link"></i></a>
+</h3>
+</div>
+<div id="PDFhrd" class="section level3" number="10.3.4">
+<h3>
+<span class="header-section-number">10.3.4</span> PDF-R Scrape: Hardware Platforms<a class="anchor" aria-label="anchor" href="#PDFhrd"><i class="fas fa-link"></i></a>
+</h3>
+<p><a href="pdf-form-and-r-scraping.html#PDFtop">Top of section</a></p>
+</div>
+<div id="PDFsec" class="section level3" number="10.3.5">
+<h3>
+<span class="header-section-number">10.3.5</span> PDF-R Scrape: Security Factors<a class="anchor" aria-label="anchor" href="#PDFsec"><i class="fas fa-link"></i></a>
+</h3>
+</div>
+<div id="PDFbus" class="section level3" number="10.3.6">
+<h3>
+<span class="header-section-number">10.3.6</span> PDF-R Scrape: Business Model and Customer Support<a class="anchor" aria-label="anchor" href="#PDFbus"><i class="fas fa-link"></i></a>
+</h3>
+<p><a href="pdf-form-and-r-scraping.html#PDFtop">Top of section</a></p>
 
 </div>
+</div>
+</div>
+
+
+
   <div class="chapter-nav">
-<div class="prev"><a href="appendix--.html"><span class="header-section-number">B</span> Appendix -</a></div>
-<div class="next"><a href="expnet.html"><span class="header-section-number">D</span> Expert Network</a></div>
+<div class="prev"><a href="big-fin.html"><span class="header-section-number">9</span> Big Fin</a></div>
+<div class="next"><a href="yoldem.html"><span class="header-section-number">11</span> Yolo Bipass: Survey123 Trial App</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
-      <ul class="nav navbar-nav"><li><a class="nav-link" href="#gloss"><span class="header-section-number">C</span> Glossary</a></li></ul>
+      <ul class="nav navbar-nav">
+<li><a class="nav-link" href="#pdf-form-and-r-scraping"><span class="header-section-number">10</span> PDF Form and R Scraping</a></li>
+<li><a class="nav-link" href="#PDFtop"><span class="header-section-number">10.1</span> PDF-R Scrape Overview</a></li>
+<li>
+<a class="nav-link" href="#pdf-r-scrape-key-features"><span class="header-section-number">10.2</span> PDF-R Scrape: Key Features</a><ul class="nav navbar-nav"><li><a class="nav-link" href="#pdf-r-scrape-form-developing-interface"><span class="header-section-number">10.2.1</span> PDF-R Scrape Form Developing Interface</a></li></ul>
+</li>
+<li>
+<a class="nav-link" href="#pdf-r-scrape-criteria-tables"><span class="header-section-number">10.3</span> PDF-R Scrape: Criteria Tables</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#pdf-r-scrape-forms-options"><span class="header-section-number">10.3.1</span> PDF-R Scrape: Forms Options</a></li>
+<li><a class="nav-link" href="#PDFdat"><span class="header-section-number">10.3.2</span> PDF-R Scrape: Data Interface</a></li>
+<li><a class="nav-link" href="#PDFpho"><span class="header-section-number">10.3.3</span> PDF-R Scrape: Photo Integration and External Sensors</a></li>
+<li><a class="nav-link" href="#PDFhrd"><span class="header-section-number">10.3.4</span> PDF-R Scrape: Hardware Platforms</a></li>
+<li><a class="nav-link" href="#PDFsec"><span class="header-section-number">10.3.5</span> PDF-R Scrape: Security Factors</a></li>
+<li><a class="nav-link" href="#PDFbus"><span class="header-section-number">10.3.6</span> PDF-R Scrape: Business Model and Customer Support</a></li>
+</ul>
+</li>
+</ul>
 
       <div class="book-extra">
         <ul class="list-unstyled">
-<li><a id="book-source" href="https://github.com/InteragencyEcologicalProgram/e-device.git/blob/master/glossary.Rmd">View source <i class="fab fa-github"></i></a></li>
-          <li><a id="book-edit" href="https://github.com/InteragencyEcologicalProgram/e-device.git/edit/master/glossary.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
+<li><a id="book-source" href="https://github.com/InteragencyEcologicalProgram/e-device.git/blob/master/10-PDF_R.Rmd">View source <i class="fab fa-github"></i></a></li>
+          <li><a id="book-edit" href="https://github.com/InteragencyEcologicalProgram/e-device.git/edit/master/10-PDF_R.Rmd">Edit this page <i class="fab fa-github"></i></a></li>
         </ul>
 </div>
     </nav>

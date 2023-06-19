@@ -53,39 +53,32 @@ Survey3$exp_status[grepl("I have previously used",Survey3$exp_status)]<-"I have 
 Survey3$exp_status[grepl("I am currently using",Survey3$exp_status)]<-"I am currently using"
 ## Save to .rds file ##
 # Maybe I don't need to save to rds
-#saveRDS(Survey3, file = "Survey3.rds")
 
 popapps <- read_excel(file.path(tabs,"most_common_apps.xlsx"),sheet = "Sheet1")
 popapps[is.na(popapps)] <- " "
-#saveRDS(popapps, file = here("popapps.rds"))
 
 
 ## pros cons table for summary
 proscons <- read_excel(file.path(tabs,"ProsCons2.xlsx"))
-#saveRDS(proscons, file = here("proscons.rds"))
 
 
 ## pros cons table for summary
 criteria <- read_excel_allsheets(file.path(tabs,"Template_app_criteria_intro.xlsx"))
-#saveRDS(criteria, file = "criteria.rds")
 
 
 ## e-device criteria table for intro
 criteria <- read_excel_allsheets(file.path(tabs,"Template_app_criteria_intro.xlsx"))
-#saveRDS(criteria, file = "criteria.rds")
 
 
 ## speakers
 speakrs <- read_excel(file.path(tabs,"speakers_locals.xlsx"))
-#saveRDS(speakrs$Sheet1, file = "speakrs.rds")
 
 ## expert network
 experts <- read_excel(file.path(tabs,"ExpertNet.xlsx"))
-#saveRDS(experts$Sheet1, file = "experts.rds")
 
 
 ## software criteria tables
-## currently not saved - maybe I don't need to save to rds
+## remove score column; not going to try to compare using scoring approach
 survey123 <- read_excel_allsheets(file.path(tabs,"Survey123_app_criteria2.xlsx"))
 powerapp <- read_excel_allsheets(file.path(tabs,"Power_app_criteria.xlsx"))
 fulcrum <- read_excel_allsheets(file.path(tabs,"Fulcrum.xlsx"))

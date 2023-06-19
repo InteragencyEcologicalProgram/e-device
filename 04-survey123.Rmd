@@ -79,23 +79,23 @@ s123form %>%
   
   
 kable(s123form, format = "html", escape = F, caption = 'Forms Options',
-      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews","Score(0-3)"),
+      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews"),
       booktabs = TRUE, align =  "l") %>%
   kable_paper() %>% 
   kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
   
-  column_spec(1, width_min = "2cm", bold = TRUE, italic = F) %>%
-  column_spec(1, width_max = "3cm", bold = TRUE, italic = F) %>%
-  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(1, width_min = "2.5cm", bold = TRUE,) %>%
+  column_spec(1, width_max = "3cm", bold = TRUE) %>%
+  column_spec(2, width_min = "2.5cm" ) %>%
   column_spec(2, width_max = "3cm" ) %>%
-  column_spec(3, width_min = "2cm") %>%
-  column_spec(3, width_max = "2.5cm") %>%
-  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(3, width_min = "1.5cm") %>%
+  column_spec(3, width_max = "2cm") %>%
+  column_spec(4, width_min = "2cm") %>%
   column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_min = "2cm") %>%
   column_spec(5, width_max = "5cm") %>%
   column_spec(6, width_min = "2cm") %>%  
-  column_spec(7, width_min = "3cm") %>%
+  column_spec(6, width_max = "5cm") %>%  
   scroll_box(width = "800px", height = "600px") 
 ```
 
@@ -121,23 +121,23 @@ s123dat %>%
 
 
 kable(s123dat, format = "html", escape = F, caption = 'Data Interface Options',
-      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews","Score(0-3)"),
+      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews"),
       booktabs = TRUE, align =  "l") %>%
   kable_paper() %>% 
   kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
   
-  column_spec(1, width_min = "2cm", bold = TRUE, italic = F) %>%
-  column_spec(1, width_max = "3cm", bold = TRUE, italic = F) %>%
-  column_spec(2, width_min = "2cm" ) %>%
+  column_spec(1, width_min = "2.5cm", bold = TRUE,) %>%
+  column_spec(1, width_max = "3cm", bold = TRUE) %>%
+  column_spec(2, width_min = "2.5cm" ) %>%
   column_spec(2, width_max = "3cm" ) %>%
-  column_spec(3, width_min = "2cm") %>%
-  column_spec(3, width_max = "2.5cm") %>%
-  column_spec(4, width_min = "4.5cm") %>%
+  column_spec(3, width_min = "1.5cm") %>%
+  column_spec(3, width_max = "2cm") %>%
+  column_spec(4, width_min = "2cm") %>%
   column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "4.5cm") %>%
+  column_spec(5, width_min = "2cm") %>%
   column_spec(5, width_max = "5cm") %>%
   column_spec(6, width_min = "2cm") %>%  
-  column_spec(7, width_min = "3cm") %>%
+  column_spec(6, width_max = "5cm") %>%  
   scroll_box(width = "800px", height = "600px") 
 
 ```
@@ -165,23 +165,22 @@ s123phot %>%
 
 
 kable(s123phot, format = "html", escape = F, caption = 'Photo Integration and External Sensors',  
-      col.names = c("Category","Feature"	,"Available",	"Group Notes","External  Reviews","Score(0-3)"),
+      col.names = c("Category","Feature"	,"Available",	"Group Notes","External  Reviews"),
       booktabs = TRUE, align =  "l") %>%
   kable_paper() %>% 
   kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
   
-  column_spec(1, width_min = "2cm", bold = TRUE, italic = F) %>%
-  column_spec(1, width_max = "3cm", bold = TRUE, italic = F) %>%
-  column_spec(2, width_min = "2cm" ) %>%
-  column_spec(2, width_max = "3cm" ) %>%
+  column_spec(1, width_min = "2.5cm", bold = TRUE,) %>%
+  column_spec(1, width_max = "3.5cm", bold = TRUE) %>%
+  column_spec(2, width_min = "2.5cm" ) %>%
+  column_spec(2, width_max = "4cm" ) %>%
   column_spec(3, width_min = "2cm") %>%
   column_spec(3, width_max = "2.5cm") %>%
-  column_spec(4, width_min = "4.5cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "4.5cm") %>%
-  column_spec(5, width_max = "5cm") %>%
-  column_spec(6, width_min = "2cm") %>%  
-  
+  column_spec(4, width_min = "4cm") %>%
+  column_spec(4, width_max = "5.5cm") %>%
+  column_spec(5, width_min = "4cm") %>%
+  column_spec(5, width_max = "5.5cm") %>%
+
   scroll_box(width = "800px", height = "600px") 
 
 ```
@@ -204,21 +203,19 @@ s123hard[] <- lapply(s123hard, function(x) ifelse(is.na(x), "", x))
 #s123hard <- s123hard #%>% select(1:3,)
 
 kable(s123hard, format = "html", escape = F, caption = 'Hardware Platform Options',
-      col.names = c("Feature"	,"Available",	"Group Notes","External  Reviews","Score(0-3)"),
+      col.names = c("Feature"	,"Available",	"Group Notes","External  Reviews"),
       booktabs = TRUE, align =  "l") %>%
   kable_paper() %>% 
   kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
   
-  column_spec(1, width_min = "6cm", bold = TRUE, italic = F) %>%
-  column_spec(1, width_max = "7cm", bold = TRUE, italic = F) %>%
-  column_spec(2, width_min = "2cm" ) %>%
-  column_spec(2, width_max = "3cm" ) %>%
-  column_spec(3, width_min = "2cm") %>%
-  column_spec(3, width_max = "2.5cm") %>%
+  column_spec(1, width_min = "7cm", bold = TRUE) %>%
+  column_spec(1, width_max = "8cm", bold = TRUE) %>%
+  column_spec(2, width_min = "3cm" ) %>%
+  column_spec(2, width_max = "3.5cm" ) %>%
+  column_spec(3, width_min = "4.5cm") %>%
+  column_spec(3, width_max = "5cm") %>%
   column_spec(4, width_min = "4.5cm") %>%
   column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "2.5cm") %>%
-  column_spec(5, width_max = "3cm") %>%
 
   scroll_box(width = "800px", height = "600px") 
 
@@ -235,12 +232,12 @@ library(kableExtra)
 
 s123sec[] <- lapply(s123sec, function(x) ifelse(is.na(x), "", x))
 
-kable(s123sec, format = "html", escape = F, caption = 'Security Factors', booktabs = TRUE, align =  "l",col.names = c("Feature"	,"Available",	"Description","Group Notes","External  Reviews","Score(0-3)")) %>%
+kable(s123sec, format = "html", escape = F, caption = 'Security Factors', booktabs = TRUE, align =  "l",col.names = c("Feature"	,"Available",	"Description","Group Notes","External  Reviews")) %>%
   kable_paper() %>% 
   kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
   
-  column_spec(1, width_min = "3cm", bold = TRUE, italic = F) %>%
-  column_spec(1, width_max = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_min = "3cm", bold = TRUE) %>%
+  column_spec(1, width_max = "4cm", bold = TRUE) %>%
   column_spec(2, width_min = "2cm" ) %>%
   column_spec(2, width_max = "3cm" ) %>%
   column_spec(3, width_min = "3cm") %>%
@@ -249,8 +246,7 @@ kable(s123sec, format = "html", escape = F, caption = 'Security Factors', bookta
   column_spec(4, width_max = "5cm") %>%
   column_spec(5, width_min = "4.5cm") %>%
   column_spec(5, width_max = "5cm") %>%
-  column_spec(6, width_min = "3cm") %>%  
-  
+
   scroll_box(width = "800px", height = "600px") 
 
 ```
@@ -274,12 +270,12 @@ s123bus[] <- lapply(s123bus, function(x) ifelse(is.na(x), "", x))
 s123bus %>%
   group_by(Feature) %>%
   mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
-kable(s123bus, format = "html", escape = F, caption = 'Business Model and Pricing',  booktabs = TRUE,col.names = c("Feature"	,"Description","Price","Group Notes","External Reviews","Score(0-3)"), align =  "l") %>%
+kable(s123bus, format = "html", escape = F, caption = 'Business Model and Pricing',  booktabs = TRUE,col.names = c("Feature"	,"Description","Price","Group Notes","External Reviews"), align =  "l") %>%
   kable_paper() %>% 
   kable_styling(full_width =TRUE, fixed_thead = TRUE, font_size = 18) %>%
   
-  column_spec(1, width_min = "4cm", bold = TRUE, italic = F) %>%
-  column_spec(1, width_max = "5cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_min = "4cm", bold = TRUE) %>%
+  column_spec(1, width_max = "5cm", bold = TRUE) %>%
   column_spec(2, width_min = "4cm" ) %>%
   column_spec(2, width_max = "5cm" ) %>%
   column_spec(3, width_min = "2cm") %>%
@@ -288,7 +284,6 @@ kable(s123bus, format = "html", escape = F, caption = 'Business Model and Pricin
   column_spec(4, width_max = "5cm") %>%
   column_spec(5, width_min = "4.5cm") %>%
   column_spec(5, width_max = "5cm") %>%
-  column_spec(6, width_min = "3cm") %>%  
   scroll_box(width = "800px", height = "600px") 
 
 

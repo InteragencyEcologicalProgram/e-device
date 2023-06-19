@@ -47,7 +47,7 @@ The Fulcrum App is build on the Google Cloud Platform and Google Drive.  Google 
 
 Because Fulcrum data is stored on the Google Cloud Platform, it is replicated in real time to multiple data centers in separate geographic regions, which increases redundancy and loss prevention. The Fulcrum back-end is powered by PostgreSQL and PostGIS, the open source industry-standard database platform for working with spatial data. 
 
-A Fulcrum REST API is available to programmatically link the Fulcrum database with a project database. The Fulcrum-Google Cloud interface also provides for a wide range of API links possible [Fulcrum API hooks](#fuhook).  Note that this listing does not include direct links to a non-cloud-service-based database, in contrast to the MS Power Apps options which provide an established link to connect to an 'on-premises' MS database).  The Fulcrum 'web hooks' are written in the internal JSON format and creating a customized link requires some coding: https://www.fulcrumapp.com/blog/syncing-fulcrum-with-your-own-database/. Significant Fulcrum documentation is available to support customizing links to project databases : https://docs.fulcrumapp.com/reference/records-update
+A Fulcrum REST API is available to programmatically link the Fulcrum database with a project database. The Fulcrum-Google Cloud interface also provides for a wide range of API links possible [Fulcrum API hooks](#fuhook).  Note that this listing does not include direct links to a non-cloud-service-based database, in contrast to the MS Power Apps options which provide an established link to connect to an 'on-premises' MS database.  The Fulcrum 'web hooks' are written in the internal JSON format and creating a customized link requires some coding: https://www.fulcrumapp.com/blog/syncing-fulcrum-with-your-own-database/. Significant Fulcrum documentation is available to support customizing links to project databases : https://docs.fulcrumapp.com/reference/records-update
 
 
 <div class="figure">
@@ -99,153 +99,136 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Score(0-3) </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Data entry validation/QC </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Geo-referencing </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Fulcrum is able to collect the GPS coordinates from the GPS of the e-device with a button within the form; Fulcrum does not provide mapping of all elements like Survey 123.  Fulcrum has recently developed integration with ESRI to provide advanced mapping features: https://help.fulcrumapp.com/en/articles/4813276-how-does-our-esri-integration-work; Location collection can be automatically collected with each record. </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Data entry validation/QC </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Geo-referencing </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Fulcrum is able to collect the GPS coordinates from the GPS of the e-device with a button within the form; Fulcrum does not provide mapping of all elements like Survey 123.  Fulcrum has recently developed integration with ESRI to provide advanced mapping features: https://help.fulcrumapp.com/en/articles/4813276-how-does-our-esri-integration-work; Location collection can be automatically collected with each record. </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Constrained choices from a list </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Choice lists are natively supported or can be populated with record links </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Constrained choices from a list </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Choice lists are natively supported or can be populated with record links </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Rules guiding answer series (e.g., “Conditional Questions” and “Skips”) </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> It is possible to configure conditional visibility of notes, sections and entry fields based on responses provided. </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Rules guiding answer series (e.g., “Conditional Questions” and “Skips”) </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> It is possible to configure conditional visibility of notes, sections and entry fields based on responses provided. </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Constrained choices from an external table </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Choice lists are natively supported or can be populated with record links </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Constrained choices from an external table </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Choice lists are natively supported or can be populated with record links </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Form Version Control </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Asked Pat for a link to a screen shot </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Form Version Control </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Asked Pat for a link to a screen shot </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Real-time Data Review </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Not simple </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> The web tool provides tools for data review and summaries.  Configuring the mobile app for real-time review may require customization. </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> In a Fulcrum trial, it was not easy to configure a listing of the lengths for review.  There did not appear to be a simple function for listing and reviewing the data in the collection form. </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Real-time Data Review </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Not simple </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> The web tool provides tools for data review and summaries.  Configuring the mobile app for real-time review may require customization. </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> In a Fulcrum trial, it was not easy to configure a listing of the lengths for review.  There did not appear to be a simple function for listing and reviewing the data in the collection form. </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Real-time Edit (“on the fly”) </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes, but </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Fields were editable until saved; </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> In a Fulcrum Trial for Bay Study, found it easily to make record changes before and after records were saved in the mobile app. </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Real-time Edit (“on the fly”) </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes, but </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Fields were editable until saved; </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> In a Fulcrum Trial for Bay Study, found it easily to make record changes before and after records were saved in the mobile app. </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Ease of Form Development </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Intuitive form design tool </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Web tool for form design is intuitive and provides flexibilty for field position and type.  Form itself is easy to navigate between tabs and across/down fields. </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Ease of Form Development </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Intuitive form design tool </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Web tool for form design is intuitive and provides flexibilty for field position and type.  Form itself is easy to navigate between tabs and across/down fields. </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Coding language required? </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> No / Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Fulcrum is designed to be a NO-CODE app building interface. </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> In a Fulcrum Trial for Bay Study survey, the web drag-n-drop interface provided 80% of the form requirements needed, but technical support was requested to configure the real-time listings that are needed.  Form optimization would have likely required json coding. </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Coding language required? </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> No / Yes </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Fulcrum is designed to be a NO-CODE app building interface. </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> In a Fulcrum Trial for Bay Study survey, the web drag-n-drop interface provided 80% of the form requirements needed, but technical support was requested to configure the real-time listings that are needed.  Form optimization would have likely required json coding. </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Different styles of question types </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Multiple field types: basic, multiple choice, required fields; defaut values; requirement rules; visibility (conditional) rules, https://help.fulcrumapp.com/en/articles/75014-what-field-types-does-fulcrum-support </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Different styles of question types </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Multiple field types: basic, multiple choice, required fields; defaut values; requirement rules; visibility (conditional) rules, https://help.fulcrumapp.com/en/articles/75014-what-field-types-does-fulcrum-support </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Flexibility to configure in a logical order for field entry (e.g., nested desgin) </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Can easilly group questions into sections; Can add "repeatables" to be used for repeating collections where number is unknown/expandable; </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Flexibility to configure in a logical order for field entry (e.g., nested desgin) </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Can easilly group questions into sections; Can add "repeatables" to be used for repeating collections where number is unknown/expandable; </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Other IEP Survey needs </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Permissions Management </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Other IEP Survey needs </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Permissions Management </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Muti-users of an app </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Muti-users of an app </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Off-line capacity </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Off-line capacity </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> User Accessability </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Multiple-language options </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> User Accessability </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Multiple-language options </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Font adjustment/Speak-to-text </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Font adjustment/Speak-to-text </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
 </table></div>
@@ -265,90 +248,80 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Score(0-3) </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Database interface </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Cloud-storage </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Database interface </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Cloud-storage </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Direct integration with database </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Direct integration with database </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Integrate data from local tables </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Integrate data from local tables </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Edit after transfer </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Editing data ‘on-the-fly’ (data already submitted) </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Edit after transfer </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Editing data ‘on-the-fly’ (data already submitted) </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Data format </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Open (standard) format output </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> PDF report generation is really developed in Fulcrum; can develop workflow to send report automatically: email and/or text </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Data format </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Open (standard) format output </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> PDF report generation is really developed in Fulcrum; can develop workflow to send report automatically: email and/or text </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Data format logical / useable </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Data format logical / useable </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Data transfer </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Real-time data transfer </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Data transfer </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Real-time data transfer </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Cloud connectivity &amp; back up </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Cloud connectivity &amp; back up </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Data change logs </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Audit trails (data version control) </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> https://help.fulcrumapp.com/en/articles/76663-how-does-version-history-work </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Data change logs </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Audit trails (data version control) </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> https://help.fulcrumapp.com/en/articles/76663-how-does-version-history-work </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
 </table></div>
@@ -369,99 +342,88 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Score(0-3) </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Photo Integration </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Collect photo &amp; assoc. with element </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;"> Photo Integration </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> Collect photo &amp; assoc. with element </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Ease of interface </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> Ease of interface </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Multi-photo per element (and # limit) </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> Multi-photo per element (and # limit) </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Drawing/Annotating on photo </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> Drawing/Annotating on photo </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Annotating Yes; Drawing No </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> https://help.fulcrumapp.com/en/articles/3130731-what-are-photo-fields </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> https://help.fulcrumapp.com/en/articles/3130731-what-are-photo-fields </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> X-tern sensors </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> GPS from device </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;"> X-tern sensors </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> GPS from device </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Integratedata from bar codes </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> Integratedata from bar codes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Integrate data from external sensors </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> Integrate data from external sensors </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes, potentially, using API </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> External sensors could be read in using configured API connection (https://docs.fulcrumapp.com/docs/developer-information).  These 'webhooks' are used to connect Fulcrum with Campbell dl potentially.   OR upload spreadsheet into the app and push that out.  Can populate fields in form from an uploaded spreadsheet. </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> External sensors could be read in using configured API connection (https://docs.fulcrumapp.com/docs/developer-information).  These 'webhooks' are used to connect Fulcrum with Campbell dl potentially.   OR upload spreadsheet into the app and push that out.  Can populate fields in form from an uploaded spreadsheet. </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 2cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
 </tbody>
 </table></div>
@@ -484,58 +446,50 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Score(0-3) </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;"> Smart Phones and Tablets </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 7cm; font-weight: bold;max-width: 8cm; font-weight: bold;"> Smart Phones and Tablets </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 3.5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;"> -      iOS (phone and tablet) </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Yes, offline works </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 7cm; font-weight: bold;max-width: 8cm; font-weight: bold;"> -      iOS (phone and tablet) </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 3.5cm; "> Yes, offline works </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;"> -      Android(phone and tablet) </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Yes, offline works </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 7cm; font-weight: bold;max-width: 8cm; font-weight: bold;"> -      Android(phone and tablet) </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 3.5cm; "> Yes, offline works </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;"> Desktop/laptop </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 7cm; font-weight: bold;max-width: 8cm; font-weight: bold;"> Desktop/laptop </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 3.5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;"> -      Windows 7,8,10, 11 </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Yes, web only </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 7cm; font-weight: bold;max-width: 8cm; font-weight: bold;"> -      Windows 7,8,10, 11 </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 3.5cm; "> Yes, web only </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;"> -      MacOS (computer) </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Yes, web only </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 7cm; font-weight: bold;max-width: 8cm; font-weight: bold;"> -      MacOS (computer) </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 3.5cm; "> Yes, web only </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 6cm; font-weight: bold;max-width: 7cm; font-weight: bold;"> -      Ubuntu Linux </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Yes, web only </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 7cm; font-weight: bold;max-width: 8cm; font-weight: bold;"> -      Ubuntu Linux </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 3.5cm; "> Yes, web only </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
 </table></div>
@@ -554,7 +508,6 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Score(0-3) </th>
   </tr>
  </thead>
 <tbody>
@@ -564,7 +517,6 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <td style="text-align:left;min-width: 3cm; max-width: 4cm; "> Fulcrum has conducted security audits for projects with aerospace company, toyota, verison, telegraph </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Is the application Cloud based, and if so, where? </td>
@@ -572,7 +524,6 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <td style="text-align:left;min-width: 3cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Where is the data being stored for the application? </td>
@@ -580,7 +531,6 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <td style="text-align:left;min-width: 3cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Is the data center FedRAMP certified? </td>
@@ -588,7 +538,6 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <td style="text-align:left;min-width: 3cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Online Security measures </td>
@@ -596,7 +545,6 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <td style="text-align:left;min-width: 3cm; max-width: 4cm; "> All network communications in Fulcrum are secured with 256-bit SSL (TLS) connections ;  entire cloud infrastructure is continually replicated across multiple datacenter regions; The Fulcrum infrastructure is deployed on Amazon Web Services (AWS), and benefits from the security practices of AWS. </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
   </tr>
 </tbody>
 </table></div>
@@ -619,7 +567,6 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Price </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External Reviews </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Score(0-3) </th>
   </tr>
  </thead>
 <tbody>
@@ -632,7 +579,6 @@ Task and inspection checklists, Customizable digital forms &amp; apps </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> $15 US / month </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Price (Option 2) </td>
@@ -647,7 +593,6 @@ Consolidated inspection performance dashboards </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> $33 US / user / month </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Discussions with the Fulcrum sales rep included considering a discount for all IEP associated licenses even when not from same university </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Price (Option 3) </td>
@@ -659,7 +604,6 @@ Webhooks </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> "Let's Talk" </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Business model </td>
@@ -667,7 +611,6 @@ Webhooks </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Sales person was pretty superficial and not always that helpful.  The rep for the Bay Area is new to the company; not as good as previous, according to other Fulcrum users. </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Technical Support </td>
@@ -675,7 +618,6 @@ Webhooks </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 3cm; ">  </td>
   </tr>
 </tbody>
 </table></div>
