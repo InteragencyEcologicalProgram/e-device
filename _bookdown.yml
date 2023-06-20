@@ -24,7 +24,7 @@ language:
 split_by: section
 rmd_files:
   - index.Rmd
-  - summary.Rmd
+  #- summary.Rmd #run as separate markdown and link to the html 
   - 01-intro.Rmd
   - 02-survey.Rmd
   - 03-criteria.Rmd

@@ -261,8 +261,8 @@ kable(fulcsec, format = "html", escape = F, caption = 'Security Factors', bookta
   kable_paper() %>% 
   kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
   
-  column_spec(1, width_min = "3cm", bold = TRUE, italic = F) %>%
-  column_spec(1, width_max = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_min = "3cm", bold = TRUE) %>%
+  column_spec(1, width_max = "4cm", bold = TRUE) %>%
   column_spec(2, width_min = "2cm" ) %>%
   column_spec(2, width_max = "3cm" ) %>%
   column_spec(3, width_min = "3cm") %>%
@@ -299,8 +299,8 @@ kable(fulcbus, format = "html", escape = F, caption = 'Business Model and Pricin
   kable_paper() %>% 
   kable_styling(full_width =TRUE, fixed_thead = TRUE, font_size = 18) %>%
   
-  column_spec(1, width_min = "4cm", bold = TRUE, italic = F) %>%
-  column_spec(1, width_max = "5cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_min = "4cm", bold = TRUE) %>%
+  column_spec(1, width_max = "5cm", bold = TRUE) %>%
   column_spec(2, width_min = "4cm" ) %>%
   column_spec(2, width_max = "5cm" ) %>%
   column_spec(3, width_min = "2cm") %>%

@@ -90,7 +90,3 @@ kable(proscons, format = "html", escape = F,  booktabs = TRUE, align='l') %>%
   scroll_box(width = "800px")
 
 ```
-
-
-
-
