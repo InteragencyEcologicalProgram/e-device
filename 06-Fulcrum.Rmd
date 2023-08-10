@@ -88,41 +88,11 @@ fulcbus  <- fulcrum$Business_Model
 
 
 
-
-
-
 ```{r fulcform, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Forms Options', out.width='70%', tab.asp=.75, tab.align='left' }
 
 library(kableExtra)
 
-fulcform[] <- lapply(fulcform, function(x) ifelse(is.na(x), "", x))
-fulcform %>%
-  # Group by category column and collapse repeating values
-  group_by(Category) %>%
-  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
-  group_by(Feature) %>%
-  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
-  
-  
-kable(fulcform, format = "html", escape = F, caption = 'Forms Options',
-      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews"),
-      booktabs = TRUE, align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "2.5cm", bold = TRUE,) %>%
-  column_spec(1, width_max = "3cm", bold = TRUE) %>%
-  column_spec(2, width_min = "2.5cm" ) %>%
-  column_spec(2, width_max = "3cm" ) %>%
-  column_spec(3, width_min = "1.5cm") %>%
-  column_spec(3, width_max = "2cm") %>%
-  column_spec(4, width_min = "2cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "2cm") %>%
-  column_spec(5, width_max = "5cm") %>%
-  column_spec(6, width_min = "2cm") %>%  
-  column_spec(6, width_max = "5cm") %>%  
-  scroll_box(width = "800px", height = "600px") 
+formtable(fulcform)
 ```
 
 
@@ -130,41 +100,12 @@ kable(fulcform, format = "html", escape = F, caption = 'Forms Options',
 
 The data connectivity options in Fulcrum App are significant, as noted above and outlined in the Data Interface table. An important note is the ability of the Fulcrum App Mobile components that supports exporting the 'Collections' on a mobile device to a standard .json file.  This is a stand-out feature compared to Survey123 and Fulcrum, and can be critical when building in a back-up protocol for cases when internet data transfer is not available.  The Bay Study Power App project included this option to export to .json because there are some survey stations in which internet access is low or not available [See Bay Study Fulcrum App demo](#powdem).
 
+
 ```{r fulcdat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
 
 library(kableExtra)
 
-fulcdat[] <- lapply(fulcdat, function(x) ifelse(is.na(x), "", x))
-
-
-fulcdat %>%
-  # Group by category column and collapse repeating values
-  group_by(Category) %>%
-  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
-  group_by(Feature) %>%
-  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
-  
-
-
-kable(fulcdat, format = "html", escape = F, caption = 'Data Interface Options',
-      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews"),
-      booktabs = TRUE, align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "2.5cm", bold = TRUE,) %>%
-  column_spec(1, width_max = "3cm", bold = TRUE) %>%
-  column_spec(2, width_min = "2.5cm" ) %>%
-  column_spec(2, width_max = "3cm" ) %>%
-  column_spec(3, width_min = "1.5cm") %>%
-  column_spec(3, width_max = "2cm") %>%
-  column_spec(4, width_min = "2cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "2cm") %>%
-  column_spec(5, width_max = "5cm") %>%
-  column_spec(6, width_min = "2cm") %>%  
-  column_spec(6, width_max = "5cm") %>%  
-  scroll_box(width = "800px", height = "600px") 
+datatable(fulcdat)
 
 ```
 
@@ -179,35 +120,8 @@ kable(fulcdat, format = "html", escape = F, caption = 'Data Interface Options',
 
 library(kableExtra)
 
-fulcphot[] <- lapply(fulcphot, function(x) ifelse(is.na(x), "", x))
+phototable(fulcphot)
 
-fulcphot %>%
-  # Group by category column and collapse repeating values
-  group_by(Category) %>%
-  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
-  group_by(Feature) %>%
-  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
-  
-
-
-kable(fulcphot, format = "html", escape = F, caption = 'Photo Integration and External Sensors',  
-      col.names = c("Category","Feature"	,"Available","Description",	"Group Notes","External  Reviews"),
-      booktabs = TRUE, align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "2.5cm", bold = TRUE,) %>%
-  column_spec(1, width_max = "3.5cm", bold = TRUE) %>%
-  column_spec(2, width_min = "2.5cm" ) %>%
-  column_spec(2, width_max = "4cm" ) %>%
-  column_spec(3, width_min = "2cm") %>%
-  column_spec(3, width_max = "2.5cm") %>%
-  column_spec(4, width_min = "4cm") %>%
-  column_spec(4, width_max = "5.5cm") %>%
-  column_spec(5, width_min = "4cm") %>%
-  column_spec(5, width_max = "5.5cm") %>%
-
-  scroll_box(width = "800px", height = "600px") 
 
 ```
 
@@ -224,25 +138,7 @@ kable(fulcphot, format = "html", escape = F, caption = 'Photo Integration and Ex
 ```{r fulchard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
 
 library(kableExtra)
-
-fulchard[] <- lapply(fulchard, function(x) ifelse(is.na(x), "", x)) 
-
-kable(fulchard, format = "html", escape = F, caption = 'Hardware Platform Options',
-      col.names = c("Feature"	,"Available",	"Group Notes","External  Reviews"),
-      booktabs = TRUE, align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "7cm", bold = TRUE) %>%
-  column_spec(1, width_max = "8cm", bold = TRUE) %>%
-  column_spec(2, width_min = "3cm" ) %>%
-  column_spec(2, width_max = "3.5cm" ) %>%
-  column_spec(3, width_min = "4.5cm") %>%
-  column_spec(3, width_max = "5cm") %>%
-  column_spec(4, width_min = "4.5cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-
-  scroll_box(width = "800px", height = "600px") 
+hardtable(fulchard)
 
 ```
 
@@ -255,24 +151,7 @@ kable(fulchard, format = "html", escape = F, caption = 'Hardware Platform Option
 
 library(kableExtra)
 
-fulcsec[] <- lapply(fulcsec, function(x) ifelse(is.na(x), "", x))
-
-kable(fulcsec, format = "html", escape = F, caption = 'Security Factors', booktabs = TRUE, align =  "l",col.names = c("Feature"	,"Available",	"Description","Group Notes","External  Reviews")) %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "3cm", bold = TRUE) %>%
-  column_spec(1, width_max = "4cm", bold = TRUE) %>%
-  column_spec(2, width_min = "2cm" ) %>%
-  column_spec(2, width_max = "3cm" ) %>%
-  column_spec(3, width_min = "3cm") %>%
-  column_spec(3, width_max = "4cm") %>%
-  column_spec(4, width_min = "4.5cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "4.5cm") %>%
-  column_spec(5, width_max = "5cm") %>%
-  
-  scroll_box(width = "800px", height = "600px") 
+sectable(fulcsec) 
 
 ```
 
@@ -287,30 +166,8 @@ kable(fulcsec, format = "html", escape = F, caption = 'Security Factors', bookta
 
 ```{r fulpbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
 
-
-
 library(kableExtra)
-
-fulcbus[] <- lapply(fulcbus, function(x) ifelse(is.na(x), "", x))
-fulcbus %>%
-  group_by(Feature) %>%
-  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
-kable(fulcbus, format = "html", escape = F, caption = 'Business Model and Pricing',  booktabs = TRUE,col.names = c("Feature"	,"Description","Price","Group Notes","External Reviews"), align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =TRUE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "4cm", bold = TRUE) %>%
-  column_spec(1, width_max = "5cm", bold = TRUE) %>%
-  column_spec(2, width_min = "4cm" ) %>%
-  column_spec(2, width_max = "5cm" ) %>%
-  column_spec(3, width_min = "2cm") %>%
-  column_spec(3, width_max = "2.5cm") %>%
-  column_spec(4, width_min = "4.5cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "4.5cm") %>%
-  column_spec(5, width_max = "5cm") %>%
-  scroll_box(width = "800px", height = "600px") 
-
+sectable(fulcbus)
 
 ```
 

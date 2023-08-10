@@ -1,29 +1,101 @@
-# FEED
+# VIMS/FEED
 
-## FEED Overview  {#feetop} 
+## VIMS/FEED Overview  {#feetop} 
+
+FEED is a small company owned by Chris Bonzek who works in association with Virginia Institute of Marine Science (VIMS), a division of the College of William and Mary. In Virginia, the State does not conduct any research or monitoring of the state aquatic resources; VIMS and other universities conduct all aquatic monitoring.  
+
+VIMS has been using electronic data collection since 1980’s and 'FEED' (Fisheries Environment for Electronic Data) is an app configuration method that VIMS ended up developing to provide customization of their own field data entry software. Now, many people use VIMS/FEED (form software/customization) across the country and in Canada. Thus, FEED was specifically developed for fisheries monitoring and, as a business, provides complete individualized customization of Form and Access database for each specific survey requirements.
+
+## VIMS/FEED: Key Features 
+- Can read in data from many sources and normally uses access for a database. 
+- Can create manual backups to csv or backup the whole app database. 
+- Can view a summary report, based on access queries. 
+- QAQC queries can be included in the data entry tool (e.g., combo boxes, length/weight checks, out of range values etc).
+- Hierarchical structured data.
+- Can have multiple data collecting stations that feed into one database. 
+- Can be programmed such that the collection form adjusts depending on what data you collected for certain species; these adjustments can be based on multiple conditions (e.g., species and size). 
+- Many different sample applications.
+- GPS info collected from any GPS device:
+    * Tow Distance: app records actual track, not just calculating difference between start and end coordinates. 
+    * Any GPS unit can be used (even the small hand-held version); an NMEA stream starts each sentence with an ID. As long at FEED knows what it is, can parse it out.
+
+Some links for VIMS and FEED:
+
+- Description on VIMS site: https://www.vims.edu/research/departments/fisheries/programs2/multispecies_fisheries_research/feed/index.php
+- Main website: https://www.feedapps.net
+- Youtube video featuring FEED: https://www.youtube.com/watch?v=ko-Yv3xk7kA
 
 
-## FEED: Key Features 
+### VIMS/FEED External Device Interface
 
-### FEED Form Developing Interface
+The VIMS/FEED app is designed to use a Local Area Network in contrast to other app that have an on-line interface or cloud-based data transfer options. Two key advantages of keeping the data collections and storage local: 1. no change in behavior of the tool if the survey loses internet connectivity; and 2. **Ease of connection to peripheral devices such as fish boards, scales, GPS systems via a LAN router.**  
+
+```{r feedev, echo=FALSE, fig.cap="Graphic representation of the various peripheral connections possible with the FEED app devopement tool ", out.width = '90%'}
+knitr::include_graphics("images/FEED/DirectDeviceConnects.jpg", error = FALSE)
+```
 
 
+### FEED App/VIMS Form Interface
+
+The FEED App works in conjunction with the VIMS Form app (a generic form program consists of database and clear text file which tells software (a .NET programming language) how to interact with database and how the form appears on the screen. 
+
+The FEED approach is not attempting to be a user friendly app development tool, but rather a customization service. Chris Bonzek indicates that, after the initial survey configuration set up, many people learn how to make adjustments to the configuration file independently of his help. 
+
+```{r feetxt, echo=FALSE, fig.cap="An example of the FEED configuration file that is used to run the VIMS app", out.width = '90%'}
+knitr::include_graphics("images/FEED/textfile.PNG", error = FALSE)
+```
 
 ## FEED: Criteria Tables
 
 ###  FEED: Forms Options
 
 
+```{r feeinit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+
+library(kableExtra)
+
+feeform <- feed$Forms_Options
+feedat <- feed$Data_Interface 
+feephot <- feed$Photos_ExtSensors
+feehard <- feed$HW_Platforms
+feesec  <- feed$Security_Factors
+feebus  <- feed$Business_Model
+```
+
+
+
+```{r feedform, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Forms Options', out.width='70%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+formtable(feeform)
+```
+
 
 
 ### FEED: Data Interface {#feedat}
 
 
+```{r feeddat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+datatable(feedat)
+
+```
+
 
 ###  FEED: Photo Integration and External Sensors {#feepho}
 
 
+```{r feedphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
 
+
+library(kableExtra)
+
+phototable(feephot)
+
+
+```
 
 
 ###  FEED:  Hardware Platforms  {#feehrd}
@@ -31,16 +103,37 @@
 [Top of section](feetop)
 
 
+```{r feedhard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+hardtable(feehard)
+
+```
+
 
 ### FEED: Security Factors {#feesec}
 
 
+```{r feedsec, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Security Factors', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+sectable(feesec) 
+
+```
 
 
 ### FEED: Business Model and Customer Support {#feebus}
 
 [Top of section](#feetop)
 
+
+```{r feedbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+sectable(feebus)
+
+```
 
 
 
