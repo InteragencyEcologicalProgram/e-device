@@ -1,3 +1,12 @@
+--- 
+title: "Executive Summary: Electronic Data Entry Options for IEP Surveys"
+author: "IEP DUWG 'e-Device' Sub-group"
+date: "2023-08-09"
+output: html_document
+css: styles.css
+---
+
+
 # Executive Summary {-}
 
 ## **Take Home Message:** {-}
@@ -64,8 +73,8 @@ Adopting digital data entry protocols will require time to develop the platforms
 <tbody>
   <tr>
    <td style="text-align:left;max-width: 4.5cm; font-weight: bold;"> ESRI Survey123 </td>
-   <td style="text-align:left;max-width: 7cm; "> **Pros:** Geo-referencing of all objects; map layers available; </td>
-   <td style="text-align:left;max-width: 10cm; "> **Cons**: difficult to configure desired format to view/edit data 'on-the-fly'  in the field </td>
+   <td style="text-align:left;max-width: 7cm; "> **Pros:** Geo-referencing of all objects; map layers available </td>
+   <td style="text-align:left;max-width: 10cm; "> **Cons**:  Difficult to configure desired format to view/edit data 'on-the-fly'  in the field </td>
    <td style="text-align:left;"> **Cons:** Cannot connect to sensors directly </td>
    <td style="text-align:left;"> **Pros:**  Can be run on all platform types: ios, Android, and PC (web only) </td>
    <td style="text-align:left;"> **Pros:** thoroughly vetted in state agencies </td>
@@ -73,11 +82,15 @@ Adopting digital data entry protocols will require time to develop the platforms
   </tr>
   <tr>
    <td style="text-align:left;max-width: 4.5cm; font-weight: bold;"> MS Power Apps </td>
-   <td style="text-align:left;max-width: 7cm; "> **Pros:**Low-code/No-code; customizable; Uses Excel-like function; AI support </td>
-   <td style="text-align:left;max-width: 10cm; "> **Pros:**  Power Platform connection provide easy connectivity to SQL, OneDrive databases.
+   <td style="text-align:left;max-width: 7cm; "> **Pros:** Low-code/ No-code; customizable; Uses Excel-like function; AI support </td>
+   <td style="text-align:left;max-width: 10cm; "> **Pros:**  Power Platform connection provide easy connectivity to SQL, OneDrive databases
+
+--- --- --- ---
 
 **Cons:** Even though Power Apps can be run on a Windows system (on/off-line), it cannot read in data from local drive </td>
    <td style="text-align:left;"> **Pros:** It is possible to control external devices using PowerApps
+
+--- --- --- ---
 
 **Cons:** An Azure license is required to connect to external devices (not available with Power Apps for Government Plans) </td>
    <td style="text-align:left;"> **Pros:**  Can be run on all platform types: ios, Android, and Window (including off-line) </td>
@@ -86,13 +99,15 @@ Adopting digital data entry protocols will require time to develop the platforms
   </tr>
   <tr>
    <td style="text-align:left;max-width: 4.5cm; font-weight: bold;"> Fulcrum </td>
-   <td style="text-align:left;max-width: 7cm; "> **Pros:**  Intuitive form-building interface; Auto-formating for modern look; 
+   <td style="text-align:left;max-width: 7cm; "> **Pros:**  Intuitive form-building interface; Auto-formating for modern look
 
+--- --- --- ---
+  
 **Cons:**  Complex design requires coding; Limits to nesting data </td>
    <td style="text-align:left;max-width: 10cm; "> **Pros:**  Provides many types of API connections e.g., to SQL, OneDrive </td>
    <td style="text-align:left;"> **Cons:** Even though Power Apps can be run on a Windows system (on/off-line), it cannot read in data from local drive </td>
    <td style="text-align:left;"> **Pros:**  Can be run on all platform types: ios, Android, and PC (web only) </td>
-   <td style="text-align:left;"> **Pros:**security audits for projects with aerospace company, toyota, verison, telegraph </td>
+   <td style="text-align:left;"> **Pros:** security audits for projects with aerospace company, toyota, verison, telegraph </td>
    <td style="text-align:left;"> Moderate </td>
   </tr>
   <tr>
@@ -109,17 +124,21 @@ Adopting digital data entry protocols will require time to develop the platforms
    <td style="text-align:left;max-width: 7cm; "> **Pros:**  Customized form specific to users application; Designed specifically for fish surveys </td>
    <td style="text-align:left;max-width: 10cm; "> **Pros:**  Built on local Access db so compatible will all M.S. connectivity
 
-**Cons:** No built in Cloud connectivity; no built in API </td>
+--- --- --- ---
+
+**Cons:** No built-in Cloud connectivity; no built-in API </td>
    <td style="text-align:left;"> **Pros:**  Can connect to external sensors; uses local area network </td>
    <td style="text-align:left;"> **Cons:**  Only works on Windows </td>
-   <td style="text-align:left;"> **Pros:**LAN based system so low security risk </td>
+   <td style="text-align:left;"> **Pros:** LAN based system so low security risk </td>
    <td style="text-align:left;"> One-time configuration fee (~$2000)
+
+ --- --- --- ---
 
 **Cons:** One person company; questions about future company composition </td>
   </tr>
   <tr>
    <td style="text-align:left;max-width: 4.5cm; font-weight: bold;"> Big Fin </td>
-   <td style="text-align:left;max-width: 7cm; "> **Pros:**Designed specifically for fish surveys </td>
+   <td style="text-align:left;max-width: 7cm; "> **Pros:** Designed specifically for fish surveys </td>
    <td style="text-align:left;max-width: 10cm; "> **Cons:** API connection to Cloud base data or transfer needs to be customized </td>
    <td style="text-align:left;"> **Pros:**  Connects directly to many types of external sensors </td>
    <td style="text-align:left;"> **Cons:**  Only works on Android </td>
@@ -129,13 +148,15 @@ Adopting digital data entry protocols will require time to develop the platforms
   <tr>
    <td style="text-align:left;max-width: 4.5cm; font-weight: bold;"> PDF/R-scraping </td>
    <td style="text-align:left;max-width: 7cm; "> **Cons:**  Not as many options to control PDF form input </td>
-   <td style="text-align:left;max-width: 10cm; "> **Pros:**R-based PDF scraped data can be formated in R and transferred remotely with R-based API protocols;
+   <td style="text-align:left;max-width: 10cm; "> **Pros:** R-based PDF scraped data can be formated in R and transferred remotely with R-based API protocols
+
+--- --- --- ---
 
 **Cons:** All data configuratons must be programmed </td>
    <td style="text-align:left;"> **Cons:**  No photo options; no options to connect to external sensors </td>
    <td style="text-align:left;"> **Pros:** PDF forms are usable on all platform types; PDF forms may be used on mobile apps using Adobe Reader app </td>
-   <td style="text-align:left;"> **Pros:**low security risk </td>
-   <td style="text-align:left;"> **Pros:**Least expensive approach </td>
+   <td style="text-align:left;"> **Pros:** low security risk </td>
+   <td style="text-align:left;"> **Pros:** Least expensive approach </td>
   </tr>
 </tbody>
 </table></div>

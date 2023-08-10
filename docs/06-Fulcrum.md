@@ -86,9 +86,6 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
 
 
 
-
-
-
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:fulcform)Forms Options</caption>
  <thead>
@@ -237,6 +234,7 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
 ### Fulcrum App: Data Interface {#fuldat}
 
 The data connectivity options in Fulcrum App are significant, as noted above and outlined in the Data Interface table. An important note is the ability of the Fulcrum App Mobile components that supports exporting the 'Collections' on a mobile device to a standard .json file.  This is a stand-out feature compared to Survey123 and Fulcrum, and can be critical when building in a back-up protocol for cases when internet data transfer is not available.  The Bay Study Power App project included this option to export to .json because there are some survey stations in which internet access is low or not available [See Bay Study Fulcrum App demo](#powdem).
+
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:fulcdat)Data Interface Options</caption>
@@ -558,31 +556,31 @@ The data connectivity options in Fulcrum App are significant, as noted above and
 
   
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; margin-left: auto; margin-right: auto;'>
-<caption style="font-size: initial !important;">(\#tab:fulpbus)Business Model and Pricing</caption>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">(\#tab:fulpbus)Security Factors</caption>
  <thead>
   <tr>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Price </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Price (Option 1) </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> Starter: 
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Price (Option 1) </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Starter: 
 Task and issue management
 Team, web, and external contributor Issue reporting, 
 Task and inspection checklists, Customizable digital forms &amp; apps </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> $15 US / month </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; "> $15 US / month </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Price (Option 2) </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> Professional: 
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Price (Option 2) </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Professional: 
 Task and issue management
 Team, web, and external contributor Issue reporting
 Task and inspection checklists
@@ -590,32 +588,32 @@ Customizable digital forms &amp; apps
 Advanced digital form functionality with automatic geotagging
 Digital Signatures
 Consolidated inspection performance dashboards </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> $33 US / user / month </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; "> $33 US / user / month </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Discussions with the Fulcrum sales rep included considering a discount for all IEP associated licenses even when not from same university </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Price (Option 3) </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> Enterprise: 
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Price (Option 3) </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Enterprise: 
 Everything in the Professional package plus: SAML SSO &amp; Audit Logs
 Operational API Access
 Query API Access
 Webhooks </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> "Let's Talk" </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; "> "Let's Talk" </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Business model </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> Small tech company </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Business model </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Small tech company </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> Sales person was pretty superficial and not always that helpful.  The rep for the Bay Area is new to the company; not as good as previous, according to other Fulcrum users. </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Technical Support </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> Technical time for customization is expensive </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Technical Support </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Technical time for customization is expensive </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>

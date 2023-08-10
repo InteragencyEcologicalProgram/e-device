@@ -1,7 +1,7 @@
 --- 
 title: "Electronic Data Entry Options for IEP Surveys"
 author: "IEP DUWG 'e-Device' Sub-group led by Karrin Alstad"
-date: "2023-06-19"
+date: "2023-08-09"
 site: bookdown::bookdown_site
 url: "https://interagencyecologicalprogram.github.io/e-device/"
 documentclass: book
