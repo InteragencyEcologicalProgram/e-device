@@ -264,6 +264,8 @@ XLSForm formatting language is described at: https://xlsform.org/en/.
 </table></div>
 
 
+
+
 ### Survey123: Data Interface {#S12dat}
 
 
@@ -367,6 +369,8 @@ https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872 </t
 
 
 
+
+
 ###  Survey123: Photo Integration and External Sensors {#s12pho}
 
 
@@ -443,6 +447,8 @@ https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanni
 
 
 
+
+
 ###  Survey123:  Hardware Platforms  {#s12hrd}
 
 [Top of section](#s12top)
@@ -506,6 +512,8 @@ https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanni
 </table></div>
 
 
+
+
 ### Survey123: Security Factors {#s12sec}
 
 
@@ -560,6 +568,8 @@ Esri's flagship software, ArcGIS, runs on Azure. Esri provides deployment tooli
   </tr>
 </tbody>
 </table></div>
+
+
 
 
 
@@ -644,6 +654,8 @@ https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872 </t
   </tr>
 </tbody>
 </table></div>
+
+
 
 
 

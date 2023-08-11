@@ -30,20 +30,40 @@ Some links for VIMS and FEED:
 
 The VIMS/FEED app is designed to use a Local Area Network in contrast to other app that have an on-line interface or cloud-based data transfer options. Two key advantages of keeping the data collections and storage local: 1. no change in behavior of the tool if the survey loses internet connectivity; and 2. **Ease of connection to peripheral devices such as fish boards, scales, GPS systems via a LAN router.**  
 
-```{r feedev, echo=FALSE, fig.cap="Graphic representation of the various peripheral connections possible with the FEED app devopement tool ", out.width = '90%'}
+```{r feeddev, echo=FALSE, fig.cap="Graphic representation of the various peripheral connections possible with the FEED app devopement tool ", out.width = '90%'}
 knitr::include_graphics("images/FEED/DirectDeviceConnects.jpg", error = FALSE)
 ```
 
 
-### FEED App/VIMS Form Interface
+### FEED App/VIMS Form Development
 
-The FEED App works in conjunction with the VIMS Form app (a generic form program consists of database and clear text file which tells software (a .NET programming language) how to interact with database and how the form appears on the screen. 
+The FEED App works in conjunction with the VIMS Form software which is a generic form program writtenm in ____ (a .NET programming language).  The FEED 'App' consists of an Access database (\@ref(fig:feedAdb)) and clear text file (\@ref(fig:feedtxt)) which tells .NET software how to interact with database and how the form appears on the screen. 
 
 The FEED approach is not attempting to be a user friendly app development tool, but rather a customization service. Chris Bonzek indicates that, after the initial survey configuration set up, many people learn how to make adjustments to the configuration file independently of his help. 
 
-```{r feetxt, echo=FALSE, fig.cap="An example of the FEED configuration file that is used to run the VIMS app", out.width = '90%'}
+```{r feedtxt, echo=FALSE, fig.cap="An example of the FEED configuration file that is used to run the VIMS app", out.width = '90%'}
 knitr::include_graphics("images/FEED/textfile.PNG", error = FALSE)
 ```
+
+```{r feedAdb, echo=FALSE, fig.cap="An example of the FEED Access database that is configured specifically to work with the VIMS app (Note: This is not a final storage database).", out.width = '90%'}
+knitr::include_graphics("images/FEED/FeedAppdb.PNG", error = FALSE)
+```
+
+
+### FEED App/VIMS Form Appearance
+
+The VIMS/FEED App provides a clear data entry interface with a variety of controls on the allowable values entered, including drop down, radio buttons, calculated values.
+
+```{r feedfrm, echo=FALSE, fig.cap="An example of the VIMS/FEED form interface providing realtime frequency plotting", out.width = '90%'}
+knitr::include_graphics("images/FEED/VIMS.PNG", error = FALSE)
+```
+
+```{r feedfeat, echo=FALSE, fig.cap="An example of the VIMS/FEED form interface providing realtime frequency plotting", out.width = '90%'}
+knitr::include_graphics("images/FEED/FeedFeatures.JPG", error = FALSE)
+```
+
+### FEED App/VIMS Data Output Format
+
 
 ## FEED: Criteria Tables
 

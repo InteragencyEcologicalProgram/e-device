@@ -111,6 +111,8 @@ The main categories considering include options within the forms building tools,
 
 
 
+
+
 ### Data Interface Criteria {#datint}
 
 [Top of section](#crittop)
@@ -177,6 +179,8 @@ Can data be edited after having been pushed to a remote location? </td>
 
 
 
+
+
 ### Photo Integration and External Sensors {#photsens}
 
 [Top of section](#crittop)
@@ -232,6 +236,8 @@ Can data be edited after having been pushed to a remote location? </td>
 
 
 
+
+
 ### Hardware Platforms {#hardware}
 
 [Top of section](#crittop)
@@ -281,6 +287,8 @@ Can data be edited after having been pushed to a remote location? </td>
 
 
 
+
+
 ### Security Factors {#securt}
 
 [Top of section](#crittop)
@@ -322,6 +330,8 @@ Can data be edited after having been pushed to a remote location? </td>
 
 
 
+
+
 ### Business Model and Customer Support {#business}
 
 [Top of section](#crittop)
@@ -356,3 +366,5 @@ Can data be edited after having been pushed to a remote location? </td>
   </tr>
 </tbody>
 </table></div>
+
+

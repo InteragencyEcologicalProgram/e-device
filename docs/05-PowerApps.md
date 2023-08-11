@@ -215,6 +215,8 @@ Speak to text has been demonstrated within Power Apps using the Premium licenses
 </table></div>
 
 
+
+
 ### Power Apps: Data Interface {#powdat}
 
 
@@ -310,6 +312,8 @@ Speak to text has been demonstrated within Power Apps using the Premium licenses
 
 
 
+
+
 ###  Power Apps: Photo Integration and External Sensors {#powpho}
 
 
@@ -389,6 +393,8 @@ Speak to text has been demonstrated within Power Apps using the Premium licenses
 
 
 
+
+
 ###  Power Apps:  Hardware Platforms  {#powhrd}
 
 [Top of section](#powtop)
@@ -452,6 +458,8 @@ Speak to text has been demonstrated within Power Apps using the Premium licenses
 </table></div>
 
 
+
+
 ### Power Apps: Security Factors {#powsec}
 
 
@@ -505,6 +513,8 @@ Speak to text has been demonstrated within Power Apps using the Premium licenses
   </tr>
 </tbody>
 </table></div>
+
+
 
 
 
@@ -566,6 +576,8 @@ The 'Power Apps per App Plan for Government' is the end-user license which is in
   </tr>
 </tbody>
 </table></div>
+
+
 
 
 

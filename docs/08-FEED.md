@@ -32,20 +32,43 @@ The VIMS/FEED app is designed to use a Local Area Network in contrast to other a
 
 <div class="figure">
 <img src="images/FEED/DirectDeviceConnects.jpg" alt="Graphic representation of the various peripheral connections possible with the FEED app devopement tool " width="90%" />
-<p class="caption">(\#fig:feedev)Graphic representation of the various peripheral connections possible with the FEED app devopement tool </p>
+<p class="caption">(\#fig:feeddev)Graphic representation of the various peripheral connections possible with the FEED app devopement tool </p>
 </div>
 
 
-### FEED App/VIMS Form Interface
+### FEED App/VIMS Form Development
 
-The FEED App works in conjunction with the VIMS Form app (a generic form program consists of database and clear text file which tells software (a .NET programming language) how to interact with database and how the form appears on the screen. 
+The FEED App works in conjunction with the VIMS Form software which is a generic form program writtenm in ____ (a .NET programming language).  The FEED 'App' consists of an Access database (\@ref(fig:feedAdb)) and clear text file (\@ref(fig:feedtxt)) which tells .NET software how to interact with database and how the form appears on the screen. 
 
 The FEED approach is not attempting to be a user friendly app development tool, but rather a customization service. Chris Bonzek indicates that, after the initial survey configuration set up, many people learn how to make adjustments to the configuration file independently of his help. 
 
 <div class="figure">
 <img src="images/FEED/textfile.PNG" alt="An example of the FEED configuration file that is used to run the VIMS app" width="90%" />
-<p class="caption">(\#fig:feetxt)An example of the FEED configuration file that is used to run the VIMS app</p>
+<p class="caption">(\#fig:feedtxt)An example of the FEED configuration file that is used to run the VIMS app</p>
 </div>
+
+<div class="figure">
+<img src="images/FEED/FeedAppdb.PNG" alt="An example of the FEED Access database that is configured specifically to work with the VIMS app (Note: This is not a final storage database)." width="90%" />
+<p class="caption">(\#fig:feedAdb)An example of the FEED Access database that is configured specifically to work with the VIMS app (Note: This is not a final storage database).</p>
+</div>
+
+
+### FEED App/VIMS Form Appearance
+
+The VIMS/FEED App provides a clear data entry interface with a variety of controls on the allowable values entered, including drop down, radio buttons, calculated values.
+
+<div class="figure">
+<img src="images/FEED/VIMS.PNG" alt="An example of the VIMS/FEED form interface providing realtime frequency plotting" width="90%" />
+<p class="caption">(\#fig:feedfrm)An example of the VIMS/FEED form interface providing realtime frequency plotting</p>
+</div>
+
+<div class="figure">
+<img src="images/FEED/FeedFeatures.JPG" alt="An example of the VIMS/FEED form interface providing realtime frequency plotting" width="90%" />
+<p class="caption">(\#fig:feedfeat)An example of the VIMS/FEED form interface providing realtime frequency plotting</p>
+</div>
+
+### FEED App/VIMS Data Output Format
+
 
 ## FEED: Criteria Tables
 
@@ -202,6 +225,8 @@ The FEED approach is not attempting to be a user friendly app development tool, 
 
 
 
+
+
 ### FEED: Data Interface {#feedat}
 
 
@@ -294,6 +319,8 @@ The FEED approach is not attempting to be a user friendly app development tool, 
 </table></div>
 
 
+
+
 ###  FEED: Photo Integration and External Sensors {#feepho}
 
 
@@ -370,6 +397,8 @@ The FEED approach is not attempting to be a user friendly app development tool, 
 </table></div>
 
 
+
+
 ###  FEED:  Hardware Platforms  {#feehrd}
 
 [Top of section](feetop)
@@ -432,6 +461,8 @@ The FEED approach is not attempting to be a user friendly app development tool, 
 </table></div>
 
 
+
+
 ### FEED: Security Factors {#feesec}
 
 
@@ -486,6 +517,8 @@ The FEED approach is not attempting to be a user friendly app development tool, 
 </table></div>
 
 
+
+
 ### FEED: Business Model and Customer Support {#feebus}
 
 [Top of section](#feetop)
@@ -533,6 +566,8 @@ The FEED approach is not attempting to be a user friendly app development tool, 
   </tr>
 </tbody>
 </table></div>
+
+
 
 
 

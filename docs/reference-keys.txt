@@ -174,3 +174,12 @@ responses-from-non-experienced-seeking-e-solutions
 appendix--
 gloss
 expnet
+fig:feeddev
+fig:feedtxt
+fig:feedAdb
+feed-appvims-form-interface-1
+fig:feedfrm
+fig:feedfeat
+feed-appvims-form-development
+feed-appvims-form-appearance
+feed-appvims-data-output-format
