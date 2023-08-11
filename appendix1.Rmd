@@ -5,9 +5,8 @@
 ## Survey Questions 
 
 The IEP electronic data entry survey was distributed on June 15, 2022 and responses compiled on August 1, 2022. This survey may be downloaded from the following link:
-
 ```{r e_surv, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
-xfun::embed_file("C:/Users/KAlstad/Kar_Docs/ProjectMangmt/e-Devices/IEP_Edevice_Survey.pdf")
+xfun::embed_file(c("docs/IEP_Edevice_Survey.pdf"))
 ```
 
 ## Survey Responses  

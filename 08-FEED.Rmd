@@ -151,7 +151,7 @@ sectable(feesec)
 ```{r feedbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
 
 library(kableExtra)
-sectable(feebus)
+bustable(feebus)
 
 ```
 

@@ -83,6 +83,7 @@ survey123 <- read_excel_allsheets(file.path(tabs,"Survey123_app_criteria2.xlsx")
 powerapp <- read_excel_allsheets(file.path(tabs,"Power_app_criteria.xlsx"))
 fulcrum <- read_excel_allsheets(file.path(tabs,"Fulcrum.xlsx"))
 feed <- read_excel_allsheets(file.path(tabs,"FEED_criteria.xlsx"))
+bigfin <- read_excel_allsheets(file.path(tabs,"BigFin_criteria.xlsx"))
 
 
 ## Table-Making Functions for each section of the app criteria tables

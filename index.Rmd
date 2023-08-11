@@ -35,8 +35,54 @@ knitr::include_graphics(c("images/bothlogo.JPG"))
 
 
 
+## **Table 1: Summary of Date Entry Software Reviewed** 
 
-## **How to Contribute: Two Ways**
+An Executive Summary reporting on the activities in this DUWG e-device subgroup was shared with IEP Coordinators Team in Sept of 2023. This report may be downloaded using the below link and Table 1 from this report is included here. 
+```{r e_surv, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+library(here)
+xfun::embed_file(c("docs/ExecSum2.pdf"))
+```
+
+
+<!-- # specifying font style for bold because H3 does not render bold "**" option-->
+::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
+**Table 1:  The top software tools used for field data entry are listed and the Pros and Cons of each tool are briefly described for each [criteria category](#crittop).**
+:::
+
+```{r procon, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap=NULL, out.width='100%', tab.asp=.75, tab.align='left'}
+
+library(kableExtra)
+library(dplyr)
+library(here)
+
+# 'The top software tools used for field data entry are listed and the Pros and Cons of each tool are briefly described.'
+
+# Replace NAs with empty strings 
+proscons[is.na(proscons)] <- ""
+
+# Group by category column and collapse repeating values
+proscons %>%
+  group_by(Software) %>%
+  mutate(Software = ifelse(duplicated(Software), "", Software))  %>%
+
+#caption = ".",
+  
+kable(proscons, format = "html", escape = F,  booktabs = TRUE, align='l') %>%
+  kable_paper() %>% 
+  # kable_styling(bootstrap_options = c("striped", "hover"),full_width = FALSE, fixed_thead = TRUE,
+  #               font_size = 20) %>%
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  #column_spec(1, width_min = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "4.5cm", bold = TRUE, italic = F) %>%
+  #column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+  #column_spec(3, width_min = "10cm", bold = F, italic = F) %>%
+  column_spec(3, width_max = "10cm", bold = F, italic = F) %>%
+  scroll_box(width = "800px")
+
+```
+
+## **How to Contribute New E-Device Research: Two Ways**
 
 <!-- # specifying font style for bold because H3 does not render bold "**" option-->
 ::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
@@ -66,7 +112,7 @@ bookdown::render_book()
 :::
 
 
-1. Print to pdf each page of the document that needs to be changed using the web browser print options (*Note: The current version is not rendered a pdf doc due to a conflict with Kable(). Input welcome*)
+1. Print to pdf each page of the document that needs to be changed using the web browser print options 
 
 2. Use a pdf editor to insert comments or changes.
 
@@ -74,7 +120,7 @@ bookdown::render_book()
 
 
 
-## Bookdown File Organization
+## Organization of this Bookdown File
 
 
 This document is configured using the bookdown::bs4_book format for HTML output and the file organization is as follows:

@@ -2,11 +2,94 @@
 
 ## Big Fin Overview  {#BFtop} 
 
+The Big Fin Scientific Data Collection System (DCS) was created for both outdoor and in-lab data collection, with the purpose of decreasing the costs and time associated with gathering and using Field Data. The Big Fin Scientific DCS includes feature and hardware to support fish survey type of applications with an emphasis on keeping collection device costs low.
 
 ## Big Fin: Key Features 
 
-### Big Fin Form Developing Interface
+### Big Fin DCS Tablet Software: DCSLinkStream 
 
+Big Fin DCS software "DCSLinkStream" can only be used with Android tablets.  Big Fin measurements boards use an open Bluetooth (2.0) protocol which is compatible with all devices, and boards can be hard wired with USB waterproof cables.  
+
+DCSLinkStream collects data with a local area network and uses a separate Access db as an interface between field measurements and the final database. Data can be interfaced with a cloud-based storage utility called "DCSUnity".
+
+```{r DCSperi, echo=FALSE, fig.cap="The BigFin software DCSLinkStream can be configured to read data from a variety of peripherals", out.width = '90%'}
+knitr::include_graphics("images/BigFin/DCS_peripherals.JPG", error = FALSE)
+```
+
+```{r DCSlayr, echo=FALSE, fig.cap="The BigFin software DCSLinkStream is organized into three generic layers that can be customized for the individual application", out.width = '90%'}
+knitr::include_graphics("images/BigFin/DCS_layers.JPG", error = FALSE)
+```
+
+
+```{r DCSbatch, echo=FALSE, fig.cap="Screen shot of the DCSLinkStream form within the 'Batch' layer", out.width = '90%'}
+knitr::include_graphics("images/BigFin/BigFin3.PNG", error = FALSE)
+```
+
+```{r DCSrec, echo=FALSE, fig.cap="Screen shot of the DCSLinkStream form within the 'Record' layer", out.width = '90%'}
+knitr::include_graphics("images/BigFin/BigFin1.PNG", error = FALSE)
+```
+
+
+```{r DCSrec2, echo=FALSE, fig.cap="Screen shot of the DCSLinkStream form within the 'Record' layer", out.width = '90%'}
+knitr::include_graphics("images/BigFin/BigFin5.PNG", error = FALSE)
+```
+
+
+
+```{r DCSgraph, echo=FALSE, fig.cap="The BigFin software DCSLinkStream provides real-time feedback, both in graphical frequencies and tallied data summaries.", out.width = '90%'}
+knitr::include_graphics("images/BigFin/DCS_realtime.JPG", error = FALSE)
+```
+
+
+
+```{r DCSedit, echo=FALSE, fig.cap="The BigFin software DCSLinkStream can be configured to read data from a variety of peripherals", out.width = '90%'}
+knitr::include_graphics("images/BigFin/BigFin6.PNG", error = FALSE)
+```
+
+
+
+### Big Fin DCS Web Based Tool: DCSUnity
+
+```{r DCSunity, echo=FALSE, fig.cap="The BigFin DCSUnity software provides a web based data repository and data viewing/organizing interface.  Field data from DSC-LinkStream is automatically pushed to the DCS-Unity online Account.", out.width = '90%'}
+knitr::include_graphics("images/BigFin/DCSUnity.JPG", error = FALSE)
+```
+
+
+
+
+```{r BFmod, echo=FALSE, fig.cap="The BigFin software products and the fish boards may be used separately or configured together", out.width = '90%'}
+knitr::include_graphics("images/BigFin/Modular.JPG", error = FALSE)
+```
+
+### Big Fin Digital Data-Capture Boards
+
+Big Fin measurement boards can be manufactured in any length up to the largest size, 2.5 meters. Boards are waterproof, lightweight, rugged, and can wash down easily; Easy to maintain. Big Fin boards interface directly with DCSLinkStream and the user can program many input keys along the board. The measurement resolution of the board is 100 microns. The boards gets calibrated initially and can be re-calibrated in 30 seconds. Drift is temperature dependent but the unit does not drift quickly because the electronics keep it warm and relatively stable. 
+
+```{r BFboard1, echo=FALSE, fig.cap="BigFin CEO Chris Bonzek demonstrating the water proof control center of the fish measurement boards", out.width = '90%'}
+knitr::include_graphics("images/BigFin/BigFin9.PNG", error = FALSE)
+```
+
+
+```{r BFboard2, echo=FALSE, fig.cap="BigFin CEO Chris Bonzek demonstrating the use of the stylis with the programmed short-cut buttons for species or other category.", out.width = '90%'}
+knitr::include_graphics("images/BigFin/BigFin15.PNG", error = FALSE)
+```
+
+
+
+
+```{r BFboard3, echo=FALSE, fig.cap="BigFin CEO Chris Bonzek demonstrating the battery pack on the back of the fish boards which may be changed out if necessary.", out.width = '90%'}
+knitr::include_graphics("images/BigFin/BigFin10.PNG", error = FALSE)
+```
+
+
+```{r BF3d, echo=FALSE, fig.cap="In 2023, business is moving towards selling board specs so client can 3D print the entire board.", out.width = '90%'}
+knitr::include_graphics("images/BigFin/fish.PNG", error = FALSE)
+```
+
+
+```{r BF3d2, echo=FALSE, fig.cap="In 2023, business is moving towards selling board specs so client can 3D print the entire board.", out.width = '90%'}
+knitr::include_graphics("images/BigFin/fish2.PNG", error = FALSE)
+```
 
 
 ## Big Fin: Criteria Tables
@@ -15,29 +98,82 @@
 
 
 
+```{r BFinit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+
+library(kableExtra)
+
+BFform <- bigfin$Forms_Options
+BFdat  <- bigfin$Data_Interface 
+BFphot <- bigfin$Photos_ExtSensors
+BFhard <- bigfin$HW_Platforms
+BFsec  <- bigfin$Security_Factors
+BFbus  <- bigfin$Business_Model
+```
+
+
+```{r BFform, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Forms Options', out.width='70%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+formtable(BFform)
+```
+
+
 
 ### Big Fin: Data Interface {#BFdat}
 
 
+```{r BFdat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+datatable(BFdat)
+
+```
 
 ###  Big Fin: Photo Integration and External Sensors {#BFpho}
 
 
+```{r BFphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+phototable(BFphot)
+
+```
 
 
 
 ###  Big Fin:  Hardware Platforms  {#BFhrd}
 
+```{r BFhard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+hardtable(BFhard)
+
+```
 [Top of section](#BFtop)
 
 
 
 ### Big Fin: Security Factors {#BFsec}
 
+```{r BFsec, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Security Factors', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+sectable(BFsec) 
+
+```
 
 
 
 ### Big Fin: Business Model and Customer Support {#BFbus}
+
+
+```{r BFbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+bustable(BFbus)
+
+```
 
 [Top of section](#BFtop)
 

@@ -1,11 +1,3 @@
---- 
-title: "Executive Summary: Electronic Data Entry Options for IEP Surveys"
-author: "IEP DUWG 'e-Device' Sub-group"
-date: "`r Sys.Date()`"
-output: html_document
-css: styles.css
----
-
 
 # Executive Summary {-}
 
