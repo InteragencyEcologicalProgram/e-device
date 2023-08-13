@@ -1,3 +1,60 @@
 # SF Bay Study: PowerApps Trial App   {#powdem}
 
 
+
+```{r padem1, echo=FALSE, fig.cap="Screen capture of SF Bay Study Power Apps demo app: Main Screen options.", out.width = '90%'}
+knitr::include_graphics("images/IEPdemos/SFBS_powerapps/SFPapp_main.jpg", error = FALSE)
+```
+
+```{r padem1, echo=FALSE, fig.cap="Screen capture of SF Bay Study Power Apps demo app: Main Screen options.", out.width = '90%'}
+knitr::include_graphics("images/IEPdemos/SFBS_powerapps/SFPapp_DaySample.jpg", error = FALSE)
+```
+
+```{r padem1, echo=FALSE, fig.cap="Screen capture of SF Bay Study Power Apps demo app: Main Screen options.", out.width = '90%'}
+knitr::include_graphics("images/IEPdemos/SFBS_powerapps/TowInfo.jpg", error = FALSE)
+```
+
+
+```{r padem1, echo=FALSE, fig.cap="Screen capture of SF Bay Study Power Apps demo app: Main Screen options.", out.width = '90%'}
+knitr::include_graphics("images/IEPdemos/SFBS_powerapps/SFPapp_selectspp.jpg", error = FALSE)
+```
+
+
+
+
+
+
+```{r padem1, echo=FALSE, fig.cap="Screen capture of SF Bay Study Power Apps demo app: Main Screen options.", out.width = '90%'}
+knitr::include_graphics("images/IEPdemos/SFBS_powerapps/add_lengths.jpg", error = FALSE)
+```
+
+
+
+
+
+```{r padem1, echo=FALSE, fig.cap="Screen capture of SF Bay Study Power Apps demo app: Main Screen options.", out.width = '90%'}
+knitr::include_graphics("images/IEPdemos/SFBS_powerapps/collect_photos.jpg", error = FALSE)
+```
+
+
+
+```{r padem1, echo=FALSE, fig.cap="Screen capture of SF Bay Study Power Apps demo app: Main Screen options.", out.width = '90%'}
+knitr::include_graphics("images/IEPdemos/SFBS_powerapps/edit_sample.jpg", error = FALSE)
+```
+
+
+
+
+```{r padem1, echo=FALSE, fig.cap="Screen capture of SF Bay Study Power Apps demo app: Main Screen options.", out.width = '90%'}
+knitr::include_graphics("images/IEPdemos/SFBS_powerapps/summary_byspecies.jpg", error = FALSE)
+```
+
+
+
+
+```{r padem1, echo=FALSE, fig.cap="Screen capture of SF Bay Study Power Apps demo app: Main Screen options.", out.width = '90%'}
+knitr::include_graphics("images/IEPdemos/SFBS_powerapps/export_csv_json.jpg", error = FALSE)
+```
+
+
+

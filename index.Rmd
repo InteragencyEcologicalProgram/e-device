@@ -46,6 +46,7 @@ xfun::embed_file(c("docs/ExecSum2.pdf"))
 
 <!-- # specifying font style for bold because H3 does not render bold "**" option-->
 ::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
+
 **Table 1:  The top software tools used for field data entry are listed and the Pros and Cons of each tool are briefly described for each [criteria category](#crittop).**
 :::
 
