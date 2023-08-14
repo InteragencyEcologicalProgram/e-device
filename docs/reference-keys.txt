@@ -71,7 +71,15 @@ tab:BFphot
 tab:BFhard
 tab:BFsec
 tab:BFbus
-fig:Yolodemo
+fig:Yolodemo2
+fig:Yolodemo3
+fig:Yolodemo4
+fig:Yolodemo5
+fig:Yolodemo6
+fig:Yolodemo7
+fig:Yolodemo8
+fig:Yolodemo9
+fig:Yolodemo10
 fig:padem3
 fig:padem4
 fig:padem6
@@ -191,7 +199,6 @@ PDFhrd
 PDFsec
 PDFbus
 yoldem
-section
 powdem
 e-device-hardware-options
 waterproof-cases-ipads

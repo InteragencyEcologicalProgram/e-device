@@ -1,9 +1,0 @@
-# (PART\*) IEP Survey Demos {-}
-
-# Yolo Bipass: Survey123 Trial App {#yoldem}
-
-## 
-
-```{r Yolodemo, echo=FALSE, fig.cap="Screen capture of the ESRI web interface for Survey123 highlighting the two main options for designing a Survey123 form: the web designer or the Survey123 Connect tool.", out.width = '90%'}
-knitr::include_graphics("images/survey123/ESRIweb2.png", error = FALSE)
-```

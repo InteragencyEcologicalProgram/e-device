@@ -35,7 +35,7 @@ rmd_files:
   - 08-FEED.Rmd
   - 09-BigFin.Rmd
   - 10-PDF_R.Rmd
-  - survey123demo.Rmd
+  - surv123demo.Rmd
   - powerappsdemo.Rmd
   - hardware.Rmd
   - sensors.Rmd
