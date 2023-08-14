@@ -67,7 +67,9 @@ The VIMS/FEED App provides a clear data entry interface with a variety of contro
 <p class="caption">(\#fig:feedfeat)An example of the VIMS/FEED form interface providing realtime frequency plotting</p>
 </div>
 
-### FEED App/VIMS Data Output Format
+### VIMS/FEED App Data Output Format
+
+VIMS/FEED is configured to work with and Access database. Survey data collections are stored in Access db as an intermediate location, but data tables will need to be formatted further to establish the final database format (using a processing script: R, Python, SAS, other).  
 
 
 ## FEED: Criteria Tables

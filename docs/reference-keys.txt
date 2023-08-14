@@ -72,6 +72,13 @@ tab:BFhard
 tab:BFsec
 tab:BFbus
 fig:Yolodemo
+fig:padem3
+fig:padem4
+fig:padem6
+fig:padem5
+fig:padem7
+fig:padem8
+fig:padem9
 fig:nmea
 fig:nmea2
 tab:expnet
@@ -151,7 +158,7 @@ vimsfeed-key-features
 vimsfeed-external-device-interface
 feed-appvims-form-development
 feed-appvims-form-appearance
-feed-appvims-data-output-format
+vimsfeed-app-data-output-format
 feed-criteria-tables
 feed-forms-options
 feedat
