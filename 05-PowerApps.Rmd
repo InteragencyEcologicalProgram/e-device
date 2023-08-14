@@ -28,6 +28,7 @@ knitr::include_graphics("images/PowerApps/Start_Canvas6.jpg", error = FALSE)
 
 The seamless connections to either on-premise or online data sources is a notable feature of Power Apps. Users may initiate a Power App form by connecting to an existing database or starting a blank app.  Another Power Apps feature that stands out is the The on-premises data gateway acts as a bridge to provide quick and secure data transfer between on-premises data (data that isn't in the cloud) and several Microsoft cloud services. https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem
 
+An important note is the ability of the Power App Mobile components that supports exporting the 'Collections' on a mobile device to a standard .json file.  This is a stand-out feature compared to Survey123 and Fulcrum, and can be critical when building in a back-up protocol for cases when internet data transfer is not available.  The Bay Study Power App project included this option to export to .json because there are some survey stations in which internet access is low or not available [See Bay Study Fulcrum App demo](#powdem)
 
 ```{r paconn, echo=FALSE, fig.cap="Graphical representation of the multiple types of Power Apps data connections established in Power Apps.", out.width = '90%'}
 knitr::include_graphics("images/PowerApps/Connections.jpg", error = FALSE)
@@ -69,34 +70,8 @@ powbus  <- powerapp$Business_Model
 
 library(kableExtra)
 
-powform[] <- lapply(powform, function(x) ifelse(is.na(x), "", x))
-powform %>%
-  # Group by category column and collapse repeating values
-  group_by(Category) %>%
-  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
-  group_by(Feature) %>%
-  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
-  
-  
-kable(powform, format = "html", escape = F, caption = 'Forms Options',
-      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews"),
-      booktabs = TRUE, align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "2.5cm", bold = TRUE,) %>%
-  column_spec(1, width_max = "3cm", bold = TRUE) %>%
-  column_spec(2, width_min = "1.5cm" ) %>%
-  column_spec(2, width_max = "2cm" ) %>%
-  column_spec(3, width_min = "1.5cm") %>%
-  column_spec(3, width_max = "2cm") %>%
-  column_spec(4, width_min = "2cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "2cm") %>%
-  column_spec(5, width_max = "5cm") %>%
-  column_spec(6, width_min = "2cm") %>%  
-  column_spec(6, width_max = "5cm") %>%  
-  scroll_box(width = "800px", height = "600px") 
+formtable(powform)
+
 ```
 
 
@@ -107,38 +82,7 @@ kable(powform, format = "html", escape = F, caption = 'Forms Options',
 ```{r padat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
 
 library(kableExtra)
-
-powdat[] <- lapply(powdat, function(x) ifelse(is.na(x), "", x))
-
-
-powdat %>%
-  # Group by category column and collapse repeating values
-  group_by(Category) %>%
-  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
-  group_by(Feature) %>%
-  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
-  
-
-
-kable(powdat, format = "html", escape = F, caption = 'Data Interface Options',
-      col.names = c("Category","Feature"	,"Available","Description",		"Group Notes","External  Reviews"),
-      booktabs = TRUE, align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "2.5cm", bold = TRUE,) %>%
-  column_spec(1, width_max = "3cm", bold = TRUE) %>%
-  column_spec(2, width_min = "1.5cm" ) %>%
-  column_spec(2, width_max = "2cm" ) %>%
-  column_spec(3, width_min = "1.5cm") %>%
-  column_spec(3, width_max = "2cm") %>%
-  column_spec(4, width_min = "2cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "2cm") %>%
-  column_spec(5, width_max = "5cm") %>%
-  column_spec(6, width_min = "2cm") %>%  
-  column_spec(6, width_max = "5cm") %>%  
-  scroll_box(width = "800px", height = "600px") 
+datatable(powdat)
 
 ```
 
@@ -153,36 +97,7 @@ kable(powdat, format = "html", escape = F, caption = 'Data Interface Options',
 
 library(kableExtra)
 
-powhot[] <- lapply(powhot, function(x) ifelse(is.na(x), "", x))
-
-powhot %>%
-  # Group by category column and collapse repeating values
-  group_by(Category) %>%
-  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
-  group_by(Feature) %>%
-  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
-  
-
-
-kable(powhot, format = "html", escape = F, caption = 'Photo Integration and External Sensors',  
-      col.names = c("Category","Feature"	,"Available","Description",	"Group Notes","External  Reviews"),
-      booktabs = TRUE, align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "2.5cm", bold = TRUE,) %>%
-  column_spec(1, width_max = "3.5cm", bold = TRUE) %>%
-  column_spec(2, width_min = "2.5cm" ) %>%
-  column_spec(2, width_max = "4cm" ) %>%
-  column_spec(3, width_min = "2cm") %>%
-  column_spec(3, width_max = "2.5cm") %>%
-  column_spec(4, width_min = "4cm") %>%
-  column_spec(4, width_max = "5.5cm") %>%
-  column_spec(5, width_min = "4cm") %>%
-  column_spec(5, width_max = "5.5cm") %>%
-
-  scroll_box(width = "800px", height = "600px") 
-
+phototable(powhot)
 ```
 
 
@@ -198,27 +113,7 @@ kable(powhot, format = "html", escape = F, caption = 'Photo Integration and Exte
 ```{r paard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
 
 library(kableExtra)
-
-powhard[] <- lapply(powhard, function(x) ifelse(is.na(x), "", x)) 
-#powhard <- powhard #%>% select(1:3,)
-
-kable(powhard, format = "html", escape = F, caption = 'Hardware Platform Options',
-      col.names = c("Feature"	,"Available",	"Group Notes","External  Reviews"),
-      booktabs = TRUE, align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "7cm", bold = TRUE) %>%
-  column_spec(1, width_max = "8cm", bold = TRUE) %>%
-  column_spec(2, width_min = "3cm" ) %>%
-  column_spec(2, width_max = "3.5cm" ) %>%
-  column_spec(3, width_min = "4.5cm") %>%
-  column_spec(3, width_max = "5cm") %>%
-  column_spec(4, width_min = "4.5cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-
-  scroll_box(width = "800px", height = "600px") 
-
+hardtable(powhard)
 ```
 
 
@@ -229,25 +124,7 @@ kable(powhard, format = "html", escape = F, caption = 'Hardware Platform Options
 ```{r pasec, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Security Factors', out.width='100%', tab.asp=.75, tab.align='left' }
 
 library(kableExtra)
-
-powsec[] <- lapply(powsec, function(x) ifelse(is.na(x), "", x))
-
-kable(powsec, format = "html", escape = F, caption = 'Security Factors', booktabs = TRUE, align =  "l",col.names = c("Feature"	,"Available",	"Description","Group Notes","External  Reviews")) %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "3cm", bold = TRUE) %>%
-  column_spec(1, width_max = "4cm", bold = TRUE) %>%
-  column_spec(2, width_min = "2cm" ) %>%
-  column_spec(2, width_max = "3cm" ) %>%
-  column_spec(3, width_min = "3cm") %>%
-  column_spec(3, width_max = "4cm") %>%
-  column_spec(4, width_min = "4.5cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "4.5cm") %>%
-  column_spec(5, width_max = "5cm") %>%
-  
-  scroll_box(width = "800px", height = "600px") 
+sectable(powsec) 
 
 ```
 
@@ -262,29 +139,8 @@ Microsoft Power Apps pricing plans include subscription plans and Pay-as-you-go 
 
 ```{r pabus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
 
-
-
 library(kableExtra)
-
-powbus[] <- lapply(powbus, function(x) ifelse(is.na(x), "", x))
-powbus %>%
-  group_by(Feature) %>%
-  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
-kable(powbus, format = "html", escape = F, caption = 'Business Model and Pricing',  booktabs = TRUE,col.names = c("Feature"	,"Description","Price","Group Notes","External Reviews"), align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =TRUE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "3.5cm", bold = TRUE) %>%
-  column_spec(1, width_max = "4cm", bold = TRUE) %>%
-  column_spec(2, width_min = "3.5cm" ) %>%
-  column_spec(2, width_max = "4cm" ) %>%
-  column_spec(3, width_min = "3cm") %>%
-  column_spec(3, width_max = "4cm") %>%
-  column_spec(4, width_min = "4cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-  column_spec(5, width_min = "4cm") %>%
-  column_spec(5, width_max = "5cm") %>%
-  scroll_box(width = "800px", height = "600px") 
+bustable(powbus)
 
 
 ```

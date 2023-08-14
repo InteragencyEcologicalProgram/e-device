@@ -84,7 +84,7 @@ powerapp <- read_excel_allsheets(file.path(tabs,"Power_app_criteria.xlsx"))
 fulcrum <- read_excel_allsheets(file.path(tabs,"Fulcrum.xlsx"))
 feed <- read_excel_allsheets(file.path(tabs,"FEED_criteria.xlsx"))
 bigfin <- read_excel_allsheets(file.path(tabs,"BigFin_criteria.xlsx"))
-
+PDFR <- read_excel_allsheets(file.path(tabs,"PDF_Rscrap.xlsx"))
 
 ## Table-Making Functions for each section of the app criteria tables
 

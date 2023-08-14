@@ -1,0 +1,68 @@
+# Preamble
+
+**This bookdown document is intended as a repository of technical information related to the use of electronic field data entry tools**, including reviews of different software options, hardware, and factors regarding interfacing with external sensors and downstream databases.  
+
+The initial information was gleaned from interviews and presentations organized during a DUWG Electronic Data Entry Device ("e-device") focus group (6/2022-6/2023), but these reports are far from exhaustive and there are many software/hardware options for field data entry that have not yet been reviewed.  Meanwhile communication and cloud processing technology is advancing rapidly.  
+
+**This initiative generally asks that all IEP survey teams that have e-device experience, or those that are adding digital data-entry tools to their program, please share these experiences and help to develop this resource for other IEP surveys seeking to update data entry protocols.**
+
+
+
+```{r ieplog, echo=FALSE,  out.width= "70%", fig.align='center',fig.cap=""}
+knitr::include_graphics(c("images/bothlogo.JPG"))
+```
+
+
+
+## **Table 1: Summary of Date Entry Software Reviewed** 
+
+An Executive Summary reporting on the activities in this DUWG e-device subgroup was shared with IEP Coordinators Team in Sept of 2023. This report may be downloaded using the below link and Table 1 from this report is included here. 
+```{r e_surv, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+library(here)
+xfun::embed_file(c("docs/ExecSum2.pdf"))
+```
+
+
+<!-- # specifying font style for bold because H3 does not render bold "**" option-->
+::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
+
+**Table 1:  The top software tools used for field data entry are listed and the Pros and Cons of each tool are briefly described for each [criteria category](#crittop).**
+:::
+
+```{r procon, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap=NULL, out.width='100%', tab.asp=.75, tab.align='left'}
+
+library(kableExtra)
+library(dplyr)
+library(here)
+
+# 'The top software tools used for field data entry are listed and the Pros and Cons of each tool are briefly described.'
+
+# Replace NAs with empty strings 
+proscons[is.na(proscons)] <- ""
+
+# Group by category column and collapse repeating values
+proscons %>%
+  group_by(Software) %>%
+  mutate(Software = ifelse(duplicated(Software), "", Software))  %>%
+
+#caption = ".",
+  
+kable(proscons, format = "html", escape = F,  booktabs = TRUE, align='l') %>%
+  kable_paper() %>% 
+  # kable_styling(bootstrap_options = c("striped", "hover"),full_width = FALSE, fixed_thead = TRUE,
+  #               font_size = 20) %>%
+  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
+  #column_spec(1, width_min = "4cm", bold = TRUE, italic = F) %>%
+  column_spec(1, width_max = "4.5cm", bold = TRUE, italic = F) %>%
+  #column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
+  column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
+  #column_spec(3, width_min = "10cm", bold = F, italic = F) %>%
+  column_spec(3, width_max = "10cm", bold = F, italic = F) %>%
+  scroll_box(width = "800px")
+
+```
+
+
+
+
+

@@ -1,48 +1,227 @@
 # PDF Form and R Scraping
 
-## PDF-R Scrape Overview  {#PDFtop} 
+## R Scrape PDF Approach Overview  {#PDFtop} 
+
+PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum [See IEP E-device Survey](#appx_1).  
+
+PDF forms can be filled in using either Acrobat, Acrobat Reader (free), or Foxit editor. Static or interactive forms can be created using either the Acrobat or Foxit editor. 
+
+R has been proposed as a tool for programmatically extracting the filled-in PDF form.  The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. The full code for Trinh's evaluation is included in Appendix 2: [PDF R Scraping Demonstration](#appx_2)
 
 
-## PDF-R Scrape: Key Features 
+## Create a fillable PDF form
 
-### PDF-R Scrape Form Developing Interface
+[How to create fillable PDF forms with Adobe Adrobat](https://helpx.adobe.com/acrobat/using/creating-distributing-pdf-forms.html#create_forms_using_acrobat)
+
+[How to create fillable PDF forms with Foxit Editor](https://www.foxit.com/blog/how-to-create-fillable-pdf-forms/?psafe_param=1&utm_source=googleads&utm_medium=PMAX&cq_cmp=19179766755&utm_campaign=FOXIT_GA_NAM_EN_PMAX_LEADS_SALESFORCE_PDF%20EDITOR&gclid=EAIaIQobChMIkore1cbcgAMVgAOtBh3QLQ_WEAAYASAAEgLmOfD_BwE)
 
 
 
-## PDF-R Scrape: Criteria Tables
+```{r pdf_R, echo=FALSE, fig.cap="Field types options in Foxit.", out.width = '90%'}
+knitr::include_graphics("images/PDF_Rscrape/FoxitEditor.jpg", error = FALSE)
+```
+
+
+
+
+## Excerpts from evalutaion by Trinh Nguyen:
+
+Purpose: There are several PDF scraping packages in R. I will focus on two:
+
+1.  `pdftools`
+2.  `tabulizer`
+
+Pros and Cons
+
+-   The main reason to consider this approach: cost. It is free.
+
+::: incremental
+-   The main reasons to **NOT** consider this approach: nearly everything else:
+    1.  very code heavy
+    2.  no support
+    3.  scrapes only text-based data
+    4.  `tabulizer` can be difficult to install if you run into Java restrictions
+:::
+
+Outline
+
+1.  Primer to 'pdftools'
+2.  Primer to 'tabulizer'
+3.  Case study: Bay Study datasheet
+4.  Case study: DGS Pay Period Tables
+5.  Conclusion
+
+Primer to 'pdftools'
+
+-   Primarily used to extract **ONLY** text-based data from a pdf
+-   Will read back all text as a singular string (ignoring structure)
+
+
+Primer to 'tabulizer'
+
+-   Used to extract **ONLY** text-based data from a pdf
+-   Can extract formatted tabular data as tables
+-   However, tables must be formatted as tables
+
+Case study: Bay Study Datasheet
+
+```{r , echo=FALSE, fig.cap="Bay Study datasheet: NOT Tabulated", out.width = '90%'}
+knitr::include_graphics("images/PDF_Rscrape/bayStudyExample_1.png", error = FALSE)
+```
+
+Workflow: Bay Study
+
+1. If the data is tabular, use `extract_table()` from `tabulizer`
+2. Non-tabular data will require more creative approaches
+
+
+```{r , echo=FALSE, fig.cap="Attempt to extract Bay Study datasheet using tabulizer function, extract_tables", out.width = '90%'}
+knitr::include_graphics("images/PDF_Rscrape/extract_non-formated.JPG", error = FALSE)
+```
+
+
+```{r , echo=FALSE, fig.cap="Attempt to extract Bay Study datasheet by finding specific data locations for reference.", out.width = '90%'}
+knitr::include_graphics("images/PDF_Rscrape/extract_non-formated2.JPG", error = FALSE)
+```
+
+```{r , echo=FALSE, fig.cap="Bay Study datasheet with data location highlighted.", out.width = '90%'}
+knitr::include_graphics("images/PDF_Rscrape/extract_non-formated3.JPG", error = FALSE)
+```
+
+```{r , echo=FALSE, fig.cap="Bay Study datasheet coordinates from locate_areas function.", out.width = '90%'}
+knitr::include_graphics("images/PDF_Rscrape/extract_non-formated4.JPG", error = FALSE)
+```
+
+```{r , echo=FALSE, fig.cap="Extracted data from one location of the Bay Study datasheet", out.width = '90%'}
+knitr::include_graphics("images/PDF_Rscrape/extract_non-formated5.JPG", error = FALSE)
+```
+In Contrast: Tabular Data
+
+
+```{r , echo=FALSE, fig.cap="Tabulated Pay Period tables.", out.width = '90%'}
+knitr::include_graphics("images/PDF_Rscrape/PDF_formatedtables.jpg", error = FALSE)
+```
+
+
+```{r , echo=FALSE, fig.cap="Extracting Tabulated Data", out.width = '90%'}
+knitr::include_graphics("images/PDF_Rscrape/extract_tabular.JPG", error = FALSE)
+```
+
+```{r , echo=FALSE, fig.cap="Extracted Tabulated Data", out.width = '90%'}
+knitr::include_graphics("images/PDF_Rscrape/extract_tabular2.JPG", error = FALSE)
+```
+Conclusion 
+
+- Possible
+- Automate with `tabulizer` and `pdftools`
+
+::: {.fragment}
+However, there are major drawbacks:
+
+::: {.incremental}
+  1. requires a non-trivial amount of coding knowledge in R
+  2. can only scrape text-based data
+  3. sensitive to structure of the datasheet
+  4. no established workflow and dedicated features
+  5. no support
+  6. requires Java
+
+:::
+:::
+
+Pros and Cons
+
+```{r, echo=FALSE, warning = FALSE, message = FALSE}
+library(kableExtra)
+data.frame("Features" = c("Ease of installation", "Ease of use", "Ease of application", "Extract tables", "Extract text", "Automation", "Code Knowledge", "Recommend"),
+           "tabulizer" = c("Hard", "Medium", "Hard", "Yes", "Yes", "Yes", "Medium High", "No"),
+           "pdftools" = c("Easy", "Easy", "Very Hard", "No", "Yes", "Yes", "Very High", "Very No")) %>%
+  setNames(c("Features", "'tabulizer'", "'pdftools'")) %>% 
+  kable() %>% 
+  kable_styling(bootstrap_options = c("striped", "hover", "condensed", "responsive"))
+```
+
+
+
+## R Scrape PDF Approach: Criteria Tables
 
 ###  PDF-R Scrape: Forms Options
 
+```{r PDFRinit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+
+library(kableExtra)
+
+PDFRform <- PDFR$Forms_Options
+PDFRdat  <- PDFR$Data_Interface 
+PDFRphot <- PDFR$Photos_ExtSensors
+PDFRhard <- PDFR$HW_Platforms
+PDFRsec  <- PDFR$Security_Factors
+PDFRbus  <- PDFR$Business_Model
+```
+
+
+```{r PDFRform, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Forms Options', out.width='70%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+formtable(PDFRform)
+```
 
 
 
 ### PDF-R Scrape: Data Interface {#PDFdat}
 
 
+```{r PDFRdat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+datatable(PDFRdat)
+
+```
 
 ###  PDF-R Scrape: Photo Integration and External Sensors {#PDFpho}
 
 
+```{r PDFRphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+phototable(PDFRphot)
+
+```
 
 
 
 ###  PDF-R Scrape:  Hardware Platforms  {#PDFhrd}
 
-[Top of section](#PDFtop)
+```{r PDFRhard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+hardtable(PDFRhard)
+
+```
+[Top of section](#BFtop)
 
 
 
 ### PDF-R Scrape: Security Factors {#PDFsec}
 
+```{r PDFRsec, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Security Factors', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+sectable(PDFRsec) 
+
+```
 
 
 
 ### PDF-R Scrape: Business Model and Customer Support {#PDFbus}
 
-[Top of section](#PDFtop)
 
+```{r PDFRbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
 
+library(kableExtra)
+bustable(PDFRbus)
 
-
+```
 
 
