@@ -35,7 +35,7 @@ Two tools were developed to promote the transition to electronic data entry meth
 
 - Summarized and expanded listings of the specific pros and cons of each of the top data entry software apps (Table 1 below)
 
-- An open-access html document and Github repository for information related to electronic field data entry software/hardware for IEP Survey applications (Link to [Github repo](https://github.com/InteragencyEcologicalProgram/e-device) and [E-device document Introduction](#intro))**
+- An open-access html document and Github repository for information related to electronic field data entry software/hardware for IEP Survey applications (Link to [Github repo](https://github.com/InteragencyEcologicalProgram/e-device) and [E-device document Introduction](#intro))
 
 
 ## **Takeaway:** {-}

@@ -5,10 +5,7 @@ date: "2023-08-14"
 site: bookdown::bookdown_site
 url: "https://interagencyecologicalprogram.github.io/e-device/"
 documentclass: book
-description: "This bookdown document is intended to summarize the research collected
-  by IEP DUWG members regarding the use of electronic data entry tools in IEP Surveys.
-  This project is in-progress and has not been fully reviewed by the IEP DUWG e-device
-  team."
+description: "This bookdown document is intended to summarize the research collected by IEP DUWG members regarding the use of electronic data entry tools in IEP Surveys."
 bibliography:
 - book.bib
 - packages.bib

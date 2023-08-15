@@ -1,9 +1,24 @@
 # Appendix - PDF R Scraping Demonstration {#appx_2}
 
-NOTE: Tabulizer library and code chunks are marked to include in the Bookdown doc.
-Need to remove markouts of library and code chunks in order to run the program.
 
+NOTES:
 
+Full PDF scraping code example, example pdf data tables, and presentation slides prepared by  Trinh Nguyen:
+```{r, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+library(here)
+xfun::embed_file(c("docs/images/PDF_Rscrape/pdfScrapingPresentation.qmd"))
+xfun::embed_file(c("docs/images/PDF_Rscrape/pdfScrapingPresentation.html"))
+xfun::embed_file(c("docs/images/PDF_Rscrape/bayStudyExample.pdf"))
+xfun::embed_file(c("docs/images/PDF_Rscrape/bayStudyExample_1.png"))
+xfun::embed_file(c("docs/images/PDF_Rscrape/Bay Study field sheet front_fill2_data.pdf"))
+xfun::embed_file(c("docs/images/PDF_Rscrape/PayPeriodsDGS_1.png"))
+```
+
+<br>
+
+Tabulizer library and code chunks are marked to include in this Bookdown doc. Need to remove markouts of library and code chunks in order to run the program.
+
+<br>
 <!-- --- -->
 <!-- title: "R Scraping Demonstration" -->
 <!-- author: "Trinh Nguyen" -->
@@ -13,7 +28,7 @@ Need to remove markouts of library and code chunks in order to run the program.
 <!--     code-line-numbers: true -->
 <!-- --- -->
 
-```{r}
+```{r, warning=FALSE, message=FALSE}
 library(kableExtra)
 library(dplyr)
 #library(tabulizer)

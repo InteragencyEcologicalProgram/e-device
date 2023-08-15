@@ -99,7 +99,7 @@ In Contrast: Tabular Data
 
 
 ```{r , echo=FALSE, fig.cap="Tabulated Pay Period tables.", out.width = '90%'}
-knitr::include_graphics("images/PDF_Rscrape/PDF_formatedtables.jpg", error = FALSE)
+knitr::include_graphics("docs/images/PDF_Rscrape/PayPeriodsDGS_1.png", error = FALSE)
 ```
 
 

@@ -106,7 +106,7 @@ In Contrast: Tabular Data
 
 
 <div class="figure">
-<img src="images/PDF_Rscrape/PDF_formatedtables.jpg" alt="Tabulated Pay Period tables." width="90%" />
+<img src="docs/images/PDF_Rscrape/PayPeriodsDGS_1.png" alt="Tabulated Pay Period tables." width="90%" />
 <p class="caption">(\#fig:unnamed-chunk-7)Tabulated Pay Period tables.</p>
 </div>
 
