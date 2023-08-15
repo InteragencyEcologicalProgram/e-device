@@ -75,22 +75,22 @@ DCSLinkStream collects data with a local area network and uses a separate Access
 Big Fin measurement boards can be manufactured in any length up to the largest size, 2.5 meters. Boards are waterproof, lightweight, rugged, and can wash down easily; Easy to maintain. Big Fin boards interface directly with DCSLinkStream and the user can program many input keys along the board. The measurement resolution of the board is 100 microns. The boards gets calibrated initially and can be re-calibrated in 30 seconds. Drift is temperature dependent but the unit does not drift quickly because the electronics keep it warm and relatively stable. 
 
 <div class="figure">
-<img src="images/BigFin/BigFin9.PNG" alt="BigFin CEO Chris Bonzek demonstrating the water proof control center of the fish measurement boards" width="90%" />
-<p class="caption">(\#fig:BFboard1)BigFin CEO Chris Bonzek demonstrating the water proof control center of the fish measurement boards</p>
+<img src="images/BigFin/BigFin9.PNG" alt="BigFin CEO Chris Carroll demonstrating the water proof control center of the fish measurement boards" width="90%" />
+<p class="caption">(\#fig:BFboard1)BigFin CEO Chris Carroll demonstrating the water proof control center of the fish measurement boards</p>
 </div>
 
 
 <div class="figure">
-<img src="images/BigFin/BigFin15.PNG" alt="BigFin CEO Chris Bonzek demonstrating the use of the stylis with the programmed short-cut buttons for species or other category." width="90%" />
-<p class="caption">(\#fig:BFboard2)BigFin CEO Chris Bonzek demonstrating the use of the stylis with the programmed short-cut buttons for species or other category.</p>
+<img src="images/BigFin/BigFin15.PNG" alt="BigFin CEO Chris Carroll demonstrating the use of the stylis with the programmed short-cut buttons for species or other category." width="90%" />
+<p class="caption">(\#fig:BFboard2)BigFin CEO Chris Carroll demonstrating the use of the stylis with the programmed short-cut buttons for species or other category.</p>
 </div>
 
 
 
 
 <div class="figure">
-<img src="images/BigFin/BigFin10.PNG" alt="BigFin CEO Chris Bonzek demonstrating the battery pack on the back of the fish boards which may be changed out if necessary." width="90%" />
-<p class="caption">(\#fig:BFboard3)BigFin CEO Chris Bonzek demonstrating the battery pack on the back of the fish boards which may be changed out if necessary.</p>
+<img src="images/BigFin/BigFin10.PNG" alt="BigFin CEO Chris Carroll demonstrating the battery pack on the back of the fish boards which may be changed out if necessary." width="90%" />
+<p class="caption">(\#fig:BFboard3)BigFin CEO Chris Carroll demonstrating the battery pack on the back of the fish boards which may be changed out if necessary.</p>
 </div>
 
 

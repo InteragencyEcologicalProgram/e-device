@@ -77,7 +77,7 @@ XLSForm formatting language is described at: https://xlsform.org/en/.
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Geo-referencing </td>
    <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Every Survey123 entry (object?) has an associated lat/long data </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Uses device navigation: phone app or GPS device; Data can open in data in ArcGIS maps directly; Can change base map; Default is current location; Can tap the map to change location [test](https://doc.arcgis.com/en/survey123/browser/analyze-results/viewresults.htm#:~:text=Under%20the%20title%20for%20your,geodatabase%20and%20download%20your%20data) </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Uses device navigation: phone app or GPS device; Data can open in data in ArcGIS maps directly; Can change base map; Default is current location; Can tap the map to change location [arcgis_techsupport](https://doc.arcgis.com/en/survey123/browser/analyze-results/viewresults.htm#:~:text=Under%20the%20title%20for%20your,geodatabase%20and%20download%20your%20data) </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
@@ -104,7 +104,7 @@ XLSForm formatting language is described at: https://xlsform.org/en/.
    <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Web Designer  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> This can be done with Web Designer using the ‘Set rule function’; However, in Web Designer, this function is limited to Single choice, Dropdown, Likert scale, and Rating questions </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> [tst4](https://support.esri.com/en/technical-article/000022942) </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> [esri_techsupport](https://support.esri.com/en/technical-article/000022942) </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
@@ -580,60 +580,60 @@ Esri's flagship software, ArcGIS, runs on Azure. Esri provides deployment tooli
 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; margin-left: auto; margin-right: auto;'>
-<caption style="font-size: initial !important;">(\#tab:s123bus)Business Model and Pricing</caption>
+<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<caption style="font-size: initial !important;">(\#tab:s123bus)Security Factors</caption>
  <thead>
   <tr>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Price </th>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Price (Option 1) </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> “Mobile Worker” includes Survey123 </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> $350/yr </td>
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Price (Option 1) </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> “Mobile Worker” includes Survey123 </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; "> $350/yr </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> Requires 'foundational user' license; either Creator </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> $500/yr </td>
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Price (Option 1) </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> Requires 'foundational user' license; either Creator </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; "> $500/yr </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> or GIS Professional </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> $700/yr </td>
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Price (Option 1) </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> or GIS Professional </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; "> $700/yr </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Price (Option 2) </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> ArcGIS Survey123 within the Online Acct </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Price (Option 2) </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> ArcGIS Survey123 within the Online Acct </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> CA State Licenses with ESRI </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Price (Option 2) </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> CA State Licenses with ESRI </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Business model </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; "> ESRII a very large company:
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Business model </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; "> ESRII a very large company:
 - difficult to get individual support
 - significant web resources 
 - huge user network within CA agencies. </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; "> “Company does not take feedback from customers”https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2728634
 
@@ -646,9 +646,9 @@ https://www.g2.com/products/arcgis-survey123/reviews?page=2#survey-response-7665
 https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872 </td>
   </tr>
   <tr>
-   <td style="text-align:left;min-width: 4cm; font-weight: bold;max-width: 5cm; font-weight: bold;"> Technical Support </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; ">  </td>
+   <td style="text-align:left;min-width: 3cm; font-weight: bold;max-width: 4cm; font-weight: bold;"> Technical Support </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 3cm; ">  </td>
+   <td style="text-align:left;min-width: 3cm; max-width: 4cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>

@@ -19,7 +19,7 @@ R has been proposed as a tool for programmatically extracting the filled-in PDF 
 
 <div class="figure">
 <img src="images/PDF_Rscrape/FoxitEditor.jpg" alt="Field types options in Foxit." width="90%" />
-<p class="caption">(\#fig:pdf_R)Field types options in Foxit.</p>
+<p class="caption">(\#fig:unnamed-chunk-1)Field types options in Foxit.</p>
 </div>
 
 
@@ -68,7 +68,7 @@ Case study: Bay Study Datasheet
 
 <div class="figure">
 <img src="images/PDF_Rscrape/bayStudyExample_1.png" alt="Bay Study datasheet: NOT Tabulated" width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-1)Bay Study datasheet: NOT Tabulated</p>
+<p class="caption">(\#fig:unnamed-chunk-2)Bay Study datasheet: NOT Tabulated</p>
 </div>
 
 Workflow: Bay Study
@@ -79,46 +79,46 @@ Workflow: Bay Study
 
 <div class="figure">
 <img src="images/PDF_Rscrape/extract_non-formated.JPG" alt="Attempt to extract Bay Study datasheet using tabulizer function, extract_tables" width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-2)Attempt to extract Bay Study datasheet using tabulizer function, extract_tables</p>
+<p class="caption">(\#fig:unnamed-chunk-3)Attempt to extract Bay Study datasheet using tabulizer function, extract_tables</p>
 </div>
 
 
 <div class="figure">
 <img src="images/PDF_Rscrape/extract_non-formated2.JPG" alt="Attempt to extract Bay Study datasheet by finding specific data locations for reference." width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-3)Attempt to extract Bay Study datasheet by finding specific data locations for reference.</p>
+<p class="caption">(\#fig:unnamed-chunk-4)Attempt to extract Bay Study datasheet by finding specific data locations for reference.</p>
 </div>
 
 <div class="figure">
 <img src="images/PDF_Rscrape/extract_non-formated3.JPG" alt="Bay Study datasheet with data location highlighted." width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-4)Bay Study datasheet with data location highlighted.</p>
+<p class="caption">(\#fig:unnamed-chunk-5)Bay Study datasheet with data location highlighted.</p>
 </div>
 
 <div class="figure">
 <img src="images/PDF_Rscrape/extract_non-formated4.JPG" alt="Bay Study datasheet coordinates from locate_areas function." width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-5)Bay Study datasheet coordinates from locate_areas function.</p>
+<p class="caption">(\#fig:unnamed-chunk-6)Bay Study datasheet coordinates from locate_areas function.</p>
 </div>
 
 <div class="figure">
 <img src="images/PDF_Rscrape/extract_non-formated5.JPG" alt="Extracted data from one location of the Bay Study datasheet" width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-6)Extracted data from one location of the Bay Study datasheet</p>
+<p class="caption">(\#fig:unnamed-chunk-7)Extracted data from one location of the Bay Study datasheet</p>
 </div>
 In Contrast: Tabular Data
 
 
 <div class="figure">
 <img src="docs/images/PDF_Rscrape/PayPeriodsDGS_1.png" alt="Tabulated Pay Period tables." width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-7)Tabulated Pay Period tables.</p>
+<p class="caption">(\#fig:unnamed-chunk-8)Tabulated Pay Period tables.</p>
 </div>
 
 
 <div class="figure">
 <img src="images/PDF_Rscrape/extract_tabular.JPG" alt="Extracting Tabulated Data" width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-8)Extracting Tabulated Data</p>
+<p class="caption">(\#fig:unnamed-chunk-9)Extracting Tabulated Data</p>
 </div>
 
 <div class="figure">
 <img src="images/PDF_Rscrape/extract_tabular2.JPG" alt="Extracted Tabulated Data" width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-9)Extracted Tabulated Data</p>
+<p class="caption">(\#fig:unnamed-chunk-10)Extracted Tabulated Data</p>
 </div>
 Conclusion 
 

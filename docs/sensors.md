@@ -3,20 +3,20 @@
 # Fishboards
 
 
-## Big Fin Scientific
+## Using Big Fin Boards with non-Big Fin Software
 
-### Boards
+### Integration Guide
 
-The Integration Guide is found here:  
-Integration guide: https://docs.google.com/document/d/1dsl45kLUo_u6044DCm82qgpmtCswVcmYyMqIZAow1VE/edit
-Admittedly, it also needs updating with some of the newer commands.  Until that can be accomplished, hopefully soon, I will work directly with anyone wanting to integrate their application with the boards.
+The Integration Guide is found here: https://docs.google.com/document/d/1dsl45kLUo_u6044DCm82qgpmtCswVcmYyMqIZAow1VE/edit
+"Admittedly, it also needs updating with some of the newer commands.  Until that can be accomplished, hopefully soon, I will work directly with anyone wanting to integrate their application with the boards."
 Chris Carroll <chris@bigfinscientific.com>
 
-### Alternative Software: Dcs5 Controller
+### Alternative Software: Python Example
 
-On the aside, here's a recent application, made by Jerome Guay, which interfaces to the DCS5 XT boards:
+Here's a recent application, made by Jerome Guay, which interfaces to the DCS5 XT boards:
 https://github.com/iml-gddaiss/dcs5
 
+### DCS5 Firmware
 And here's a Discord channel where you can ask questions about the DCS5 Firmware-
 https://discord.gg/XHW2cbGwXk
 
