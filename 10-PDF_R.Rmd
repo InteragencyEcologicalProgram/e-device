@@ -17,7 +17,7 @@ R has been proposed as a tool for programmatically extracting the filled-in PDF 
 
 
 
-```{r pdf_R, echo=FALSE, fig.cap="Field types options in Foxit.", out.width = '90%'}
+```{r, echo=FALSE, fig.cap="Field types options in Foxit.", out.width = '90%'}
 knitr::include_graphics("images/PDF_Rscrape/FoxitEditor.jpg", error = FALSE)
 ```
 

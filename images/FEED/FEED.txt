@@ -1,0 +1,45 @@
+what program language is this written in?
+is it meant to be only customized by VIMS -or can user make any changes 
+how big is VIMS; how many programmers 
+what is the status of the company - doing well?
+GPS neema data stream?
+Continuous GPS stream...
+
+SAS programs ..
+Reprocessing samples for QC: separate tables
+Prewritten query to summarize everything
+Access queries 
+histogram  
+
+text file
+
+Visual GUI microsoft
+
+
+Flowwest
+Bret Harvey DWR
+Sarah Brown DWR
+DWR CDFW USFW 
+nov - may
+spring run juviel production estimate
+middle steps
+field based data entry
+shiny app
+ipad
+Ryan Brekneck
+
+Ryan cook
+Adam Nanninga
+Enhanced Delta Smelt Monitorin
+Cladia MacFarlane
+non-electronic issues
+other data flow issues
+database servers in denver
+platform out - same as web based
+on a tough book
+Denver: Fed massive server
+Data management and special studies program
+Collaborative effort
+
+
+
