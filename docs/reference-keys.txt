@@ -165,17 +165,6 @@ fulpho
 fulhrd
 fulsec
 fulbus
-pendragon
-pentop
-pendragon-key-features
-pendragon-form-developing-interface
-pendragon-criteria-tables
-pendragon-forms-options
-pendat
-penpho
-penhrd
-pensec
-penbus
 vimsfeed
 feetop
 vimsfeed-key-features
