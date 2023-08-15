@@ -17,17 +17,13 @@ language:
     equation: "Equation"
     reference: "Reference"
     code: "Code"
-# this works with other html code in the summary.rmdto suppress the table header 
-# (this exec summary to be submitted as a separate document)
-# header-includes:
-#     - \usepackage{caption}
 split_by: section
 rmd_files:
   - index.Rmd
-  - summary.Rmd #run as separate markdown and link to the html 
-  - Preamble.Rmd
   - contribute.Rmd
   - organization.Rmd
+  - summary.Rmd 
+  #- Preamble.Rmd # included in index.Rmd
   - 01-intro.Rmd
   - 02-survey.Rmd
   - 03-criteria.Rmd

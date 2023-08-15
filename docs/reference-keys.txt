@@ -105,13 +105,11 @@ fig:padem9
 fig:nmea
 fig:nmea2
 tab:expnet
-summary
 preamble
-table-1-summary-of-date-entry-software-reviewed
 contribute
-how-to-contribute-new-e-device-research-two-ways
 organization
 organization-of-this-bookdown-file
+summary
 intro
 e-device-working-group-overview
 goals

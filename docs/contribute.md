@@ -1,39 +1,39 @@
 # CONTRIBUTE
 
-## **How to Contribute New E-Device Research: Two Ways**
+## **How to Contribute New E-Device Research: Two Ways** {-}
 
 <!-- # specifying font style for bold because H3 does not render bold "**" option-->
 ::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
 **Best Way: Submit changes to the e-device package using Github:** 
 :::
 
-1. Create a fork off of the primary package: https://github.com/GitKarIn/e-device2.git
+  a. Create a fork off of the primary package:   https://github.com/GitKarIn/e-device2.git
 
-2. Clone this fork to your own local repository
+  b. Clone this fork to your own local repository
 
-3. Render the book:
+  c. Render the book:
 
--  Click on the Build pane in the RStudio IDE and Click on Build Book tool
+      -  Click on the 'Build' pane in the RStudio IDE and Click on 'Build Book' tool
 
--  Or, build the book from the R console:
+      -  Or, build the book from the R console:
+
 
 ```r
 bookdown::render_book()
 ```
 
-4. Compose changes or updates to the book contents
+  d. Compose changes or updates to the book contents
 
-5. Check for merge conflicts and submit a pull request
+  e. Check for merge conflicts and submit a pull request
 
 <!-- # specifying font style for bold because H3 does not render bold "**" option-->
 ::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
 **Back-up Way: Email proposed changes/edits to the document manager:** 
 :::
 
+  a. Print to pdf each page of the document that needs to be changed using the web browser print options 
 
-1. Print to pdf each page of the document that needs to be changed using the web browser print options 
+  b. Use a pdf editor to insert comments or changes.
 
-2. Use a pdf editor to insert comments or changes.
-
-3. E-mail these edited pdf pages to: karrin.alstad@wildlife.ca.gov
+  c. E-mail these edited pdf pages to: karrin.alstad@wildlife.ca.gov
 

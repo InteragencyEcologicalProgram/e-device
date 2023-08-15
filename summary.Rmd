@@ -1,22 +1,20 @@
-
 # (PART\*) Executive Summary {-}
 
 # Summary 
-
 
 
 ## **Take Home Message:** {-}
 
 **IEP should transition to electronic data entry in order to improve efficiency and data quality.**
 
-Digital data entry methods facilitate more accurate and rapid reporting of survey data - as compared to paper data sheets - by reducing field entry errors, eliminating manual entry QC checks, and improving overall processing efficiency. 
+Digital data entry methods facilitate more accurate and rapid reporting of survey data, as compared to paper data sheets, by reducing field entry errors, eliminating manual entry QC checks, and improving overall processing efficiency. 
 
 
 ## **Problem:** {-}
 
-**IEP still uses paper data sheets for most surveys.**  
+**IEP still uses paper data sheets for most surveys.** Most IEP surveys still use paper datasheets for data collection.  Paper datasheets increase transcription and handwriting errors, increase data transfer time, and increase potential for data loss when compared to electronic data sheets.
 
-**IEP survey leads have significant questions about electronic data entry methods.** Several surveys have tried out different e-devices for collecting field data, but they haven't been broadly adopted due to lack of available information about which tools are most appropriate for survey applications.  
+**IEP survey leads have significant questions about electronic data entry methods.** Several surveys have considered different data entry software and/or hardware devices for collecting field data, but these tools have not been been broadly adopted due to lack of available information about which tools are most appropriate for survey applications.  
 
 
 
@@ -35,21 +33,28 @@ The DUWG formed a sub-team and carried out the following steps:
 
 Two tools were developed to promote the transition to electronic data entry methods:
 
-- **Summarized and expanded listing of the specific pros and cons of each of the top data entry software apps (Table 1 below)**
+- Summarized and expanded listings of the specific pros and cons of each of the top data entry software apps (Table 1 below)
 
-- **An open-access html document and Github repository for information related to electronic field data entry software/hardware for IEP Survey applications (Link to [Github repo](https://github.com/InteragencyEcologicalProgram/e-device) and [E-device document Introduction](#intro))**
+- An open-access html document and Github repository for information related to electronic field data entry software/hardware for IEP Survey applications (Link to [Github repo](https://github.com/InteragencyEcologicalProgram/e-device) and [E-device document Introduction](#intro))
 
 
-## **Impacts:** {-}
+## **Takeaway:** {-}
 
-Adopting digital data entry protocols will require time to develop the platforms and software and to train the staff. In addition, IEP surveys will have to budget for the purchase and maintenance of mobile field devices, data loggers and/or electronic fish measurement boards. **In the longer term, the time and staff-power savings in reduced data entry and post-collection processing will significantly outweigh equipment and training time expenditures.**
+Adopting digital data entry protocols will require time to develop the field data entry software, establish procedures to transfer data to central database, and train survey staff to use these new tools. In addition, IEP surveys will have to budget for the purchase and maintenance of mobile field devices, data loggers and/or electronic fish measurement boards. **In the long term, the savings in time and effort with the reduction in data entry and post-collection processing will significantly outweigh equipment and training time expenditures.**
+
+
+NOTE: This Executive Summary was shared with IEP Coordinators Team in Sept of 2023. This report may be downloaded using the below link and Table 1 from this report is included here. 
+```{r e_surv, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+library(here)
+xfun::embed_file(c("docs/ExecSumm_edevice_Sept2023.pdf"))
+```
 
 
 ## **Table 1:** {-}
 
 <!-- # specifying font style for bold because H3 does not render bold "**" option-->
-::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
-**Table 1:  The top software tools used for field data entry are listed and the Pros and Cons of each tool are briefly described for each [criteria category](#crittop).**
+::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"} 
+**Top 7 software applications used by IEP for field data entry with pros and cons for each criteria category, listed in order reviewed by the DUWG sub-team. The criteria used for comparison are described here [criteria category](#crittop).**
 :::
 
 
