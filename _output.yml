@@ -1,5 +1,5 @@
 bookdown::bs4_book:
-  css: style_test2.css
+  css: style.css
   theme:
     primary: "#096B72"
     bootswatch: yeti

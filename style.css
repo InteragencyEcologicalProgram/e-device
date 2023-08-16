@@ -9,22 +9,8 @@ pre {
   word-break: normal;
   word-wrap: normal;
 }
-
 pre code {
   white-space: inherit;
-}
-
-
-table thead tr{
-  display: table;
-  width: 100%;
-  table-layout: fixed;
-}
-
-table  tbody{
-  display:block;
-  max-height:600px;
-  overflow:auto;//set tbody to auto
 }
 
 
@@ -34,6 +20,18 @@ tbody::-webkit-scrollbar {
 
 .sidebar li a {
 font-size: 16px;
+}
+
+#menu .right {
+    float: right;
+}
+
+#book-source {
+  display: none;
+}
+
+#book-edit {
+  display: none;
 }
 
 li.book-part {
@@ -57,3 +55,5 @@ h1 {
 }
 
 
+
+<a id="book-source" href="https://github.com/jennybc/happy-git-with-r/blob/main/usage-existing-project-github-last.Rmd">View source <i class="fab fa-github" aria-hidden="true"></i></a>

@@ -8,7 +8,7 @@ This bookdown document is intended to be a 'living document' which develops as m
 
 ### Goals
 
-In general, the goal of the electronic data entry sub-group of the DUWG is to research field data entry software and hardware devices (“e-devices”), and to generate resources that support IEP survey leads in selecting and deploying digital data-entry procedures.  This sub-group does not intend to suggest a single solution or software choice for all IEP surveys; rather, the sub-group aims to provide specific application reviews and research, and group members may report on direct hands-on software trials or testing of new methods. Potentially, these activities will initiate an IEP e-device users network as a resource for IEP survey members who are newer to these methods and technologies.
+In general, the goal of the electronic data entry sub-group of the DUWG is to research field data entry software and hardware devices (“e-devices”), and to generate resources that support IEP survey leads in selecting and deploying digital data-entry procedures.  This sub-group does not intend to suggest a single solution or software choice for all IEP surveys; rather, the sub-group aims to provide specific application reviews and research, and group members may report on direct hands-on software trials or tests of new methods. Optimally, these activities will promote the formation of an e-device users network which will provide resources for IEP survey staff who are newer to these methods and technologies.
 
 ### Approach
 

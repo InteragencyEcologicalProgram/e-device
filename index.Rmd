@@ -29,7 +29,3 @@ knitr::include_graphics(c("images/bothlogo.JPG"))
 ```
 
 
-```{js, echo = FALSE}
-title=document.getElementById('header');
-title.innerHTML = '<img src=""images/bothlogo.JPG"" alt="ibothlogo.JPG">' + title.innerHTML
-```

@@ -27,7 +27,3 @@ The initial information was gleaned from interviews and presentations organized 
 <img src="images/bothlogo.JPG" width="70%" style="display: block; margin: auto;" />
 
 
-<script>
-title=document.getElementById('header');
-title.innerHTML = '<img src=""images/bothlogo.JPG"" alt="ibothlogo.JPG">' + title.innerHTML
-</script>

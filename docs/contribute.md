@@ -7,7 +7,7 @@
 **Best Way: Submit changes to the e-device package using Github:** 
 :::
 
-  a. Create a fork off of the primary package:   https://github.com/GitKarIn/e-device2.git
+  a. Create a fork off of the primary package: https://github.com/InteragencyEcologicalProgram/e-device
 
   b. Clone this fork to your own local repository
 
