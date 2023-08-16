@@ -23,17 +23,18 @@ bookdown::render_book()
 ```
 
   d. Compose changes or updates to the book contents
+  
+  e. Render the book after you make changes
 
-  e. Check for merge conflicts and submit a pull request
+  f. Submit a pull request with your revisions
 
 <!-- # specifying font style for bold because H3 does not render bold "**" option-->
 ::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
 **Back-up Way: Email proposed changes/edits to the document manager:** 
 :::
 
-  a. Print to pdf each page of the document that needs to be changed using the web browser print options 
+  a. Print to pdf each page of the document that needs to be changed using the web browser print options and use a pdf editor to insert comments or changes, 
+  Or, just note the bookdown page and the changes needed in a text document.
 
-  b. Use a pdf editor to insert comments or changes.
-
-  c. E-mail these edited pdf pages to: karrin.alstad@wildlife.ca.gov
+  b. E-mail these edits to: karrin.alstad@wildlife.ca.gov
 

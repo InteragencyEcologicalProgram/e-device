@@ -24,7 +24,7 @@ One of the goal the e-device sub-group was to develop a listing of IEP associate
    <td style="text-align:left;max-width: 4.5cm; font-weight: bold;"> PDF Forms using R-based data scraping </td>
    <td style="text-align:left;max-width: 7cm; "> Trinh Nguyen (IEP) </td>
    <td style="text-align:left;max-width: 10cm; "> Trinh.Nguyen@wildlife.ca.gov </td>
-   <td style="text-align:left;max-width: 10cm; "> (pending Trinh's approval) </td>
+   <td style="text-align:left;max-width: 10cm; ">  </td>
   </tr>
 </tbody>
 </table>
