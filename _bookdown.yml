@@ -23,7 +23,6 @@ rmd_files:
   - contribute.Rmd
   - organization.Rmd
   - summary.Rmd 
-  #- Preamble.Rmd # included in index.Rmd
   - 01-intro.Rmd
   - 02-survey.Rmd
   - 03-criteria.Rmd
@@ -36,6 +35,7 @@ rmd_files:
   - 10-PDF_R.Rmd
   - surv123demo.Rmd
   - powerappsdemo.Rmd
+  - fulcrumdemo.Rmd
   - hardware.Rmd
   - sensors.Rmd
   - appendix1.Rmd

@@ -1,7 +1,7 @@
 # SF Bay Study: PowerApps Trial App   {#powdem}
 
 
-The SF Bay Study ES staff have explored several electronic data entry software to support the complex Bay Study survey collections.  The software app that has shown the most promise is the Microsoft Form software 'Power Apps'.  T
+The SF Bay Study ES staff have explored several electronic data entry software to support the complex Bay Study survey collections.  The software app that has shown the most promise is the Microsoft Form software 'Power Apps'.  
 
 After approximately 6 months of app development in collaboration with the CDFW IT department and with Tuongvan Nguyen (IEP), the SF Bay Study Power app is now in a lab/field testing phase of development. Included below are screen shots of the app demonstrating the key features.
 

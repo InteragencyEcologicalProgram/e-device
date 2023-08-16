@@ -1,0 +1,42 @@
+# SF Bay Study: Fulcrum Trial App {#SFBSfulc}
+
+```{r, echo=FALSE, fig.cap="Screen capture of a test Fulcrum app developed for SFBS survey.", out.width = '50%'}
+knitr::include_graphics("images/IEPdemos/SFBS_fulcrum/IMG_0292.PNG", error = FALSE)
+```
+
+
+```{r, echo=FALSE, fig.cap="Screen capture of a test Fulcrum app developed for SFBS survey.", out.width = '50%'}
+knitr::include_graphics("images/IEPdemos/SFBS_fulcrum/IMG_0293.PNG", error = FALSE)
+```
+
+
+```{r, echo=FALSE, fig.cap="Screen capture of a test Fulcrum app developed for SFBS survey.", out.width = '50%'}
+knitr::include_graphics("images/IEPdemos/SFBS_fulcrum/IMG_0294.PNG", error = FALSE)
+```
+
+
+```{r, echo=FALSE, fig.cap="Screen capture of a test Fulcrum app developed for SFBS survey.", out.width = '50%'}
+knitr::include_graphics("images/IEPdemos/SFBS_fulcrum/IMG_0295.PNG", error = FALSE)
+```
+
+
+```{r, echo=FALSE, fig.cap="Screen capture of a test Fulcrum app developed for SFBS survey.", out.width = '50%'}
+knitr::include_graphics("images/IEPdemos/SFBS_fulcrum/IMG_0296.PNG", error = FALSE)
+```
+
+
+```{r, echo=FALSE, fig.cap="Screen capture of a test Fulcrum app developed for SFBS survey.", out.width = '50%'}
+knitr::include_graphics("images/IEPdemos/SFBS_fulcrum/IMG_0297.PNG", error = FALSE)
+```
+
+
+```{r, echo=FALSE, fig.cap="Screen capture of a test Fulcrum app developed for SFBS survey.", out.width = '50%'}
+knitr::include_graphics("images/IEPdemos/SFBS_fulcrum/IMG_0298.PNG", error = FALSE)
+```
+
+
+```{r, echo=FALSE, fig.cap="Screen capture of a test Fulcrum app developed for SFBS survey.", out.width = '130%'}
+knitr::include_graphics("images/IEPdemos/SFBS_fulcrum/lengths.PNG", error = FALSE)
+```
+
+
