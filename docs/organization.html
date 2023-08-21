@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 3 Organization | Electronic Data Entry Options for IEP Surveys</title>
 <meta name="author" content="IEP DUWG ‘e-Device’ Sub-group">
-<meta name="description" content="3.1 Organization of this Bookdown File This document is configured using the bookdown::bs4_book format for HTML output and the file organization is as follows: The main project folder...">
+<meta name="description" content="3.1 Organization of this Bookdown File This document uses the bookdown:bs4_book format for HTML output. The file organization is as follows: The main project folder (“edevice2/”) contains all...">
 <meta name="generator" content="bookdown 0.33 with bs4_book()">
 <meta property="og:title" content="Chapter 3 Organization | Electronic Data Entry Options for IEP Surveys">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://interagencyecologicalprogram.github.io/e-device/organization.html">
-<meta property="og:description" content="3.1 Organization of this Bookdown File This document is configured using the bookdown::bs4_book format for HTML output and the file organization is as follows: The main project folder...">
+<meta property="og:description" content="3.1 Organization of this Bookdown File This document uses the bookdown:bs4_book format for HTML output. The file organization is as follows: The main project folder (“edevice2/”) contains all...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 3 Organization | Electronic Data Entry Options for IEP Surveys">
-<meta name="twitter:description" content="3.1 Organization of this Bookdown File This document is configured using the bookdown::bs4_book format for HTML output and the file organization is as follows: The main project folder...">
+<meta name="twitter:description" content="3.1 Organization of this Bookdown File This document uses the bookdown:bs4_book format for HTML output. The file organization is as follows: The main project folder (“edevice2/”) contains all...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -46,7 +46,7 @@
       <nav aria-label="Table of contents"><h2>Table of contents</h2>
         <ul class="book-toc list-unstyled">
 <li><a class="" href="index.html"><span class="header-section-number">1</span> Preamble</a></li>
-<li><a class="" href="contribute.html"><span class="header-section-number">2</span> CONTRIBUTE</a></li>
+<li><a class="" href="contrb.html"><span class="header-section-number">2</span> Contribute</a></li>
 <li><a class="active" href="organization.html"><span class="header-section-number">3</span> Organization</a></li>
 <li class="book-part">Executive Summary</li>
 <li><a class="" href="summary.html"><span class="header-section-number">4</span> Summary</a></li>
@@ -90,14 +90,14 @@
 <h2>
 <span class="header-section-number">3.1</span> Organization of this Bookdown File<a class="anchor" aria-label="anchor" href="#organization-of-this-bookdown-file"><i class="fas fa-link"></i></a>
 </h2>
-<p>This document is configured using the bookdown::bs4_book format for HTML output and the file organization is as follows:</p>
+<p>This document uses the bookdown:bs4_book format for HTML output. The file organization is as follows:</p>
 <ul>
-<li><p>The main project folder (“edevice2/”) contains all files included in this bookdown document, including the data tables and scripts used to populate the document tables. The main folder of the project contains all of the .Rmd files that compose one (and only one) chapter.</p></li>
+<li><p>The main project folder (“edevice2/”) contains all files included in this bookdown document, including the data tables and scripts used to populate the document tables. The main folder of the project contains all the .Rmd files for the whole book.</p></li>
 <li><p>01-intro.Rmd, 02-survey.Rmd, etc.: These are the chapter files of the e-device book, which are numbered in the order that they appear in the table of contents. A chapter <em>must</em> start with a first-level heading: <code># A good chapter</code>, and can contain one (and only one) first-level heading.</p></li>
-<li><p>_bookdown.yml: This file contains the configuration options f the e-device book, including the output format, the location of the chapters, and the order of the chapters [if numbers are not used].</p></li>
+<li><p>_bookdown.yml: This file contains the configuration options of the e-device book, including the output format, the location of the chapters, and the order of the chapters.</p></li>
 <li><p>_output.yml: This file contains the configuration options for the output format, such as the theme, the CSS, and the JavaScript.</p></li>
 <li><p>index.Rmd: This file contains the content for this current page providing this orientation material. It also contains the front matter for the book, such as the title, the author, and the date, as well as the table of contents.</p></li>
-<li><p>_book/: This is the directory where the compiled book is stored. It contains all of the HTML, CSS, and JavaScript files that make up the book. Files in the _book directory should NOT be edited.</p></li>
+<li><p>_book/: This is the directory where the compiled book is stored. It contains all the HTML, CSS, and JavaScript files that make up the book. Files in the _book directory should NOT be edited.</p></li>
 <li><p>images/: This is the directory that contains all static images (images not derived by R code chunk) that are included in the e-device book. The static images (e.g., screen clips) are organized in folders by chapter.</p></li>
 <li><p>data_scripts/: This is the directory that contains all data handing scripts used in the e-device book. Currently, one data read script is run prior to rendering the book. This script output .rds data tables to the main edevice2 folder for access by the Rmd files.</p></li>
 <li><p>tables/: Excel files associated with the tables generated in this bookdown document are located in the tables/ folder.</p></li>
@@ -109,7 +109,7 @@
 
 
   <div class="chapter-nav">
-<div class="prev"><a href="contribute.html"><span class="header-section-number">2</span> CONTRIBUTE</a></div>
+<div class="prev"><a href="contrb.html"><span class="header-section-number">2</span> Contribute</a></div>
 <div class="next"><a href="summary.html"><span class="header-section-number">4</span> Summary</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>

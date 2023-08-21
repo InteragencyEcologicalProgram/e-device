@@ -55,14 +55,13 @@ NOTE: This Executive Summary was shared with IEP Coordinators Team in Sept of 20
 
 <!-- # specifying font style for bold because H3 does not render bold "**" option-->
 ::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"} 
-**Top software applications used by IEP for field data entry with the most notable* pros and cons for each criteria category.**  The criteria used for comparison are described here [criteria category](#crittop). 
+**Top software applications used by IEP for field data entry with the most notable* pros and cons for each criteria category.**  The criteria used for comparison are described here [criteria category](#crittop). Note: Apps are listed in order reviewed by the DUWG sub-team.
 :::
 
-*Note: Categories without a specified Pro or Con indicated mean that app meets basic requirements for survey data collection for that category.
+*NOTE: The categories without a specified Pro or Con points listed indicate that the app meets the basic requirements needed for survey data collection for that category.
 
-*Note: Apps are listed in order reviewed by the DUWG sub-team.
 
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto;border-bottom: 0; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
  <thead>
   <tr>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Software </th>
@@ -163,8 +162,6 @@ NOTE: This Executive Summary was shared with IEP Coordinators Team in Sept of 20
    <td style="text-align:left;"> **Pros:** Least expensive approach </td>
   </tr>
 </tbody>
-<tfoot><tr><td style="padding: 0; " colspan="100%">
-<sup></sup> *Categories without a specified Pro or Con indicated mean that app meets basic requirements for survey data collection for that category.</td></tr></tfoot>
 </table></div>
 
 

@@ -1,10 +1,10 @@
-# CONTRIBUTE
+# Contribute {#contrb}
 
 ## **How to Contribute New E-Device Research: Two Ways** {-}
 
 <!-- # specifying font style for bold because H3 does not render bold "**" option-->
 ::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
-**Best Way: Submit changes to the e-device package using Github:** 
+**Preferred Way: Submit changes to the e-device package using Github:** 
 :::
 
   a. Create a fork off of the primary package: https://github.com/InteragencyEcologicalProgram/e-device
@@ -30,7 +30,7 @@ bookdown::render_book()
 
 <!-- # specifying font style for bold because H3 does not render bold "**" option-->
 ::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
-**Back-up Way: Email proposed changes/edits to the document manager:** 
+**Alternative Way: Email proposed changes/edits to the document manager:** 
 :::
 
   a. Print to pdf each page of the document that needs to be changed using the web browser print options and use a pdf editor to insert comments or changes, 
