@@ -46,7 +46,7 @@ Adopting digital data entry protocols will require time to develop the field dat
 NOTE: This Executive Summary was shared with IEP Coordinators Team in Sept of 2023. 
 ```{r e_surv, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
 library(here)
-xfun::embed_file(c("docs/ExecSumm_edevice_Sept2023.pdf"))
+xfun::embed_file(c("docs/ExecSumm_edevice.pdf"))
 ```
 
 
