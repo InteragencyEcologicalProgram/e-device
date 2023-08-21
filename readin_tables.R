@@ -59,15 +59,17 @@ popapps[is.na(popapps)] <- " "
 saveRDS(popapps, file = "popapps.rds")
 
 
-## e-device criteria table for intro
-criteria <- read_excel_allsheets(file.path(Xdatfldr,"Template_app_criteria_intro.xlsx"))
-saveRDS(criteria, file = "criteria.rds")
-
-
 ## speakers
 speakrs <- read_excel_allsheets(file.path(Xdatfldr,"speakers_locals.xlsx"))
 saveRDS(speakrs$Sheet1, file = "speakrs.rds")
 
+## e-device criteria table for intro
+criteria <- read_excel_allsheets(file.path(Xdatfldr,"Template_app_criteria_intro.xlsx"))
+saveRDS(criteria, file = "criteria.rds")
+
+# ProsCons
+proscons <- read_excel_allsheets(file.path(Xdatfldr,"ProsCons2.xlsx"))
+proscons <- as.data.frame(proscons[1])
 
 ## software criteria tables
 survey123 <- read_excel_allsheets(file.path(Xdatfldr,"Survey123_app_criteria2.xlsx"))

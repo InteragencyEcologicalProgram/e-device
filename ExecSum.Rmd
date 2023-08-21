@@ -53,7 +53,7 @@ Adopting digital data entry protocols will require time to develop the platforms
 
 <!-- # specifying font style for bold because H3 does not render bold "**" option-->
 ::: {#Tab1  style="font-size:18px; font-family: Segoe UI;"}
-**Table 1:  The top software tools used for field data entry are listed and the Pros and Cons of each tool are briefly described for each [criteria category](#crittop).**
+**Table 1:  The top software tools used for field data entry are listed and the most notable* Pros and Cons of each tool are briefly described for each [criteria category](#crittop).**
 :::
 
 
@@ -78,8 +78,8 @@ proscons %>%
   
 kable(proscons, format = "html", escape = F,  booktabs = TRUE, align='l') %>%
   kable_paper() %>% 
-  # kable_styling(bootstrap_options = c("striped", "hover"),full_width = FALSE, fixed_thead = TRUE,
-  #               font_size = 20) %>%
+   
+  add_footnote("Footnote 1", notation="alphabet")%>%
   kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
   #column_spec(1, width_min = "4cm", bold = TRUE, italic = F) %>%
   column_spec(1, width_max = "4.5cm", bold = TRUE, italic = F) %>%

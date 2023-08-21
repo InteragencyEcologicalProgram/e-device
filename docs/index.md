@@ -1,7 +1,7 @@
 --- 
 title: "Electronic Data Entry Options for IEP Surveys"
 author: "IEP DUWG 'e-Device' Sub-group"
-date: "2023-08-16"
+date: "2023-08-21"
 site: bookdown::bookdown_site
 url: "https://interagencyecologicalprogram.github.io/e-device/"
 documentclass: book
