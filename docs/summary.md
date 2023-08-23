@@ -168,11 +168,11 @@ NOTE: This Executive Summary was shared with IEP Coordinators Team in Sept of 20
   <tr>
    <td style="text-align:left;max-width: 4.5cm; font-weight: bold;"> PDF/R-scraping </td>
    <td style="text-align:left;max-width: 7cm; "> **Cons:**  Not as many options to control PDF form input </td>
-   <td style="text-align:left;max-width: 10cm; "> **Pros:** R-based PDF scraped data can be formated in R and transferred remotely with R-based API protocols
+   <td style="text-align:left;max-width: 10cm; "> **Pros:** R-based PDF scraped data could be further processed in R
 
 --- --- --- ---
 
-**Cons:** All data configuratons must be programmed </td>
+**Cons:** All data configuratons must be coded by scratch requiring programming skills </td>
    <td style="text-align:left;"> **Cons:**  No photo options; no options to connect to external sensors </td>
    <td style="text-align:left;"> **Pros:** PDF forms are usable on all platform types; PDF forms may be used on mobile apps using Adobe Reader app </td>
    <td style="text-align:left;"> **Pros:** low security risk </td>

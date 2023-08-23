@@ -130,8 +130,8 @@ Dan:  It would have to be set up like that originally; The built-in Java calls c
 
 
 <div class="figure">
-<img src="images/Pendragon/synch.jpg" alt="Pendragon forms can be transposed to different device types." width="90%" />
-<p class="caption">(\#fig:pend5)Pendragon forms can be transposed to different device types.</p>
+<img src="images/Pendragon/synch.jpg" alt="The Pendragon data transfer to the cloud SQL platform is initiated manually with a synch button outside of the data entry form." width="90%" />
+<p class="caption">(\#fig:pend5)The Pendragon data transfer to the cloud SQL platform is initiated manually with a synch button outside of the data entry form.</p>
 </div>
 
 

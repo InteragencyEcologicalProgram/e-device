@@ -121,7 +121,7 @@ Dan: A secure obdc protocol could be configured so that users can develop their 
 Dan:  It would have to be set up like that originally; The built-in Java calls can send individual data to a server or an IP address. It is expecting a web server but a custom API could be configured to synch to a local system.
 
 
-```{r pend5, echo=FALSE, fig.cap="Pendragon forms can be transposed to different device types.", out.width = '90%'}
+```{r pend5, echo=FALSE, fig.cap="The Pendragon data transfer to the cloud SQL platform is initiated manually with a synch button outside of the data entry form.", out.width = '90%'}
 knitr::include_graphics("images/Pendragon/synch.jpg", error = FALSE)
 ```
 

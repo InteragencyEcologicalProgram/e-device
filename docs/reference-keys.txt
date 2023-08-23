@@ -124,7 +124,8 @@ tab:expnet
 preamble
 contrb
 organization
-organization-of-this-bookdown-file
+organization-of-this-e-device-document-overall
+organization-of-the-bookdown-files
 summary
 intro
 e-device-working-group-overview
