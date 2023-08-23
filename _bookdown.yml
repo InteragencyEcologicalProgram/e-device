@@ -29,7 +29,7 @@ rmd_files:
   - 04-survey123.Rmd
   - 05-PowerApps.Rmd
   - 06-Fulcrum.Rmd
-  #- 07-Pendragon.Rmd
+  - 07-Pendragon.Rmd
   - 08-FEED.Rmd
   - 09-BigFin.Rmd
   - 10-PDF_R.Rmd

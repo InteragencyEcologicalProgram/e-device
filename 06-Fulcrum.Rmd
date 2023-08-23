@@ -164,7 +164,7 @@ sectable(fulcsec)
 
   
 
-```{r fulpbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
+```{r fulcbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
 
 library(kableExtra)
 sectable(fulcbus)

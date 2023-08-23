@@ -62,16 +62,13 @@ popapps[is.na(popapps)] <- " "
 proscons <- read_excel(file.path(tabs,"ProsCons2.xlsx"))
 
 
-## pros cons table for summary
-criteria <- read_excel_allsheets(file.path(tabs,"Template_app_criteria_intro.xlsx"))
-
-
 ## e-device criteria table for intro
 criteria <- read_excel_allsheets(file.path(tabs,"Template_app_criteria_intro.xlsx"))
 
 
 ## speakers
 speakrs <- read_excel(file.path(tabs,"speakers_locals.xlsx"))
+
 
 ## expert network
 experts <- read_excel(file.path(tabs,"ExpertNet.xlsx"))
@@ -85,6 +82,9 @@ fulcrum <- read_excel_allsheets(file.path(tabs,"Fulcrum.xlsx"))
 feed <- read_excel_allsheets(file.path(tabs,"FEED_criteria.xlsx"))
 bigfin <- read_excel_allsheets(file.path(tabs,"BigFin_criteria.xlsx"))
 PDFR <- read_excel_allsheets(file.path(tabs,"PDF_Rscrap.xlsx"))
+pendrag <- read_excel_allsheets(file.path(tabs,"Pendragon.xlsx"))
+
+
 
 ## Table-Making Functions for each section of the app criteria tables
 

@@ -4,17 +4,17 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<title>Chapter 13 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys</title>
+<title>Chapter 14 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys</title>
 <meta name="author" content="IEP DUWG ‘e-Device’ Sub-group">
-<meta name="description" content="13.1 R Scrape PDF Approach Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time...">
+<meta name="description" content="14.1 R Scrape PDF Approach Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time...">
 <meta name="generator" content="bookdown 0.33 with bs4_book()">
-<meta property="og:title" content="Chapter 13 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys">
+<meta property="og:title" content="Chapter 14 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://interagencyecologicalprogram.github.io/e-device/pdf-form-and-r-scraping.html">
-<meta property="og:description" content="13.1 R Scrape PDF Approach Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time...">
+<meta property="og:description" content="14.1 R Scrape PDF Approach Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time...">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Chapter 13 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys">
-<meta name="twitter:description" content="13.1 R Scrape PDF Approach Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time...">
+<meta name="twitter:title" content="Chapter 14 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys">
+<meta name="twitter:description" content="14.1 R Scrape PDF Approach Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -58,18 +58,19 @@
 <li><a class="" href="esri-survey123.html"><span class="header-section-number">8</span> ESRI Survey123</a></li>
 <li><a class="" href="ms-power-apps.html"><span class="header-section-number">9</span> MS Power Apps</a></li>
 <li><a class="" href="fulcrum-app.html"><span class="header-section-number">10</span> Fulcrum App</a></li>
-<li><a class="" href="vimsfeed.html"><span class="header-section-number">11</span> VIMS/FEED</a></li>
-<li><a class="" href="big-fin.html"><span class="header-section-number">12</span> Big Fin</a></li>
-<li><a class="active" href="pdf-form-and-r-scraping.html"><span class="header-section-number">13</span> PDF Form and R Scraping</a></li>
+<li><a class="" href="pendragon.html"><span class="header-section-number">11</span> Pendragon</a></li>
+<li><a class="" href="vimsfeed.html"><span class="header-section-number">12</span> VIMS/FEED</a></li>
+<li><a class="" href="big-fin.html"><span class="header-section-number">13</span> Big Fin</a></li>
+<li><a class="active" href="pdf-form-and-r-scraping.html"><span class="header-section-number">14</span> PDF Form and R Scraping</a></li>
 <li class="book-part">IEP Survey Demos</li>
-<li><a class="" href="yoldem.html"><span class="header-section-number">14</span> Yolo Bypass: Survey123 Trial App</a></li>
-<li><a class="" href="powdem.html"><span class="header-section-number">15</span> SF Bay Study: PowerApps Trial App</a></li>
-<li><a class="" href="SFBSfulc.html"><span class="header-section-number">16</span> SF Bay Study: Fulcrum Trial App</a></li>
+<li><a class="" href="yoldem.html"><span class="header-section-number">15</span> Yolo Bypass: Survey123 Trial App</a></li>
+<li><a class="" href="powdem.html"><span class="header-section-number">16</span> SF Bay Study: PowerApps Trial App</a></li>
+<li><a class="" href="SFBSfulc.html"><span class="header-section-number">17</span> SF Bay Study: Fulcrum Trial App</a></li>
 <li class="book-part">Hardware Reviews</li>
-<li><a class="" href="e-device-hardware-options.html"><span class="header-section-number">17</span> E-Device Hardware Options</a></li>
+<li><a class="" href="e-device-hardware-options.html"><span class="header-section-number">18</span> E-Device Hardware Options</a></li>
 <li class="book-part">External Sensors</li>
-<li><a class="" href="fishboards.html"><span class="header-section-number">18</span> Fishboards</a></li>
-<li><a class="" href="navigation-data.html"><span class="header-section-number">19</span> Navigation Data</a></li>
+<li><a class="" href="fishboards.html"><span class="header-section-number">19</span> Fishboards</a></li>
+<li><a class="" href="navigation-data.html"><span class="header-section-number">20</span> Navigation Data</a></li>
 <li class="book-part">Appendix</li>
 <li><a class="" href="appx_1.html"><span class="header-section-number">A</span> Appendix - E-device Survey</a></li>
 <li><a class="" href="appx_2.html"><span class="header-section-number">B</span> Appendix - PDF R Scraping Demonstration</a></li>
@@ -82,34 +83,34 @@
         </div>
       </nav>
 </div>
-  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="pdf-form-and-r-scraping" class="section level1" number="13">
+  </header><main class="col-sm-12 col-md-9 col-lg-7" id="content"><div id="pdf-form-and-r-scraping" class="section level1" number="14">
 <h1>
-<span class="header-section-number">13</span> PDF Form and R Scraping<a class="anchor" aria-label="anchor" href="#pdf-form-and-r-scraping"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14</span> PDF Form and R Scraping<a class="anchor" aria-label="anchor" href="#pdf-form-and-r-scraping"><i class="fas fa-link"></i></a>
 </h1>
-<div id="PDFtop" class="section level2" number="13.1">
+<div id="PDFtop" class="section level2" number="14.1">
 <h2>
-<span class="header-section-number">13.1</span> R Scrape PDF Approach Overview<a class="anchor" aria-label="anchor" href="#PDFtop"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.1</span> R Scrape PDF Approach Overview<a class="anchor" aria-label="anchor" href="#PDFtop"><i class="fas fa-link"></i></a>
 </h2>
 <p>PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum <a href="appx_1.html#appx_1">See IEP E-device Survey</a>.</p>
 <p>PDF forms can be filled in using either Acrobat, Acrobat Reader (free), or Foxit editor. Static or interactive forms can be created using either the Acrobat or Foxit editor.</p>
 <p>R has been proposed as a tool for programmatically extracting the filled-in PDF form. The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. The full code for Trinh’s evaluation is included in Appendix 2: <a href="appx_2.html#appx_2">PDF R Scraping Demonstration</a></p>
 </div>
-<div id="create-a-fillable-pdf-form" class="section level2" number="13.2">
+<div id="create-a-fillable-pdf-form" class="section level2" number="14.2">
 <h2>
-<span class="header-section-number">13.2</span> Create a fillable PDF form<a class="anchor" aria-label="anchor" href="#create-a-fillable-pdf-form"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.2</span> Create a fillable PDF form<a class="anchor" aria-label="anchor" href="#create-a-fillable-pdf-form"><i class="fas fa-link"></i></a>
 </h2>
 <p><a href="https://helpx.adobe.com/acrobat/using/creating-distributing-pdf-forms.html#create_forms_using_acrobat">How to create fillable PDF forms with Adobe Adrobat</a></p>
 <p><a href="https://www.foxit.com/blog/how-to-create-fillable-pdf-forms/?psafe_param=1&amp;utm_source=googleads&amp;utm_medium=PMAX&amp;cq_cmp=19179766755&amp;utm_campaign=FOXIT_GA_NAM_EN_PMAX_LEADS_SALESFORCE_PDF%20EDITOR&amp;gclid=EAIaIQobChMIkore1cbcgAMVgAOtBh3QLQ_WEAAYASAAEgLmOfD_BwE">How to create fillable PDF forms with Foxit Editor</a></p>
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-1"></span>
 <img src="images/PDF_Rscrape/FoxitEditor.jpg" alt="Field types options in Foxit." width="90%"><p class="caption">
-Figure 13.1: Field types options in Foxit.
+Figure 14.1: Field types options in Foxit.
 </p>
 </div>
 </div>
-<div id="excerpts-from-evalutaion-by-trinh-nguyen" class="section level2" number="13.3">
+<div id="excerpts-from-evalutaion-by-trinh-nguyen" class="section level2" number="14.3">
 <h2>
-<span class="header-section-number">13.3</span> Excerpts from evalutaion by Trinh Nguyen:<a class="anchor" aria-label="anchor" href="#excerpts-from-evalutaion-by-trinh-nguyen"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.3</span> Excerpts from evalutaion by Trinh Nguyen:<a class="anchor" aria-label="anchor" href="#excerpts-from-evalutaion-by-trinh-nguyen"><i class="fas fa-link"></i></a>
 </h2>
 <p>Purpose: There are several PDF scraping packages in R. I will focus on two:</p>
 <ol style="list-style-type: decimal">
@@ -156,7 +157,7 @@ Figure 13.1: Field types options in Foxit.
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-2"></span>
 <img src="images/PDF_Rscrape/bayStudyExample_1.png" alt="Bay Study datasheet: NOT Tabulated" width="90%"><p class="caption">
-Figure 13.2: Bay Study datasheet: NOT Tabulated
+Figure 14.2: Bay Study datasheet: NOT Tabulated
 </p>
 </div>
 <p>Workflow: Bay Study</p>
@@ -168,50 +169,50 @@ Figure 13.2: Bay Study datasheet: NOT Tabulated
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-3"></span>
 <img src="images/PDF_Rscrape/extract_non-formated.JPG" alt="Attempt to extract Bay Study datasheet using tabulizer function, extract_tables" width="90%"><p class="caption">
-Figure 13.3: Attempt to extract Bay Study datasheet using tabulizer function, extract_tables
+Figure 14.3: Attempt to extract Bay Study datasheet using tabulizer function, extract_tables
 </p>
 </div>
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-4"></span>
 <img src="images/PDF_Rscrape/extract_non-formated2.JPG" alt="Attempt to extract Bay Study datasheet by finding specific data locations for reference." width="90%"><p class="caption">
-Figure 13.4: Attempt to extract Bay Study datasheet by finding specific data locations for reference.
+Figure 14.4: Attempt to extract Bay Study datasheet by finding specific data locations for reference.
 </p>
 </div>
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-5"></span>
 <img src="images/PDF_Rscrape/extract_non-formated3.JPG" alt="Bay Study datasheet with data location highlighted." width="90%"><p class="caption">
-Figure 13.5: Bay Study datasheet with data location highlighted.
+Figure 14.5: Bay Study datasheet with data location highlighted.
 </p>
 </div>
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-6"></span>
 <img src="images/PDF_Rscrape/extract_non-formated4.JPG" alt="Bay Study datasheet coordinates from locate_areas function." width="90%"><p class="caption">
-Figure 13.6: Bay Study datasheet coordinates from locate_areas function.
+Figure 14.6: Bay Study datasheet coordinates from locate_areas function.
 </p>
 </div>
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-7"></span>
 <img src="images/PDF_Rscrape/extract_non-formated5.JPG" alt="Extracted data from one location of the Bay Study datasheet" width="90%"><p class="caption">
-Figure 13.7: Extracted data from one location of the Bay Study datasheet
+Figure 14.7: Extracted data from one location of the Bay Study datasheet
 </p>
 </div>
 <p>In Contrast: Tabular Data</p>
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-8"></span>
 <img src="docs/images/PDF_Rscrape/PayPeriodsDGS_1.png" alt="Tabulated Pay Period tables." width="90%"><p class="caption">
-Figure 13.8: Tabulated Pay Period tables.
+Figure 14.8: Tabulated Pay Period tables.
 </p>
 </div>
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-9"></span>
 <img src="images/PDF_Rscrape/extract_tabular.JPG" alt="Extracting Tabulated Data" width="90%"><p class="caption">
-Figure 13.9: Extracting Tabulated Data
+Figure 14.9: Extracting Tabulated Data
 </p>
 </div>
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-10"></span>
 <img src="images/PDF_Rscrape/extract_tabular2.JPG" alt="Extracted Tabulated Data" width="90%"><p class="caption">
-Figure 13.10: Extracted Tabulated Data
+Figure 14.10: Extracted Tabulated Data
 </p>
 </div>
 <p>Conclusion</p>
@@ -338,18 +339,18 @@ Very No
 </tbody>
 </table></div>
 </div>
-<div id="r-scrape-pdf-approach-criteria-tables" class="section level2" number="13.4">
+<div id="r-scrape-pdf-approach-criteria-tables" class="section level2" number="14.4">
 <h2>
-<span class="header-section-number">13.4</span> R Scrape PDF Approach: Criteria Tables<a class="anchor" aria-label="anchor" href="#r-scrape-pdf-approach-criteria-tables"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4</span> R Scrape PDF Approach: Criteria Tables<a class="anchor" aria-label="anchor" href="#r-scrape-pdf-approach-criteria-tables"><i class="fas fa-link"></i></a>
 </h2>
-<div id="pdf-r-scrape-forms-options" class="section level3" number="13.4.1">
+<div id="pdf-r-scrape-forms-options" class="section level3" number="14.4.1">
 <h3>
-<span class="header-section-number">13.4.1</span> PDF-R Scrape: Forms Options<a class="anchor" aria-label="anchor" href="#pdf-r-scrape-forms-options"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.1</span> PDF-R Scrape: Forms Options<a class="anchor" aria-label="anchor" href="#pdf-r-scrape-forms-options"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
-<span id="tab:PDFRform">Table 13.1: </span>Forms Options
+<span id="tab:PDFRform">Table 14.1: </span>Forms Options
 </caption>
 <thead><tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
@@ -639,14 +640,14 @@ No
 </table></div>
 </div>
 </div>
-<div id="PDFdat" class="section level3" number="13.4.2">
+<div id="PDFdat" class="section level3" number="14.4.2">
 <h3>
-<span class="header-section-number">13.4.2</span> PDF-R Scrape: Data Interface<a class="anchor" aria-label="anchor" href="#PDFdat"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.2</span> PDF-R Scrape: Data Interface<a class="anchor" aria-label="anchor" href="#PDFdat"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
-<span id="tab:PDFRdat">Table 13.2: </span>Data Interface Options
+<span id="tab:PDFRdat">Table 14.2: </span>Data Interface Options
 </caption>
 <thead><tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
@@ -824,14 +825,14 @@ No
 </table></div>
 </div>
 </div>
-<div id="PDFpho" class="section level3" number="13.4.3">
+<div id="PDFpho" class="section level3" number="14.4.3">
 <h3>
-<span class="header-section-number">13.4.3</span> PDF-R Scrape: Photo Integration and External Sensors<a class="anchor" aria-label="anchor" href="#PDFpho"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.3</span> PDF-R Scrape: Photo Integration and External Sensors<a class="anchor" aria-label="anchor" href="#PDFpho"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
-<span id="tab:PDFRphot">Table 13.3: </span>Photo Integration and External Sensors
+<span id="tab:PDFRphot">Table 14.3: </span>Photo Integration and External Sensors
 </caption>
 <thead><tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
@@ -972,14 +973,14 @@ No
 </table></div>
 </div>
 </div>
-<div id="PDFhrd" class="section level3" number="13.4.4">
+<div id="PDFhrd" class="section level3" number="14.4.4">
 <h3>
-<span class="header-section-number">13.4.4</span> PDF-R Scrape: Hardware Platforms<a class="anchor" aria-label="anchor" href="#PDFhrd"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.4</span> PDF-R Scrape: Hardware Platforms<a class="anchor" aria-label="anchor" href="#PDFhrd"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
-<span id="tab:PDFRhard">Table 13.4: </span>Hardware Platform Options
+<span id="tab:PDFRhard">Table 14.4: </span>Hardware Platform Options
 </caption>
 <thead><tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
@@ -1083,14 +1084,14 @@ Yes
 </div>
 <p><a href="big-fin.html#BFtop">Top of section</a></p>
 </div>
-<div id="PDFsec" class="section level3" number="13.4.5">
+<div id="PDFsec" class="section level3" number="14.4.5">
 <h3>
-<span class="header-section-number">13.4.5</span> PDF-R Scrape: Security Factors<a class="anchor" aria-label="anchor" href="#PDFsec"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.5</span> PDF-R Scrape: Security Factors<a class="anchor" aria-label="anchor" href="#PDFsec"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
-<span id="tab:PDFRsec">Table 13.5: </span>Security Factors
+<span id="tab:PDFRsec">Table 14.5: </span>Security Factors
 </caption>
 <thead><tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
@@ -1184,14 +1185,14 @@ No
 </table></div>
 </div>
 </div>
-<div id="PDFbus" class="section level3" number="13.4.6">
+<div id="PDFbus" class="section level3" number="14.4.6">
 <h3>
-<span class="header-section-number">13.4.6</span> PDF-R Scrape: Business Model and Customer Support<a class="anchor" aria-label="anchor" href="#PDFbus"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.6</span> PDF-R Scrape: Business Model and Customer Support<a class="anchor" aria-label="anchor" href="#PDFbus"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
-<span id="tab:PDFRbus">Table 13.6: </span>Security Factors
+<span id="tab:PDFRbus">Table 14.6: </span>Security Factors
 </caption>
 <thead><tr>
 <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
@@ -1264,23 +1265,23 @@ R programming is where one may need support.
 
 
   <div class="chapter-nav">
-<div class="prev"><a href="big-fin.html"><span class="header-section-number">12</span> Big Fin</a></div>
-<div class="next"><a href="yoldem.html"><span class="header-section-number">14</span> Yolo Bypass: Survey123 Trial App</a></div>
+<div class="prev"><a href="big-fin.html"><span class="header-section-number">13</span> Big Fin</a></div>
+<div class="next"><a href="yoldem.html"><span class="header-section-number">15</span> Yolo Bypass: Survey123 Trial App</a></div>
 </div></main><div class="col-md-3 col-lg-2 d-none d-md-block sidebar sidebar-chapter">
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
-<li><a class="nav-link" href="#pdf-form-and-r-scraping"><span class="header-section-number">13</span> PDF Form and R Scraping</a></li>
-<li><a class="nav-link" href="#PDFtop"><span class="header-section-number">13.1</span> R Scrape PDF Approach Overview</a></li>
-<li><a class="nav-link" href="#create-a-fillable-pdf-form"><span class="header-section-number">13.2</span> Create a fillable PDF form</a></li>
-<li><a class="nav-link" href="#excerpts-from-evalutaion-by-trinh-nguyen"><span class="header-section-number">13.3</span> Excerpts from evalutaion by Trinh Nguyen:</a></li>
+<li><a class="nav-link" href="#pdf-form-and-r-scraping"><span class="header-section-number">14</span> PDF Form and R Scraping</a></li>
+<li><a class="nav-link" href="#PDFtop"><span class="header-section-number">14.1</span> R Scrape PDF Approach Overview</a></li>
+<li><a class="nav-link" href="#create-a-fillable-pdf-form"><span class="header-section-number">14.2</span> Create a fillable PDF form</a></li>
+<li><a class="nav-link" href="#excerpts-from-evalutaion-by-trinh-nguyen"><span class="header-section-number">14.3</span> Excerpts from evalutaion by Trinh Nguyen:</a></li>
 <li>
-<a class="nav-link" href="#r-scrape-pdf-approach-criteria-tables"><span class="header-section-number">13.4</span> R Scrape PDF Approach: Criteria Tables</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#pdf-r-scrape-forms-options"><span class="header-section-number">13.4.1</span> PDF-R Scrape: Forms Options</a></li>
-<li><a class="nav-link" href="#PDFdat"><span class="header-section-number">13.4.2</span> PDF-R Scrape: Data Interface</a></li>
-<li><a class="nav-link" href="#PDFpho"><span class="header-section-number">13.4.3</span> PDF-R Scrape: Photo Integration and External Sensors</a></li>
-<li><a class="nav-link" href="#PDFhrd"><span class="header-section-number">13.4.4</span> PDF-R Scrape: Hardware Platforms</a></li>
-<li><a class="nav-link" href="#PDFsec"><span class="header-section-number">13.4.5</span> PDF-R Scrape: Security Factors</a></li>
-<li><a class="nav-link" href="#PDFbus"><span class="header-section-number">13.4.6</span> PDF-R Scrape: Business Model and Customer Support</a></li>
+<a class="nav-link" href="#r-scrape-pdf-approach-criteria-tables"><span class="header-section-number">14.4</span> R Scrape PDF Approach: Criteria Tables</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#pdf-r-scrape-forms-options"><span class="header-section-number">14.4.1</span> PDF-R Scrape: Forms Options</a></li>
+<li><a class="nav-link" href="#PDFdat"><span class="header-section-number">14.4.2</span> PDF-R Scrape: Data Interface</a></li>
+<li><a class="nav-link" href="#PDFpho"><span class="header-section-number">14.4.3</span> PDF-R Scrape: Photo Integration and External Sensors</a></li>
+<li><a class="nav-link" href="#PDFhrd"><span class="header-section-number">14.4.4</span> PDF-R Scrape: Hardware Platforms</a></li>
+<li><a class="nav-link" href="#PDFsec"><span class="header-section-number">14.4.5</span> PDF-R Scrape: Security Factors</a></li>
+<li><a class="nav-link" href="#PDFbus"><span class="header-section-number">14.4.6</span> PDF-R Scrape: Business Model and Customer Support</a></li>
 </ul>
 </li>
 </ul>
@@ -1300,7 +1301,7 @@ R programming is where one may need support.
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Electronic Data Entry Options for IEP Surveys</strong>" was written by IEP DUWG ‘e-Device’ Sub-group. It was last built on 2023-08-21.</p>
+    <p>"<strong>Electronic Data Entry Options for IEP Surveys</strong>" was written by IEP DUWG ‘e-Device’ Sub-group. It was last built on 2023-08-23.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

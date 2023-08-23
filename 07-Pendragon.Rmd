@@ -3,10 +3,127 @@
 
 ## Pendragon Overview  {#pentop} 
 
+Dan Phillips, a Pendragon Forms company representative, presented to the e-device group on Sept. 22, 2022. Dan suggests that Pendragon falls into the middle of the array of e-device software options, between the very simple, quick menu driven and completely customized form, and forms developed from scratch using base coding languages. Pendragon is in the middle because it has a basic structure that must be followed, but it also has significant flexibility with custom scripting options. On the more complex end, Pendragon forms can include sub-forms, scripting, and custom Java scripted rules and calculations. Pendragon, unlike some other competitors, creates and saves the form in a relational database. MySQL is the database server used.
+
 
 ## Pendragon: Key Features 
 
+
 ### Pendragon Form Developing Interface
+
+There are two approaches to developing a data entry form:
+
+  1.	Basic Form Designer 
+  
+
+Fields can be added one by one through the web-based forms designer GUI.  
+
+```{r pend1, echo=FALSE, fig.cap="Pendragon web-based forms designer GUI.", out.width = '90%'}
+knitr::include_graphics("images/Pendragon/01-qs-dashboard.jpg", error = FALSE)
+```
+  
+```{r pend12, echo=FALSE, fig.cap="Pendragon web-based forms designer GUI.", out.width = '90%'}
+knitr::include_graphics("images/Pendragon/form_dev3.jpg", error = FALSE)
+```
+   
+```{r pend13, echo=FALSE, fig.cap="Pendragon web-based forms designer GUI.", out.width = '90%'}
+knitr::include_graphics("images/Pendragon/form_dev4.jpg", error = FALSE)
+``` 
+  
+  2.	Custom built solutions
+
+The core scripting language of Pendragon is simplified version of Java. Pendragon provides many built-in/proprietary "Calls" (functions) that provide common forms options that are often repeated many times within a form. Pendragon also provides an interface for user-developed Calls; Custom calls are a more advanced form-building options, but these can provides further flexibility and application optimization.  
+
+### Pendragon Forms Options
+
+- The date time stamp is included no mater what, but form of date-time can be customized.
+- Full range of field types: Radio buttons (drop-down lists); look-up lists (for large list of records)
+- GPS can be captured by Pendragon from the device. Precision of GPS depends on capacity of device.
+- Images (more than one) can be captured by the device and associated with a record.
+- Access to sub-forms can be added (nested format)
+- Forms can extend across multiple pages.
+
+
+```{r pend2, echo=FALSE, fig.cap="Pendragon forms can extend across multiple pages.", out.width = '90%'}
+knitr::include_graphics("images/Pendragon/forms_examples.jpg", error = FALSE)
+```
+
+- Voice to text can be used for text fields.
+- Web-designer provides an 'All-fields" view for review of Form fields
+
+- ‘Buttons’ are functions that use custom written scripts.
+Dan Phillips (Pendragon) suggests:
+For someone who has never done any scripting or coding before, the Forms design routine will be new.
+For someone who has done some basic scripting, this tool will be quick to pick up.
+
+- Option available to ‘Go To’ a second input field based on the response of the first input field.
+- There are ways to hide certain fields based on the response of an initial input field.
+
+
+
+### Pendragon Form Permissions Management
+
+There are three different levels of access to a Pendragon account.  The User-level can only get in from the interface on the device and cannot design or change the data collection form;  The Designer-level can design forms but cannot control users;  The Administrative-level can do both. Completed forms can be assigned to groups and users can be added to have access to these forms.
+
+- Completed forms can be assigned to groups and users can be added to have access to these forms.
+
+
+```{r pend3, echo=FALSE, fig.cap="Completed forms can be assigned to groups and users can be added to have access to these forms.", out.width = '90%'}
+knitr::include_graphics("images/Pendragon/group.jpg", error = FALSE)
+```
+
+- Completed forms are ‘frozen’ to lock down form configurations; forms are 'published' to make available to specified users.
+
+```{r pend32, echo=FALSE, fig.cap="Completed forms are ‘frozen’ to lock down form configurations; forms are 'published' to make available to specified users.", out.width = '90%'}
+knitr::include_graphics("images/Pendragon/form_list.jpg", error = FALSE)
+```
+
+
+
+### Pendragon Web Tool Options
+
+
+- Web tool menu displays can help organize all forms created.
+- Pendragon forms can be used and tested in any browser which allows you to test everything before it is deployed on a mobile device.
+- The ‘mobile view’ of the All Fields form provides a preview of the form as it would appear on the device.
+- Pendragon forms can be transposed to different device types (forms have a ‘responsive layout’)
+
+
+
+```{r pend4, echo=FALSE, fig.cap="Pendragon forms can be transposed to different device types.", out.width = '90%'}
+knitr::include_graphics("images/Pendragon/layout_options.jpg", error = FALSE)
+```
+
+### Pendragon Mobile Options
+
+- The Form display will only show columns that fit on the page so the design choice is important for for different device types.
+- Rules can be assigned to specify which records come off of the device.
+- Rules can be assigned to indicate which fields are transferred during a synchronization.
+- Two actions during synchronization: Records to server; new Forms to device 
+- GPS: even if you don’t have internet, you can still import a GPS reading from your device.
+- In offline mode: data is not transferred to the server – all data collected locally.
+- Pendragon can collect GPS from device API; GPS through Bluetooth connections are a more complete problem.
+- Pendragon can trace monitoring path and calculate distance
+
+
+```{r pend6, echo=FALSE, fig.cap="Pendragon forms collect the GPS of monitoring path and calculate basic trace distance.", out.width = '90%'}
+knitr::include_graphics("images/Pendragon/trace.jpg", error = FALSE)
+```
+
+### Pendragon Data Interface
+
+- Custom API connections available
+- NO version control on the cloud service so CANNOT revert to previous states of the database. 
+- Default method for data collection is to run the export (export csv file plus image attachments). 
+Dan: A secure obdc protocol could be configured so that users can develop their own version control; The user connects to Pendragon cloud storage through an API, pulls and saves data daily, uses their own script to establish version control.
+- Pendragon data CANNOT backed up to local laptop right now.
+- Can Pendragon be configured to synch to a local system?
+Dan:  It would have to be set up like that originally; The built-in Java calls can send individual data to a server or an IP address. It is expecting a web server but a custom API could be configured to synch to a local system.
+
+
+```{r pend5, echo=FALSE, fig.cap="Pendragon forms can be transposed to different device types.", out.width = '90%'}
+knitr::include_graphics("images/Pendragon/synch.jpg", error = FALSE)
+```
 
 
 
@@ -16,26 +133,72 @@
 
 
 
+```{r Peninit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
+
+library(kableExtra)
+
+Penform <- pendrag$Forms_Options
+Pendat  <- pendrag$Data_Interface 
+Penphot <- pendrag$Photos_ExtSensors
+Penhard <- pendrag$HW_Platforms
+Pensec  <- pendrag$Security_Factors
+Penbus  <- pendrag$Business_Model
+```
+
+
+```{r Penform, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Forms Options', out.width='70%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+formtable(Penform)
+```
+
 
 ### Pendragon: Data Interface {#pendat}
 
+```{r Pendat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+datatable(Pendat)
+
+```
 
 
 ###  Pendragon: Photo Integration and External Sensors {#penpho}
 
+```{r Penphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
 
 
+library(kableExtra)
+
+phototable(Penphot)
+
+
+```
 
 
 ###  Pendragon:  Hardware Platforms  {#penhrd}
 
 [Top of section](pentop)
 
+```{r Penhard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
 
+library(kableExtra)
+hardtable(Penhard)
+
+```
 
 ### Pendragon: Security Factors {#pensec}
 
 
+
+```{r Pensec, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Security Factors', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+
+sectable(Pensec) 
+
+```
 
 
 ### Pendragon: Business Model and Customer Support {#penbus}
@@ -43,6 +206,13 @@
 [Top of section](#pentop)
 
 
+
+```{r Penbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }
+
+library(kableExtra)
+sectable(Penbus)
+
+```
 
 
 

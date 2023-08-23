@@ -567,7 +567,7 @@ The data connectivity options in Fulcrum App are significant, as noted above and
   
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
-<caption style="font-size: initial !important;">(\#tab:fulpbus)Security Factors</caption>
+<caption style="font-size: initial !important;">(\#tab:fulcbus)Security Factors</caption>
  <thead>
   <tr>
    <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>

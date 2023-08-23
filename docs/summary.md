@@ -115,11 +115,27 @@ NOTE: This Executive Summary was shared with IEP Coordinators Team in Sept of 20
   </tr>
   <tr>
    <td style="text-align:left;max-width: 4.5cm; font-weight: bold;"> Pendragon </td>
-   <td style="text-align:left;max-width: 7cm; ">  </td>
-   <td style="text-align:left;max-width: 10cm; ">  </td>
-   <td style="text-align:left;"> **Cons:**  Cannot read in data from local drive; cannot connect to sensors directly </td>
-   <td style="text-align:left;">  </td>
-   <td style="text-align:left;"> **Cons:** Not FedRAMP certified </td>
+   <td style="text-align:left;max-width: 7cm; "> **Pros:** Provides user-friendly form building GUI that can be expanded/customized with Java coding. </td>
+   <td style="text-align:left;max-width: 10cm; "> **Pros:** Data synch as relational tables to a MySQL database on cloud server
+
+--- --- --- ---
+
+**Cons:**  Cannot backup to local laptop (when internet not available) </td>
+   <td style="text-align:left;"> **Pros:** Provides API potential for custom data interface with external sensors
+
+--- --- --- ---
+
+**Cons:**  Cannot read in data from local drive; No built in tool for connecting to sensors directly </td>
+   <td style="text-align:left;"> **Pros:** Works on iOS/Android phones 
+
+--- --- --- ---
+
+**Cons:** Some custom Java options do not work on iOS devices </td>
+   <td style="text-align:left;"> **Pros:** Azure cloud serive is FedRAMP certified
+
+--- --- --- --- 
+
+**Cons:** Pendrogon tool does not have security  validations available </td>
    <td style="text-align:left;"> Moderate </td>
   </tr>
   <tr>
@@ -130,7 +146,8 @@ NOTE: This Executive Summary was shared with IEP Coordinators Team in Sept of 20
 --- --- --- ---
 
 **Cons:** No built-in Cloud connectivity; no built-in API </td>
-   <td style="text-align:left;"> **Pros:**  Can connect to external sensors; uses local area network </td>
+   <td style="text-align:left;"> **Pros:**  Can connect to external sensors; uses local area network 
+--- --- --- --- </td>
    <td style="text-align:left;"> **Cons:**  Only works on Windows </td>
    <td style="text-align:left;"> **Pros:** LAN based system so low security risk </td>
    <td style="text-align:left;"> One-time configuration fee (~$2000)
@@ -142,7 +159,7 @@ NOTE: This Executive Summary was shared with IEP Coordinators Team in Sept of 20
   <tr>
    <td style="text-align:left;max-width: 4.5cm; font-weight: bold;"> Big Fin </td>
    <td style="text-align:left;max-width: 7cm; "> **Pros:** Designed specifically for fish surveys </td>
-   <td style="text-align:left;max-width: 10cm; "> **Cons:** API connection to Cloud base data or transfer needs to be customized </td>
+   <td style="text-align:left;max-width: 10cm; "> **Cons:** </td>
    <td style="text-align:left;"> **Pros:**  Connects directly to many types of external sensors </td>
    <td style="text-align:left;"> **Cons:**  Only works on Android </td>
    <td style="text-align:left;">  </td>
