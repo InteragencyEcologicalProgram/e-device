@@ -1,6 +1,7 @@
 # Appendix - PDF R Scraping Demonstration {#appx_2}
 
 
+
 NOTES:
 
 Full PDF scraping code example, example pdf data tables, and presentation slides prepared by  Trinh Nguyen:
@@ -34,6 +35,7 @@ library(dplyr)
 #library(tabulizer)
 library(tidyr)
 library(stringr)
+pdfRead <-    here("images/PDF_Rscrape/pdfRead")
 ```
 
 Purpose: There are several PDF scraping packages in R. I will focus on two:
@@ -80,7 +82,10 @@ pdftools::pdf_text("https://water.ca.gov/-/media/DWR-Website/Web-Pages/Programs/
 
 Bay Study Datasheet
 
-![](bayStudyExample_1.png)
+```{r , echo=FALSE, out.width = '90%'}
+knitr::include_graphics(file.path(pdfRead,"bayStudyExample_1.png"), error = FALSE)
+```
+
 
 ## Workflow: Bay Study
 
@@ -90,16 +95,15 @@ Bay Study Datasheet
 ## Workflow: extracting tabular data
 
 ```{r, echo=TRUE, eval=FALSE}
-extract_tables(file.path("Bay Study field sheet front_fill2_data.pdf"))
+extract_tables(file.path(pdfRead,"Bay Study field sheet front_fill2_data.pdf"))
 ```
 
-## Workflow: extracting tabular data
 
 `extract_tables()` has two algorithms to try and scrape tables. Can try both
 
 ```{r, echo=TRUE, eval=FALSE} 
-extract_tables(file.path("pdfRead", "bayStudyExample.pdf"), method = "lattice")
-extract_tables(file.path("pdfRead", "bayStudyExample.pdf"), method = "stream")
+extract_tables(file.path(pdfRead, "bayStudyExample.pdf"), method = "lattice")
+extract_tables(file.path(pdfRead, "bayStudyExample.pdf"), method = "stream")
 ```
 
 <br/><br/>
@@ -108,34 +112,34 @@ extract_tables(file.path("pdfRead", "bayStudyExample.pdf"), method = "stream")
 Does not work still!
 :::
 
-## Workflow: extracting tabular data
 
 One final way is to specify the specific location of the data on the pdf.
 
 ```{r, echo=TRUE, eval=FALSE}
-locate_areas(file.path("Bay Study field sheet front_fill2_data.pdf"))
+locate_areas(file.path(pdfRead,"Bay Study field sheet front_fill2_data.pdf"))
 ```
 
-## Workflow: extracting tabular data {.scrollable}
 
-![](locateCoordinates.png)
+```{r , echo=FALSE, out.width = '90%'}
+knitr::include_graphics(file.path(pdfRead,"locateCoordinates.png"), error = FALSE)
+```
 
-## Workflow: extracting tabular data
 
 Once selected:
 
-![](locateCoordinatesResults.png)
+```{r , echo=FALSE, out.width = '90%'}
+knitr::include_graphics(file.path(pdfRead,"locateCoordinatesResults.png"), error = FALSE)
+```
 
-## Workflow: extracting tabular data
 
 ```{r, echo=TRUE, eval=FALSE}
-table <- extract_tables(file.path("bayStudyExample.pdf"), pages = 1,
+table <- extract_tables(file.path(pdfRead,"bayStudyExample.pdf"), pages = 1,
                         area = list(c(176.8358, 35.8913, 393.9738, 601.7659)), 
                         guess = F, output = "data.frame")
 table
 ```
 
-## Workflow: extracting tabular data 
+ 
 ```{r, echo=TRUE, eval=FALSE}
 #| output-location: slide
 table[[1]] %>% 
@@ -158,13 +162,17 @@ table[[1]] %>%
 
 `tabulizer` works well *IF* the datasheet is set up correctly.
 
-![](PayPeriodsDGS_1.png)
+
+```{r , echo=FALSE, out.width = '90%'}
+knitr::include_graphics(file.path(pdfRead,"PayPeriodsDGS_1.png"), error = FALSE)
+```
+
 
 ## Case study: DGS Pay Period Tables
 
 ```{r, echo=TRUE, eval=FALSE}
 #|output-location: slide
-tables <- extract_tables(file.path("PayPeriodsDGS.pdf"), method = "stream")
+tables <- extract_tables(file.path(pdfRead,"PayPeriodsDGS.pdf"), method = "stream")
 tables
 ```
 
@@ -231,7 +239,7 @@ However, there are major drawbacks:
 
 ## Pros and Cons
 
-```{r, echo=FALSE, eval=FALSE}
+```{r, echo=FALSE, eval=T}
 
 data.frame("Features" = c("Ease of installation", "Ease of use", "Ease of application", "Extract tables", "Extract text", "Automation", "Code Knowledge", "Recommend"),
            "tabulizer" = c("Hard", "Medium", "Hard", "Yes", "Yes", "Yes", "Medium High", "No"),

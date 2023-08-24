@@ -75,7 +75,7 @@ formtable(powform)
 ```
 
 
-### Power Apps: Data Interface {#powdat}
+### Data Interface {#powdat}
 
 
 
@@ -89,7 +89,7 @@ datatable(powdat)
 
 
 
-###  Power Apps: Photo Integration and External Sensors {#powpho}
+###  Photo Integration and External Sensors {#powpho}
 
 
 ```{r paphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
@@ -104,7 +104,7 @@ phototable(powhot)
 
 
 
-###  Power Apps:  Hardware Platforms  {#powhrd}
+###  Hardware Platforms  {#powhrd}
 
 [Top of section](#powtop)
 
@@ -117,7 +117,7 @@ hardtable(powhard)
 ```
 
 
-### Power Apps: Security Factors {#powsec}
+### Security Factors {#powsec}
 
 
 
@@ -131,7 +131,7 @@ sectable(powsec)
 
 
 
-### Power Apps: Business Model and Customer Support {#powbus}
+### Business Model and Customer Support {#powbus}
 
 [Top of section](#powtop)
 

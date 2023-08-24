@@ -103,15 +103,16 @@
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span></span>
 <span><span class="co">#library(tabulizer)</span></span>
 <span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyr.tidyverse.org">tidyr</a></span><span class="op">)</span></span>
-<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://stringr.tidyverse.org">stringr</a></span><span class="op">)</span></span></code></pre></div>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://stringr.tidyverse.org">stringr</a></span><span class="op">)</span></span>
+<span><span class="va">pdfRead</span> <span class="op">&lt;-</span>    <span class="fu">here</span><span class="op">(</span><span class="st">"images/PDF_Rscrape/pdfRead"</span><span class="op">)</span></span></code></pre></div>
 <p>Purpose: There are several PDF scraping packages in R. I will focus on two:</p>
 <ol style="list-style-type: decimal">
 <li><code>pdftools</code></li>
 <li><code>tabulizer</code></li>
 </ol>
-<div id="pros-and-cons" class="section level2" number="22.1">
+<div id="pros-and-cons-2" class="section level2" number="22.1">
 <h2>
-<span class="header-section-number">B.1</span> Pros and Cons<a class="anchor" aria-label="anchor" href="#pros-and-cons"><i class="fas fa-link"></i></a>
+<span class="header-section-number">B.1</span> Pros and Cons<a class="anchor" aria-label="anchor" href="#pros-and-cons-2"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>The main reason to consider this approach: cost. It is free.</li>
@@ -130,9 +131,9 @@
 </ul>
 </div>
 </div>
-<div id="outline" class="section level2" number="22.2">
+<div id="outline-1" class="section level2" number="22.2">
 <h2>
-<span class="header-section-number">B.2</span> Outline<a class="anchor" aria-label="anchor" href="#outline"><i class="fas fa-link"></i></a>
+<span class="header-section-number">B.2</span> Outline<a class="anchor" aria-label="anchor" href="#outline-1"><i class="fas fa-link"></i></a>
 </h2>
 <ol style="list-style-type: decimal">
 <li>Primer to ‘pdftools’</li>
@@ -168,7 +169,7 @@
 <span class="header-section-number">B.5</span> Case study: Bay Study<a class="anchor" aria-label="anchor" href="#case-study-bay-study"><i class="fas fa-link"></i></a>
 </h2>
 <p>Bay Study Datasheet</p>
-<div class="inline-figure"><img src="bayStudyExample_1.png"></div>
+<div class="inline-figure"><img src="images/PDF_Rscrape/pdfRead/bayStudyExample_1.png" width="90%"></div>
 </div>
 <div id="workflow-bay-study" class="section level2" number="22.6">
 <h2>
@@ -185,56 +186,26 @@
 <span class="header-section-number">B.7</span> Workflow: extracting tabular data<a class="anchor" aria-label="anchor" href="#workflow-extracting-tabular-data"><i class="fas fa-link"></i></a>
 </h2>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"Bay Study field sheet front_fill2_data.pdf"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-</div>
-<div id="workflow-extracting-tabular-data-1" class="section level2" number="22.8">
-<h2>
-<span class="header-section-number">B.8</span> Workflow: extracting tabular data<a class="anchor" aria-label="anchor" href="#workflow-extracting-tabular-data-1"><i class="fas fa-link"></i></a>
-</h2>
+<code class="sourceCode R"><span><span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>,<span class="st">"Bay Study field sheet front_fill2_data.pdf"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 <p><code>extract_tables()</code> has two algorithms to try and scrape tables. Can try both</p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"pdfRead"</span>, <span class="st">"bayStudyExample.pdf"</span><span class="op">)</span>, method <span class="op">=</span> <span class="st">"lattice"</span><span class="op">)</span></span>
-<span><span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"pdfRead"</span>, <span class="st">"bayStudyExample.pdf"</span><span class="op">)</span>, method <span class="op">=</span> <span class="st">"stream"</span><span class="op">)</span></span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>, <span class="st">"bayStudyExample.pdf"</span><span class="op">)</span>, method <span class="op">=</span> <span class="st">"lattice"</span><span class="op">)</span></span>
+<span><span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>, <span class="st">"bayStudyExample.pdf"</span><span class="op">)</span>, method <span class="op">=</span> <span class="st">"stream"</span><span class="op">)</span></span></code></pre></div>
 <p><br><br></p>
 <div class="fragment">
 <p>Does not work still!</p>
 </div>
-</div>
-<div id="workflow-extracting-tabular-data-2" class="section level2" number="22.9">
-<h2>
-<span class="header-section-number">B.9</span> Workflow: extracting tabular data<a class="anchor" aria-label="anchor" href="#workflow-extracting-tabular-data-2"><i class="fas fa-link"></i></a>
-</h2>
 <p>One final way is to specify the specific location of the data on the pdf.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="fu">locate_areas</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"Bay Study field sheet front_fill2_data.pdf"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
-</div>
-<div id="workflow-extracting-tabular-data-3" class="section level2 scrollable" number="22.10">
-<h2>
-<span class="header-section-number">B.10</span> Workflow: extracting tabular data<a class="anchor" aria-label="anchor" href="#workflow-extracting-tabular-data-3"><i class="fas fa-link"></i></a>
-</h2>
-<div class="inline-figure"><img src="locateCoordinates.png"></div>
-</div>
-<div id="workflow-extracting-tabular-data-4" class="section level2" number="22.11">
-<h2>
-<span class="header-section-number">B.11</span> Workflow: extracting tabular data<a class="anchor" aria-label="anchor" href="#workflow-extracting-tabular-data-4"><i class="fas fa-link"></i></a>
-</h2>
+<code class="sourceCode R"><span><span class="fu">locate_areas</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>,<span class="st">"Bay Study field sheet front_fill2_data.pdf"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<div class="inline-figure"><img src="images/PDF_Rscrape/pdfRead/locateCoordinates.png" width="90%"></div>
 <p>Once selected:</p>
-<div class="inline-figure"><img src="locateCoordinatesResults.png"></div>
-</div>
-<div id="workflow-extracting-tabular-data-5" class="section level2" number="22.12">
-<h2>
-<span class="header-section-number">B.12</span> Workflow: extracting tabular data<a class="anchor" aria-label="anchor" href="#workflow-extracting-tabular-data-5"><i class="fas fa-link"></i></a>
-</h2>
+<div class="inline-figure"><img src="images/PDF_Rscrape/pdfRead/locateCoordinatesResults.png" width="90%"></div>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span><span class="va">table</span> <span class="op">&lt;-</span> <span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"bayStudyExample.pdf"</span><span class="op">)</span>, pages <span class="op">=</span> <span class="fl">1</span>,</span>
+<code class="sourceCode R"><span><span class="va">table</span> <span class="op">&lt;-</span> <span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>,<span class="st">"bayStudyExample.pdf"</span><span class="op">)</span>, pages <span class="op">=</span> <span class="fl">1</span>,</span>
 <span>                        area <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">176.8358</span>, <span class="fl">35.8913</span>, <span class="fl">393.9738</span>, <span class="fl">601.7659</span><span class="op">)</span><span class="op">)</span>, </span>
 <span>                        guess <span class="op">=</span> <span class="cn">F</span>, output <span class="op">=</span> <span class="st">"data.frame"</span><span class="op">)</span></span>
 <span><span class="va">table</span></span></code></pre></div>
-</div>
-<div id="workflow-extracting-tabular-data-6" class="section level2" number="22.13">
-<h2>
-<span class="header-section-number">B.13</span> Workflow: extracting tabular data<a class="anchor" aria-label="anchor" href="#workflow-extracting-tabular-data-6"><i class="fas fa-link"></i></a>
-</h2>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="va">table</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
 <span>  <span class="va">.</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span>, <span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
@@ -251,25 +222,25 @@
 <span>                <span class="va">as.numeric</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
 <span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="op">!</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">S</span><span class="op">)</span> <span class="op">&amp;</span> <span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">Plus</span><span class="op">)</span> <span class="op">&amp;</span> <span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">Length</span><span class="op">)</span> <span class="op">&amp;</span> <span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">Sex</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="case-study-dgs-pay-period-tables" class="section level2" number="22.14">
+<div id="case-study-dgs-pay-period-tables" class="section level2" number="22.8">
 <h2>
-<span class="header-section-number">B.14</span> Case study: DGS Pay Period Tables<a class="anchor" aria-label="anchor" href="#case-study-dgs-pay-period-tables"><i class="fas fa-link"></i></a>
+<span class="header-section-number">B.8</span> Case study: DGS Pay Period Tables<a class="anchor" aria-label="anchor" href="#case-study-dgs-pay-period-tables"><i class="fas fa-link"></i></a>
 </h2>
 <p><code>tabulizer</code> works well <em>IF</em> the datasheet is set up correctly.</p>
-<div class="inline-figure"><img src="PayPeriodsDGS_1.png"></div>
+<div class="inline-figure"><img src="images/PDF_Rscrape/pdfRead/PayPeriodsDGS_1.png" width="90%"></div>
 </div>
-<div id="case-study-dgs-pay-period-tables-1" class="section level2" number="22.15">
+<div id="case-study-dgs-pay-period-tables-1" class="section level2" number="22.9">
 <h2>
-<span class="header-section-number">B.15</span> Case study: DGS Pay Period Tables<a class="anchor" aria-label="anchor" href="#case-study-dgs-pay-period-tables-1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">B.9</span> Case study: DGS Pay Period Tables<a class="anchor" aria-label="anchor" href="#case-study-dgs-pay-period-tables-1"><i class="fas fa-link"></i></a>
 </h2>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co">#|output-location: slide</span></span>
-<span><span class="va">tables</span> <span class="op">&lt;-</span> <span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="st">"PayPeriodsDGS.pdf"</span><span class="op">)</span>, method <span class="op">=</span> <span class="st">"stream"</span><span class="op">)</span></span>
+<span><span class="va">tables</span> <span class="op">&lt;-</span> <span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>,<span class="st">"PayPeriodsDGS.pdf"</span><span class="op">)</span>, method <span class="op">=</span> <span class="st">"stream"</span><span class="op">)</span></span>
 <span><span class="va">tables</span></span></code></pre></div>
 </div>
-<div id="case-study-dgs-pay-period-tables-2" class="section level2" number="22.16">
+<div id="case-study-dgs-pay-period-tables-2" class="section level2" number="22.10">
 <h2>
-<span class="header-section-number">B.16</span> Case study: DGS Pay Period Tables<a class="anchor" aria-label="anchor" href="#case-study-dgs-pay-period-tables-2"><i class="fas fa-link"></i></a>
+<span class="header-section-number">B.10</span> Case study: DGS Pay Period Tables<a class="anchor" aria-label="anchor" href="#case-study-dgs-pay-period-tables-2"><i class="fas fa-link"></i></a>
 </h2>
 <p>Easily workable, e.g., pay period information for the current month:</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
@@ -309,9 +280,9 @@
 <span>                       <span class="fu"><a href="https://dplyr.tidyverse.org/reference/pull.html">pull</a></span><span class="op">(</span><span class="va">pattern</span><span class="op">)</span><span class="op">)</span>,</span>
 <span>         <span class="va">month</span> <span class="op">==</span> <span class="va">month.name</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/numeric.html">as.numeric</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/format.html">format</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.time</a></span><span class="op">(</span><span class="op">)</span>, <span class="st">"%m"</span><span class="op">)</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span></code></pre></div>
 </div>
-<div id="conclusion" class="section level2 smaller" number="22.17">
+<div id="conclusion-1" class="section level2 smaller" number="22.11">
 <h2>
-<span class="header-section-number">B.17</span> Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"><i class="fas fa-link"></i></a>
+<span class="header-section-number">B.11</span> Conclusion<a class="anchor" aria-label="anchor" href="#conclusion-1"><i class="fas fa-link"></i></a>
 </h2>
 <ul>
 <li>Possible</li>
@@ -332,14 +303,117 @@
 </div>
 </div>
 </div>
-<div id="pros-and-cons-1" class="section level2" number="22.18">
+<div id="pros-and-cons-3" class="section level2" number="22.12">
 <h2>
-<span class="header-section-number">B.18</span> Pros and Cons<a class="anchor" aria-label="anchor" href="#pros-and-cons-1"><i class="fas fa-link"></i></a>
+<span class="header-section-number">B.12</span> Pros and Cons<a class="anchor" aria-label="anchor" href="#pros-and-cons-3"><i class="fas fa-link"></i></a>
 </h2>
+<div class="inline-table"><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+<thead><tr>
+<th style="text-align:left;">
+Features
+</th>
+<th style="text-align:left;">
+‘tabulizer’
+</th>
+<th style="text-align:left;">
+‘pdftools’
+</th>
+</tr></thead>
+<tbody>
+<tr>
+<td style="text-align:left;">
+Ease of installation
+</td>
+<td style="text-align:left;">
+Hard
+</td>
+<td style="text-align:left;">
+Easy
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ease of use
+</td>
+<td style="text-align:left;">
+Medium
+</td>
+<td style="text-align:left;">
+Easy
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Ease of application
+</td>
+<td style="text-align:left;">
+Hard
+</td>
+<td style="text-align:left;">
+Very Hard
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Extract tables
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+No
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Extract text
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Automation
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+<td style="text-align:left;">
+Yes
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Code Knowledge
+</td>
+<td style="text-align:left;">
+Medium High
+</td>
+<td style="text-align:left;">
+Very High
+</td>
+</tr>
+<tr>
+<td style="text-align:left;">
+Recommend
+</td>
+<td style="text-align:left;">
+No
+</td>
+<td style="text-align:left;">
+Very No
+</td>
+</tr>
+</tbody>
+</table></div>
 </div>
-<div id="questions" class="section level2" number="22.19">
+<div id="questions" class="section level2" number="22.13">
 <h2>
-<span class="header-section-number">B.19</span> Questions<!-- --- --><a class="anchor" aria-label="anchor" href="#questions"><i class="fas fa-link"></i></a>
+<span class="header-section-number">B.13</span> Questions<!-- --- --><a class="anchor" aria-label="anchor" href="#questions"><i class="fas fa-link"></i></a>
 </h2>
 
 </div>
@@ -351,25 +425,19 @@
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#appx_2"><span class="header-section-number">B</span> Appendix - PDF R Scraping Demonstration</a></li>
-<li><a class="nav-link" href="#pros-and-cons"><span class="header-section-number">B.1</span> Pros and Cons</a></li>
-<li><a class="nav-link" href="#outline"><span class="header-section-number">B.2</span> Outline</a></li>
+<li><a class="nav-link" href="#pros-and-cons-2"><span class="header-section-number">B.1</span> Pros and Cons</a></li>
+<li><a class="nav-link" href="#outline-1"><span class="header-section-number">B.2</span> Outline</a></li>
 <li><a class="nav-link" href="#primer-to-pdftools"><span class="header-section-number">B.3</span> Primer to ‘pdftools’</a></li>
 <li><a class="nav-link" href="#primer-to-tabulizer"><span class="header-section-number">B.4</span> Primer to ‘tabulizer’</a></li>
 <li><a class="nav-link" href="#case-study-bay-study"><span class="header-section-number">B.5</span> Case study: Bay Study</a></li>
 <li><a class="nav-link" href="#workflow-bay-study"><span class="header-section-number">B.6</span> Workflow: Bay Study</a></li>
 <li><a class="nav-link" href="#workflow-extracting-tabular-data"><span class="header-section-number">B.7</span> Workflow: extracting tabular data</a></li>
-<li><a class="nav-link" href="#workflow-extracting-tabular-data-1"><span class="header-section-number">B.8</span> Workflow: extracting tabular data</a></li>
-<li><a class="nav-link" href="#workflow-extracting-tabular-data-2"><span class="header-section-number">B.9</span> Workflow: extracting tabular data</a></li>
-<li><a class="nav-link" href="#workflow-extracting-tabular-data-3"><span class="header-section-number">B.10</span> Workflow: extracting tabular data</a></li>
-<li><a class="nav-link" href="#workflow-extracting-tabular-data-4"><span class="header-section-number">B.11</span> Workflow: extracting tabular data</a></li>
-<li><a class="nav-link" href="#workflow-extracting-tabular-data-5"><span class="header-section-number">B.12</span> Workflow: extracting tabular data</a></li>
-<li><a class="nav-link" href="#workflow-extracting-tabular-data-6"><span class="header-section-number">B.13</span> Workflow: extracting tabular data</a></li>
-<li><a class="nav-link" href="#case-study-dgs-pay-period-tables"><span class="header-section-number">B.14</span> Case study: DGS Pay Period Tables</a></li>
-<li><a class="nav-link" href="#case-study-dgs-pay-period-tables-1"><span class="header-section-number">B.15</span> Case study: DGS Pay Period Tables</a></li>
-<li><a class="nav-link" href="#case-study-dgs-pay-period-tables-2"><span class="header-section-number">B.16</span> Case study: DGS Pay Period Tables</a></li>
-<li><a class="nav-link" href="#conclusion"><span class="header-section-number">B.17</span> Conclusion</a></li>
-<li><a class="nav-link" href="#pros-and-cons-1"><span class="header-section-number">B.18</span> Pros and Cons</a></li>
-<li><a class="nav-link" href="#questions"><span class="header-section-number">B.19</span> Questions</a></li>
+<li><a class="nav-link" href="#case-study-dgs-pay-period-tables"><span class="header-section-number">B.8</span> Case study: DGS Pay Period Tables</a></li>
+<li><a class="nav-link" href="#case-study-dgs-pay-period-tables-1"><span class="header-section-number">B.9</span> Case study: DGS Pay Period Tables</a></li>
+<li><a class="nav-link" href="#case-study-dgs-pay-period-tables-2"><span class="header-section-number">B.10</span> Case study: DGS Pay Period Tables</a></li>
+<li><a class="nav-link" href="#conclusion-1"><span class="header-section-number">B.11</span> Conclusion</a></li>
+<li><a class="nav-link" href="#pros-and-cons-3"><span class="header-section-number">B.12</span> Pros and Cons</a></li>
+<li><a class="nav-link" href="#questions"><span class="header-section-number">B.13</span> Questions</a></li>
 </ul>
 
       <div class="book-extra">

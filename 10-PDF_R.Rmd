@@ -4,9 +4,11 @@
 
 PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum [See IEP E-device Survey](#appx_1).  
 
-PDF forms can be filled in using either Acrobat, Acrobat Reader (free), or Foxit editor. Static or interactive forms can be created using either the Acrobat or Foxit editor. 
+Fillable PDF forms can be developed using a number of programs, including Acrobat, Acrobat Reader (free) or Foxit editor (free version available). Other free software or web-based PDF form building and fillable conversion tools are available (e.g., Canva/DocFly or UPDF).  
 
-R has been proposed as a tool for programmatically extracting the filled-in PDF form.  The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. The full code for Trinh's evaluation is included in Appendix 2: [PDF R Scraping Demonstration](#appx_2)
+R has been proposed as a tool for programmatically extracting the filled-in PDF form. The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. Scraping is the process of programmatically grabbing information from a webpage or document by analyzing the underlying code of the document.
+
+The full code for Trinh's evaluation is included in Appendix 2: [PDF R Scraping Demonstration](#appx_2)
 
 
 ## Create a fillable PDF form
@@ -17,7 +19,7 @@ R has been proposed as a tool for programmatically extracting the filled-in PDF 
 
 
 
-```{r, echo=FALSE, fig.cap="Field types options in Foxit.", out.width = '90%'}
+```{r, echo=FALSE, fig.cap="Potential field types available to insert as fillable forms in Foxit.", out.width = '90%'}
 knitr::include_graphics("images/PDF_Rscrape/FoxitEditor.jpg", error = FALSE)
 ```
 
@@ -31,7 +33,7 @@ Purpose: There are several PDF scraping packages in R. I will focus on two:
 1.  `pdftools`
 2.  `tabulizer`
 
-Pros and Cons
+###  Pros and Cons
 
 -   The main reason to consider this approach: cost. It is free.
 
@@ -43,7 +45,7 @@ Pros and Cons
     4.  `tabulizer` can be difficult to install if you run into Java restrictions
 :::
 
-Outline
+### Outline
 
 1.  Primer to 'pdftools'
 2.  Primer to 'tabulizer'
@@ -103,14 +105,15 @@ knitr::include_graphics("docs/images/PDF_Rscrape/PayPeriodsDGS_1.png", error = F
 ```
 
 
-```{r , echo=FALSE, fig.cap="Extracting Tabulated Data", out.width = '90%'}
-knitr::include_graphics("images/PDF_Rscrape/extract_tabular.JPG", error = FALSE)
-```
+<!-- ```{r , echo=FALSE, fig.cap="Extracting Tabulated Data", out.width = '90%'} -->
+<!-- knitr::include_graphics("images/PDF_Rscrape/extract_tabular.JPG", error = FALSE) -->
+<!-- ``` -->
 
-```{r , echo=FALSE, fig.cap="Extracted Tabulated Data", out.width = '90%'}
-knitr::include_graphics("images/PDF_Rscrape/extract_tabular2.JPG", error = FALSE)
-```
-Conclusion 
+<!-- ```{r , echo=FALSE, fig.cap="Extracted Tabulated Data", out.width = '90%'} -->
+<!-- knitr::include_graphics("images/PDF_Rscrape/extract_tabular2.JPG", error = FALSE) -->
+<!-- ``` -->
+
+### Conclusion 
 
 - Possible
 - Automate with `tabulizer` and `pdftools`
@@ -129,7 +132,7 @@ However, there are major drawbacks:
 :::
 :::
 
-Pros and Cons
+###  Pros and Cons
 
 ```{r, echo=FALSE, warning = FALSE, message = FALSE}
 library(kableExtra)
@@ -145,7 +148,7 @@ data.frame("Features" = c("Ease of installation", "Ease of use", "Ease of applic
 
 ## R Scrape PDF Approach: Criteria Tables
 
-###  PDF-R Scrape: Forms Options
+###  Forms Options
 
 ```{r PDFRinit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
 
@@ -169,7 +172,7 @@ formtable(PDFRform)
 
 
 
-### PDF-R Scrape: Data Interface {#PDFdat}
+### Data Interface {#PDFdat}
 
 
 ```{r PDFRdat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
@@ -179,7 +182,7 @@ datatable(PDFRdat)
 
 ```
 
-###  PDF-R Scrape: Photo Integration and External Sensors {#PDFpho}
+###  Photo Integration and External Sensors {#PDFpho}
 
 
 ```{r PDFRphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
@@ -191,7 +194,7 @@ phototable(PDFRphot)
 
 
 
-###  PDF-R Scrape:  Hardware Platforms  {#PDFhrd}
+###  Hardware Platforms  {#PDFhrd}
 
 ```{r PDFRhard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
 
@@ -203,7 +206,7 @@ hardtable(PDFRhard)
 
 
 
-### PDF-R Scrape: Security Factors {#PDFsec}
+### Security Factors {#PDFsec}
 
 ```{r PDFRsec, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Security Factors', out.width='100%', tab.asp=.75, tab.align='left' }
 
@@ -214,7 +217,7 @@ sectable(PDFRsec)
 
 
 
-### PDF-R Scrape: Business Model and Customer Support {#PDFbus}
+### Business Model and Customer Support {#PDFbus}
 
 
 ```{r PDFRbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }

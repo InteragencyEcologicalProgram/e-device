@@ -292,7 +292,7 @@ Dan:  It would have to be set up like that originally; The built-in Java calls c
 
 
 
-### Pendragon: Data Interface {#pendat}
+### Data Interface {#pendat}
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:Pendat)Data Interface Options</caption>
@@ -385,7 +385,7 @@ Dan:  It would have to be set up like that originally; The built-in Java calls c
 
 
 
-###  Pendragon: Photo Integration and External Sensors {#penpho}
+###  Photo Integration and External Sensors {#penpho}
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:Penphot)Photo Integration and External Sensors</caption>
@@ -462,7 +462,7 @@ Dan:  It would have to be set up like that originally; The built-in Java calls c
 
 
 
-###  Pendragon:  Hardware Platforms  {#penhrd}
+###  Hardware Platforms  {#penhrd}
 
 [Top of section](pentop)
 
@@ -524,7 +524,7 @@ Dan:  It would have to be set up like that originally; The built-in Java calls c
 
 
 
-### Pendragon: Security Factors {#pensec}
+### Security Factors {#pensec}
 
 
 
@@ -581,7 +581,7 @@ Dan:  It would have to be set up like that originally; The built-in Java calls c
 
 
 
-### Pendragon: Business Model and Customer Support {#penbus}
+### Business Model and Customer Support {#penbus}
 
 [Top of section](#pentop)
 

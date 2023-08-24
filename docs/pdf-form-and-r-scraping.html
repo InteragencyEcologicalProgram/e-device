@@ -92,8 +92,9 @@
 <span class="header-section-number">14.1</span> R Scrape PDF Approach Overview<a class="anchor" aria-label="anchor" href="#PDFtop"><i class="fas fa-link"></i></a>
 </h2>
 <p>PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum <a href="appx_1.html#appx_1">See IEP E-device Survey</a>.</p>
-<p>PDF forms can be filled in using either Acrobat, Acrobat Reader (free), or Foxit editor. Static or interactive forms can be created using either the Acrobat or Foxit editor.</p>
-<p>R has been proposed as a tool for programmatically extracting the filled-in PDF form. The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. The full code for Trinh’s evaluation is included in Appendix 2: <a href="appx_2.html#appx_2">PDF R Scraping Demonstration</a></p>
+<p>Fillable PDF forms can be developed using a number of programs, including Acrobat, Acrobat Reader (free) or Foxit editor (free version available). Other free software or web-based PDF form building and fillable conversion tools are available (e.g., Canva/DocFly or UPDF).</p>
+<p>R has been proposed as a tool for programmatically extracting the filled-in PDF form. The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. Scraping is the process of programmatically grabbing information from a webpage or document by analyzing the underlying code of the document.</p>
+<p>The full code for Trinh’s evaluation is included in Appendix 2: <a href="appx_2.html#appx_2">PDF R Scraping Demonstration</a></p>
 </div>
 <div id="create-a-fillable-pdf-form" class="section level2" number="14.2">
 <h2>
@@ -103,8 +104,8 @@
 <p><a href="https://www.foxit.com/blog/how-to-create-fillable-pdf-forms/?psafe_param=1&amp;utm_source=googleads&amp;utm_medium=PMAX&amp;cq_cmp=19179766755&amp;utm_campaign=FOXIT_GA_NAM_EN_PMAX_LEADS_SALESFORCE_PDF%20EDITOR&amp;gclid=EAIaIQobChMIkore1cbcgAMVgAOtBh3QLQ_WEAAYASAAEgLmOfD_BwE">How to create fillable PDF forms with Foxit Editor</a></p>
 <div class="figure">
 <span style="display:block;" id="fig:unnamed-chunk-1"></span>
-<img src="images/PDF_Rscrape/FoxitEditor.jpg" alt="Field types options in Foxit." width="90%"><p class="caption">
-Figure 14.1: Field types options in Foxit.
+<img src="images/PDF_Rscrape/FoxitEditor.jpg" alt="Potential field types available to insert as fillable forms in Foxit." width="90%"><p class="caption">
+Figure 14.1: Potential field types available to insert as fillable forms in Foxit.
 </p>
 </div>
 </div>
@@ -117,7 +118,10 @@ Figure 14.1: Field types options in Foxit.
 <li><code>pdftools</code></li>
 <li><code>tabulizer</code></li>
 </ol>
-<p>Pros and Cons</p>
+<div id="pros-and-cons" class="section level3" number="14.3.1">
+<h3>
+<span class="header-section-number">14.3.1</span> Pros and Cons<a class="anchor" aria-label="anchor" href="#pros-and-cons"><i class="fas fa-link"></i></a>
+</h3>
 <ul>
 <li>The main reason to consider this approach: cost. It is free.</li>
 </ul>
@@ -134,7 +138,11 @@ Figure 14.1: Field types options in Foxit.
 </li>
 </ul>
 </div>
-<p>Outline</p>
+</div>
+<div id="outline" class="section level3" number="14.3.2">
+<h3>
+<span class="header-section-number">14.3.2</span> Outline<a class="anchor" aria-label="anchor" href="#outline"><i class="fas fa-link"></i></a>
+</h3>
 <ol style="list-style-type: decimal">
 <li>Primer to ‘pdftools’</li>
 <li>Primer to ‘tabulizer’</li>
@@ -203,19 +211,17 @@ Figure 14.7: Extracted data from one location of the Bay Study datasheet
 Figure 14.8: Tabulated Pay Period tables.
 </p>
 </div>
-<div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-9"></span>
-<img src="images/PDF_Rscrape/extract_tabular.JPG" alt="Extracting Tabulated Data" width="90%"><p class="caption">
-Figure 14.9: Extracting Tabulated Data
-</p>
+<!-- ```{r , echo=FALSE, fig.cap="Extracting Tabulated Data", out.width = '90%'} -->
+<!-- knitr::include_graphics("images/PDF_Rscrape/extract_tabular.JPG", error = FALSE) -->
+<!-- ``` -->
+<!-- ```{r , echo=FALSE, fig.cap="Extracted Tabulated Data", out.width = '90%'} -->
+<!-- knitr::include_graphics("images/PDF_Rscrape/extract_tabular2.JPG", error = FALSE) -->
+<!-- ``` -->
 </div>
-<div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-10"></span>
-<img src="images/PDF_Rscrape/extract_tabular2.JPG" alt="Extracted Tabulated Data" width="90%"><p class="caption">
-Figure 14.10: Extracted Tabulated Data
-</p>
-</div>
-<p>Conclusion</p>
+<div id="conclusion" class="section level3" number="14.3.3">
+<h3>
+<span class="header-section-number">14.3.3</span> Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"><i class="fas fa-link"></i></a>
+</h3>
 <ul>
 <li>Possible</li>
 <li>Automate with <code>tabulizer</code> and <code>pdftools</code>
@@ -234,7 +240,11 @@ Figure 14.10: Extracted Tabulated Data
 </ol>
 </div>
 </div>
-<p>Pros and Cons</p>
+</div>
+<div id="pros-and-cons-1" class="section level3" number="14.3.4">
+<h3>
+<span class="header-section-number">14.3.4</span> Pros and Cons<a class="anchor" aria-label="anchor" href="#pros-and-cons-1"><i class="fas fa-link"></i></a>
+</h3>
 <div class="inline-table"><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead><tr>
 <th style="text-align:left;">
@@ -339,13 +349,14 @@ Very No
 </tbody>
 </table></div>
 </div>
+</div>
 <div id="r-scrape-pdf-approach-criteria-tables" class="section level2" number="14.4">
 <h2>
 <span class="header-section-number">14.4</span> R Scrape PDF Approach: Criteria Tables<a class="anchor" aria-label="anchor" href="#r-scrape-pdf-approach-criteria-tables"><i class="fas fa-link"></i></a>
 </h2>
-<div id="pdf-r-scrape-forms-options" class="section level3" number="14.4.1">
+<div id="forms-options-4" class="section level3" number="14.4.1">
 <h3>
-<span class="header-section-number">14.4.1</span> PDF-R Scrape: Forms Options<a class="anchor" aria-label="anchor" href="#pdf-r-scrape-forms-options"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.1</span> Forms Options<a class="anchor" aria-label="anchor" href="#forms-options-4"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -642,7 +653,7 @@ No
 </div>
 <div id="PDFdat" class="section level3" number="14.4.2">
 <h3>
-<span class="header-section-number">14.4.2</span> PDF-R Scrape: Data Interface<a class="anchor" aria-label="anchor" href="#PDFdat"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.2</span> Data Interface<a class="anchor" aria-label="anchor" href="#PDFdat"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -827,7 +838,7 @@ No
 </div>
 <div id="PDFpho" class="section level3" number="14.4.3">
 <h3>
-<span class="header-section-number">14.4.3</span> PDF-R Scrape: Photo Integration and External Sensors<a class="anchor" aria-label="anchor" href="#PDFpho"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.3</span> Photo Integration and External Sensors<a class="anchor" aria-label="anchor" href="#PDFpho"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -975,7 +986,7 @@ No
 </div>
 <div id="PDFhrd" class="section level3" number="14.4.4">
 <h3>
-<span class="header-section-number">14.4.4</span> PDF-R Scrape: Hardware Platforms<a class="anchor" aria-label="anchor" href="#PDFhrd"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.4</span> Hardware Platforms<a class="anchor" aria-label="anchor" href="#PDFhrd"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -1086,7 +1097,7 @@ Yes
 </div>
 <div id="PDFsec" class="section level3" number="14.4.5">
 <h3>
-<span class="header-section-number">14.4.5</span> PDF-R Scrape: Security Factors<a class="anchor" aria-label="anchor" href="#PDFsec"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.5</span> Security Factors<a class="anchor" aria-label="anchor" href="#PDFsec"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -1187,7 +1198,7 @@ No
 </div>
 <div id="PDFbus" class="section level3" number="14.4.6">
 <h3>
-<span class="header-section-number">14.4.6</span> PDF-R Scrape: Business Model and Customer Support<a class="anchor" aria-label="anchor" href="#PDFbus"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.4.6</span> Business Model and Customer Support<a class="anchor" aria-label="anchor" href="#PDFbus"><i class="fas fa-link"></i></a>
 </h3>
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -1273,15 +1284,22 @@ R programming is where one may need support.
 <li><a class="nav-link" href="#pdf-form-and-r-scraping"><span class="header-section-number">14</span> PDF Form and R Scraping</a></li>
 <li><a class="nav-link" href="#PDFtop"><span class="header-section-number">14.1</span> R Scrape PDF Approach Overview</a></li>
 <li><a class="nav-link" href="#create-a-fillable-pdf-form"><span class="header-section-number">14.2</span> Create a fillable PDF form</a></li>
-<li><a class="nav-link" href="#excerpts-from-evalutaion-by-trinh-nguyen"><span class="header-section-number">14.3</span> Excerpts from evalutaion by Trinh Nguyen:</a></li>
+<li>
+<a class="nav-link" href="#excerpts-from-evalutaion-by-trinh-nguyen"><span class="header-section-number">14.3</span> Excerpts from evalutaion by Trinh Nguyen:</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#pros-and-cons"><span class="header-section-number">14.3.1</span> Pros and Cons</a></li>
+<li><a class="nav-link" href="#outline"><span class="header-section-number">14.3.2</span> Outline</a></li>
+<li><a class="nav-link" href="#conclusion"><span class="header-section-number">14.3.3</span> Conclusion</a></li>
+<li><a class="nav-link" href="#pros-and-cons-1"><span class="header-section-number">14.3.4</span> Pros and Cons</a></li>
+</ul>
+</li>
 <li>
 <a class="nav-link" href="#r-scrape-pdf-approach-criteria-tables"><span class="header-section-number">14.4</span> R Scrape PDF Approach: Criteria Tables</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#pdf-r-scrape-forms-options"><span class="header-section-number">14.4.1</span> PDF-R Scrape: Forms Options</a></li>
-<li><a class="nav-link" href="#PDFdat"><span class="header-section-number">14.4.2</span> PDF-R Scrape: Data Interface</a></li>
-<li><a class="nav-link" href="#PDFpho"><span class="header-section-number">14.4.3</span> PDF-R Scrape: Photo Integration and External Sensors</a></li>
-<li><a class="nav-link" href="#PDFhrd"><span class="header-section-number">14.4.4</span> PDF-R Scrape: Hardware Platforms</a></li>
-<li><a class="nav-link" href="#PDFsec"><span class="header-section-number">14.4.5</span> PDF-R Scrape: Security Factors</a></li>
-<li><a class="nav-link" href="#PDFbus"><span class="header-section-number">14.4.6</span> PDF-R Scrape: Business Model and Customer Support</a></li>
+<li><a class="nav-link" href="#forms-options-4"><span class="header-section-number">14.4.1</span> Forms Options</a></li>
+<li><a class="nav-link" href="#PDFdat"><span class="header-section-number">14.4.2</span> Data Interface</a></li>
+<li><a class="nav-link" href="#PDFpho"><span class="header-section-number">14.4.3</span> Photo Integration and External Sensors</a></li>
+<li><a class="nav-link" href="#PDFhrd"><span class="header-section-number">14.4.4</span> Hardware Platforms</a></li>
+<li><a class="nav-link" href="#PDFsec"><span class="header-section-number">14.4.5</span> Security Factors</a></li>
+<li><a class="nav-link" href="#PDFbus"><span class="header-section-number">14.4.6</span> Business Model and Customer Support</a></li>
 </ul>
 </li>
 </ul>

@@ -218,7 +218,7 @@ Speak to text has been demonstrated within Power Apps using the Premium licenses
 
 
 
-### Power Apps: Data Interface {#powdat}
+### Data Interface {#powdat}
 
 
 
@@ -315,7 +315,7 @@ Speak to text has been demonstrated within Power Apps using the Premium licenses
 
 
 
-###  Power Apps: Photo Integration and External Sensors {#powpho}
+###  Photo Integration and External Sensors {#powpho}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -396,7 +396,7 @@ Speak to text has been demonstrated within Power Apps using the Premium licenses
 
 
 
-###  Power Apps:  Hardware Platforms  {#powhrd}
+###  Hardware Platforms  {#powhrd}
 
 [Top of section](#powtop)
 
@@ -461,7 +461,7 @@ Speak to text has been demonstrated within Power Apps using the Premium licenses
 
 
 
-### Power Apps: Security Factors {#powsec}
+### Security Factors {#powsec}
 
 
 
@@ -520,7 +520,7 @@ Speak to text has been demonstrated within Power Apps using the Premium licenses
 
 
 
-### Power Apps: Business Model and Customer Support {#powbus}
+### Business Model and Customer Support {#powbus}
 
 [Top of section](#powtop)
 

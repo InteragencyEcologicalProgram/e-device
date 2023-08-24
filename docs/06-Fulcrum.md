@@ -78,7 +78,7 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
 
 
 
-### Fulcrum App: Forms Options 
+### Forms Options 
 
 
 
@@ -233,7 +233,7 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
 
 
 
-### Fulcrum App: Data Interface {#fuldat}
+### Data Interface {#fuldat}
 
 The data connectivity options in Fulcrum App are significant, as noted above and outlined in the Data Interface table. 
 
@@ -331,7 +331,7 @@ The data connectivity options in Fulcrum App are significant, as noted above and
 
 
 
-###  Fulcrum App: Photo Integration and External Sensors {#fulpho}
+###  Photo Integration and External Sensors {#fulpho}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -436,7 +436,7 @@ The data connectivity options in Fulcrum App are significant, as noted above and
 
 
 
-###  Fulcrum App:  Hardware Platforms  {#fulhrd}
+###  Hardware Platforms  {#fulhrd}
 
 [Top of section](#fultop)
 
@@ -501,7 +501,7 @@ The data connectivity options in Fulcrum App are significant, as noted above and
 
 
 
-### Fulcrum App: Security Factors {#fulsec}
+### Security Factors {#fulsec}
 
 
 
@@ -560,7 +560,7 @@ The data connectivity options in Fulcrum App are significant, as noted above and
 
 
 
-### Fulcrum App: Business Model and Customer Support {#fulbus}
+### Business Model and Customer Support {#fulbus}
 
 [Top of section](#fultop)
 

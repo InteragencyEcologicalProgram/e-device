@@ -72,7 +72,7 @@ knitr::include_graphics("images/Fulcrum/maps_office2.jpg", error = FALSE)
 
 
 
-### Fulcrum App: Forms Options 
+### Forms Options 
 
 
 
@@ -96,7 +96,7 @@ formtable(fulcform)
 ```
 
 
-### Fulcrum App: Data Interface {#fuldat}
+### Data Interface {#fuldat}
 
 The data connectivity options in Fulcrum App are significant, as noted above and outlined in the Data Interface table. 
 
@@ -112,7 +112,7 @@ datatable(fulcdat)
 
 
 
-###  Fulcrum App: Photo Integration and External Sensors {#fulpho}
+###  Photo Integration and External Sensors {#fulpho}
 
 
 ```{r fulcphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
@@ -129,7 +129,7 @@ phototable(fulcphot)
 
 
 
-###  Fulcrum App:  Hardware Platforms  {#fulhrd}
+###  Hardware Platforms  {#fulhrd}
 
 [Top of section](#fultop)
 
@@ -143,7 +143,7 @@ hardtable(fulchard)
 ```
 
 
-### Fulcrum App: Security Factors {#fulsec}
+### Security Factors {#fulsec}
 
 
 
@@ -158,7 +158,7 @@ sectable(fulcsec)
 
 
 
-### Fulcrum App: Business Model and Customer Support {#fulbus}
+### Business Model and Customer Support {#fulbus}
 
 [Top of section](#fultop)
 

@@ -1,6 +1,7 @@
 # Appendix - PDF R Scraping Demonstration {#appx_2}
 
 
+
 NOTES:
 
 Full PDF scraping code example, example pdf data tables, and presentation slides prepared by  Trinh Nguyen:
@@ -51,6 +52,7 @@ library(dplyr)
 #library(tabulizer)
 library(tidyr)
 library(stringr)
+pdfRead <-    here("images/PDF_Rscrape/pdfRead")
 ```
 
 Purpose: There are several PDF scraping packages in R. I will focus on two:
@@ -98,7 +100,8 @@ pdftools::pdf_text("https://water.ca.gov/-/media/DWR-Website/Web-Pages/Programs/
 
 Bay Study Datasheet
 
-![](bayStudyExample_1.png)
+<img src="images/PDF_Rscrape/pdfRead/bayStudyExample_1.png" width="90%" />
+
 
 ## Workflow: Bay Study
 
@@ -109,17 +112,16 @@ Bay Study Datasheet
 
 
 ```r
-extract_tables(file.path("Bay Study field sheet front_fill2_data.pdf"))
+extract_tables(file.path(pdfRead,"Bay Study field sheet front_fill2_data.pdf"))
 ```
 
-## Workflow: extracting tabular data
 
 `extract_tables()` has two algorithms to try and scrape tables. Can try both
 
 
 ```r
-extract_tables(file.path("pdfRead", "bayStudyExample.pdf"), method = "lattice")
-extract_tables(file.path("pdfRead", "bayStudyExample.pdf"), method = "stream")
+extract_tables(file.path(pdfRead, "bayStudyExample.pdf"), method = "lattice")
+extract_tables(file.path(pdfRead, "bayStudyExample.pdf"), method = "stream")
 ```
 
 <br/><br/>
@@ -128,36 +130,32 @@ extract_tables(file.path("pdfRead", "bayStudyExample.pdf"), method = "stream")
 Does not work still!
 :::
 
-## Workflow: extracting tabular data
 
 One final way is to specify the specific location of the data on the pdf.
 
 
 ```r
-locate_areas(file.path("Bay Study field sheet front_fill2_data.pdf"))
+locate_areas(file.path(pdfRead,"Bay Study field sheet front_fill2_data.pdf"))
 ```
 
-## Workflow: extracting tabular data {.scrollable}
 
-![](locateCoordinates.png)
+<img src="images/PDF_Rscrape/pdfRead/locateCoordinates.png" width="90%" />
 
-## Workflow: extracting tabular data
 
 Once selected:
 
-![](locateCoordinatesResults.png)
+<img src="images/PDF_Rscrape/pdfRead/locateCoordinatesResults.png" width="90%" />
 
-## Workflow: extracting tabular data
 
 
 ```r
-table <- extract_tables(file.path("bayStudyExample.pdf"), pages = 1,
+table <- extract_tables(file.path(pdfRead,"bayStudyExample.pdf"), pages = 1,
                         area = list(c(176.8358, 35.8913, 393.9738, 601.7659)), 
                         guess = F, output = "data.frame")
 table
 ```
 
-## Workflow: extracting tabular data 
+ 
 
 ```r
 table[[1]] %>% 
@@ -180,14 +178,16 @@ table[[1]] %>%
 
 `tabulizer` works well *IF* the datasheet is set up correctly.
 
-![](PayPeriodsDGS_1.png)
+
+<img src="images/PDF_Rscrape/pdfRead/PayPeriodsDGS_1.png" width="90%" />
+
 
 ## Case study: DGS Pay Period Tables
 
 
 ```r
 #|output-location: slide
-tables <- extract_tables(file.path("PayPeriodsDGS.pdf"), method = "stream")
+tables <- extract_tables(file.path(pdfRead,"PayPeriodsDGS.pdf"), method = "stream")
 tables
 ```
 
@@ -254,6 +254,58 @@ However, there are major drawbacks:
 :::
 
 ## Pros and Cons
+
+<table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
+ <thead>
+  <tr>
+   <th style="text-align:left;"> Features </th>
+   <th style="text-align:left;"> 'tabulizer' </th>
+   <th style="text-align:left;"> 'pdftools' </th>
+  </tr>
+ </thead>
+<tbody>
+  <tr>
+   <td style="text-align:left;"> Ease of installation </td>
+   <td style="text-align:left;"> Hard </td>
+   <td style="text-align:left;"> Easy </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ease of use </td>
+   <td style="text-align:left;"> Medium </td>
+   <td style="text-align:left;"> Easy </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Ease of application </td>
+   <td style="text-align:left;"> Hard </td>
+   <td style="text-align:left;"> Very Hard </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Extract tables </td>
+   <td style="text-align:left;"> Yes </td>
+   <td style="text-align:left;"> No </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Extract text </td>
+   <td style="text-align:left;"> Yes </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Automation </td>
+   <td style="text-align:left;"> Yes </td>
+   <td style="text-align:left;"> Yes </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Code Knowledge </td>
+   <td style="text-align:left;"> Medium High </td>
+   <td style="text-align:left;"> Very High </td>
+  </tr>
+  <tr>
+   <td style="text-align:left;"> Recommend </td>
+   <td style="text-align:left;"> No </td>
+   <td style="text-align:left;"> Very No </td>
+  </tr>
+</tbody>
+</table>
 
 
 

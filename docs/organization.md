@@ -2,17 +2,14 @@
 
 ## Organization of this E-device Document Overall
 
-- Executive Summary: Provides a concise summary of the e-device sub-group goals, methods, and project take-way to date; Table 1 summaries the most notable pros and cons for each software application
+- Executive Summary: Provides a concise summary of the e-device sub-group goals, methods, and project take-way to date; Table 1 summaries the most notable pros and cons for each software application.  Note: Table 1 is generated in a separate R markdown document not included in the e-device repository.
 - Introduction: Provides more in-depth description of the goals and the approach of the e-device sub-group, including an outline of the IEP e-device questionnaire.
 - Software Reviews: Includes reviews of field data entry software applications ("app" or "apps") that were reviewed by the e-device sub-group, starting with a chapter defining the criteria used for the app comparisons. New entries or updated entries are encouraged.
 - IEP Survey Demos: Includes chapters describing the hands-on experience of IEP Survey teams that have conducted a trial of one of the e-device apps; IEP demonstrations included might be from entry level to very experienced e-device users/teams.  New entries or updated entries are encouraged.
 - Hardware Reviews: Section is a place-holder for any relevant information regarding field data entry devices and associated weather protection products. New entries or updated entries are encouraged.
-- External Sensors: Section devoted to the data collection from fish boards and/or other environmental sensors and the potential integration with e-device apps.
-- Appendix: Section intended for additional/supplemental information that would support IEP survey teams to better understand e-device approaches presented in Software, hardware, or demonstration sections. 
-- Appendix/Expert Network: Provides a listing of IEP associates who are willing to be a contact for new e-device users within IEP who are seeking information to support e-device method decisions.
-
-
-
+- External Sensors: Section is devoted to the data collection from fish boards and/or other environmental sensors and the potential integration with e-device apps.
+- Appendix: Section is intended for additional/supplemental information that would support IEP survey teams to better understand e-device approaches presented in Software, hardware, or demonstration sections. 
+- Appendix/Expert Network: Provides a listing of IEP associates who are willing to be an expert contact for new e-device users within IEP who are seeking information to support e-device method decisions.
 
 
 

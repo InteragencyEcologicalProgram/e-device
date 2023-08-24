@@ -69,7 +69,7 @@ VIMS/FEED is configured to work with and Access database. Survey data collection
 
 ## FEED: Criteria Tables
 
-###  FEED: Forms Options
+###  Forms Options
 
 
 ```{r feeinit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
@@ -95,7 +95,7 @@ formtable(feeform)
 
 
 
-### FEED: Data Interface {#feedat}
+### Data Interface {#feedat}
 
 
 ```{r feeddat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
@@ -106,7 +106,7 @@ datatable(feedat)
 ```
 
 
-###  FEED: Photo Integration and External Sensors {#feepho}
+###  Photo Integration and External Sensors {#feepho}
 
 
 ```{r feedphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
@@ -120,7 +120,7 @@ phototable(feephot)
 ```
 
 
-###  FEED:  Hardware Platforms  {#feehrd}
+###  Hardware Platforms  {#feehrd}
 
 [Top of section](feetop)
 
@@ -133,7 +133,7 @@ hardtable(feehard)
 ```
 
 
-### FEED: Security Factors {#feesec}
+### Security Factors {#feesec}
 
 
 ```{r feedsec, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Security Factors', out.width='100%', tab.asp=.75, tab.align='left' }
@@ -145,7 +145,7 @@ sectable(feesec)
 ```
 
 
-### FEED: Business Model and Customer Support {#feebus}
+### Business Model and Customer Support {#feebus}
 
 [Top of section](#feetop)
 

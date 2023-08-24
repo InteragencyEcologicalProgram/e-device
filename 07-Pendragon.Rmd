@@ -153,7 +153,7 @@ formtable(Penform)
 ```
 
 
-### Pendragon: Data Interface {#pendat}
+### Data Interface {#pendat}
 
 ```{r Pendat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
 
@@ -164,7 +164,7 @@ datatable(Pendat)
 ```
 
 
-###  Pendragon: Photo Integration and External Sensors {#penpho}
+###  Photo Integration and External Sensors {#penpho}
 
 ```{r Penphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
 
@@ -177,7 +177,7 @@ phototable(Penphot)
 ```
 
 
-###  Pendragon:  Hardware Platforms  {#penhrd}
+###  Hardware Platforms  {#penhrd}
 
 [Top of section](pentop)
 
@@ -188,7 +188,7 @@ hardtable(Penhard)
 
 ```
 
-### Pendragon: Security Factors {#pensec}
+### Security Factors {#pensec}
 
 
 
@@ -201,7 +201,7 @@ sectable(Pensec)
 ```
 
 
-### Pendragon: Business Model and Customer Support {#penbus}
+### Business Model and Customer Support {#penbus}
 
 [Top of section](#pentop)
 

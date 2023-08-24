@@ -54,7 +54,7 @@ XLSForm formatting language is described at: https://xlsform.org/en/.
 
 ## Survey123: Criteria Tables
 
-### Survey123: Forms Options
+### Forms Options
 
 
 
@@ -266,7 +266,7 @@ XLSForm formatting language is described at: https://xlsform.org/en/.
 
 
 
-### Survey123: Data Interface {#S12dat}
+### Data Interface {#S12dat}
 
 
 
@@ -371,7 +371,7 @@ https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872 </t
 
 
 
-###  Survey123: Photo Integration and External Sensors {#s12pho}
+###  Photo Integration and External Sensors {#s12pho}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -449,7 +449,7 @@ https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanni
 
 
 
-###  Survey123:  Hardware Platforms  {#s12hrd}
+###  Hardware Platforms  {#s12hrd}
 
 [Top of section](#s12top)
 
@@ -514,7 +514,7 @@ https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanni
 
 
 
-### Survey123: Security Factors {#s12sec}
+### Security Factors {#s12sec}
 
 
 
@@ -574,7 +574,7 @@ Esri's flagship software, ArcGIS, runs on Azure. Esri provides deployment tooli
 
 
 
-### Survey123: Business Model and Customer Support {#s12bus}
+### Business Model and Customer Support {#s12bus}
 
 [Top of section](#s12top)
 

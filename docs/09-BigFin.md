@@ -108,7 +108,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 
 ## Big Fin: Criteria Tables
 
-###  Big Fin: Forms Options
+###  Forms Options
 
 
 
@@ -263,7 +263,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 
 
 
-### Big Fin: Data Interface {#BFdat}
+### Data Interface {#BFdat}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -356,7 +356,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 
 
 
-###  Big Fin: Photo Integration and External Sensors {#BFpho}
+###  Photo Integration and External Sensors {#BFpho}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -435,7 +435,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 
 
 
-###  Big Fin:  Hardware Platforms  {#BFhrd}
+###  Hardware Platforms  {#BFhrd}
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:BFhard)Hardware Platform Options</caption>
@@ -498,7 +498,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 
 
 
-### Big Fin: Security Factors {#BFsec}
+### Security Factors {#BFsec}
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:BFsec)Security Factors</caption>
@@ -554,7 +554,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 
 
 
-### Big Fin: Business Model and Customer Support {#BFbus}
+### Business Model and Customer Support {#BFbus}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>

@@ -94,7 +94,7 @@ knitr::include_graphics("images/BigFin/fish2.PNG", error = FALSE)
 
 ## Big Fin: Criteria Tables
 
-###  Big Fin: Forms Options
+###  Forms Options
 
 
 
@@ -120,7 +120,7 @@ formtable(BFform)
 
 
 
-### Big Fin: Data Interface {#BFdat}
+### Data Interface {#BFdat}
 
 
 ```{r BFdat, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Data Interface Options', out.width='100%', tab.asp=.75, tab.align='left' }
@@ -130,7 +130,7 @@ datatable(BFdat)
 
 ```
 
-###  Big Fin: Photo Integration and External Sensors {#BFpho}
+###  Photo Integration and External Sensors {#BFpho}
 
 
 ```{r BFphot, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
@@ -142,7 +142,7 @@ phototable(BFphot)
 
 
 
-###  Big Fin:  Hardware Platforms  {#BFhrd}
+###  Hardware Platforms  {#BFhrd}
 
 ```{r BFhard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
 
@@ -154,7 +154,7 @@ hardtable(BFhard)
 
 
 
-### Big Fin: Security Factors {#BFsec}
+### Security Factors {#BFsec}
 
 ```{r BFsec, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Security Factors', out.width='100%', tab.asp=.75, tab.align='left' }
 
@@ -165,7 +165,7 @@ sectable(BFsec)
 
 
 
-### Big Fin: Business Model and Customer Support {#BFbus}
+### Business Model and Customer Support {#BFbus}
 
 
 ```{r BFbus, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Business Model and Pricing', out.width='100%', tab.asp=.75, tab.align='left' }

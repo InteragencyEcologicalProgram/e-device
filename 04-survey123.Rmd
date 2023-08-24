@@ -52,7 +52,7 @@ knitr::include_graphics("images/survey123/survey123_xlsform2.png", error = FALSE
 
 ## Survey123: Criteria Tables
 
-### Survey123: Forms Options
+### Forms Options
 
 ```{r forminit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
 
@@ -72,7 +72,7 @@ formtable(s123form)
 ```
 
 
-### Survey123: Data Interface {#S12dat}
+### Data Interface {#S12dat}
 
 
 
@@ -85,7 +85,7 @@ datatable(s123dat)
 
 
 
-###  Survey123: Photo Integration and External Sensors {#s12pho}
+###  Photo Integration and External Sensors {#s12pho}
 
 
 ```{r s12pho, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
@@ -131,7 +131,7 @@ kable(s123phot, format = "html", escape = F, caption = 'Photo Integration and Ex
 
 
 
-###  Survey123:  Hardware Platforms  {#s12hrd}
+###  Hardware Platforms  {#s12hrd}
 
 [Top of section](#s12top)
 
@@ -144,7 +144,7 @@ hardtable(s123hard)
 ```
 
 
-### Survey123: Security Factors {#s12sec}
+### Security Factors {#s12sec}
 
 
 
@@ -157,7 +157,7 @@ sectable(s123sec)
 
 
 
-### Survey123: Business Model and Customer Support {#s12bus}
+### Business Model and Customer Support {#s12bus}
 
 [Top of section](#s12top)
 

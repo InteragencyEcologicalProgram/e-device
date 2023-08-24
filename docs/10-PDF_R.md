@@ -4,9 +4,11 @@
 
 PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum [See IEP E-device Survey](#appx_1).  
 
-PDF forms can be filled in using either Acrobat, Acrobat Reader (free), or Foxit editor. Static or interactive forms can be created using either the Acrobat or Foxit editor. 
+Fillable PDF forms can be developed using a number of programs, including Acrobat, Acrobat Reader (free) or Foxit editor (free version available). Other free software or web-based PDF form building and fillable conversion tools are available (e.g., Canva/DocFly or UPDF).  
 
-R has been proposed as a tool for programmatically extracting the filled-in PDF form.  The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. The full code for Trinh's evaluation is included in Appendix 2: [PDF R Scraping Demonstration](#appx_2)
+R has been proposed as a tool for programmatically extracting the filled-in PDF form. The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. Scraping is the process of programmatically grabbing information from a webpage or document by analyzing the underlying code of the document.
+
+The full code for Trinh's evaluation is included in Appendix 2: [PDF R Scraping Demonstration](#appx_2)
 
 
 ## Create a fillable PDF form
@@ -18,8 +20,8 @@ R has been proposed as a tool for programmatically extracting the filled-in PDF 
 
 
 <div class="figure">
-<img src="images/PDF_Rscrape/FoxitEditor.jpg" alt="Field types options in Foxit." width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-1)Field types options in Foxit.</p>
+<img src="images/PDF_Rscrape/FoxitEditor.jpg" alt="Potential field types available to insert as fillable forms in Foxit." width="90%" />
+<p class="caption">(\#fig:unnamed-chunk-1)Potential field types available to insert as fillable forms in Foxit.</p>
 </div>
 
 
@@ -32,7 +34,7 @@ Purpose: There are several PDF scraping packages in R. I will focus on two:
 1.  `pdftools`
 2.  `tabulizer`
 
-Pros and Cons
+###  Pros and Cons
 
 -   The main reason to consider this approach: cost. It is free.
 
@@ -44,7 +46,7 @@ Pros and Cons
     4.  `tabulizer` can be difficult to install if you run into Java restrictions
 :::
 
-Outline
+### Outline
 
 1.  Primer to 'pdftools'
 2.  Primer to 'tabulizer'
@@ -111,16 +113,15 @@ In Contrast: Tabular Data
 </div>
 
 
-<div class="figure">
-<img src="images/PDF_Rscrape/extract_tabular.JPG" alt="Extracting Tabulated Data" width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-9)Extracting Tabulated Data</p>
-</div>
+<!-- ```{r , echo=FALSE, fig.cap="Extracting Tabulated Data", out.width = '90%'} -->
+<!-- knitr::include_graphics("images/PDF_Rscrape/extract_tabular.JPG", error = FALSE) -->
+<!-- ``` -->
 
-<div class="figure">
-<img src="images/PDF_Rscrape/extract_tabular2.JPG" alt="Extracted Tabulated Data" width="90%" />
-<p class="caption">(\#fig:unnamed-chunk-10)Extracted Tabulated Data</p>
-</div>
-Conclusion 
+<!-- ```{r , echo=FALSE, fig.cap="Extracted Tabulated Data", out.width = '90%'} -->
+<!-- knitr::include_graphics("images/PDF_Rscrape/extract_tabular2.JPG", error = FALSE) -->
+<!-- ``` -->
+
+### Conclusion 
 
 - Possible
 - Automate with `tabulizer` and `pdftools`
@@ -139,7 +140,7 @@ However, there are major drawbacks:
 :::
 :::
 
-Pros and Cons
+###  Pros and Cons
 
 <table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
  <thead>
@@ -199,7 +200,7 @@ Pros and Cons
 
 ## R Scrape PDF Approach: Criteria Tables
 
-###  PDF-R Scrape: Forms Options
+###  Forms Options
 
 
 
@@ -352,7 +353,7 @@ Pros and Cons
 
 
 
-### PDF-R Scrape: Data Interface {#PDFdat}
+### Data Interface {#PDFdat}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -445,7 +446,7 @@ Pros and Cons
 
 
 
-###  PDF-R Scrape: Photo Integration and External Sensors {#PDFpho}
+###  Photo Integration and External Sensors {#PDFpho}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -524,7 +525,7 @@ Pros and Cons
 
 
 
-###  PDF-R Scrape:  Hardware Platforms  {#PDFhrd}
+###  Hardware Platforms  {#PDFhrd}
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:PDFRhard)Hardware Platform Options</caption>
@@ -587,7 +588,7 @@ Pros and Cons
 
 
 
-### PDF-R Scrape: Security Factors {#PDFsec}
+### Security Factors {#PDFsec}
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:PDFRsec)Security Factors</caption>
@@ -643,7 +644,7 @@ Pros and Cons
 
 
 
-### PDF-R Scrape: Business Model and Customer Support {#PDFbus}
+### Business Model and Customer Support {#PDFbus}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>

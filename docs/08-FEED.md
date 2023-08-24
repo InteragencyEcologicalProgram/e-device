@@ -74,7 +74,7 @@ VIMS/FEED is configured to work with and Access database. Survey data collection
 
 ## FEED: Criteria Tables
 
-###  FEED: Forms Options
+###  Forms Options
 
 
 
@@ -229,7 +229,7 @@ VIMS/FEED is configured to work with and Access database. Survey data collection
 
 
 
-### FEED: Data Interface {#feedat}
+### Data Interface {#feedat}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -323,7 +323,7 @@ VIMS/FEED is configured to work with and Access database. Survey data collection
 
 
 
-###  FEED: Photo Integration and External Sensors {#feepho}
+###  Photo Integration and External Sensors {#feepho}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -401,7 +401,7 @@ VIMS/FEED is configured to work with and Access database. Survey data collection
 
 
 
-###  FEED:  Hardware Platforms  {#feehrd}
+###  Hardware Platforms  {#feehrd}
 
 [Top of section](feetop)
 
@@ -465,7 +465,7 @@ VIMS/FEED is configured to work with and Access database. Survey data collection
 
 
 
-### FEED: Security Factors {#feesec}
+### Security Factors {#feesec}
 
 
 <div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
@@ -521,7 +521,7 @@ VIMS/FEED is configured to work with and Access database. Survey data collection
 
 
 
-### FEED: Business Model and Customer Support {#feebus}
+### Business Model and Customer Support {#feebus}
 
 [Top of section](#feetop)
 
