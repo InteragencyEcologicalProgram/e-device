@@ -59,16 +59,16 @@ XLSForm formatting language is described at: https://xlsform.org/en/.
 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:s1form)Forms Options</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -254,14 +254,14 @@ XLSForm formatting language is described at: https://xlsform.org/en/.
   </tr>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Font adjustment/Speak-to-text </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Font adjustment/ Speak-to-text </td>
    <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -270,16 +270,16 @@ XLSForm formatting language is described at: https://xlsform.org/en/.
 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:s12dat)Data Interface Options</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -364,25 +364,22 @@ https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872 </t
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
-
-
-
+</table>
 
 
 
 ###  Photo Integration and External Sensors {#s12pho}
 
-
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:s12pho)Photo Integration and External Sensors</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -392,13 +389,15 @@ https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872 </t
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> multiple photos can be linked to a question field with comments and associated question to a record </td>
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> Ease of interface </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> "We have problems however, when it comes to photos. If a previous user has submitted photos, a later user can not. Also, it seems there are issues period in submitting photos on any record that is not the initial creating. Users editing a record within survey 123 cannot see photos submitted be previous users.”
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;"> "We have problems however, when it comes to photos. If a previous user has submitted photos, a later user can not. Also, it seems there are issues period in submitting photos on any record that is not the initial creating. Users editing a record within survey 123 cannot see photos submitted be previous users.”
 
 https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872 </td>
   </tr>
@@ -409,20 +408,23 @@ https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872 </t
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> You can allow the user to submit multiple files in the one question response, up to a maximum of 99. 
 The maximum file size for an individual attachment submitted from the Survey123 field app is 10 MB. </td>
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> Drawing/Annotating on photo </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> The September 2021 release of ArcGIS Survey123 (version 3.13) includes ability to draw and annotate questions in the Survey123 field app. </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> https://community.esri.com/t5/arcgis-survey123-blog/updates-to-draw-and-annotate-in-arcgis-survey123/ba-p/1100656#:~:text=Draw%20and%20annotate%20are%20staple,a%20snapshot%20of%20a%20map. </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;"> https://community.esri.com/t5/arcgis-survey123-blog/updates-to-draw-and-annotate-in-arcgis-survey123/ba-p/1100656#:~:text=Draw%20and%20annotate%20are%20staple,a%20snapshot%20of%20a%20map. </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;"> X-tern sensors </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> GPS from device </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Yes </td>
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> GPS precision only as good as app on device </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> “The tool needs to have better integration capabilities with GPS and Bluetooth devices in order to capture location at a better scale than the tablet of phone can offer.” https://www.g2.com/products/arcgis-survey123/reviews?page=2#survey-response-766508 </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;"> “The tool needs to have better integration capabilities with GPS and Bluetooth devices in order to capture location at a better scale than the tablet of phone can offer.” https://www.g2.com/products/arcgis-survey123/reviews?page=2#survey-response-766508 </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
@@ -432,6 +434,7 @@ The maximum file size for an individual attachment submitted from the Survey123 
 
 https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanning-in-survey123-for-arcgis/ </td>
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
@@ -439,9 +442,13 @@ https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanni
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> No </td>
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
+
+
+
 
 
 
@@ -455,14 +462,14 @@ https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanni
 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:s12har)Hardware Platform Options</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -509,7 +516,7 @@ https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanni
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -518,15 +525,15 @@ https://www.esri.com/arcgis-blog/products/survey123/announcements/barcode-scanni
 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:s12sec)Security Factors</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -567,7 +574,7 @@ Esri's flagship software, ArcGIS, runs on Azure. Esri provides deployment tooli
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -580,15 +587,15 @@ Esri's flagship software, ArcGIS, runs on Azure. Esri provides deployment tooli
 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:s123bus)Security Factors</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -653,7 +660,7 @@ https://www.g2.com/products/arcgis-survey123/reviews#survey-response-2743872 </t
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 

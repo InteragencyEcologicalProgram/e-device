@@ -1,12 +1,12 @@
 # Big Fin
 
-## Big Fin Overview  {#BFtop} 
+## Overview  {#BFtop} 
 
 The Big Fin Scientific Data Collection System (DCS) was created for both outdoor and in-lab data collection, with the purpose of decreasing the costs and time associated with gathering and using Field Data. The Big Fin Scientific DCS includes feature and hardware to support fish survey type of applications with an emphasis on keeping collection device costs low.
 
-## Big Fin: Key Features 
+## Key Features 
 
-### Big Fin DCS Tablet Software: DCSLinkStream 
+### DCS Tablet Software: DCSLinkStream 
 
 Big Fin DCS software "DCSLinkStream" can only be used with Android tablets.  Big Fin measurements boards use an open Bluetooth (2.0) protocol which is compatible with all devices, and boards can be hard wired with USB waterproof cables.  
 
@@ -55,7 +55,7 @@ DCSLinkStream collects data with a local area network and uses a separate Access
 
 
 
-### Big Fin DCS Web Based Tool: DCSUnity
+### DCS Web Based Tool: DCSUnity
 
 <div class="figure">
 <img src="images/BigFin/DCSUnity.JPG" alt="The BigFin DCSUnity software provides a web based data repository and data viewing/organizing interface.  Field data from DSC-LinkStream is automatically pushed to the DCS-Unity online Account." width="90%" />
@@ -70,7 +70,7 @@ DCSLinkStream collects data with a local area network and uses a separate Access
 <p class="caption">(\#fig:BFmod)The BigFin software products and the fish boards may be used separately or configured together</p>
 </div>
 
-### Big Fin Digital Data-Capture Boards
+### Digital Data-Capture Boards
 
 Big Fin measurement boards can be manufactured in any length up to the largest size, 2.5 meters. Boards are waterproof, lightweight, rugged, and can wash down easily; Easy to maintain. Big Fin boards interface directly with DCSLinkStream and the user can program many input keys along the board. The measurement resolution of the board is 100 microns. The boards gets calibrated initially and can be re-calibrated in 30 seconds. Drift is temperature dependent but the unit does not drift quickly because the electronics keep it warm and relatively stable. 
 
@@ -106,7 +106,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 </div>
 
 
-## Big Fin: Criteria Tables
+## Criteria Tables
 
 ###  Forms Options
 
@@ -115,16 +115,16 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:BFform)Forms Options</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -257,7 +257,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -266,16 +266,16 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 ### Data Interface {#BFdat}
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:BFdat)Data Interface Options</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -352,23 +352,23 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
 ###  Photo Integration and External Sensors {#BFpho}
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:BFphot)Photo Integration and External Sensors</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -429,7 +429,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
    <td style="text-align:left;">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -437,14 +437,14 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 
 ###  Hardware Platforms  {#BFhrd}
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:BFhard)Hardware Platform Options</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -491,7 +491,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 [Top of section](#BFtop)
@@ -500,15 +500,15 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 
 ### Security Factors {#BFsec}
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:BFsec)Security Factors</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -548,7 +548,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -557,15 +557,15 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 ### Business Model and Customer Support {#BFbus}
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:BFbus)Security Factors</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -598,7 +598,7 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 

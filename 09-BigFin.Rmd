@@ -1,12 +1,12 @@
 # Big Fin
 
-## Big Fin Overview  {#BFtop} 
+## Overview  {#BFtop} 
 
 The Big Fin Scientific Data Collection System (DCS) was created for both outdoor and in-lab data collection, with the purpose of decreasing the costs and time associated with gathering and using Field Data. The Big Fin Scientific DCS includes feature and hardware to support fish survey type of applications with an emphasis on keeping collection device costs low.
 
-## Big Fin: Key Features 
+## Key Features 
 
-### Big Fin DCS Tablet Software: DCSLinkStream 
+### DCS Tablet Software: DCSLinkStream 
 
 Big Fin DCS software "DCSLinkStream" can only be used with Android tablets.  Big Fin measurements boards use an open Bluetooth (2.0) protocol which is compatible with all devices, and boards can be hard wired with USB waterproof cables.  
 
@@ -48,7 +48,7 @@ knitr::include_graphics("images/BigFin/BigFin6.PNG", error = FALSE)
 
 
 
-### Big Fin DCS Web Based Tool: DCSUnity
+### DCS Web Based Tool: DCSUnity
 
 ```{r DCSunity, echo=FALSE, fig.cap="The BigFin DCSUnity software provides a web based data repository and data viewing/organizing interface.  Field data from DSC-LinkStream is automatically pushed to the DCS-Unity online Account.", out.width = '90%'}
 knitr::include_graphics("images/BigFin/DCSUnity.JPG", error = FALSE)
@@ -61,7 +61,7 @@ knitr::include_graphics("images/BigFin/DCSUnity.JPG", error = FALSE)
 knitr::include_graphics("images/BigFin/Modular.JPG", error = FALSE)
 ```
 
-### Big Fin Digital Data-Capture Boards
+### Digital Data-Capture Boards
 
 Big Fin measurement boards can be manufactured in any length up to the largest size, 2.5 meters. Boards are waterproof, lightweight, rugged, and can wash down easily; Easy to maintain. Big Fin boards interface directly with DCSLinkStream and the user can program many input keys along the board. The measurement resolution of the board is 100 microns. The boards gets calibrated initially and can be re-calibrated in 30 seconds. Drift is temperature dependent but the unit does not drift quickly because the electronics keep it warm and relatively stable. 
 
@@ -92,7 +92,7 @@ knitr::include_graphics("images/BigFin/fish2.PNG", error = FALSE)
 ```
 
 
-## Big Fin: Criteria Tables
+## Criteria Tables
 
 ###  Forms Options
 

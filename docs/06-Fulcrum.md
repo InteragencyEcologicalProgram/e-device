@@ -1,6 +1,6 @@
 # Fulcrum App
 
-## Fulcrum App Overview    {#fultop}
+## Overview    {#fultop}
 
 The Fulcrum App is a mobile data collection platform that provides tools to collect and analyze data in field surveys. There are two key components to the Fulcrum platform: the mobile app is for data collectors in the field and a web-based dashboard that provides an at-a-glance view of all field data collections in real time and summaries to date which can be accessible to anyone working on the project. 
 
@@ -10,7 +10,7 @@ Fulcrum is currently being used by at least two major ecosystem monitoring field
  
 
 
-## Fulcrum App: Key Features 
+## Key Features 
 
 ### Professional Look
 
@@ -74,7 +74,7 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
 </div>
 
 
-## Fulcrum App: Criteria Tables
+## Criteria Tables
 
 
 
@@ -86,16 +86,16 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:fulcform)Forms Options</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -160,7 +160,7 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Intuitive form design tool </td>
    <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> Web tool for form design is intuitive and provides flexibilty for field position and type.  Form itself is easy to navigate between tabs and across/down fields. </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> NEON: We have about 3 full time people managing ~200 apps and the ingest pipeline </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
@@ -190,7 +190,7 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Other IEP Survey needs </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Permissions Management </td>
-   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
@@ -198,7 +198,7 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Muti-users of an app </td>
-   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
@@ -206,7 +206,7 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Off-line capacity </td>
-   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
@@ -214,21 +214,21 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> User Accessability </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Multiple-language options </td>
-   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> ? </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
-   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Font adjustment/Speak-to-text </td>
-   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Font adjustment/ Speak-to-text </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> ? </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -238,23 +238,23 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
 The data connectivity options in Fulcrum App are significant, as noted above and outlined in the Data Interface table. 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:fulcdat)Data Interface Options</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Database interface </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Cloud-storage </td>
-   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
@@ -270,25 +270,27 @@ The data connectivity options in Fulcrum App are significant, as noted above and
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">  </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Integrate data from local tables </td>
-   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> NEON: pull through API (https://docs.fulcrumapp.com/docs/developer-information): use webhooks to connect Fulcrum with Campbell dl.  Developer would set up API from Fulcrum to the datalogger API.
+Has to be done in Admin mode: OR upload spreadsheet into the app and push that out.  Can populate fields in form from an uploaded spreadsheet.   
+API does not have to be on-line. https://docs.fulcrumapp.com/docs/developer-information </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Edit after transfer </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Editing data ‘on-the-fly’ (data already submitted) </td>
-   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> NEON: Easy to update, can hide older data from UI view (which may be unwanted, but still there when accessed via the API), our system also requires concomitant changes to our own database which adds to the time neede to edit apps </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Data format </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Open (standard) format output </td>
-   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> PDF report generation is really developed in Fulcrum; can develop workflow to send report automatically: email and/or text </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> NEON: data can be exported from the fulcrum cloud as a csv or can be retrieved as .json from their API </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
   <tr>
@@ -302,7 +304,7 @@ The data connectivity options in Fulcrum App are significant, as noted above and
   <tr>
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;"> Data transfer </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Real-time data transfer </td>
-   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">  </td>
+   <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
@@ -320,11 +322,11 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; "> Audit trails (data version control) </td>
    <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; "> Yes </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> https://help.fulcrumapp.com/en/articles/76663-how-does-version-history-work </td>
-   <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
+   <td style="text-align:left;min-width: 2cm; max-width: 5cm; "> NEON:fully deleted records can be retrieved with some work most of the time, all changes to a synced record are recorded in the "history", permission can prevent users from fully deleting records </td>
    <td style="text-align:left;min-width: 2cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -334,16 +336,16 @@ The data connectivity options in Fulcrum App are significant, as noted above and
 ###  Photo Integration and External Sensors {#fulpho}
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:fulcphot)Photo Integration and External Sensors</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Category </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -375,7 +377,7 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3.5cm; font-weight: bold;">  </td>
    <td style="text-align:left;min-width: 2.5cm; max-width: 4cm; "> Drawing/Annotating on photo </td>
    <td style="text-align:left;min-width: 2cm; max-width: 2.5cm; "> Annotating Yes; Drawing No </td>
-   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; ">  </td>
+   <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> NEON: You can do annotation on all photos throughout the application </td>
    <td style="text-align:left;min-width: 4cm; max-width: 5.5cm; "> https://help.fulcrumapp.com/en/articles/3130731-what-are-photo-fields </td>
    <td style="text-align:left;">  </td>
   </tr>
@@ -428,7 +430,7 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <td style="text-align:left;">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -442,14 +444,14 @@ The data connectivity options in Fulcrum App are significant, as noted above and
 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:fulchard)Hardware Platform Options</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -496,7 +498,7 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -505,15 +507,15 @@ The data connectivity options in Fulcrum App are significant, as noted above and
 
 
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:fulcsec)Security Factors</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -553,7 +555,7 @@ The data connectivity options in Fulcrum App are significant, as noted above and
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -566,15 +568,15 @@ The data connectivity options in Fulcrum App are significant, as noted above and
 
   
 
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:fulcbus)Security Factors</caption>
  <thead>
   <tr>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
-   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Feature </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Available </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Description </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> Group Notes </th>
+   <th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;"> External  Reviews </th>
   </tr>
  </thead>
 <tbody>
@@ -628,7 +630,7 @@ Webhooks </td>
    <td style="text-align:left;min-width: 4.5cm; max-width: 5cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 

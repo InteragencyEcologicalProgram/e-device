@@ -1,11 +1,11 @@
 # MS Power Apps 
 
-## Power Apps Overview    {#powtop}
+## Overview    {#powtop}
 
 The Power Apps 'Suite' is a collection of apps, services, connectors and (with an Azure subscription) a database platform. Power Apps provides two different form building methods: 1. A Canvas App starts with a blank canvas and provides Power Point-like drag-and-drop form building tools and Excel-like functions to control behavior and interaction of the entry fields; 2. A Model-driven App is an app that is integrated into a Common Data Service (CDS) which is a secure, cloud-based storage space that can use to store business application data (CDS requires the Azure subscription).  Canvas apps are ideal for building task-based forms (such as collecting Survey data).  Model-driven apps are better for creating end-to-end solutions such as a customer service support ticket that that must be created, routed, addressed, updated, marked as complete automatically based on conditions.  The Bay Study app demonstration uses a Canvas derived Power App approach [Bay Study P-App](#powdem).
 
 
-## Power Apps: Key Features 
+## Key Features 
 
 
 ### Intuitive Form Developing Interface
@@ -47,9 +47,9 @@ knitr::include_graphics("images/PowerApps/Start_Canvas3.jpg", error = FALSE)
 ```
 
 
-## Power Apps: Criteria Tables
+## Criteria Tables
 
-### Power Apps: Forms Options 
+### Forms Options 
 
 
 ```{r painit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
@@ -58,7 +58,7 @@ library(kableExtra)
 
 powform <- powerapp$Forms_Options
 powdat <- powerapp$Data_Interface 
-powhot <- powerapp$Photos_ExtSensors
+powphot <- powerapp$Photos_ExtSensors
 powhard <- powerapp$HW_Platforms
 powsec  <- powerapp$Security_Factors
 powbus  <- powerapp$Business_Model
@@ -97,7 +97,7 @@ datatable(powdat)
 
 library(kableExtra)
 
-phototable(powhot)
+phototable(powphot)
 ```
 
 
@@ -110,7 +110,7 @@ phototable(powhot)
 
 
 
-```{r paard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
+```{r pahard, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Hardware Platform Options', out.width='100%', tab.asp=.75, tab.align='left' }
 
 library(kableExtra)
 hardtable(powhard)

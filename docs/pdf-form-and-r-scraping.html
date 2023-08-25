@@ -6,15 +6,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <title>Chapter 14 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys</title>
 <meta name="author" content="IEP DUWG ‘e-Device’ Sub-group">
-<meta name="description" content="14.1 R Scrape PDF Approach Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time...">
+<meta name="description" content="14.1 Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum...">
 <meta name="generator" content="bookdown 0.33 with bs4_book()">
 <meta property="og:title" content="Chapter 14 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys">
 <meta property="og:type" content="book">
 <meta property="og:url" content="https://interagencyecologicalprogram.github.io/e-device/pdf-form-and-r-scraping.html">
-<meta property="og:description" content="14.1 R Scrape PDF Approach Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time...">
+<meta property="og:description" content="14.1 Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum...">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Chapter 14 PDF Form and R Scraping | Electronic Data Entry Options for IEP Surveys">
-<meta name="twitter:description" content="14.1 R Scrape PDF Approach Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time...">
+<meta name="twitter:description" content="14.1 Overview PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum...">
 <!-- JS --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://kit.fontawesome.com/6ecbd6c532.js" crossorigin="anonymous"></script><script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="libs/bootstrap-4.6.0/bootstrap.min.css" rel="stylesheet">
 <script src="libs/bootstrap-4.6.0/bootstrap.bundle.min.js"></script><script src="libs/bs3compat-0.4.2/transition.js"></script><script src="libs/bs3compat-0.4.2/tabs.js"></script><script src="libs/bs3compat-0.4.2/bs3compat.js"></script><link href="libs/bs4_book-1.0.0/bs4_book.css" rel="stylesheet">
@@ -89,17 +89,16 @@
 </h1>
 <div id="PDFtop" class="section level2" number="14.1">
 <h2>
-<span class="header-section-number">14.1</span> R Scrape PDF Approach Overview<a class="anchor" aria-label="anchor" href="#PDFtop"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.1</span> Overview<a class="anchor" aria-label="anchor" href="#PDFtop"><i class="fas fa-link"></i></a>
 </h2>
-<p>PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum <a href="appx_1.html#appx_1">See IEP E-device Survey</a>.</p>
-<p>Fillable PDF forms can be developed using a number of programs, including Acrobat, Acrobat Reader (free) or Foxit editor (free version available). Other free software or web-based PDF form building and fillable conversion tools are available (e.g., Canva/DocFly or UPDF).</p>
+<p>PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum <a href="appx_1.html#appx_1">See IEP E-device Survey responses</a>.</p>
 <p>R has been proposed as a tool for programmatically extracting the filled-in PDF form. The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. Scraping is the process of programmatically grabbing information from a webpage or document by analyzing the underlying code of the document.</p>
-<p>The full code for Trinh’s evaluation is included in Appendix 2: <a href="appx_2.html#appx_2">PDF R Scraping Demonstration</a></p>
 </div>
 <div id="create-a-fillable-pdf-form" class="section level2" number="14.2">
 <h2>
 <span class="header-section-number">14.2</span> Create a fillable PDF form<a class="anchor" aria-label="anchor" href="#create-a-fillable-pdf-form"><i class="fas fa-link"></i></a>
 </h2>
+<p>Fillable PDF forms can be developed using a number of programs, including Acrobat, Acrobat Reader (free) or Foxit editor (free version available). Other free software or web-based PDF form building and fillable conversion tools are available (e.g., Canva/DocFly or UPDF).</p>
 <p><a href="https://helpx.adobe.com/acrobat/using/creating-distributing-pdf-forms.html#create_forms_using_acrobat">How to create fillable PDF forms with Adobe Adrobat</a></p>
 <p><a href="https://www.foxit.com/blog/how-to-create-fillable-pdf-forms/?psafe_param=1&amp;utm_source=googleads&amp;utm_medium=PMAX&amp;cq_cmp=19179766755&amp;utm_campaign=FOXIT_GA_NAM_EN_PMAX_LEADS_SALESFORCE_PDF%20EDITOR&amp;gclid=EAIaIQobChMIkore1cbcgAMVgAOtBh3QLQ_WEAAYASAAEgLmOfD_BwE">How to create fillable PDF forms with Foxit Editor</a></p>
 <div class="figure">
@@ -109,19 +108,30 @@ Figure 14.1: Potential field types available to insert as fillable forms in Foxi
 </p>
 </div>
 </div>
-<div id="excerpts-from-evalutaion-by-trinh-nguyen" class="section level2" number="14.3">
+<div id="analysis-by-trinh-nguyen" class="section level2" number="14.3">
 <h2>
-<span class="header-section-number">14.3</span> Excerpts from evalutaion by Trinh Nguyen:<a class="anchor" aria-label="anchor" href="#excerpts-from-evalutaion-by-trinh-nguyen"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.3</span> Analysis by Trinh Nguyen<a class="anchor" aria-label="anchor" href="#analysis-by-trinh-nguyen"><i class="fas fa-link"></i></a>
 </h2>
+<p>The following is an evaluation of R-based methods for data extraction from PDF Forms prepared by Trinh Nguyen (IEP/CDFW) and presented to the DUWG subgroup in August 2023.</p>
+<p>NOTE: The tabulizer library and code chunks are marked out in this bookdown document in order to simplify the Bookdown render. The full downloadable codes used for Trinh’s evaluation are included in Appendix 2: <a href="appx_2.html#appx_2">PDF R Scraping Demonstration</a></p>
+<p><br></p>
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="http://haozhu233.github.io/kableExtra/">kableExtra</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org">dplyr</a></span><span class="op">)</span></span>
+<span><span class="co">#library(tabulizer)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyr.tidyverse.org">tidyr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html">library</a></span><span class="op">(</span><span class="va"><a href="https://stringr.tidyverse.org">stringr</a></span><span class="op">)</span></span>
+<span><span class="va">pdfRead</span> <span class="op">&lt;-</span>    <span class="fu">here</span><span class="op">(</span><span class="st">"images/PDF_Rscrape/pdfRead"</span><span class="op">)</span></span></code></pre></div>
 <p>Purpose: There are several PDF scraping packages in R. I will focus on two:</p>
 <ol style="list-style-type: decimal">
 <li><code>pdftools</code></li>
 <li><code>tabulizer</code></li>
 </ol>
-<div id="pros-and-cons" class="section level3" number="14.3.1">
-<h3>
-<span class="header-section-number">14.3.1</span> Pros and Cons<a class="anchor" aria-label="anchor" href="#pros-and-cons"><i class="fas fa-link"></i></a>
-</h3>
+</div>
+<div id="pros-and-cons" class="section level2" number="14.4">
+<h2>
+<span class="header-section-number">14.4</span> Pros and Cons<a class="anchor" aria-label="anchor" href="#pros-and-cons"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li>The main reason to consider this approach: cost. It is free.</li>
 </ul>
@@ -139,10 +149,10 @@ Figure 14.1: Potential field types available to insert as fillable forms in Foxi
 </ul>
 </div>
 </div>
-<div id="outline" class="section level3" number="14.3.2">
-<h3>
-<span class="header-section-number">14.3.2</span> Outline<a class="anchor" aria-label="anchor" href="#outline"><i class="fas fa-link"></i></a>
-</h3>
+<div id="outline" class="section level2" number="14.5">
+<h2>
+<span class="header-section-number">14.5</span> Outline<a class="anchor" aria-label="anchor" href="#outline"><i class="fas fa-link"></i></a>
+</h2>
 <ol style="list-style-type: decimal">
 <li>Primer to ‘pdftools’</li>
 <li>Primer to ‘tabulizer’</li>
@@ -150,78 +160,140 @@ Figure 14.1: Potential field types available to insert as fillable forms in Foxi
 <li>Case study: DGS Pay Period Tables</li>
 <li>Conclusion</li>
 </ol>
-<p>Primer to ‘pdftools’</p>
+</div>
+<div id="primer-to-pdftools" class="section level2" number="14.6">
+<h2>
+<span class="header-section-number">14.6</span> Primer to ‘pdftools’<a class="anchor" aria-label="anchor" href="#primer-to-pdftools"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li>Primarily used to extract <strong>ONLY</strong> text-based data from a pdf</li>
 <li>Will read back all text as a singular string (ignoring structure)</li>
 </ul>
-<p>Primer to ‘tabulizer’</p>
+<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">pdftools</span><span class="fu">::</span><span class="fu"><a href="https://docs.ropensci.org/pdftools/reference/pdftools.html">pdf_text</a></span><span class="op">(</span><span class="st">"https://water.ca.gov/-/media/DWR-Website/Web-Pages/Programs/State-Water-Project/Operations-And-Maintenance/Files/Operations-Control-Office/Delta-Status-And-Operations/Delta-Operations-Daily-Summary.pdf"</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div id="primer-to-tabulizer" class="section level2" number="14.7">
+<h2>
+<span class="header-section-number">14.7</span> Primer to ‘tabulizer’<a class="anchor" aria-label="anchor" href="#primer-to-tabulizer"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li>Used to extract <strong>ONLY</strong> text-based data from a pdf</li>
 <li>Can extract formatted tabular data as tables</li>
 <li>However, tables must be formatted as tables</li>
 </ul>
-<p>Case study: Bay Study Datasheet</p>
-<div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-2"></span>
-<img src="images/PDF_Rscrape/bayStudyExample_1.png" alt="Bay Study datasheet: NOT Tabulated" width="90%"><p class="caption">
-Figure 14.2: Bay Study datasheet: NOT Tabulated
-</p>
 </div>
-<p>Workflow: Bay Study</p>
+<div id="first-case-study-bay-study" class="section level2" number="14.8">
+<h2>
+<span class="header-section-number">14.8</span> First Case Study: Bay Study<a class="anchor" aria-label="anchor" href="#first-case-study-bay-study"><i class="fas fa-link"></i></a>
+</h2>
+<p>A PDF form was generated to match the current Bay Study datasheet</p>
+<div class="inline-figure"><img src="images/PDF_Rscrape/pdfRead/bayStudyExample_1.png" width="90%"></div>
+<div id="general-workflow" class="section level3" number="14.8.1">
+<h3>
+<span class="header-section-number">14.8.1</span> General Workflow<a class="anchor" aria-label="anchor" href="#general-workflow"><i class="fas fa-link"></i></a>
+</h3>
 <ol style="list-style-type: decimal">
 <li>If the data is tabular, use <code>extract_table()</code> from <code>tabulizer</code>
 </li>
 <li>Non-tabular data will require more creative approaches</li>
 </ol>
-<div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-3"></span>
-<img src="images/PDF_Rscrape/extract_non-formated.JPG" alt="Attempt to extract Bay Study datasheet using tabulizer function, extract_tables" width="90%"><p class="caption">
-Figure 14.3: Attempt to extract Bay Study datasheet using tabulizer function, extract_tables
-</p>
 </div>
-<div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-4"></span>
-<img src="images/PDF_Rscrape/extract_non-formated2.JPG" alt="Attempt to extract Bay Study datasheet by finding specific data locations for reference." width="90%"><p class="caption">
-Figure 14.4: Attempt to extract Bay Study datasheet by finding specific data locations for reference.
-</p>
-</div>
-<div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-5"></span>
-<img src="images/PDF_Rscrape/extract_non-formated3.JPG" alt="Bay Study datasheet with data location highlighted." width="90%"><p class="caption">
-Figure 14.5: Bay Study datasheet with data location highlighted.
-</p>
-</div>
-<div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-6"></span>
-<img src="images/PDF_Rscrape/extract_non-formated4.JPG" alt="Bay Study datasheet coordinates from locate_areas function." width="90%"><p class="caption">
-Figure 14.6: Bay Study datasheet coordinates from locate_areas function.
-</p>
-</div>
-<div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-7"></span>
-<img src="images/PDF_Rscrape/extract_non-formated5.JPG" alt="Extracted data from one location of the Bay Study datasheet" width="90%"><p class="caption">
-Figure 14.7: Extracted data from one location of the Bay Study datasheet
-</p>
-</div>
-<p>In Contrast: Tabular Data</p>
-<div class="figure">
-<span style="display:block;" id="fig:unnamed-chunk-8"></span>
-<img src="docs/images/PDF_Rscrape/PayPeriodsDGS_1.png" alt="Tabulated Pay Period tables." width="90%"><p class="caption">
-Figure 14.8: Tabulated Pay Period tables.
-</p>
-</div>
-<!-- ```{r , echo=FALSE, fig.cap="Extracting Tabulated Data", out.width = '90%'} -->
-<!-- knitr::include_graphics("images/PDF_Rscrape/extract_tabular.JPG", error = FALSE) -->
-<!-- ``` -->
-<!-- ```{r , echo=FALSE, fig.cap="Extracted Tabulated Data", out.width = '90%'} -->
-<!-- knitr::include_graphics("images/PDF_Rscrape/extract_tabular2.JPG", error = FALSE) -->
-<!-- ``` -->
-</div>
-<div id="conclusion" class="section level3" number="14.3.3">
+<div id="extracting-tabular-data" class="section level3" number="14.8.2">
 <h3>
-<span class="header-section-number">14.3.3</span> Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.8.2</span> Extracting tabular data<a class="anchor" aria-label="anchor" href="#extracting-tabular-data"><i class="fas fa-link"></i></a>
 </h3>
+<p>Note: Output of these extract_table functions will not appear in the bookdown document because the tabulizer library is marked out. See <a href="appx_2.html#appx_2">Appendix 2</a> for full R code and example PDF files.</p>
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>,<span class="st">"Bay Study field sheet front_fill2_data.pdf"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<p><code>extract_tables()</code> has two algorithms to try and scrape tables. Can try both</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>, <span class="st">"bayStudyExample.pdf"</span><span class="op">)</span>, method <span class="op">=</span> <span class="st">"lattice"</span><span class="op">)</span></span>
+<span><span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>, <span class="st">"bayStudyExample.pdf"</span><span class="op">)</span>, method <span class="op">=</span> <span class="st">"stream"</span><span class="op">)</span></span></code></pre></div>
+<p><br><br></p>
+<div class="fragment">
+<p>Still does not work for the example Bay Study form!</p>
+</div>
+<p>One final approach is to specify the specific location of the data on the pdf.</p>
+<div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="fu">locate_areas</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>,<span class="st">"Bay Study field sheet front_fill2_data.pdf"</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+<div class="inline-figure"><img src="images/PDF_Rscrape/pdfRead/locateCoordinates.png" width="90%"></div>
+<p>Once data table is selected, extract_tables function can be applied successfully:</p>
+<div class="inline-figure"><img src="images/PDF_Rscrape/pdfRead/locateCoordinatesResults.png" width="90%"></div>
+<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">table</span> <span class="op">&lt;-</span> <span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>,<span class="st">"bayStudyExample.pdf"</span><span class="op">)</span>, pages <span class="op">=</span> <span class="fl">1</span>,</span>
+<span>                        area <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="fl">176.8358</span>, <span class="fl">35.8913</span>, <span class="fl">393.9738</span>, <span class="fl">601.7659</span><span class="op">)</span><span class="op">)</span>, </span>
+<span>                        guess <span class="op">=</span> <span class="cn">F</span>, output <span class="op">=</span> <span class="st">"data.frame"</span><span class="op">)</span></span>
+<span><span class="va">table</span></span></code></pre></div>
+<div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">table</span><span class="op">[[</span><span class="fl">1</span><span class="op">]</span><span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="va">.</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span>, <span class="op">]</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/stats/setNames.html">setNames</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Species"</span>, <span class="st">"S"</span>, <span class="st">"Plus"</span>, <span class="st">"Specimen1"</span>, <span class="st">"Specimen2"</span>, <span class="st">"Specimen3"</span>, </span>
+<span>             <span class="st">"Specimen4"</span>, <span class="st">"Specimen5"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/pivot_longer.html">pivot_longer</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"Specimen1"</span>, <span class="st">"Specimen2"</span>, <span class="st">"Specimen3"</span>, </span>
+<span>                 <span class="st">"Specimen4"</span>, <span class="st">"Specimen5"</span><span class="op">)</span>,</span>
+<span>               <span class="co"># contains("Specimen"), </span></span>
+<span>               names_to <span class="op">=</span> <span class="st">"Specimen"</span>, values_to <span class="op">=</span> <span class="st">"Length"</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>Sex <span class="op">=</span> <span class="fu"><a href="https://stringr.tidyverse.org/reference/str_extract.html">str_extract</a></span><span class="op">(</span><span class="va">Length</span>, <span class="st">"[:upper:]"</span><span class="op">)</span>,</span>
+<span>         Length <span class="op">=</span> <span class="fu"><a href="https://stringr.tidyverse.org/reference/str_extract.html">str_extract</a></span><span class="op">(</span><span class="va">Length</span>, <span class="st">"\\d+"</span><span class="op">)</span>,</span>
+<span>         <span class="fu"><a href="https://dplyr.tidyverse.org/reference/across.html">across</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">S</span>, <span class="va">Plus</span>, <span class="va">Length</span><span class="op">)</span>,</span>
+<span>                <span class="va">as.numeric</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="op">!</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">S</span><span class="op">)</span> <span class="op">&amp;</span> <span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">Plus</span><span class="op">)</span> <span class="op">&amp;</span> <span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">Length</span><span class="op">)</span> <span class="op">&amp;</span> <span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">Sex</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span></code></pre></div>
+</div>
+</div>
+<div id="second-case-study-dgs-pay-period-tables" class="section level2" number="14.9">
+<h2>
+<span class="header-section-number">14.9</span> Second Case Study: DGS Pay Period Tables<a class="anchor" aria-label="anchor" href="#second-case-study-dgs-pay-period-tables"><i class="fas fa-link"></i></a>
+</h2>
+<p><code>tabulizer</code> works well <em>IF</em> the datasheet is set up correctly.</p>
+<div class="inline-figure"><img src="images/PDF_Rscrape/pdfRead/PayPeriodsDGS_1.png" width="90%"></div>
+<p>DGS Pay Period Tables</p>
+<div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co">#|output-location: slide</span></span>
+<span><span class="va">tables</span> <span class="op">&lt;-</span> <span class="fu">extract_tables</span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/file.path.html">file.path</a></span><span class="op">(</span><span class="va">pdfRead</span>,<span class="st">"PayPeriodsDGS.pdf"</span><span class="op">)</span>, method <span class="op">=</span> <span class="st">"stream"</span><span class="op">)</span></span>
+<span><span class="va">tables</span></span></code></pre></div>
+<p>Easily workable, e.g., pay period information for the current month:</p>
+<div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="va">masterTableLocation</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/which.html">which</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/lapply.html">sapply</a></span><span class="op">(</span><span class="va">tables</span>, <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="va">x</span><span class="op">[</span><span class="fl">1</span>, <span class="fl">1</span><span class="op">]</span> <span class="op">==</span> <span class="st">"Year"</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="co"># Cleaning up the tables</span></span>
+<span><span class="co"># Table 6 is the master table showing which schedule table each year will follow:</span></span>
+<span><span class="va">masterTable</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span>year <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">tables</span><span class="op">[[</span><span class="va">masterTableLocation</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fl">1</span>, <span class="fl">2</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span>, </span>
+<span>                                   <span class="va">tables</span><span class="op">[[</span><span class="va">masterTableLocation</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fl">4</span>, <span class="fl">2</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span>, </span>
+<span>                                   <span class="va">tables</span><span class="op">[[</span><span class="va">masterTableLocation</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fl">7</span>, <span class="fl">2</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span><span class="op">)</span>, </span>
+<span>                          pattern <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">tables</span><span class="op">[[</span><span class="va">masterTableLocation</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fl">2</span>, <span class="fl">2</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span>, </span>
+<span>                                      <span class="va">tables</span><span class="op">[[</span><span class="va">masterTableLocation</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fl">5</span>, <span class="fl">2</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span>, </span>
+<span>                                      <span class="va">tables</span><span class="op">[[</span><span class="va">masterTableLocation</span><span class="op">]</span><span class="op">]</span><span class="op">[</span><span class="fl">8</span>, <span class="fl">2</span><span class="op">:</span><span class="fl">12</span><span class="op">]</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/across.html">across</a></span><span class="op">(</span><span class="fu"><a href="https://tidyselect.r-lib.org/reference/everything.html">everything</a></span><span class="op">(</span><span class="op">)</span>, <span class="va">as.numeric</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="op">!</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html">is.na</a></span><span class="op">(</span><span class="va">year</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">priorityTable</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/lapply.html">lapply</a></span><span class="op">(</span><span class="va">tables</span><span class="op">[</span><span class="op">-</span><span class="va">masterTableLocation</span><span class="op">]</span>, <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
+<span></span>
+<span>  <span class="kw">if</span> <span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html">grepl</a></span><span class="op">(</span><span class="st">"PATTERN"</span>, <span class="va">x</span><span class="op">[</span><span class="fl">1</span>, <span class="fl">1</span><span class="op">]</span><span class="op">)</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>      <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html">mutate</a></span><span class="op">(</span>pattern <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/grep.html">gsub</a></span><span class="op">(</span><span class="st">"[^0-9]"</span>, <span class="st">""</span>, <span class="va">X1</span><span class="op">[</span><span class="fl">1</span><span class="op">]</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>      <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">X2</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">month.name</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>      <span class="fu"><a href="https://tidyr.tidyverse.org/reference/separate.html">separate</a></span><span class="op">(</span><span class="va">X3</span>, into <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"startDate"</span>, <span class="st">"endDate"</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">" to "</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>      <span class="fu"><a href="https://dplyr.tidyverse.org/reference/transmute.html">transmute</a></span><span class="op">(</span><span class="va">pattern</span>, month <span class="op">=</span> <span class="va">X2</span>, <span class="va">startDate</span>, <span class="va">endDate</span>, numberPaydays <span class="op">=</span> <span class="va">X4</span><span class="op">)</span></span>
+<span>  <span class="op">}</span> <span class="kw">else</span> <span class="op">{</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html">data.frame</a></span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>      <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">X1</span> <span class="op"><a href="https://rdrr.io/r/base/match.html">%in%</a></span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">month.name</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>      <span class="fu"><a href="https://tidyr.tidyverse.org/reference/separate.html">separate</a></span><span class="op">(</span><span class="va">X2</span>, into <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="st">"startDate"</span>, <span class="st">"endDate"</span><span class="op">)</span>, sep <span class="op">=</span> <span class="st">" to "</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>      <span class="fu"><a href="https://dplyr.tidyverse.org/reference/transmute.html">transmute</a></span><span class="op">(</span>month <span class="op">=</span> <span class="va">X1</span>, <span class="va">startDate</span>, <span class="va">endDate</span>, numberPaydays <span class="op">=</span> <span class="va">X3</span><span class="op">)</span></span>
+<span>  <span class="op">}</span></span>
+<span><span class="op">}</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/bind_rows.html">bind_rows</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://tidyr.tidyverse.org/reference/fill.html">fill</a></span><span class="op">(</span><span class="va">pattern</span>, .direction <span class="op">=</span> <span class="st">"down"</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">priorityTable</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">pattern</span> <span class="op">==</span> <span class="op">(</span><span class="va">masterTable</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span></span>
+<span>                       <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">year</span> <span class="op">==</span> <span class="fu"><a href="https://rdrr.io/r/base/format.html">format</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.time</a></span><span class="op">(</span><span class="op">)</span>, <span class="st">"%Y"</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="https://magrittr.tidyverse.org/reference/pipe.html">%&gt;%</a></span> </span>
+<span>                       <span class="fu"><a href="https://dplyr.tidyverse.org/reference/pull.html">pull</a></span><span class="op">(</span><span class="va">pattern</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>         <span class="va">month</span> <span class="op">==</span> <span class="va">month.name</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/numeric.html">as.numeric</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/format.html">format</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.time</a></span><span class="op">(</span><span class="op">)</span>, <span class="st">"%m"</span><span class="op">)</span><span class="op">)</span><span class="op">]</span><span class="op">)</span></span></code></pre></div>
+</div>
+<div id="conclusion" class="section level2 smaller" number="14.10">
+<h2>
+<span class="header-section-number">14.10</span> Conclusion<a class="anchor" aria-label="anchor" href="#conclusion"><i class="fas fa-link"></i></a>
+</h2>
 <ul>
 <li>Possible</li>
 <li>Automate with <code>tabulizer</code> and <code>pdftools</code>
@@ -241,10 +313,10 @@ Figure 14.8: Tabulated Pay Period tables.
 </div>
 </div>
 </div>
-<div id="pros-and-cons-1" class="section level3" number="14.3.4">
-<h3>
-<span class="header-section-number">14.3.4</span> Pros and Cons<a class="anchor" aria-label="anchor" href="#pros-and-cons-1"><i class="fas fa-link"></i></a>
-</h3>
+<div id="pros-and-cons-1" class="section level2" number="14.11">
+<h2>
+<span class="header-section-number">14.11</span> Pros and Cons<a class="anchor" aria-label="anchor" href="#pros-and-cons-1"><i class="fas fa-link"></i></a>
+</h2>
 <div class="inline-table"><table class="table table-striped table-hover table-condensed table-responsive" style="margin-left: auto; margin-right: auto;">
 <thead><tr>
 <th style="text-align:left;">
@@ -349,37 +421,35 @@ Very No
 </tbody>
 </table></div>
 </div>
-</div>
-<div id="r-scrape-pdf-approach-criteria-tables" class="section level2" number="14.4">
+<div id="criteria-tables-5" class="section level2" number="14.12">
 <h2>
-<span class="header-section-number">14.4</span> R Scrape PDF Approach: Criteria Tables<a class="anchor" aria-label="anchor" href="#r-scrape-pdf-approach-criteria-tables"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.12</span> Criteria Tables<a class="anchor" aria-label="anchor" href="#criteria-tables-5"><i class="fas fa-link"></i></a>
 </h2>
-<div id="forms-options-4" class="section level3" number="14.4.1">
+<div id="forms-options-7" class="section level3" number="14.12.1">
 <h3>
-<span class="header-section-number">14.4.1</span> Forms Options<a class="anchor" aria-label="anchor" href="#forms-options-4"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.12.1</span> Forms Options<a class="anchor" aria-label="anchor" href="#forms-options-7"><i class="fas fa-link"></i></a>
 </h3>
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
 <span id="tab:PDFRform">Table 14.1: </span>Forms Options
 </caption>
 <thead><tr>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Category
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Feature
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Available
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Description
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Group Notes
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 External Reviews
 </th>
 </tr></thead>
@@ -635,7 +705,7 @@ No
 <td style="text-align:left;min-width: 2.5cm; font-weight: bold;max-width: 3cm; font-weight: bold;">
 </td>
 <td style="text-align:left;min-width: 2.5cm; max-width: 3cm; ">
-Font adjustment/Speak-to-text
+Font adjustment/ Speak-to-text
 </td>
 <td style="text-align:left;min-width: 1.5cm; max-width: 2cm; ">
 No
@@ -650,33 +720,31 @@ No
 </tbody>
 </table></div>
 </div>
-</div>
-<div id="PDFdat" class="section level3" number="14.4.2">
+<div id="PDFdat" class="section level3" number="14.12.2">
 <h3>
-<span class="header-section-number">14.4.2</span> Data Interface<a class="anchor" aria-label="anchor" href="#PDFdat"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.12.2</span> Data Interface<a class="anchor" aria-label="anchor" href="#PDFdat"><i class="fas fa-link"></i></a>
 </h3>
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
 <span id="tab:PDFRdat">Table 14.2: </span>Data Interface Options
 </caption>
 <thead><tr>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Category
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Feature
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Available
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Description
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Group Notes
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 External Reviews
 </th>
 </tr></thead>
@@ -835,33 +903,31 @@ No
 </tbody>
 </table></div>
 </div>
-</div>
-<div id="PDFpho" class="section level3" number="14.4.3">
+<div id="PDFpho" class="section level3" number="14.12.3">
 <h3>
-<span class="header-section-number">14.4.3</span> Photo Integration and External Sensors<a class="anchor" aria-label="anchor" href="#PDFpho"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.12.3</span> Photo Integration and External Sensors<a class="anchor" aria-label="anchor" href="#PDFpho"><i class="fas fa-link"></i></a>
 </h3>
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
 <span id="tab:PDFRphot">Table 14.3: </span>Photo Integration and External Sensors
 </caption>
 <thead><tr>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Category
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Feature
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Available
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Description
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Group Notes
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 External Reviews
 </th>
 </tr></thead>
@@ -983,27 +1049,25 @@ No
 </tbody>
 </table></div>
 </div>
-</div>
-<div id="PDFhrd" class="section level3" number="14.4.4">
+<div id="PDFhrd" class="section level3" number="14.12.4">
 <h3>
-<span class="header-section-number">14.4.4</span> Hardware Platforms<a class="anchor" aria-label="anchor" href="#PDFhrd"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.12.4</span> Hardware Platforms<a class="anchor" aria-label="anchor" href="#PDFhrd"><i class="fas fa-link"></i></a>
 </h3>
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
 <span id="tab:PDFRhard">Table 14.4: </span>Hardware Platform Options
 </caption>
 <thead><tr>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Feature
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Available
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Group Notes
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 External Reviews
 </th>
 </tr></thead>
@@ -1092,32 +1156,30 @@ Yes
 </tr>
 </tbody>
 </table></div>
-</div>
 <p><a href="big-fin.html#BFtop">Top of section</a></p>
 </div>
-<div id="PDFsec" class="section level3" number="14.4.5">
+<div id="PDFsec" class="section level3" number="14.12.5">
 <h3>
-<span class="header-section-number">14.4.5</span> Security Factors<a class="anchor" aria-label="anchor" href="#PDFsec"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.12.5</span> Security Factors<a class="anchor" aria-label="anchor" href="#PDFsec"><i class="fas fa-link"></i></a>
 </h3>
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
 <span id="tab:PDFRsec">Table 14.5: </span>Security Factors
 </caption>
 <thead><tr>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Feature
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Available
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Description
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Group Notes
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 External Reviews
 </th>
 </tr></thead>
@@ -1195,30 +1257,28 @@ No
 </tbody>
 </table></div>
 </div>
-</div>
-<div id="PDFbus" class="section level3" number="14.4.6">
+<div id="PDFbus" class="section level3" number="14.12.6">
 <h3>
-<span class="header-section-number">14.4.6</span> Business Model and Customer Support<a class="anchor" aria-label="anchor" href="#PDFbus"><i class="fas fa-link"></i></a>
+<span class="header-section-number">14.12.6</span> Business Model and Customer Support<a class="anchor" aria-label="anchor" href="#PDFbus"><i class="fas fa-link"></i></a>
 </h3>
-<div style="border: 1px solid #ddd; padding: 0px; overflow-y: scroll; height:600px; overflow-x: scroll; width:800px; ">
 <div class="inline-table"><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">
 <span id="tab:PDFRbus">Table 14.6: </span>Security Factors
 </caption>
 <thead><tr>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Feature
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Available
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Description
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 Group Notes
 </th>
-<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;position: sticky; top:0; background-color: #FFFFFF;">
+<th style="text-align:left;position: sticky; top:0; background-color: #FFFFFF;">
 External Reviews
 </th>
 </tr></thead>
@@ -1268,8 +1328,6 @@ R programming is where one may need support.
 </tbody>
 </table></div>
 </div>
-
-</div>
 </div>
 </div>
 
@@ -1282,24 +1340,30 @@ R programming is where one may need support.
     <nav id="toc" data-toggle="toc" aria-label="On this page"><h2>On this page</h2>
       <ul class="nav navbar-nav">
 <li><a class="nav-link" href="#pdf-form-and-r-scraping"><span class="header-section-number">14</span> PDF Form and R Scraping</a></li>
-<li><a class="nav-link" href="#PDFtop"><span class="header-section-number">14.1</span> R Scrape PDF Approach Overview</a></li>
+<li><a class="nav-link" href="#PDFtop"><span class="header-section-number">14.1</span> Overview</a></li>
 <li><a class="nav-link" href="#create-a-fillable-pdf-form"><span class="header-section-number">14.2</span> Create a fillable PDF form</a></li>
+<li><a class="nav-link" href="#analysis-by-trinh-nguyen"><span class="header-section-number">14.3</span> Analysis by Trinh Nguyen</a></li>
+<li><a class="nav-link" href="#pros-and-cons"><span class="header-section-number">14.4</span> Pros and Cons</a></li>
+<li><a class="nav-link" href="#outline"><span class="header-section-number">14.5</span> Outline</a></li>
+<li><a class="nav-link" href="#primer-to-pdftools"><span class="header-section-number">14.6</span> Primer to ‘pdftools’</a></li>
+<li><a class="nav-link" href="#primer-to-tabulizer"><span class="header-section-number">14.7</span> Primer to ‘tabulizer’</a></li>
 <li>
-<a class="nav-link" href="#excerpts-from-evalutaion-by-trinh-nguyen"><span class="header-section-number">14.3</span> Excerpts from evalutaion by Trinh Nguyen:</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#pros-and-cons"><span class="header-section-number">14.3.1</span> Pros and Cons</a></li>
-<li><a class="nav-link" href="#outline"><span class="header-section-number">14.3.2</span> Outline</a></li>
-<li><a class="nav-link" href="#conclusion"><span class="header-section-number">14.3.3</span> Conclusion</a></li>
-<li><a class="nav-link" href="#pros-and-cons-1"><span class="header-section-number">14.3.4</span> Pros and Cons</a></li>
+<a class="nav-link" href="#first-case-study-bay-study"><span class="header-section-number">14.8</span> First Case Study: Bay Study</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#general-workflow"><span class="header-section-number">14.8.1</span> General Workflow</a></li>
+<li><a class="nav-link" href="#extracting-tabular-data"><span class="header-section-number">14.8.2</span> Extracting tabular data</a></li>
 </ul>
 </li>
+<li><a class="nav-link" href="#second-case-study-dgs-pay-period-tables"><span class="header-section-number">14.9</span> Second Case Study: DGS Pay Period Tables</a></li>
+<li><a class="nav-link" href="#conclusion"><span class="header-section-number">14.10</span> Conclusion</a></li>
+<li><a class="nav-link" href="#pros-and-cons-1"><span class="header-section-number">14.11</span> Pros and Cons</a></li>
 <li>
-<a class="nav-link" href="#r-scrape-pdf-approach-criteria-tables"><span class="header-section-number">14.4</span> R Scrape PDF Approach: Criteria Tables</a><ul class="nav navbar-nav">
-<li><a class="nav-link" href="#forms-options-4"><span class="header-section-number">14.4.1</span> Forms Options</a></li>
-<li><a class="nav-link" href="#PDFdat"><span class="header-section-number">14.4.2</span> Data Interface</a></li>
-<li><a class="nav-link" href="#PDFpho"><span class="header-section-number">14.4.3</span> Photo Integration and External Sensors</a></li>
-<li><a class="nav-link" href="#PDFhrd"><span class="header-section-number">14.4.4</span> Hardware Platforms</a></li>
-<li><a class="nav-link" href="#PDFsec"><span class="header-section-number">14.4.5</span> Security Factors</a></li>
-<li><a class="nav-link" href="#PDFbus"><span class="header-section-number">14.4.6</span> Business Model and Customer Support</a></li>
+<a class="nav-link" href="#criteria-tables-5"><span class="header-section-number">14.12</span> Criteria Tables</a><ul class="nav navbar-nav">
+<li><a class="nav-link" href="#forms-options-7"><span class="header-section-number">14.12.1</span> Forms Options</a></li>
+<li><a class="nav-link" href="#PDFdat"><span class="header-section-number">14.12.2</span> Data Interface</a></li>
+<li><a class="nav-link" href="#PDFpho"><span class="header-section-number">14.12.3</span> Photo Integration and External Sensors</a></li>
+<li><a class="nav-link" href="#PDFhrd"><span class="header-section-number">14.12.4</span> Hardware Platforms</a></li>
+<li><a class="nav-link" href="#PDFsec"><span class="header-section-number">14.12.5</span> Security Factors</a></li>
+<li><a class="nav-link" href="#PDFbus"><span class="header-section-number">14.12.6</span> Business Model and Customer Support</a></li>
 </ul>
 </li>
 </ul>
@@ -1319,7 +1383,7 @@ R programming is where one may need support.
 <footer class="bg-primary text-light mt-5"><div class="container"><div class="row">
 
   <div class="col-12 col-md-6 mt-3">
-    <p>"<strong>Electronic Data Entry Options for IEP Surveys</strong>" was written by IEP DUWG ‘e-Device’ Sub-group. It was last built on 2023-08-23.</p>
+    <p>"<strong>Electronic Data Entry Options for IEP Surveys</strong>" was written by IEP DUWG ‘e-Device’ Sub-group. It was last built on 2023-08-25.</p>
   </div>
 
   <div class="col-12 col-md-6 mt-3">

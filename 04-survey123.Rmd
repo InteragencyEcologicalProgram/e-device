@@ -82,50 +82,18 @@ library(kableExtra)
 datatable(s123dat)
 ```
 
-
-
-
 ###  Photo Integration and External Sensors {#s12pho}
-
 
 ```{r s12pho, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE,  tab.cap='Photo Integration and External Sensors', out.width='100%', tab.asp=.75, tab.align='left' }
 
 
 library(kableExtra)
-#phototable(s123phot)
 
-
-s123phot[] <- lapply(s123phot, function(x) ifelse(is.na(x), "", x))
-
-s123phot %>%
-  # Group by category column and collapse repeating values
-  group_by(Category) %>%
-  mutate(Category = ifelse(duplicated(Category), "", Category))  %>%
-  group_by(Feature) %>%
-  mutate(Feature = ifelse(duplicated(Feature), "", Feature))  %>%
-  
-
-
-kable(s123phot, format = "html", escape = F, caption = 'Photo Integration and External Sensors',  
-      col.names = c("Category","Feature"	,"Available",	"Group Notes","External  Reviews"),
-      booktabs = TRUE, align =  "l") %>%
-  kable_paper() %>% 
-  kable_styling(full_width =FALSE, fixed_thead = TRUE, font_size = 18) %>%
-  
-  column_spec(1, width_min = "2.5cm", bold = TRUE,) %>%
-  column_spec(1, width_max = "3.5cm", bold = TRUE) %>%
-  column_spec(2, width_min = "2.5cm" ) %>%
-  column_spec(2, width_max = "4cm" ) %>%
-  column_spec(3, width_min = "2cm") %>%
-  column_spec(3, width_max = "2.5cm") %>%
-  column_spec(4, width_min = "4cm") %>%
-  column_spec(4, width_max = "5.5cm") %>%
-  column_spec(5, width_min = "4cm") %>%
-  column_spec(5, width_max = "5.5cm") %>%
-
-  scroll_box(width = "800px", height = "600px") 
-
+phototable(s123phot)
 ```
+
+
+
 
 
 

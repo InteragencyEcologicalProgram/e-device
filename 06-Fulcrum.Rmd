@@ -1,6 +1,6 @@
 # Fulcrum App
 
-## Fulcrum App Overview    {#fultop}
+## Overview    {#fultop}
 
 The Fulcrum App is a mobile data collection platform that provides tools to collect and analyze data in field surveys. There are two key components to the Fulcrum platform: the mobile app is for data collectors in the field and a web-based dashboard that provides an at-a-glance view of all field data collections in real time and summaries to date which can be accessible to anyone working on the project. 
 
@@ -10,7 +10,7 @@ Fulcrum is currently being used by at least two major ecosystem monitoring field
  
 
 
-## Fulcrum App: Key Features 
+## Key Features 
 
 ### Professional Look
 
@@ -68,7 +68,7 @@ knitr::include_graphics("images/Fulcrum/maps_office2.jpg", error = FALSE)
 ```
 
 
-## Fulcrum App: Criteria Tables
+## Criteria Tables
 
 
 

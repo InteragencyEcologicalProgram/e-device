@@ -113,8 +113,9 @@ formtable <- function(appform, tibble = FALSE) {
     column_spec(5, width_min = "2cm") %>%
     column_spec(5, width_max = "5cm") %>%
     column_spec(6, width_min = "2cm") %>%  
-    column_spec(6, width_max = "5cm") %>%  
-    scroll_box(width = "800px", height = "600px") 
+    column_spec(6, width_max = "5cm") 
+  # %>%  
+  #   scroll_box(width = "800px", height = "600px") 
   
 }
 
@@ -144,8 +145,9 @@ datatable <- function(appdata, tibble = FALSE) {
     column_spec(5, width_min = "2cm") %>%
     column_spec(5, width_max = "5cm") %>%
     column_spec(6, width_min = "2cm") %>%  
-    column_spec(6, width_max = "5cm") %>%  
-    scroll_box(width = "800px", height = "600px") 
+    column_spec(6, width_max = "5cm") 
+  # %>%  
+  #   scroll_box(width = "800px", height = "600px") 
 }
 
 phototable <- function(appphot, tibble = FALSE) {
@@ -172,9 +174,9 @@ phototable <- function(appphot, tibble = FALSE) {
     column_spec(4, width_min = "4cm") %>%
     column_spec(4, width_max = "5.5cm") %>%
     column_spec(5, width_min = "4cm") %>%
-    column_spec(5, width_max = "5.5cm") %>%
-    
-    scroll_box(width = "800px", height = "600px") 
+    column_spec(5, width_max = "5.5cm") 
+  # %>%
+  #   scroll_box(width = "800px", height = "600px") 
 }
 
 
@@ -194,9 +196,9 @@ kable(apphard, format = "html", escape = F, caption = 'Hardware Platform Options
   column_spec(3, width_min = "4.5cm") %>%
   column_spec(3, width_max = "5cm") %>%
   column_spec(4, width_min = "4.5cm") %>%
-  column_spec(4, width_max = "5cm") %>%
-  
-  scroll_box(width = "800px", height = "600px") 
+  column_spec(4, width_max = "5cm") 
+  # %>%
+  # scroll_box(width = "800px", height = "600px") 
 }
 
 
@@ -216,9 +218,9 @@ sectable <- function(appsecr, tibble = FALSE) {
     column_spec(4, width_min = "4.5cm") %>%
     column_spec(4, width_max = "5cm") %>%
     column_spec(5, width_min = "4.5cm") %>%
-    column_spec(5, width_max = "5cm") %>%
-    
-    scroll_box(width = "800px", height = "600px") 
+    column_spec(5, width_max = "5cm") 
+    # %>%
+    # scroll_box(width = "800px", height = "600px") 
 }
 
 
@@ -238,8 +240,8 @@ bustable <- function(appbusi, tibble = FALSE) {
     column_spec(4, width_min = "4.5cm") %>%
     column_spec(4, width_max = "5cm") %>%
     column_spec(5, width_min = "4.5cm") %>%
-    column_spec(5, width_max = "5cm") %>%
-    
-    scroll_box(width = "800px", height = "600px") 
+    column_spec(5, width_max = "5cm") 
+  # %>%
+  #   scroll_box(width = "800px", height = "600px") 
 }
 
