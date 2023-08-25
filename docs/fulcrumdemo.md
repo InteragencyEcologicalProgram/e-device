@@ -1,4 +1,4 @@
-# SF Bay Study: Fulcrum Trial App {#SFBSfulc}
+# SF Bay Study: Fulcrum Trial App {#BSfulc}
 
 <div class="figure">
 <img src="images/IEPdemos/SFBS_fulcrum/IMG_0292.PNG" alt="Screen capture of a test Fulcrum app developed for SFBS survey." width="50%" />

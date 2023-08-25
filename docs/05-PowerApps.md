@@ -30,7 +30,7 @@ The Power Apps form-building interface is intended to be a "LOW-code/NO-code" ex
 
 The seamless connections to either on-premise or online data sources is a notable feature of Power Apps. Users may initiate a Power App form by connecting to an existing database or starting a blank app.  Another Power Apps feature that stands out is the The on-premises data gateway acts as a bridge to provide quick and secure data transfer between on-premises data (data that isn't in the cloud) and several Microsoft cloud services. https://learn.microsoft.com/en-us/data-integration/gateway/service-gateway-onprem
 
-An important note is the ability of the Power App Mobile components that supports exporting the 'Collections' on a mobile device to a standard .json file.  This is a stand-out feature compared to Survey123 and Fulcrum, and can be critical when building in a back-up protocol for cases when internet data transfer is not available.  The Bay Study Power App project included this option to export to .json because there are some survey stations in which internet access is low or not available [See Bay Study Fulcrum App demo](#powdem)
+An important note is the ability of the Power App Mobile components that supports exporting the 'Collections' on a mobile device to a standard .json file.  This is a stand-out feature compared to Survey123 and Fulcrum, and can be critical when building in a back-up protocol for cases when internet data transfer is not available.  The Bay Study Power App project included this option to export to .json because there are some survey stations in which internet access is low or not available [See Bay Study Fulcrum App demo](#BSfulc)
 
 <div class="figure">
 <img src="images/PowerApps/Connections.jpg" alt="Graphical representation of the multiple types of Power Apps data connections established in Power Apps." width="90%" />
@@ -53,6 +53,9 @@ A Power App form may be developed for a tablet or phone formatting, and the tabl
 
 
 ## Criteria Tables
+
+For in-depth definitions of each criteria, see [e-device comparison criteria](#crittop).
+
 
 ### Forms Options 
 

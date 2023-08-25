@@ -1,4 +1,4 @@
-# SF Bay Study: Fulcrum Trial App {#SFBSfulc}
+# SF Bay Study: Fulcrum Trial App {#BSfulc}
 
 ```{r, echo=FALSE, fig.cap="Screen capture of a test Fulcrum app developed for SFBS survey.", out.width = '50%'}
 knitr::include_graphics("images/IEPdemos/SFBS_fulcrum/IMG_0292.PNG", error = FALSE)

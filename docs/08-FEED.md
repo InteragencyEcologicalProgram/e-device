@@ -74,6 +74,9 @@ VIMS/FEED is configured to work with and Access database. Survey data collection
 
 ## Criteria Tables
 
+For in-depth definitions of each criteria, see [e-device comparison criteria](#crittop).
+
+
 ###  Forms Options
 
 

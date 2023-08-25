@@ -14,7 +14,7 @@ The main categories considering include options within the forms building tools,
 
 <!-- [Top of section](#crittop) -->
 
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:forms)Forms Options.</caption>
  <thead>
   <tr>
@@ -105,7 +105,7 @@ The main categories considering include options within the forms building tools,
    <td style="text-align:left;max-width: 8cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -118,7 +118,7 @@ The main categories considering include options within the forms building tools,
 [Top of section](#crittop)
 
 
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; width: auto !important; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:data)Data Interface Options.</caption>
  <thead>
   <tr>
@@ -171,7 +171,7 @@ Can data be edited after having been pushed to a remote location? </td>
    <td style="text-align:left;min-width: 8cm; max-width: 9cm; "> Can the form be directly configured to an SQL or Access database? If do, how difficult is this configuration? </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -186,7 +186,7 @@ Can data be edited after having been pushed to a remote location? </td>
 [Top of section](#crittop)
 
 
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:photo)Photo Integration and External Sensors.</caption>
  <thead>
   <tr>
@@ -232,7 +232,7 @@ Can data be edited after having been pushed to a remote location? </td>
    <td style="text-align:left;min-width: 10cm; "> Can the app integrate a datastream from an external sensor (Navigation data or fish board data?) </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -244,7 +244,7 @@ Can data be edited after having been pushed to a remote location? </td>
 
 
 
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table style='width:90%; font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; margin-left: auto; margin-right: auto;' class=" lightable-paper table">
+<table style='width:90%; font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; margin-left: auto; margin-right: auto;' class=" lightable-paper table">
 <caption style="font-size: initial !important;">(\#tab:HWplat)Hardware Platforms Supported.</caption>
  <thead>
   <tr>
@@ -282,7 +282,7 @@ Can data be edited after having been pushed to a remote location? </td>
    <td style="text-align:left;min-width: 8cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 
@@ -295,7 +295,7 @@ Can data be edited after having been pushed to a remote location? </td>
 
 
 
-<div style="border: 1px solid #ddd; padding: 5px; overflow-x: scroll; width:800px; "><table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; margin-left: auto; margin-right: auto;'>
+<table class=" lightable-paper table" style='font-family: "Arial Narrow", arial, helvetica, sans-serif; margin-left: auto; margin-right: auto; font-size: 18px; margin-left: auto; margin-right: auto;'>
 <caption style="font-size: initial !important;">(\#tab:security)Software Security Factors.</caption>
  <thead>
   <tr>
@@ -325,7 +325,7 @@ Can data be edited after having been pushed to a remote location? </td>
    <td style="text-align:left;min-width: 6cm; ">  </td>
   </tr>
 </tbody>
-</table></div>
+</table>
 
 
 

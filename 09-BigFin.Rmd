@@ -94,8 +94,9 @@ knitr::include_graphics("images/BigFin/fish2.PNG", error = FALSE)
 
 ## Criteria Tables
 
-###  Forms Options
+For in-depth definitions of each criteria, see [e-device comparison criteria](#crittop).
 
+###  Forms Options
 
 
 ```{r BFinit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }

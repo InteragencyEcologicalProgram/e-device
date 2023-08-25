@@ -70,7 +70,7 @@ knitr::include_graphics("images/Fulcrum/maps_office2.jpg", error = FALSE)
 
 ## Criteria Tables
 
-
+For in-depth definitions of each criteria, see [e-device comparison criteria](#crittop).
 
 ### Forms Options 
 

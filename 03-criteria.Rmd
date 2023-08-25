@@ -40,8 +40,9 @@ kable(forms, format = "html", escape = F, caption = "Forms Options.", booktabs =
   #column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
   column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
   #column_spec(3, width_min = "10cm", bold = F, italic = F) %>%
-  column_spec(3, width_max = "8cm", bold = F, italic = F) %>%
-  scroll_box(width = "800px")
+  column_spec(3, width_max = "8cm", bold = F, italic = F) 
+# %>%
+#   scroll_box(width = "800px")
 
 ```
 
@@ -79,8 +80,9 @@ kable(dataint, format = "html", escape = F, caption = "Data Interface Options.",
   #column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
   column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
   column_spec(3, width_min = "8cm", bold = F, italic = F) %>%
-  column_spec(3, width_max = "9cm", bold = F, italic = F) %>%
-  scroll_box(width = "800px")
+  column_spec(3, width_max = "9cm", bold = F, italic = F) 
+# %>%
+#   scroll_box(width = "800px")
 
 
 ```
@@ -118,10 +120,9 @@ photsens %>%
   column_spec(1, width_min = "3.5cm", bold = TRUE, italic = F) %>%
   column_spec(1, width_max = "4cm", bold = TRUE, italic = F) %>%
   column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
-  #column_spec(2, width_max = "7cm", bold = F, italic = F) %>%
-  column_spec(3, width_min = "10cm", bold = F, italic = F) %>%
-  #column_spec(3, width_max = "10cm", bold = F, italic = F) #%>%
-  scroll_box(width = "800px")
+  column_spec(3, width_min = "10cm", bold = F, italic = F) 
+# %>%
+#   scroll_box(width = "800px")
 
 
 ```
@@ -153,8 +154,9 @@ HWplats %>%
   
   column_spec(1, width_min = "6.0cm", bold = TRUE, italic = F) %>%
   column_spec(1, width_max = "6.5cm", bold = TRUE, italic = F) %>%
-  column_spec(2, width_min = "8cm", bold = F, italic = F) %>%
-  scroll_box(width = "800px")
+  column_spec(2, width_min = "8cm", bold = F, italic = F) 
+# %>%
+#   scroll_box(width = "800px")
 
 
 ```
@@ -185,8 +187,9 @@ securfac %>%
   
   column_spec(1, width_min = "5.0cm", bold = TRUE, italic = F) %>%
   column_spec(1, width_max = "5.5cm", bold = TRUE, italic = F) %>%
-  column_spec(2, width_min = "6cm", bold = F, italic = F) %>%
-  scroll_box(width = "800px")
+  column_spec(2, width_min = "6cm", bold = F, italic = F) 
+# %>%
+#   scroll_box(width = "800px")
 
 
 ```

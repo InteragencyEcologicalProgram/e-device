@@ -138,8 +138,9 @@ Dan:  It would have to be set up like that originally; The built-in Java calls c
 
 ## Criteria Tables
 
-###  Forms Options
+For in-depth definitions of each criteria, see [e-device comparison criteria](#crittop).
 
+###  Forms Options
 
 
 

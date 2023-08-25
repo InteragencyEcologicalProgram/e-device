@@ -54,6 +54,8 @@ XLSForm formatting language is described at: https://xlsform.org/en/.
 
 ## Survey123: Criteria Tables
 
+For in-depth definitions of each criteria, see [e-device comparison criteria](#crittop).
+
 ### Forms Options
 
 

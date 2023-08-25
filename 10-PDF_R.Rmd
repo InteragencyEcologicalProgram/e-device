@@ -4,7 +4,7 @@
 
 PDF forms have been used by several IEP survey teams as a way to streamline data collection and provide data entry QC while keeping the form development time and expense to a minimum [See IEP E-device Survey responses](#appx_1).  
 
-R has been proposed as a tool for programmatically extracting the filled-in PDF form. The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. Scraping is the process of programmatically grabbing information from a webpage or document by analyzing the underlying code of the document.
+R has been proposed as a tool for programmatically extracting the filled-in PDF form. The following is a presentation developed by Trinh Nguyen that examines the feasibility of R-scraping methods for PDF forms. Data *scraping* is the process of programmatically grabbing information from a webpage or document by analyzing the underlying code of the document.
 
 
 
@@ -254,6 +254,9 @@ data.frame("Features" = c("Ease of installation", "Ease of use", "Ease of applic
 
 
 ## Criteria Tables
+
+For in-depth definitions of each criteria, see [e-device comparison criteria](#crittop).
+
 
 ###  Forms Options
 

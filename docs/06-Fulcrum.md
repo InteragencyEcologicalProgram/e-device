@@ -76,7 +76,7 @@ Fulcrum has been rated as one of the best apps for geolocation with custom maps.
 
 ## Criteria Tables
 
-
+For in-depth definitions of each criteria, see [e-device comparison criteria](#crittop).
 
 ### Forms Options 
 

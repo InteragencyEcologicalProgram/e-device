@@ -246,7 +246,7 @@ PDFsec
 PDFbus
 yoldem
 powdem
-SFBSfulc
+BSfulc
 e-device-hardware-options
 waterproof-cases-ipads
 fishboards

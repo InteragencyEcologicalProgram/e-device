@@ -108,8 +108,9 @@ Big Fin measurement boards can be manufactured in any length up to the largest s
 
 ## Criteria Tables
 
-###  Forms Options
+For in-depth definitions of each criteria, see [e-device comparison criteria](#crittop).
 
+###  Forms Options
 
 
 

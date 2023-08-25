@@ -166,7 +166,10 @@ NOTE: This Executive Summary was shared with IEP Coordinators Team in Sept of 20
   </tr>
   <tr>
    <td style="text-align:left;max-width: 4.5cm; font-weight: bold;"> PDF/R-scraping </td>
-   <td style="text-align:left;max-width: 7cm; "> **Cons:**  Not as many options to control PDF form input </td>
+   <td style="text-align:left;max-width: 7cm; "> **Cons:**  Requires very heavey code and advanced R coding skill; 
+no support available;
+R scrape function only extract text-based data;
+tablulizer library can be difficult to install; </td>
    <td style="text-align:left;max-width: 10cm; "> **Pros:** R-based PDF scraped data could be further processed in R
 
 --- --- --- ---

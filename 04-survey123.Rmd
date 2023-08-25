@@ -52,6 +52,8 @@ knitr::include_graphics("images/survey123/survey123_xlsform2.png", error = FALSE
 
 ## Survey123: Criteria Tables
 
+For in-depth definitions of each criteria, see [e-device comparison criteria](#crittop).
+
 ### Forms Options
 
 ```{r forminit, echo = FALSE, include=TRUE, message=FALSE, warning=FALSE }
